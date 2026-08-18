@@ -21,7 +21,30 @@
     "appId": "com.ikstv.quasimorph-companion",
     "productName": "Quasimorph Companion",
     "directories": { "output": "dist" },
-    "files": ["main.js", "preload.js", "src/**/*", "data/**/*", "assets/**/*"],
-    "win": { "target": "nsis" }
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*",
+      "data/**/*",
+      "assets/**/*",
+      "!assets/game-icons/_manifest.txt"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico",
+      "artifactName": "Quasimorph Companion Setup ${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Quasimorph Companion",
+      "runAfterFinish": true,
+      "installerIcon": "assets/icon.ico",
+      "uninstallerIcon": "assets/icon.ico",
+      "uninstallDisplayName": "Quasimorph Companion"
+    }
   }
 }
