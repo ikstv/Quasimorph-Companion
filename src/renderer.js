@@ -24,9 +24,40 @@ const PROC_TYPE_COLOR = {
 
 // ---- state -----------------------------------------------------------------
 let DATA = null;
-const state = { mode:'story', category:'all', search:'' };
+const state = { mode:'story', category:'all', search:'', save:null };
 let pinnedId = null;
 const missionById = {};
+
+// Faction IDs from the game save mapped to our campaign keys (for colors/icons).
+const FACTION_TO_CAMPAIGN = {
+  AnCom:'anc', CResistance:'civ', CivilUnity:'civ',
+  Hive:'hiv', RealWare:'rwa', Tezctlan:'tez',
+  Xiomara:'xio', XiomaraMasks:'xio', Urparp:'unc', UnchainedBelt:'unc'
+};
+
+function factionColor(id){
+  const camp = FACTION_TO_CAMPAIGN[id];
+  return (camp && CAMPAIGN_META[camp]?.color) || '#7b8493';
+}
+function questlineFactionCurrent(){
+  // From live save: which campaign step each faction is currently on.
+  const out = {};
+  if(!state.save?.factions) return out;
+  for(const f of state.save.factions){
+    if(!f.questlineId) continue;
+    const camp = FACTION_TO_CAMPAIGN[f.id];
+    if(camp) out[camp] = f.questlineId;   // e.g. "AnCom_1"
+  }
+  return out;
+}
+function completedStorySet(){
+  return state.save?.completedStoryIds || new Set();
+}
+function daysLeft(expireTicks){
+  // Save time is in Unity ticks; the app doesn't hold the current game clock,
+  // so we render the raw expire index as-is (relative days is a follow-up).
+  return null;
+}
 
 // ---- helpers ---------------------------------------------------------------
 const $ = (s, r=document) => r.querySelector(s);
@@ -86,6 +117,8 @@ function currentList(){
 
 function renderContent(){
   hideHover();
+  if(state.mode === 'nav') return renderNav();
+  if(state.mode === 'done') return renderDone();
   if(state.mode === 'chain') return renderChain();
   const content = $('#content');
   content.innerHTML = '';
@@ -174,6 +207,14 @@ function renderChain(){
         const node = el('div','node'); node.style.setProperty('--cc', meta.color);
         if(mm.id === pinnedId) node.classList.add('pinned');
 
+        // save-derived overlays
+        const done = completedStorySet();
+        const hereByCamp = questlineFactionCurrent();
+        const isDone = done.has(mm.id);
+        const isHere = mm.id === hereByCamp[camp];
+        if(isDone) node.classList.add('done');
+        if(isHere) node.classList.add('here');
+
         const top = el('div','node-top');
         const nleft = el('div','nt-left');
         const nemb = el('div','node-emblem'); nemb.style.color = meta.color;
@@ -181,6 +222,8 @@ function renderChain(){
         const nname = el('div','node-name'); nname.textContent = mm.name;
         nleft.append(nemb, nname);
         top.appendChild(nleft);
+        if(isDone){ const dk = el('div','node-check'); dk.textContent = '✓'; top.appendChild(dk); }
+        else if(isHere){ const hk = el('div','node-here'); hk.textContent = 'ТИ ТУТ'; top.appendChild(hk); }
         if(mm.branch){ const br = el('div','node-br'); br.textContent = mm.branch.toUpperCase(); top.appendChild(br); }
         node.appendChild(top);
 
@@ -204,6 +247,167 @@ function renderChain(){
   }
   content.appendChild(wrap);
   $('#counter').innerHTML = `<b>${count}</b> місій у ланцюгах`;
+}
+
+function saveEmpty(msg){
+  const content = $('#content');
+  content.innerHTML = '';
+  const e = el('div','empty save-empty');
+  e.innerHTML = `<div class="se-title">ЗБЕРЕЖЕННЯ НЕ ЗНАЙДЕНО</div>
+    <div class="se-body">${esc(msg)}</div>
+    <div class="se-hint">Запусти Quasimorph і створи слот — Штурман підхопить його автоматично.</div>`;
+  content.appendChild(e);
+  $('#counter').textContent = '—';
+}
+
+function renderNav(){
+  if(!state.save){ return saveEmpty('Читаю збереження…'); }
+  if(!state.save.ok){
+    return saveEmpty(state.save.reason==='no-save' ? 'Жодного слоту в папці збережень.' : state.save.reason);
+  }
+  const content = $('#content');
+  content.innerHTML = '';
+
+  // header strip: difficulty + tutorial + counts
+  const s = state.save;
+  const strip = el('div','nav-strip');
+  const diffMap = { Easy:'ЛЕГКО', Normal:'НОРМА', Hard:'ВАЖКО' };
+  strip.innerHTML = `
+    <div class="nav-chip"><b>Складність:</b> ${esc(diffMap[s.difficulty] || s.difficulty)}</div>
+    <div class="nav-chip">${s.tutorialFinished ? '✓ Навчання пройдено' : (s.tutorialActive ? '◐ Навчання активне' : 'Навчання вимкнено')}</div>
+    <div class="nav-chip"><b>Live-пропозицій:</b> ${s.liveMissions.length}</div>
+    <div class="nav-chip"><b>Пройдено сюжетних:</b> ${s.completedStoryIds.size}</div>`;
+  content.appendChild(strip);
+
+  // filter blocked; sort primary by MissionDifficulty asc, tie-breaker rewardPoints asc
+  const list = s.liveMissions
+    .filter(m => !m.isBlocked)
+    .filter(m => {
+      const q = state.search.trim().toLowerCase();
+      if(!q) return true;
+      const key = (m.storyId+' '+(m.benId||'')+' '+(m.vicId||'')+' '+(m.stationId||'')).toLowerCase();
+      return key.includes(q);
+    })
+    .sort((a,b) => (a.difficulty-b.difficulty) || (a.rewardPoints-b.rewardPoints));
+
+  $('#counter').innerHTML = `<b>${list.length}</b> / ${s.liveMissions.length} пропозицій`;
+
+  if(!list.length){
+    const e = el('div','empty'); e.textContent = 'НІЧОГО НЕ ЗНАЙДЕНО';
+    content.appendChild(e); return;
+  }
+
+  const grid = el('div','nav-list');
+  for(const lm of list){
+    const m = missionById[lm.storyId];   // may be undefined for freshly-seeded proc missions
+    const row = el('div','nav-row');
+    const camp = m ? (m.type==='story' ? m.campaignKey : null) : null;
+    row.style.setProperty('--fac', camp ? CAMPAIGN_META[camp].color : factionColor(lm.benId));
+
+    // difficulty badge
+    const d = el('div','nav-diff'); d.textContent = lm.difficulty || '?'; row.appendChild(d);
+
+    // emblem
+    const em = el('div','emblem');
+    em.style.color = row.style.getPropertyValue('--fac');
+    if(m && window.QM_ICONS){
+      em.innerHTML = m.type==='story' ? window.QM_ICONS.campaign(m.campaignKey) : window.QM_ICONS.type(m.missionType);
+    } else {
+      em.innerHTML = window.QM_ICONS?.type(lm.procType) || '';
+    }
+    row.appendChild(em);
+
+    // name + station
+    const mid = el('div','nav-mid');
+    const name = el('div','nav-name');
+    name.textContent = m?.name || lm.storyId;
+    const sub = el('div','nav-sub');
+    sub.textContent = (lm.stationId ? lm.stationId : '—') + ' · ' + (lm.procType || (m?.missionTypeName || 'СЮЖЕТ'));
+    mid.append(name, sub);
+    row.appendChild(mid);
+
+    // rep chips
+    const rep = el('div','nav-rep');
+    if(lm.benId){
+      const b = el('span','rep-chip pos');
+      b.style.color = factionColor(lm.benId);
+      b.textContent = `${lm.benId} +${lm.benDelta.toFixed(1)}`;
+      rep.appendChild(b);
+    }
+    if(lm.vicId){
+      const v = el('span','rep-chip neg');
+      v.style.color = factionColor(lm.vicId);
+      v.textContent = `${lm.vicId} ${lm.vicDelta.toFixed(1)}`;
+      rep.appendChild(v);
+    }
+    row.appendChild(rep);
+
+    // reward items summary
+    const rw = el('div','nav-rw');
+    if(lm.rewardItems.length){
+      const items = lm.rewardItems.slice(0,3).map(it => {
+        const s = (it.count>1 ? `${it.id}×${it.count}` : it.id);
+        return it.isWeapon ? `⚔ ${s}` : s;
+      });
+      if(lm.rewardItems.length > 3) items.push(`+${lm.rewardItems.length-3}`);
+      rw.textContent = items.join(' · ');
+    } else {
+      rw.textContent = `${lm.rewardPoints} pts`;
+    }
+    row.appendChild(rw);
+
+    if(m){
+      row.addEventListener('mouseenter', ()=>showHover(m, row));
+      row.addEventListener('mouseleave', hideHover);
+      row.addEventListener('click', ()=>openDrawer(m));
+      row.classList.add('clickable');
+    }
+    grid.appendChild(row);
+  }
+  content.appendChild(grid);
+}
+
+function renderDone(){
+  if(!state.save){ return saveEmpty('Читаю збереження…'); }
+  if(!state.save.ok){
+    return saveEmpty(state.save.reason==='no-save' ? 'Жодного слоту в папці збережень.' : state.save.reason);
+  }
+  const content = $('#content');
+  content.innerHTML = '';
+  const done = state.save.completedStoryIds;
+  const list = DATA.storyMissions.filter(m => done.has(m.id));
+  $('#counter').innerHTML = `<b>${list.length}</b> / ${DATA.storyMissions.length} пройдено`;
+
+  if(!list.length){
+    const e = el('div','empty');
+    e.innerHTML = '<div class="se-title">ЩЕ НІЧОГО НЕ ПРОЙДЕНО</div>' +
+      '<div class="se-body">Завершені сюжетні місії зʼявляться тут автоматично.</div>';
+    content.appendChild(e); return;
+  }
+
+  // reuse the same campaign-grouped grid layout as story mode
+  const groups = new Map();
+  for(const m of list){
+    if(!groups.has(m.campaignKey)) groups.set(m.campaignKey, []);
+    groups.get(m.campaignKey).push(m);
+  }
+  const keys = [...groups.keys()].sort((a,b)=>CAMPAIGN_ORDER.indexOf(a)-CAMPAIGN_ORDER.indexOf(b));
+  for(const k of keys){
+    const arr = groups.get(k);
+    const meta = CAMPAIGN_META[k] || {};
+    const grp = el('section','campaign-group');
+    const head = el('div','cg-head');
+    const bar = el('div','cg-bar'); bar.style.background = meta.color;
+    const title = el('div','cg-title'); title.textContent = meta.label; title.style.color = meta.color;
+    const cnt = el('div','cg-count'); cnt.textContent = arr.length;
+    const line = el('div','cg-line');
+    head.append(bar, title, cnt, line);
+    grp.appendChild(head);
+    const grid = el('div','grid');
+    for(const m of arr){ const t = tile(m); t.classList.add('done'); grid.appendChild(t); }
+    grp.appendChild(grid);
+    content.appendChild(grp);
+  }
 }
 
 function diffText(m){
@@ -389,7 +593,10 @@ function renderFilters(){
   box.innerHTML = '';
 
   // mode segmented (always visible)
-  const modes = [['story','Сюжетні'],['proc','Несюжетні'],['chain','Ланцюг']];
+  const modes = [
+    ['story','Сюжетні'], ['proc','Несюжетні'], ['chain','Ланцюг'],
+    ['nav','Штурман'], ['done','Пройдені']
+  ];
   for(const [val,label] of modes){
     const c = el('div','chip' + (state.mode===val?' active':''));
     c.textContent = label;
@@ -403,8 +610,13 @@ function renderFilters(){
   all.addEventListener('click', ()=>{ state.category='all'; renderFilters(); renderContent(); });
   box.appendChild(all);
 
-  // category chips
-  if(state.mode!=='proc'){
+  // category chips (skipped in nav mode — save-driven, category filter doesn't apply)
+  if(state.mode==='nav'){
+    box.style.display = 'none';
+  } else {
+    box.style.display = '';
+  }
+  if(state.mode==='story' || state.mode==='chain' || state.mode==='done'){
     for(const k of CAMPAIGN_ORDER){
       if(!DATA.storyMissions.some(m=>m.campaignKey===k)) continue;
       const meta = CAMPAIGN_META[k];
@@ -413,7 +625,7 @@ function renderFilters(){
       c.addEventListener('click', ()=>{ state.category=k; renderFilters(); renderContent(); });
       box.appendChild(c);
     }
-  } else {
+  } else if(state.mode==='proc') {
     const seen = new Set();
     for(const k of PROC_TYPE_ORDER){
       const one = DATA.procMissions.find(m=>m.missionType===k);
@@ -434,13 +646,39 @@ async function loadData(){
   return r.json();
 }
 
+async function refreshSave(){
+  if(!window.QM?.getSave || !window.QM_SAVE) return;
+  try {
+    const raw = await window.QM.getSave(0);
+    state.save = window.QM_SAVE.normalize(raw);
+  } catch (e) {
+    state.save = { ok:false, reason:String(e.message||e) };
+  }
+}
+
 async function boot(){
   DATA = await loadData();
   if(DATA.error){ $('#content').innerHTML = `<div class="empty">ПОМИЛКА ДАНИХ: ${esc(DATA.error)}</div>`; return; }
   buildSearchIndex();
   [...DATA.storyMissions, ...DATA.procMissions].forEach(m => { missionById[m.id] = m; });
+
+  // Prime save (best-effort; UI works without it).
+  await refreshSave();
+
   renderFilters();
   renderContent();
+
+  // Live watch — debounced re-read + re-render whenever save files change.
+  if(window.QM?.watchSave){
+    let pending = null;
+    window.QM.watchSave(async () => {
+      clearTimeout(pending);
+      pending = setTimeout(async () => {
+        await refreshSave();
+        if(state.mode==='nav' || state.mode==='done' || state.mode==='chain') renderContent();
+      }, 250);
+    });
+  }
 
   // search
   $('#search').addEventListener('input', e=>{ state.search = e.target.value; renderContent(); });

@@ -12,6 +12,16 @@ contextBridge.exposeInMainWorld('QM', {
       return { error: String(e), storyMissions: [], procMissionTypes: [] };
     }
   },
+  getSave: (slot = 0) => ipcRenderer.invoke('save:read', slot),
+  watchSave: (cb) => {
+    const handler = () => cb();
+    ipcRenderer.on('save:changed', handler);
+    ipcRenderer.send('save:watch:start');
+    return () => {
+      ipcRenderer.removeListener('save:changed', handler);
+      ipcRenderer.send('save:watch:stop');
+    };
+  },
   minimize: () => ipcRenderer.send('win:minimize'),
   maximize: () => ipcRenderer.send('win:maximize'),
   close: () => ipcRenderer.send('win:close')

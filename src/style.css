@@ -261,6 +261,61 @@ body{
 .node-unlock b{color:var(--teal);font-weight:400;font-family:"Oswald","Arial Narrow",sans-serif;
   font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:1px}
 
+/* ---------- Navigator (Штурман) ---------- */
+.nav-strip{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px 0;
+  padding:10px 12px;background:linear-gradient(180deg,var(--panel),#111318);
+  border:1px solid var(--line)}
+.nav-chip{font-family:"PT Sans Narrow","Arial Narrow",sans-serif;font-size:12px;
+  color:var(--ink);padding:2px 10px;border:1px solid var(--line);background:#141720}
+.nav-chip b{color:var(--gold);font-weight:600;letter-spacing:.02em}
+
+.nav-list{display:flex;flex-direction:column;gap:6px}
+.nav-row{position:relative;display:grid;
+  grid-template-columns:32px 28px 1fr auto auto;gap:12px;align-items:center;
+  padding:10px 14px 10px 18px;background:linear-gradient(180deg,var(--panel),#111318);
+  border:1px solid var(--line);transition:.12s cubic-bezier(.2,.7,.3,1)}
+.nav-row::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--fac,#4a5160)}
+.nav-row.clickable{cursor:pointer}
+.nav-row:hover{border-color:var(--line-bright);background:linear-gradient(180deg,#191d23,#131519);transform:translateX(2px)}
+.nav-diff{font-family:"Oswald","Arial Narrow",sans-serif;font-weight:700;font-size:22px;
+  color:var(--fac,#8b8b82);text-align:center;line-height:1;
+  text-shadow:0 0 8px color-mix(in srgb, var(--fac,#8b8b82) 55%, transparent)}
+.nav-mid{min-width:0}
+.nav-name{font-family:"Oswald","Arial Narrow",sans-serif;font-weight:600;font-size:15px;
+  color:var(--gold);line-height:1.15;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nav-sub{font-family:"PT Sans Narrow","Arial Narrow",sans-serif;font-size:11px;
+  color:var(--ink-dim);letter-spacing:.02em;margin-top:2px}
+.nav-rep{display:flex;flex-direction:column;gap:2px;align-items:flex-end}
+.rep-chip{font-family:"JetBrains Mono",monospace;font-size:10.5px;padding:1px 6px;
+  border:1px solid currentColor;letter-spacing:.02em}
+.rep-chip.pos{opacity:1}
+.rep-chip.neg{opacity:.85}
+.nav-rw{font-family:"PT Sans Narrow","Arial Narrow",sans-serif;font-size:11.5px;
+  color:var(--ink-dim);max-width:280px;text-align:right}
+
+/* Empty states for save-driven modes */
+.save-empty{padding:60px 20px;text-align:center}
+.save-empty .se-title{font-family:"Oswald","Arial Narrow",sans-serif;font-size:18px;
+  color:var(--amber);letter-spacing:.08em;margin-bottom:10px}
+.save-empty .se-body{color:var(--ink);margin-bottom:8px}
+.save-empty .se-hint{color:var(--ink-dim);font-size:12.5px}
+.empty .se-title{font-family:"Oswald","Arial Narrow",sans-serif;font-size:16px;
+  color:var(--amber);letter-spacing:.06em;margin-bottom:6px}
+.empty .se-body{color:var(--ink-dim);font-size:12.5px}
+
+/* Chain overlays: done + you-are-here */
+.node.done{opacity:.72;background:linear-gradient(180deg,#0f1116,#0c0d10)}
+.node.done .node-name{color:#9aa1b3}
+.node-check{font-family:"Oswald","Arial Narrow",sans-serif;font-weight:700;font-size:16px;
+  color:#4ac272;text-shadow:0 0 6px rgba(74,194,114,.55);padding:0 4px}
+.node.here{border-color:var(--gold);box-shadow:0 0 0 1px rgba(255,254,193,.35), 0 0 22px rgba(255,254,193,.14) inset}
+.node-here{font-family:"Oswald","Arial Narrow",sans-serif;font-weight:700;font-size:10px;
+  color:var(--gold);letter-spacing:.14em;border:1px solid var(--gold);padding:1px 6px;flex-shrink:0}
+.tile.done{opacity:.75}
+.tile.done::after{content:"✓";position:absolute;top:6px;right:6px;color:#4ac272;
+  font-family:"Oswald","Arial Narrow",sans-serif;font-weight:700;font-size:14px;
+  text-shadow:0 0 6px rgba(74,194,114,.55)}
+
 /* ---------- atmosphere ---------- */
 .fx-scanlines{position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.35;
   background:repeating-linear-gradient(0deg,rgba(0,0,0,0) 0px,rgba(0,0,0,0) 2px,rgba(0,0,0,.22) 3px,rgba(0,0,0,0) 4px);
