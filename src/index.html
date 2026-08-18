@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QUASIMORPH // База місій</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=PT+Sans+Narrow:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Custom frameless title bar -->
+  <header class="titlebar">
+    <div class="tb-left">
+      <span class="tb-logo">◈</span>
+      <span class="tb-title">QUASIMORPH</span>
+      <span class="tb-sub">// БАЗА МІСІЙ</span>
+    </div>
+    <div class="tb-drag"></div>
+    <div class="tb-right">
+      <button class="tb-btn" id="btn-min" title="Згорнути">—</button>
+      <button class="tb-btn" id="btn-max" title="Розгорнути">▢</button>
+      <button class="tb-btn tb-close" id="btn-close" title="Закрити">✕</button>
+    </div>
+  </header>
+
+  <!-- Toolbar -->
+  <div class="toolbar">
+    <div class="search-wrap">
+      <span class="search-ico">⌕</span>
+      <input id="search" type="text" placeholder="Пошук місії, станції, фракції…" autocomplete="off" />
+    </div>
+    <div class="mode-seg" id="mode-seg"></div>
+    <div class="seg-div"></div>
+    <div class="filters" id="cat-filters"></div>
+    <div class="counter" id="counter">—</div>
+  </div>
+
+  <!-- Main content -->
+  <main class="content" id="content"></main>
+
+  <!-- Floating hover card -->
+  <div class="hovercard" id="hovercard" aria-hidden="true"></div>
+
+  <!-- Detail drawer -->
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-inner" id="drawer-inner"></div>
+  </aside>
+  <div class="drawer-scrim" id="drawer-scrim"></div>
+
+  <!-- CRT / atmosphere overlays -->
+  <div class="fx-scanlines"></div>
+  <div class="fx-vignette"></div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "quasimorph-companion",
+  "version": "0.1.0",
+  "description": "Quasimorph Companion — a desktop mission database for the game Quasimorph, styled like the game.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win"
+  },
+  "author": "ikstv",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^32.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.ikstv.quasimorph-companion",
+    "productName": "Quasimorph Companion",
+    "directories": { "output": "dist" },
+    "files": ["main.js", "preload.js", "src/**/*", "data/**/*", "assets/**/*"],
+    "win": { "target": "nsis" }
+  }
+}
