@@ -272,6 +272,13 @@ body{
 /* Target-weapon picker */
 .nav-target{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:0 0 12px 0;
   padding:9px 12px;background:#0f1116;border:1px solid var(--line)}
+.nav-metric{display:flex;border:1px solid var(--line)}
+.nav-metric .ms-btn{background:transparent;color:var(--ink-dim);border:none;
+  border-right:1px solid var(--line);padding:4px 10px;cursor:pointer;
+  font-family:"Oswald","Arial Narrow",sans-serif;font-size:11.5px;letter-spacing:.06em}
+.nav-metric .ms-btn:last-child{border-right:none}
+.nav-metric .ms-btn.active{background:var(--gold);color:#101216;font-weight:700}
+.nav-metric .ms-btn:hover:not(.active){color:var(--amber)}
 .nav-sel{background:#141720;color:var(--ink);border:1px solid var(--line);
   padding:4px 8px;font-family:"PT Sans Narrow","Arial Narrow",sans-serif;font-size:12.5px;
   min-width:190px;letter-spacing:.02em}

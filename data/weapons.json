@@ -11,7 +11,8 @@
    "dmgMax": 28,
    "categories": [
     "Worker"
-   ]
+   ],
+   "dps": 66
   },
   {
    "id": "worker_pistol_1",
@@ -26,7 +27,8 @@
     "Worker",
     "CoreWard",
     "PlanetBridge"
-   ]
+   ],
+   "dps": 247
   },
   {
    "id": "army_pistol_1",
@@ -39,7 +41,8 @@
    "dmgMax": 34,
    "categories": [
     "Civilian"
-   ]
+   ],
+   "dps": 1047
   },
   {
    "id": "army_pistol_2",
@@ -54,7 +57,8 @@
     "Security",
     "Sunlight",
     "Emeraldlight"
-   ]
+   ],
+   "dps": 1551
   },
   {
    "id": "army_pistol_3",
@@ -69,7 +73,8 @@
     "Military",
     "ChurchRevelation",
     "ChurchGannix"
-   ]
+   ],
+   "dps": 1268
   },
   {
    "id": "army_pistol_4",
@@ -85,7 +90,8 @@
     "ChurchGannix",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 1112
   },
   {
    "id": "pmc_pistol_1",
@@ -98,7 +104,8 @@
    "dmgMax": 23,
    "categories": [
     "Security"
-   ]
+   ],
+   "dps": 114
   },
   {
    "id": "pmc_pistol_2",
@@ -113,7 +120,8 @@
     "Security",
     "AnCom",
     "Grasshopper"
-   ]
+   ],
+   "dps": 108
   },
   {
    "id": "pmc_pistol_3",
@@ -126,7 +134,8 @@
    "dmgMax": 27,
    "categories": [
     "Military"
-   ]
+   ],
+   "dps": 283
   },
   {
    "id": "unc_pistol_1",
@@ -139,7 +148,8 @@
    "dmgMax": 27,
    "categories": [
     "UnchainedBelt"
-   ]
+   ],
+   "dps": 273
   },
   {
    "id": "unc_pistol_2",
@@ -152,7 +162,8 @@
    "dmgMax": 69,
    "categories": [
     "UnchainedBelt"
-   ]
+   ],
+   "dps": 190
   },
   {
    "id": "military_pistol_1",
@@ -166,7 +177,8 @@
    "categories": [
     "Civilian",
     "Security"
-   ]
+   ],
+   "dps": 212
   },
   {
    "id": "military_pistol_2",
@@ -181,7 +193,8 @@
     "Security",
     "RealWare",
     "SheduThousand"
-   ]
+   ],
+   "dps": 276
   },
   {
    "id": "military_pistol_3",
@@ -197,7 +210,8 @@
     "Military",
     "RealWare",
     "SheduThousand"
-   ]
+   ],
+   "dps": 374
   },
   {
    "id": "rwa_military_pistol_1",
@@ -212,7 +226,8 @@
     "RealWare",
     "SheduThousand",
     "Merc"
-   ]
+   ],
+   "dps": 573
   },
   {
    "id": "trucker_pistol_1",
@@ -228,7 +243,8 @@
     "Security",
     "Grasshopper",
     "DaydreamChems"
-   ]
+   ],
+   "dps": 265
   },
   {
    "id": "trucker_pistol_2",
@@ -243,7 +259,8 @@
     "Military",
     "Grasshopper",
     "DaydreamChems"
-   ]
+   ],
+   "dps": 313
   },
   {
    "id": "trucker_pistol_3",
@@ -258,7 +275,8 @@
     "Grasshopper",
     "Looted",
     "Merc"
-   ]
+   ],
+   "dps": 393
   },
   {
    "id": "chu_trucker_pistol_1",
@@ -273,7 +291,8 @@
     "Grasshopper",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 393
   },
   {
    "id": "chu_trucker_pistol_2",
@@ -289,7 +308,8 @@
     "ChurchGannix",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 236
   },
   {
    "id": "rail_pistol_1",
@@ -303,7 +323,8 @@
    "categories": [
     "Science",
     "PlanetBridge"
-   ]
+   ],
+   "dps": 180
   },
   {
    "id": "rail_pistol_2",
@@ -317,7 +338,8 @@
    "categories": [
     "PlanetBridge",
     "Looted"
-   ]
+   ],
+   "dps": 243
   },
   {
    "id": "rail_pistol_3",
@@ -332,7 +354,8 @@
     "PlanetBridge",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 456
   },
   {
    "id": "laser_pistol_1",
@@ -347,7 +370,8 @@
     "SBN",
     "Sunlight",
     "Emeraldlight"
-   ]
+   ],
+   "dps": 122
   },
   {
    "id": "laser_pistol_2",
@@ -364,7 +388,8 @@
     "Emeraldlight",
     "Dilthey",
     "Looted"
-   ]
+   ],
+   "dps": 165
   },
   {
    "id": "ddr_disruptor_pistol_1",
@@ -380,7 +405,8 @@
     "Merc",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 98
   },
   {
    "id": "common_pistol_1",
@@ -395,7 +421,8 @@
     "Civilian",
     "Reserve",
     "UnchainedBelt"
-   ]
+   ],
+   "dps": 126
   },
   {
    "id": "common_pistol_2",
@@ -409,7 +436,8 @@
    "categories": [
     "Security",
     "UnchainedBelt"
-   ]
+   ],
+   "dps": 106
   },
   {
    "id": "common_pistol_3",
@@ -422,7 +450,8 @@
    "dmgMax": 25,
    "categories": [
     "Military"
-   ]
+   ],
+   "dps": 113
   },
   {
    "id": "civ_pistol_1",
@@ -435,7 +464,8 @@
    "dmgMax": 40,
    "categories": [
     "CResistance"
-   ]
+   ],
+   "dps": 433
   },
   {
    "id": "civ_pistol_2",
@@ -448,7 +478,8 @@
    "dmgMax": 26,
    "categories": [
     "CResistance"
-   ]
+   ],
+   "dps": 176
   },
   {
    "id": "civ_plasma_pistol_1",
@@ -463,7 +494,8 @@
     "CResistance",
     "Merc",
     "Energy"
-   ]
+   ],
+   "dps": 153
   },
   {
    "id": "cor_worker_pistol_1",
@@ -476,7 +508,8 @@
    "dmgMax": 28,
    "categories": [
     "CoreWard"
-   ]
+   ],
+   "dps": 342
   },
   {
    "id": "plb_pistol_1",
@@ -491,7 +524,8 @@
     "PlanetBridge",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 133
   },
   {
    "id": "plb_pistol_2",
@@ -506,7 +540,8 @@
     "PlanetBridge",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 406
   },
   {
    "id": "anc_pistol_1",
@@ -519,7 +554,8 @@
    "dmgMax": 34,
    "categories": [
     "AnCom"
-   ]
+   ],
+   "dps": 178
   },
   {
    "id": "anc_pistol_2",
@@ -533,7 +569,8 @@
    "categories": [
     "AnCom",
     "Merc"
-   ]
+   ],
+   "dps": 186
   },
   {
    "id": "anc_quasi_pistol_1",
@@ -547,7 +584,8 @@
    "categories": [
     "AnCom",
     "Merc"
-   ]
+   ],
+   "dps": 72
   },
   {
    "id": "sbn_rail_pistol_1",
@@ -560,7 +598,8 @@
    "dmgMax": 24,
    "categories": [
     "SBN"
-   ]
+   ],
+   "dps": 280
   },
   {
    "id": "ddr_toxic_pistol_1",
@@ -573,7 +612,8 @@
    "dmgMax": 24,
    "categories": [
     "DaydreamChems"
-   ]
+   ],
+   "dps": 95
   },
   {
    "id": "ddr_frost_pistol_1",
@@ -587,7 +627,8 @@
    "categories": [
     "DaydreamChems",
     "Looted"
-   ]
+   ],
+   "dps": 104
   },
   {
    "id": "grh_revolver_pistol_1",
@@ -602,7 +643,8 @@
     "Grasshopper",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 402
   },
   {
    "id": "sun_laser_pistol_1",
@@ -617,7 +659,8 @@
     "Sunlight",
     "Emeraldlight",
     "Looted"
-   ]
+   ],
+   "dps": 69
   },
   {
    "id": "sun_cryolaser_pistol_1",
@@ -634,7 +677,8 @@
     "Looted",
     "Merc",
     "Energy"
-   ]
+   ],
+   "dps": 86
   },
   {
    "id": "fra_security_pistol_1",
@@ -647,7 +691,8 @@
    "dmgMax": 27,
    "categories": [
     "FrancheComte"
-   ]
+   ],
+   "dps": 143
   },
   {
    "id": "fra_security_pistol_2",
@@ -662,7 +707,8 @@
     "FrancheComte",
     "Looted",
     "Merc"
-   ]
+   ],
+   "dps": 198
   },
   {
    "id": "fra_shock_pistol_1",
@@ -676,7 +722,8 @@
    "categories": [
     "FrancheComte",
     "Looted"
-   ]
+   ],
+   "dps": 219
   },
   {
    "id": "dil_sound_pistol_1",
@@ -689,7 +736,8 @@
    "dmgMax": 22,
    "categories": [
     "Dilthey"
-   ]
+   ],
+   "dps": 83
   },
   {
    "id": "dil_sound_pistol_2",
@@ -703,7 +751,8 @@
    "categories": [
     "Dilthey",
     "Looted"
-   ]
+   ],
+   "dps": 150
   },
   {
    "id": "dil_ion_pistol_1",
@@ -718,7 +767,8 @@
     "Dilthey",
     "Merc",
     "Energy"
-   ]
+   ],
+   "dps": 86
   },
   {
    "id": "worker_discthrower_1",
@@ -733,7 +783,8 @@
     "Worker",
     "CoreWard",
     "CResistance"
-   ]
+   ],
+   "dps": 112
   },
   {
    "id": "she_heavy_pistol_1",
@@ -746,7 +797,8 @@
    "dmgMax": 77,
    "categories": [
     "SheduThousand"
-   ]
+   ],
+   "dps": 488
   },
   {
    "id": "spec_pistol_1",
@@ -761,7 +813,8 @@
     "Military",
     "Tianming",
     "Merc"
-   ]
+   ],
+   "dps": 468
   },
   {
    "id": "spec_pistol_2",
@@ -776,7 +829,8 @@
     "Specops",
     "Tianming",
     "Merc"
-   ]
+   ],
+   "dps": 100
   },
   {
    "id": "tia_disc_pistol_1",
@@ -789,7 +843,8 @@
    "dmgMax": 42,
    "categories": [
     "Tianming"
-   ]
+   ],
+   "dps": 35
   },
   {
    "id": "common_shock_pistol_1",
@@ -803,7 +858,8 @@
    "categories": [
     "Civilian",
     "Manager"
-   ]
+   ],
+   "dps": 28
   },
   {
    "id": "matrix_disc",
@@ -816,7 +872,8 @@
    "dmgMax": 26,
    "categories": [
     "Matrix"
-   ]
+   ],
+   "dps": 8
   },
   {
    "id": "venus_quasi_pistol_1",
@@ -831,7 +888,8 @@
     "Gannix",
     "Emeraldlight",
     "ChurchGannix"
-   ]
+   ],
+   "dps": 199
   },
   {
    "id": "nature_falcon",
@@ -844,7 +902,8 @@
    "dmgMax": 49,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 150
   },
   {
    "id": "pmc_shotgun_1",
@@ -858,7 +917,8 @@
    "categories": [
     "Security",
     "AnCom"
-   ]
+   ],
+   "dps": 952
   },
   {
    "id": "pmc_shotgun_2",
@@ -872,7 +932,8 @@
    "categories": [
     "AnCom",
     "Merc"
-   ]
+   ],
+   "dps": 2076
   },
   {
    "id": "trucker_shotgun_1",
@@ -889,7 +950,8 @@
     "SheduThousand",
     "ChurchRevelation",
     "ChurchGannix"
-   ]
+   ],
+   "dps": 1610
   },
   {
    "id": "trucker_shotgun_2",
@@ -905,7 +967,8 @@
     "RealWare",
     "SheduThousand",
     "DaydreamChems"
-   ]
+   ],
+   "dps": 2212
   },
   {
    "id": "trucker_shotgun_3",
@@ -922,7 +985,8 @@
     "SheduThousand",
     "SBN",
     "Merc"
-   ]
+   ],
+   "dps": 2577
   },
   {
    "id": "common_shotgun_1",
@@ -936,7 +1000,8 @@
    "categories": [
     "Security",
     "FrancheComte"
-   ]
+   ],
+   "dps": 221
   },
   {
    "id": "common_shotgun_2",
@@ -950,7 +1015,8 @@
    "categories": [
     "Military",
     "FrancheComte"
-   ]
+   ],
+   "dps": 2340
   },
   {
    "id": "common_shotgun_3",
@@ -965,7 +1031,8 @@
     "FrancheComte",
     "Looted",
     "Merc"
-   ]
+   ],
+   "dps": 403
   },
   {
    "id": "cor_nail_shotgun_1",
@@ -980,7 +1047,8 @@
     "CoreWard",
     "Looted",
     "Merc"
-   ]
+   ],
+   "dps": 495
   },
   {
    "id": "plasma_shotgun_2",
@@ -999,7 +1067,8 @@
     "Merc",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 207
   },
   {
    "id": "military_shotgun_1",
@@ -1012,7 +1081,8 @@
    "dmgMax": 74,
    "categories": [
     "RealWare"
-   ]
+   ],
+   "dps": 1018
   },
   {
    "id": "fra_security_shotgun_1",
@@ -1027,7 +1097,8 @@
     "FrancheComte",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 1004
   },
   {
    "id": "chu_shotgun_1",
@@ -1043,7 +1114,8 @@
     "ChurchGannix",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 221
   },
   {
    "id": "anc_shotgun_1",
@@ -1056,7 +1128,8 @@
    "dmgMax": 71,
    "categories": [
     "AnCom"
-   ]
+   ],
+   "dps": 1942
   },
   {
    "id": "anc_shotgun_2",
@@ -1070,7 +1143,8 @@
    "categories": [
     "AnCom",
     "Merc"
-   ]
+   ],
+   "dps": 755
   },
   {
    "id": "sbn_rail_shotgun_1",
@@ -1083,7 +1157,8 @@
    "dmgMax": 32,
    "categories": [
     "SBN"
-   ]
+   ],
+   "dps": 424
   },
   {
    "id": "sun_laser_shotgun_1",
@@ -1100,7 +1175,8 @@
     "Merc",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 448
   },
   {
    "id": "ddr_shotgun_1",
@@ -1114,7 +1190,8 @@
    "categories": [
     "DaydreamChems",
     "Looted"
-   ]
+   ],
+   "dps": 3221
   },
   {
    "id": "ddr_toxic_shotgun_1",
@@ -1129,7 +1206,8 @@
     "DaydreamChems",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 162
   },
   {
    "id": "ddr_frost_shotgun_1",
@@ -1145,7 +1223,8 @@
     "Merc",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 132
   },
   {
    "id": "she_gas_shotgun_1",
@@ -1158,7 +1237,8 @@
    "dmgMax": 54,
    "categories": [
     "SheduThousand"
-   ]
+   ],
+   "dps": 303
   },
   {
    "id": "spec_shotgun_1",
@@ -1172,7 +1252,8 @@
    "categories": [
     "Military",
     "Tianming"
-   ]
+   ],
+   "dps": 4520
   },
   {
    "id": "dil_sound_shotgun_1",
@@ -1186,7 +1267,8 @@
    "categories": [
     "Dilthey",
     "Merc"
-   ]
+   ],
+   "dps": 1551
   },
   {
    "id": "nature_cyborg_fast_ion",
@@ -1199,7 +1281,8 @@
    "dmgMax": 70,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 1984
   },
   {
    "id": "venus_quasi_shotgun_1",
@@ -1215,7 +1298,8 @@
     "Tezctlan",
     "Emeraldlight",
     "ChurchGannix"
-   ]
+   ],
+   "dps": 394
   },
   {
    "id": "olirna_frost_shotgun_1",
@@ -1228,7 +1312,8 @@
    "dmgMax": 67,
    "categories": [
     "Olirna"
-   ]
+   ],
+   "dps": 2619
   },
   {
    "id": "mercury_shotgun_staff_1",
@@ -1241,7 +1326,8 @@
    "dmgMax": 64,
    "categories": [
     "Shartamakhum"
-   ]
+   ],
+   "dps": 360
   },
   {
    "id": "pmc_smg_1",
@@ -1256,7 +1342,8 @@
     "Security",
     "AnCom",
     "Dilthey"
-   ]
+   ],
+   "dps": 340
   },
   {
    "id": "pmc_smg_2",
@@ -1270,7 +1357,8 @@
    "categories": [
     "Security",
     "SBN"
-   ]
+   ],
+   "dps": 297
   },
   {
    "id": "pmc_smg_3",
@@ -1284,7 +1372,8 @@
    "categories": [
     "AnCom",
     "Merc"
-   ]
+   ],
+   "dps": 418
   },
   {
    "id": "pmc_smg_4",
@@ -1298,7 +1387,8 @@
    "categories": [
     "Military",
     "SBN"
-   ]
+   ],
+   "dps": 354
   },
   {
    "id": "military_smg_1",
@@ -1313,7 +1403,8 @@
     "Military",
     "RealWare",
     "SheduThousand"
-   ]
+   ],
+   "dps": 360
   },
   {
    "id": "police_smg_1",
@@ -1328,7 +1419,8 @@
     "FrancheComte",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 1600
   },
   {
    "id": "unc_smg_1",
@@ -1342,7 +1434,8 @@
    "categories": [
     "UnchainedBelt",
     "Merc"
-   ]
+   ],
+   "dps": 2643
   },
   {
    "id": "unc_smg_2",
@@ -1356,7 +1449,8 @@
    "categories": [
     "Reserve",
     "UnchainedBelt"
-   ]
+   ],
+   "dps": 554
   },
   {
    "id": "laser_smg_2",
@@ -1371,7 +1465,8 @@
     "SBN",
     "Dilthey",
     "Merc"
-   ]
+   ],
+   "dps": 276
   },
   {
    "id": "laser_smg_1",
@@ -1391,7 +1486,8 @@
     "Merc",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 245
   },
   {
    "id": "plasma_shotgun_1",
@@ -1411,7 +1507,8 @@
     "Merc",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 90
   },
   {
    "id": "rwa_military_smg_1",
@@ -1426,7 +1523,8 @@
     "RealWare",
     "SheduThousand",
     "Merc"
-   ]
+   ],
+   "dps": 507
   },
   {
    "id": "civ_common_smg_1",
@@ -1439,7 +1537,8 @@
    "dmgMax": 31,
    "categories": [
     "CResistance"
-   ]
+   ],
+   "dps": 360
   },
   {
    "id": "civ_common_smg_2",
@@ -1453,7 +1552,8 @@
    "categories": [
     "CResistance",
     "Merc"
-   ]
+   ],
+   "dps": 501
   },
   {
    "id": "anc_smg_1",
@@ -1466,7 +1566,8 @@
    "dmgMax": 27,
    "categories": [
     "AnCom"
-   ]
+   ],
+   "dps": 276
   },
   {
    "id": "anc_quasi_smg_1",
@@ -1480,7 +1581,8 @@
    "categories": [
     "AnCom",
     "Merc"
-   ]
+   ],
+   "dps": 302
   },
   {
    "id": "she_smg_1",
@@ -1493,7 +1595,8 @@
    "dmgMax": 41,
    "categories": [
     "SheduThousand"
-   ]
+   ],
+   "dps": 586
   },
   {
    "id": "grh_common_smg_1",
@@ -1506,7 +1609,8 @@
    "dmgMax": 27,
    "categories": [
     "Grasshopper"
-   ]
+   ],
+   "dps": 205
   },
   {
    "id": "fra_security_smg_1",
@@ -1520,7 +1624,8 @@
    "categories": [
     "FrancheComte",
     "Looted"
-   ]
+   ],
+   "dps": 344
   },
   {
    "id": "fra_security_smg_2",
@@ -1536,7 +1641,8 @@
     "FrancheComte",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 159
   },
   {
    "id": "fra_shock_smg_1",
@@ -1552,7 +1658,8 @@
     "Merc",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 367
   },
   {
    "id": "sun_cryolaser_smg_1",
@@ -1568,7 +1675,8 @@
     "Merc",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 280
   },
   {
    "id": "sbn_smg_1",
@@ -1582,7 +1690,8 @@
    "categories": [
     "SBN",
     "Merc"
-   ]
+   ],
+   "dps": 639
   },
   {
    "id": "sbn_rail_smg_1",
@@ -1596,7 +1705,8 @@
    "categories": [
     "SBN",
     "Merc"
-   ]
+   ],
+   "dps": 287
   },
   {
    "id": "dil_shock_smg_1",
@@ -1609,7 +1719,8 @@
    "dmgMax": 42,
    "categories": [
     "Dilthey"
-   ]
+   ],
+   "dps": 208
   },
   {
    "id": "dil_chaos_smg_1",
@@ -1624,7 +1735,8 @@
     "Dilthey",
     "Merc",
     "Energy"
-   ]
+   ],
+   "dps": 332
   },
   {
    "id": "dil_ion_smg_1",
@@ -1639,7 +1751,8 @@
     "Dilthey",
     "Merc",
     "Energy"
-   ]
+   ],
+   "dps": 259
   },
   {
    "id": "cor_worker_discthrower_1",
@@ -1654,7 +1767,8 @@
     "CoreWard",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 242
   },
   {
    "id": "plb_smg_1",
@@ -1669,7 +1783,8 @@
     "PlanetBridge",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 409
   },
   {
    "id": "spec_smg_1",
@@ -1683,7 +1798,8 @@
    "categories": [
     "Military",
     "Tianming"
-   ]
+   ],
+   "dps": 418
   },
   {
    "id": "spec_smg_2",
@@ -1697,7 +1813,8 @@
    "categories": [
     "Tianming",
     "Merc"
-   ]
+   ],
+   "dps": 240
   },
   {
    "id": "flauros_smg_1",
@@ -1710,7 +1827,8 @@
    "dmgMax": 42,
    "categories": [
     "Flauros"
-   ]
+   ],
+   "dps": 418
   },
   {
    "id": "nature_mercury_baron_smg",
@@ -1723,7 +1841,8 @@
    "dmgMax": 38,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 316
   },
   {
    "id": "mars_headgun",
@@ -1736,7 +1855,8 @@
    "dmgMax": 30,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 309
   },
   {
    "id": "nature_mars_headgun",
@@ -1749,7 +1869,8 @@
    "dmgMax": 39,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 310
   },
   {
    "id": "pmc_assault_1",
@@ -1765,7 +1886,8 @@
     "AnCom",
     "SBN",
     "Grasshopper"
-   ]
+   ],
+   "dps": 318
   },
   {
    "id": "military_assault_1",
@@ -1782,7 +1904,8 @@
     "SheduThousand",
     "DaydreamChems",
     "Merc"
-   ]
+   ],
+   "dps": 553
   },
   {
    "id": "rwa_military_assault_1",
@@ -1797,7 +1920,8 @@
     "RealWare",
     "SheduThousand",
     "Merc"
-   ]
+   ],
+   "dps": 629
   },
   {
    "id": "sbn_rail_assault_1",
@@ -1811,7 +1935,8 @@
    "categories": [
     "SBN",
     "Merc"
-   ]
+   ],
+   "dps": 202
   },
   {
    "id": "moon_assault_1",
@@ -1824,7 +1949,8 @@
    "dmgMax": 67,
    "categories": [
     "Duggur"
-   ]
+   ],
+   "dps": 287
   },
   {
    "id": "unc_assault_1",
@@ -1839,7 +1965,8 @@
     "Specops",
     "UnchainedBelt",
     "Merc"
-   ]
+   ],
+   "dps": 421
   },
   {
    "id": "unc_assault_2",
@@ -1853,7 +1980,8 @@
    "categories": [
     "UnchainedBelt",
     "Merc"
-   ]
+   ],
+   "dps": 794
   },
   {
    "id": "common_assault_1",
@@ -1869,7 +1997,8 @@
     "CoreWard",
     "ChurchRevelation",
     "ChurchGannix"
-   ]
+   ],
+   "dps": 345
   },
   {
    "id": "civ_common_assault_1",
@@ -1882,7 +2011,8 @@
    "dmgMax": 55,
    "categories": [
     "CResistance"
-   ]
+   ],
+   "dps": 662
   },
   {
    "id": "civ_common_assault_2",
@@ -1895,7 +2025,8 @@
    "dmgMax": 73,
    "categories": [
     "CResistance"
-   ]
+   ],
+   "dps": 1012
   },
   {
    "id": "civ_plasma_assault_1",
@@ -1910,7 +2041,8 @@
     "CResistance",
     "Merc",
     "Energy"
-   ]
+   ],
+   "dps": 326
   },
   {
    "id": "laser_marksman_1",
@@ -1930,7 +2062,8 @@
     "Merc",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 162
   },
   {
    "id": "sun_laser_assault_1",
@@ -1947,7 +2080,8 @@
     "Merc",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 387
   },
   {
    "id": "sun_cryolaser_assault_1",
@@ -1964,7 +2098,8 @@
     "Merc",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 310
   },
   {
    "id": "fra_security_assault_1",
@@ -1979,7 +2114,8 @@
     "FrancheComte",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 983
   },
   {
    "id": "grh_trucker_assault_1",
@@ -1994,7 +2130,8 @@
     "Military",
     "Grasshopper",
     "Looted"
-   ]
+   ],
+   "dps": 388
   },
   {
    "id": "grh_trucker_assault_2",
@@ -2009,7 +2146,8 @@
     "Grasshopper",
     "Looted",
     "Merc"
-   ]
+   ],
+   "dps": 562
   },
   {
    "id": "she_common_assault_1",
@@ -2022,7 +2160,8 @@
    "dmgMax": 53,
    "categories": [
     "SheduThousand"
-   ]
+   ],
+   "dps": 581
   },
   {
    "id": "dil_chaos_assault_1",
@@ -2037,7 +2176,8 @@
     "Dilthey",
     "Merc",
     "Energy"
-   ]
+   ],
+   "dps": 438
   },
   {
    "id": "dil_sound_assault_1",
@@ -2051,7 +2191,8 @@
    "categories": [
     "Dilthey",
     "Merc"
-   ]
+   ],
+   "dps": 408
   },
   {
    "id": "she_plasma_assault_1",
@@ -2064,7 +2205,8 @@
    "dmgMax": 68,
    "categories": [
     "SheduThousand"
-   ]
+   ],
+   "dps": 725
   },
   {
    "id": "plasma_assault_1",
@@ -2084,7 +2226,8 @@
     "Merc",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 670
   },
   {
    "id": "chu_meltathrower_1",
@@ -2100,7 +2243,8 @@
     "ChurchGannix",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 258
   },
   {
    "id": "mars_meltathrower",
@@ -2113,7 +2257,8 @@
    "dmgMax": 78,
    "categories": [
     "Merc"
-   ]
+   ],
+   "dps": 271
   },
   {
    "id": "nature_mars_meltathrower",
@@ -2126,7 +2271,8 @@
    "dmgMax": 101,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 270
   },
   {
    "id": "tia_disc_assault_1",
@@ -2140,7 +2286,8 @@
    "categories": [
     "Tianming",
     "Merc"
-   ]
+   ],
+   "dps": 391
   },
   {
    "id": "tia_shock_assault_1",
@@ -2154,7 +2301,8 @@
    "categories": [
     "Tianming",
     "Merc"
-   ]
+   ],
+   "dps": 564
   },
   {
    "id": "*nature_ron_shock_tentacle",
@@ -2167,7 +2315,8 @@
    "dmgMax": 94,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 10
   },
   {
    "id": "flauros_assault_1",
@@ -2181,7 +2330,8 @@
    "categories": [
     "Flauros",
     "Merc"
-   ]
+   ],
+   "dps": 788
   },
   {
    "id": "venus_assault_1",
@@ -2197,7 +2347,8 @@
     "Emeraldlight",
     "ChurchGannix",
     "Merc"
-   ]
+   ],
+   "dps": 666
   },
   {
    "id": "venus_marksman_1",
@@ -2214,7 +2365,8 @@
     "Emeraldlight",
     "ChurchGannix",
     "Merc"
-   ]
+   ],
+   "dps": 221
   },
   {
    "id": "olirna_cryobeam_rifle_1",
@@ -2227,7 +2379,8 @@
    "dmgMax": 63,
    "categories": [
     "Olirna"
-   ]
+   ],
+   "dps": 71
   },
   {
    "id": "mercury_assault_staff_1",
@@ -2240,7 +2393,8 @@
    "dmgMax": 50,
    "categories": [
     "Shartamakhum"
-   ]
+   ],
+   "dps": 536
   },
   {
    "id": "army_sniper_1",
@@ -2256,7 +2410,8 @@
     "RealWare",
     "SheduThousand",
     "UnchainedBelt"
-   ]
+   ],
+   "dps": 396
   },
   {
    "id": "army_sniper_2",
@@ -2273,7 +2428,8 @@
     "PlanetBridge",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 138
   },
   {
    "id": "unc_sniper_1",
@@ -2287,7 +2443,8 @@
    "categories": [
     "UnchainedBelt",
     "Merc"
-   ]
+   ],
+   "dps": 420
   },
   {
    "id": "trucker_marksman_1",
@@ -2304,7 +2461,8 @@
     "Grasshopper",
     "ChurchRevelation",
     "ChurchGannix"
-   ]
+   ],
+   "dps": 142
   },
   {
    "id": "trucker_marksman_2",
@@ -2322,7 +2480,8 @@
     "ChurchGannix",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 648
   },
   {
    "id": "laser_sniper_1",
@@ -2341,7 +2500,8 @@
     "Emeraldlight",
     "Dilthey",
     "Merc"
-   ]
+   ],
+   "dps": 62
   },
   {
    "id": "civ_marksman_1",
@@ -2355,7 +2515,8 @@
    "categories": [
     "CResistance",
     "Merc"
-   ]
+   ],
+   "dps": 305
   },
   {
    "id": "plb_marksman_1",
@@ -2370,7 +2531,8 @@
     "Planetbridge",
     "Looted",
     "Merc"
-   ]
+   ],
+   "dps": 696
   },
   {
    "id": "anc_marksman_1",
@@ -2384,7 +2546,8 @@
    "categories": [
     "AnCom",
     "Merc"
-   ]
+   ],
+   "dps": 265
   },
   {
    "id": "anc_quasi_assault_1",
@@ -2399,7 +2562,8 @@
     "AnCom",
     "Merc",
     "Energy"
-   ]
+   ],
+   "dps": 89
   },
   {
    "id": "ddr_disruptor_marksman_1",
@@ -2415,7 +2579,8 @@
     "Merc",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 115
   },
   {
    "id": "rail_marksman_1",
@@ -2430,7 +2595,8 @@
     "PlanetBridge",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 141
   },
   {
    "id": "grh_trucker_marksman_1",
@@ -2444,7 +2610,8 @@
    "categories": [
     "Grasshopper",
     "Looted"
-   ]
+   ],
+   "dps": 212
   },
   {
    "id": "grh_trucker_marksman_2",
@@ -2459,7 +2626,8 @@
     "Grasshopper",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 94
   },
   {
    "id": "grh_microwave_marksman_1",
@@ -2475,7 +2643,8 @@
     "Merc",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 284
   },
   {
    "id": "sun_laser_sniper_1",
@@ -2490,7 +2659,8 @@
     "Sunlight",
     "Emeraldlight",
     "Looted"
-   ]
+   ],
+   "dps": 82
   },
   {
    "id": "sun_laser_marksman_1",
@@ -2507,7 +2677,8 @@
     "Merc",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 263
   },
   {
    "id": "chu_sniper_1",
@@ -2522,7 +2693,8 @@
     "ChurchRevelation",
     "ChurchGannix",
     "Looted"
-   ]
+   ],
+   "dps": 419
   },
   {
    "id": "chu_plasma_sniper_1",
@@ -2538,7 +2710,8 @@
     "ChurchGannix",
     "Looted",
     "Merc"
-   ]
+   ],
+   "dps": 86
   },
   {
    "id": "dil_shock_sniper_1",
@@ -2553,7 +2726,8 @@
     "Dilthey",
     "Merc",
     "Energy"
-   ]
+   ],
+   "dps": 119
   },
   {
    "id": "venus_blowpipe_1",
@@ -2569,7 +2743,8 @@
     "XiomaraMasks",
     "Emeraldlight",
     "ChurchGannix"
-   ]
+   ],
+   "dps": 33
   },
   {
    "id": "moon_crossbow_sniper_1",
@@ -2582,7 +2757,8 @@
    "dmgMax": 83,
    "categories": [
     "Duggur"
-   ]
+   ],
+   "dps": 66
   },
   {
    "id": "mercury_staff_sniper_1",
@@ -2595,7 +2771,8 @@
    "dmgMax": 63,
    "categories": [
     "Shartamakhum"
-   ]
+   ],
+   "dps": 132
   },
   {
    "id": "worker_hmg_1",
@@ -2611,7 +2788,8 @@
     "PlanetBridge",
     "CoreWard",
     "Looted"
-   ]
+   ],
+   "dps": 676
   },
   {
    "id": "cor_worker_hmg_1",
@@ -2626,7 +2804,8 @@
     "CoreWard",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 958
   },
   {
    "id": "cor_worker_hmg_2",
@@ -2641,7 +2820,8 @@
     "CoreWard",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 1058
   },
   {
    "id": "cor_hmg_1",
@@ -2656,7 +2836,8 @@
     "CoreWard",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 810
   },
   {
    "id": "plb_hmg_1",
@@ -2671,7 +2852,8 @@
     "PlanetBridge",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 1021
   },
   {
    "id": "army_hmg_1",
@@ -2688,7 +2870,8 @@
     "PlanetBridge",
     "FrancheComte",
     "Merc"
-   ]
+   ],
+   "dps": 1115
   },
   {
    "id": "fra_security_hmg_1",
@@ -2703,7 +2886,8 @@
     "FrancheComte",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 1156
   },
   {
    "id": "rwa_military_hmg_1",
@@ -2717,7 +2901,8 @@
    "categories": [
     "RealWare",
     "Merc"
-   ]
+   ],
+   "dps": 1251
   },
   {
    "id": "unc_autogun_1",
@@ -2731,7 +2916,8 @@
    "categories": [
     "UnchainedBelt",
     "Merc"
-   ]
+   ],
+   "dps": 548
   },
   {
    "id": "venus_spear_hmg_1",
@@ -2744,7 +2930,8 @@
    "dmgMax": 72,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 1170
   },
   {
    "id": "nature_venusziggurat",
@@ -2757,7 +2944,8 @@
    "dmgMax": 93,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 500
   },
   {
    "id": "nature_mars_knight_arm",
@@ -2770,7 +2958,8 @@
    "dmgMax": 95,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 1284
   },
   {
    "id": "plasma_hmg_1",
@@ -2790,7 +2979,8 @@
     "Merc",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 1045
   },
   {
    "id": "sun_cryolaser_hmg_1",
@@ -2807,7 +2997,8 @@
     "Merc",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 795
   },
   {
    "id": "nature_cyborg_battle_machinegun",
@@ -2820,7 +3011,8 @@
    "dmgMax": 50,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 785
   },
   {
    "id": "mercury_hmg_staff_1",
@@ -2833,7 +3025,8 @@
    "dmgMax": 59,
    "categories": [
     "Shartamakhum"
-   ]
+   ],
+   "dps": 986
   },
   {
    "id": "military_minigun_1",
@@ -2851,7 +3044,8 @@
     "CoreWard",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 1277
   },
   {
    "id": "she_military_minigun_1",
@@ -2864,7 +3058,8 @@
    "dmgMax": 55,
    "categories": [
     "SheduThousand"
-   ]
+   ],
+   "dps": 952
   },
   {
    "id": "moon_minigun_1",
@@ -2878,7 +3073,8 @@
    "categories": [
     "Duggur",
     "Merc"
-   ]
+   ],
+   "dps": 1170
   },
   {
    "id": "olirna_icicle_minigun_1",
@@ -2891,7 +3087,8 @@
    "dmgMax": 59,
    "categories": [
     "Olirna"
-   ]
+   ],
+   "dps": 2220
   },
   {
    "id": "plb_worker_shockgun_1",
@@ -2907,7 +3104,8 @@
     "Merc",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 880
   },
   {
    "id": "tech_hfg_1",
@@ -2923,7 +3121,8 @@
     "CResistance",
     "Merc",
     "Energy"
-   ]
+   ],
+   "dps": 503
   },
   {
    "id": "cor_laser_sniper_1",
@@ -2937,7 +3136,8 @@
    "categories": [
     "CoreWard",
     "Looted"
-   ]
+   ],
+   "dps": 23
   },
   {
    "id": "toxic_thrower_1",
@@ -2952,7 +3152,8 @@
     "DaydreamChems",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 518
   },
   {
    "id": "worker_flamethrower_1",
@@ -2970,7 +3171,8 @@
     "SheduThousand",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 334
   },
   {
    "id": "cor_worker_flamethrower_1",
@@ -2986,7 +3188,8 @@
     "Merc",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 698
   },
   {
    "id": "mars_flamehead",
@@ -2999,7 +3202,8 @@
    "dmgMax": 47,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 455
   },
   {
    "id": "fire_extinguisher",
@@ -3012,7 +3216,8 @@
    "dmgMax": 7,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 33
   },
   {
    "id": "nature_mars_flamehead",
@@ -3025,7 +3230,8 @@
    "dmgMax": 61,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 459
   },
   {
    "id": "nature_olrina_dog_breath",
@@ -3038,7 +3244,8 @@
    "dmgMax": 90,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 691
   },
   {
    "id": "grenade_launcher_1",
@@ -3056,7 +3263,8 @@
     "UnchainedBelt",
     "CResistance",
     "Looted"
-   ]
+   ],
+   "dps": 6
   },
   {
    "id": "common_rocketlauncher_1",
@@ -3077,7 +3285,8 @@
     "Tianming",
     "CResistance",
     "Merc"
-   ]
+   ],
+   "dps": 18
   },
   {
    "id": "army_rocketlauncher_1",
@@ -3096,7 +3305,8 @@
     "CoreWard",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 40
   },
   {
    "id": "tia_rocketlauncher_1",
@@ -3110,7 +3320,8 @@
    "categories": [
     "Tianming",
     "Merc"
-   ]
+   ],
+   "dps": 35
   },
   {
    "id": "sun_rocketlauncher_1",
@@ -3126,7 +3337,8 @@
     "Emeraldlight",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 136
   },
   {
    "id": "venus_rocketlauncher_1",
@@ -3143,7 +3355,8 @@
     "Emeraldlight",
     "ChurchGannix",
     "Merc"
-   ]
+   ],
+   "dps": 225
   },
   {
    "id": "*nature_mars_rocketlauncher",
@@ -3156,7 +3369,8 @@
    "dmgMax": 133,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 976
   },
   {
    "id": "turtle_gun",
@@ -3169,7 +3383,8 @@
    "dmgMax": 89,
    "categories": [
     "Merc"
-   ]
+   ],
+   "dps": 61
   },
   {
    "id": "nature_turtle_gun",
@@ -3182,7 +3397,8 @@
    "dmgMax": 89,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 61
   },
   {
    "id": "nature_xiomara_hand",
@@ -3195,7 +3411,8 @@
    "dmgMax": 45,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 435
   },
   {
    "id": "nature_venus_warrior_smg",
@@ -3208,7 +3425,8 @@
    "dmgMax": 50,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 487
   },
   {
    "id": "nature_mars_grenade_launcher",
@@ -3221,7 +3439,8 @@
    "dmgMax": 1,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 6
   },
   {
    "id": "nature_minigun_turret",
@@ -3234,7 +3453,8 @@
    "dmgMax": 48,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 782
   },
   {
    "id": "nature_firethrower_turret",
@@ -3247,7 +3467,8 @@
    "dmgMax": 54,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 273
   },
   {
    "id": "nature_laser_turret",
@@ -3260,7 +3481,8 @@
    "dmgMax": 57,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 73
   },
   {
    "id": "nature_flauros_turret",
@@ -3273,7 +3495,8 @@
    "dmgMax": 61,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 280
   },
   {
    "id": "nature_mars_turret",
@@ -3286,7 +3509,8 @@
    "dmgMax": 110,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 1752
   },
   {
    "id": "nature_mars_urparp_headgun",
@@ -3299,7 +3523,8 @@
    "dmgMax": 57,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 1200
   },
   {
    "id": "common_knife_1",
@@ -3314,7 +3539,8 @@
     "Civilian",
     "Security",
     "DaydreamChems"
-   ]
+   ],
+   "dps": 22
   },
   {
    "id": "military_knife_1",
@@ -3330,7 +3556,8 @@
     "AnCom",
     "SBN",
     "Merc"
-   ]
+   ],
+   "dps": 35
   },
   {
    "id": "miner_knife_1",
@@ -3348,7 +3575,8 @@
     "Grasshopper",
     "PlanetBridge",
     "Tianming"
-   ]
+   ],
+   "dps": 31
   },
   {
    "id": "ddr_poisonknife_1",
@@ -3363,7 +3591,8 @@
     "DaydreamChems",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 90
   },
   {
    "id": "venus_knife_1",
@@ -3378,7 +3607,8 @@
     "Gannix",
     "Emeraldlight",
     "ChurchGannix"
-   ]
+   ],
+   "dps": 31
   },
   {
    "id": "bone_knife",
@@ -3391,7 +3621,8 @@
    "dmgMax": 27,
    "categories": [
     "Possessed"
-   ]
+   ],
+   "dps": 23
   },
   {
    "id": "matrix_knife",
@@ -3404,7 +3635,8 @@
    "dmgMax": 32,
    "categories": [
     "Matrix"
-   ]
+   ],
+   "dps": 27
   },
   {
    "id": "*spider_claw",
@@ -3418,7 +3650,8 @@
    "categories": [
     "Gannix",
     "XiomaraMasks"
-   ]
+   ],
+   "dps": 28
   },
   {
    "id": "tech_blade_1",
@@ -3434,7 +3667,8 @@
     "AnCom",
     "Merc",
     "Energy"
-   ]
+   ],
+   "dps": 84
   },
   {
    "id": "med_lightblade_1",
@@ -3452,7 +3686,8 @@
     "Emeraldlight",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 78
   },
   {
    "id": "sun_laser_powersword_1",
@@ -3469,7 +3704,8 @@
     "Merc",
     "Energy",
     "Looted"
-   ]
+   ],
+   "dps": 522
   },
   {
    "id": "tia_blade_1",
@@ -3482,7 +3718,8 @@
    "dmgMax": 38,
    "categories": [
     "Tianming"
-   ]
+   ],
+   "dps": 28
   },
   {
    "id": "mercury_sickle_1",
@@ -3495,7 +3732,8 @@
    "dmgMax": 38,
    "categories": [
     "Shartamakhum"
-   ]
+   ],
+   "dps": 26
   },
   {
    "id": "mercury_blade_1",
@@ -3508,7 +3746,8 @@
    "dmgMax": 51,
    "categories": [
     "Shartamakhum"
-   ]
+   ],
+   "dps": 60
   },
   {
    "id": "scrivnus_blade_1",
@@ -3521,7 +3760,8 @@
    "dmgMax": 54,
    "categories": [
     "Scrivnus"
-   ]
+   ],
+   "dps": 39
   },
   {
    "id": "moon_blade_1",
@@ -3535,7 +3775,8 @@
    "categories": [
     "Duggur",
     "Merc"
-   ]
+   ],
+   "dps": 107
   },
   {
    "id": "civ_powerfist_1",
@@ -3549,7 +3790,8 @@
    "categories": [
     "CResistance",
     "Merc"
-   ]
+   ],
+   "dps": 420
   },
   {
    "id": "venus_battlefist_1",
@@ -3566,7 +3808,8 @@
     "Emeraldlight",
     "ChurchGannix",
     "Merc"
-   ]
+   ],
+   "dps": 43
   },
   {
    "id": "nature_moonbaron_fist",
@@ -3579,7 +3822,8 @@
    "dmgMax": 36,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 46
   },
   {
    "id": "police_club_1",
@@ -3593,7 +3837,8 @@
    "categories": [
     "Security",
     "FrancheComte"
-   ]
+   ],
+   "dps": 34
   },
   {
    "id": "miner_breaker_1",
@@ -3608,7 +3853,8 @@
     "Miner",
     "CoreWard",
     "CResistance"
-   ]
+   ],
+   "dps": 567
   },
   {
    "id": "worker_crowbar_1",
@@ -3624,7 +3870,8 @@
     "Miner",
     "UnchainedBelt",
     "Tianming"
-   ]
+   ],
+   "dps": 39
   },
   {
    "id": "worker_wrench_1",
@@ -3639,7 +3886,8 @@
     "Worker",
     "PlanetBridge",
     "Tianming"
-   ]
+   ],
+   "dps": 45
   },
   {
    "id": "fra_police_club_1",
@@ -3654,7 +3902,8 @@
     "FrancheComte",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 273
   },
   {
    "id": "chu_fireclub_1",
@@ -3670,7 +3919,8 @@
     "ChurchGannix",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 571
   },
   {
    "id": "matrix_staff",
@@ -3683,7 +3933,8 @@
    "dmgMax": 30,
    "categories": [
     "Matrix"
-   ]
+   ],
+   "dps": 38
   },
   {
    "id": "venus_club_1",
@@ -3699,7 +3950,8 @@
     "Emeraldlight",
     "ChurchGannix",
     "Merc"
-   ]
+   ],
+   "dps": 56
   },
   {
    "id": "venus_mace_1",
@@ -3714,7 +3966,8 @@
     "Gannix",
     "Emeraldlight",
     "ChurchGannix"
-   ]
+   ],
+   "dps": 43
   },
   {
    "id": "moon_mace_1",
@@ -3727,7 +3980,8 @@
    "dmgMax": 33,
    "categories": [
     "Duggur"
-   ]
+   ],
+   "dps": 41
   },
   {
    "id": "moon_maul_1",
@@ -3740,7 +3994,8 @@
    "dmgMax": 66,
    "categories": [
     "Duggur"
-   ]
+   ],
+   "dps": 85
   },
   {
    "id": "common_axe_1",
@@ -3758,7 +4013,8 @@
     "SheduThousand",
     "Sunlight",
     "Emeraldlight"
-   ]
+   ],
+   "dps": 68
   },
   {
    "id": "prison_axe_1",
@@ -3773,7 +4029,8 @@
     "Prison",
     "Possessed",
     "DaydreamChems"
-   ]
+   ],
+   "dps": 78
   },
   {
    "id": "military_axe_1",
@@ -3794,7 +4051,8 @@
     "Tianming",
     "Merc",
     "Looted"
-   ]
+   ],
+   "dps": 74
   },
   {
    "id": "military_shovel_1",
@@ -3811,7 +4069,8 @@
     "RealWare",
     "CResistance",
     "Merc"
-   ]
+   ],
+   "dps": 57
   },
   {
    "id": "venus_axe_1",
@@ -3826,7 +4085,8 @@
     "Gannix",
     "Emeraldlight",
     "ChurchGannix"
-   ]
+   ],
+   "dps": 73
   },
   {
    "id": "venus_poleaxe_1",
@@ -3843,7 +4103,8 @@
     "Emeraldlight",
     "ChurchGannix",
     "Merc"
-   ]
+   ],
+   "dps": 86
   },
   {
    "id": "moon_axe_1",
@@ -3856,7 +4117,8 @@
    "dmgMax": 61,
    "categories": [
     "Duggur"
-   ]
+   ],
+   "dps": 63
   },
   {
    "id": "nature_human_fist",
@@ -3869,7 +4131,8 @@
    "dmgMax": 10,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 9
   },
   {
    "id": "nature_possessed_centaur_blade",
@@ -3882,7 +4145,8 @@
    "dmgMax": 24,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 29
   },
   {
    "id": "nature_possessed_bigarm_fist",
@@ -3895,7 +4159,8 @@
    "dmgMax": 25,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 20
   },
   {
    "id": "nature_possessed_fist",
@@ -3908,7 +4173,8 @@
    "dmgMax": 16,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 14
   },
   {
    "id": "nature_venus_demon_cat_claw",
@@ -3921,7 +4187,8 @@
    "dmgMax": 26,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 29
   },
   {
    "id": "nature_venus_servitor_fist",
@@ -3934,7 +4201,8 @@
    "dmgMax": 16,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 14
   },
   {
    "id": "nature_venus_knight_claw",
@@ -3947,7 +4215,8 @@
    "dmgMax": 21,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 18
   },
   {
    "id": "nature_venus_warrior_claw",
@@ -3960,7 +4229,8 @@
    "dmgMax": 62,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 77
   },
   {
    "id": "nature_venus_vortex",
@@ -3973,7 +4243,8 @@
    "dmgMax": 62,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 77
   },
   {
    "id": "nature_mars_battle_fist",
@@ -3986,7 +4257,8 @@
    "dmgMax": 33,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 26
   },
   {
    "id": "nature_mars_crab_fist",
@@ -3999,7 +4271,8 @@
    "dmgMax": 56,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 64
   },
   {
    "id": "nature_spider_knife",
@@ -4012,7 +4285,8 @@
    "dmgMax": 31,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 25
   },
   {
    "id": "nature_cyborg_fist",
@@ -4025,7 +4299,8 @@
    "dmgMax": 20,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 16
   },
   {
    "id": "nature_cyborg_drill",
@@ -4038,7 +4313,8 @@
    "dmgMax": 29,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 1492
   },
   {
    "id": "nature_cyborg_battle_fist",
@@ -4051,7 +4327,8 @@
    "dmgMax": 18,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 14
   },
   {
    "id": "nature_cyborg_recreation_fist",
@@ -4064,7 +4341,8 @@
    "dmgMax": 18,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 14
   },
   {
    "id": "nature_cyborg_recreation_blade",
@@ -4077,7 +4355,8 @@
    "dmgMax": 30,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 21
   },
   {
    "id": "nature_human_stump",
@@ -4090,7 +4369,8 @@
    "dmgMax": 9,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 7
   },
   {
    "id": "nature_mercury_headbutt",
@@ -4103,7 +4383,8 @@
    "dmgMax": 29,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 27
   },
   {
    "id": "nature_moon_knight_thorn",
@@ -4116,7 +4397,8 @@
    "dmgMax": 30,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 21
   },
   {
    "id": "nature_moon_servitor_fist",
@@ -4129,7 +4411,8 @@
    "dmgMax": 16,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 14
   },
   {
    "id": "nature_moon_slave_thorn",
@@ -4142,7 +4425,8 @@
    "dmgMax": 18,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 16
   },
   {
    "id": "nature_moon_torturer_axe",
@@ -4155,7 +4439,8 @@
    "dmgMax": 30,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 34
   },
   {
    "id": "nature_scrivnus_fist",
@@ -4168,7 +4453,8 @@
    "dmgMax": 36,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 33
   },
   {
    "id": "nature_scrivnus_baron_blade",
@@ -4181,7 +4467,8 @@
    "dmgMax": 32,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 36
   },
   {
    "id": "nature_cattaram_fist",
@@ -4194,7 +4481,8 @@
    "dmgMax": 45,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 42
   },
   {
    "id": "nature_ron_tentacle",
@@ -4207,7 +4495,8 @@
    "dmgMax": 30,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 16
   },
   {
    "id": "nature_flauros_horns",
@@ -4220,7 +4509,8 @@
    "dmgMax": 23,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 22
   },
   {
    "id": "nature_dog_bite",
@@ -4233,7 +4523,8 @@
    "dmgMax": 32,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 23
   },
   {
    "id": "nature_cargo_drone_fork",
@@ -4246,7 +4537,8 @@
    "dmgMax": 48,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 1764
   },
   {
    "id": "*human_hand",
@@ -4259,7 +4551,8 @@
    "dmgMax": 36,
    "categories": [
     "Possessed"
-   ]
+   ],
+   "dps": 45
   },
   {
    "id": "*human_leg",
@@ -4272,7 +4565,8 @@
    "dmgMax": 38,
    "categories": [
     "Possessed"
-   ]
+   ],
+   "dps": 46
   },
   {
    "id": "*cyborg_hand",
@@ -4287,7 +4581,8 @@
     "Common",
     "Worker",
     "Miner"
-   ]
+   ],
+   "dps": 48
   },
   {
    "id": "*cyborg_leg",
@@ -4302,7 +4597,8 @@
     "Common",
     "Worker",
     "Miner"
-   ]
+   ],
+   "dps": 49
   },
   {
    "id": "*cyborg_battle_hand",
@@ -4316,7 +4612,8 @@
    "categories": [
     "Military",
     "Specops"
-   ]
+   ],
+   "dps": 49
   },
   {
    "id": "*cyborg_battle_leg",
@@ -4330,7 +4627,8 @@
    "categories": [
     "Military",
     "Specops"
-   ]
+   ],
+   "dps": 51
   },
   {
    "id": "*cyborg_recreation_hand",
@@ -4345,7 +4643,8 @@
     "Management",
     "Prison",
     "Security"
-   ]
+   ],
+   "dps": 48
   },
   {
    "id": "*cyborg_recreation_leg",
@@ -4360,7 +4659,8 @@
     "Management",
     "Prison",
     "Security"
-   ]
+   ],
+   "dps": 49
   },
   {
    "id": "*mars_cyborg_hand",
@@ -4374,7 +4674,8 @@
    "categories": [
     "Ur",
     "SheduThousand"
-   ]
+   ],
+   "dps": 64
   },
   {
    "id": "*mars_cyborg_leg",
@@ -4388,7 +4689,8 @@
    "categories": [
     "Ur",
     "SheduThousand"
-   ]
+   ],
+   "dps": 66
   },
   {
    "id": "*possessed_hand",
@@ -4401,7 +4703,8 @@
    "dmgMax": 36,
    "categories": [
     "Psycho"
-   ]
+   ],
+   "dps": 45
   },
   {
    "id": "*possessed_bigarm_hand",
@@ -4415,7 +4718,8 @@
    "categories": [
     "Possessed",
     "SheduThousand"
-   ]
+   ],
+   "dps": 48
   },
   {
    "id": "*possessed_centaur_hand",
@@ -4429,7 +4733,8 @@
    "categories": [
     "Possessed",
     "SheduThousand"
-   ]
+   ],
+   "dps": 48
   },
   {
    "id": "*cyborg_drill",
@@ -4443,7 +4748,8 @@
    "categories": [
     "Miner",
     "Reserve"
-   ]
+   ],
+   "dps": 48
   },
   {
    "id": "*cyborg_battle_machinegun",
@@ -4457,7 +4763,8 @@
    "categories": [
     "Military",
     "Specops"
-   ]
+   ],
+   "dps": 48
   },
   {
    "id": "*cyborg_recreation_blade",
@@ -4471,7 +4778,8 @@
    "categories": [
     "Prison",
     "Security"
-   ]
+   ],
+   "dps": 45
   },
   {
    "id": "*venus_warrior_hand",
@@ -4486,7 +4794,8 @@
     "Gannix",
     "Emeraldlight",
     "ChurchGannix"
-   ]
+   ],
+   "dps": 45
   },
   {
    "id": "*venus_warrior_smg",
@@ -4501,7 +4810,8 @@
     "Gannix",
     "Emeraldlight",
     "ChurchGannix"
-   ]
+   ],
+   "dps": 45
   },
   {
    "id": "*mercury_baron_smg",
@@ -4514,7 +4824,8 @@
    "dmgMax": 36,
    "categories": [
     "none"
-   ]
+   ],
+   "dps": 45
   },
   {
    "id": "*mars_crab_hand",
@@ -4527,7 +4838,8 @@
    "dmgMax": 36,
    "categories": [
     "SheduThousand"
-   ]
+   ],
+   "dps": 45
   },
   {
    "id": "*mars_knight_hand",
@@ -4540,7 +4852,8 @@
    "dmgMax": 36,
    "categories": [
     "SheduThousand"
-   ]
+   ],
+   "dps": 45
   },
   {
    "id": "*mars_baron_hand",
@@ -4553,7 +4866,8 @@
    "dmgMax": 36,
    "categories": [
     "SheduThousand"
-   ]
+   ],
+   "dps": 45
   },
   {
    "id": "*mars_baron_leg",
@@ -4566,7 +4880,8 @@
    "dmgMax": 36,
    "categories": [
     "SheduThousand"
-   ]
+   ],
+   "dps": 45
   }
  ],
  "factionDrops": {
@@ -9063,6 +9378,7 @@
     "id": "army_sniper_2",
     "name": "Архиепископ",
     "dmgMax": 85,
+    "dps": 138,
     "tech": 7,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9071,6 +9387,7 @@
     "id": "anc_quasi_assault_1",
     "name": "АЭВ-Господство",
     "dmgMax": 82,
+    "dps": 89,
     "tech": 10,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9079,6 +9396,7 @@
     "id": "pmc_shotgun_2",
     "name": "Тайга АНКМ",
     "dmgMax": 72,
+    "dps": 2076,
     "tech": 6,
     "cls": "Shotgun",
     "kind": "range"
@@ -9089,6 +9407,7 @@
     "id": "tech_hfg_1",
     "name": "З.Е.П.",
     "dmgMax": 111,
+    "dps": 503,
     "tech": 10,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9097,6 +9416,7 @@
     "id": "common_rocketlauncher_1",
     "name": "РПГ-77",
     "dmgMax": 104,
+    "dps": 18,
     "tech": 6,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9105,6 +9425,7 @@
     "id": "civ_common_assault_2",
     "name": "Интернационал А",
     "dmgMax": 73,
+    "dps": 1012,
     "tech": 9,
     "cls": "AssaultRifle",
     "kind": "range"
@@ -9115,6 +9436,7 @@
     "id": "venus_rocketlauncher_1",
     "name": "Миктлахотла",
     "dmgMax": 116,
+    "dps": 225,
     "tech": 8,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9123,6 +9445,7 @@
     "id": "army_rocketlauncher_1",
     "name": "МРС-21",
     "dmgMax": 109,
+    "dps": 40,
     "tech": 8,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9131,6 +9454,7 @@
     "id": "common_rocketlauncher_1",
     "name": "РПГ-77",
     "dmgMax": 104,
+    "dps": 18,
     "tech": 6,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9141,6 +9465,7 @@
     "id": "army_rocketlauncher_1",
     "name": "МРС-21",
     "dmgMax": 109,
+    "dps": 40,
     "tech": 8,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9149,6 +9474,7 @@
     "id": "common_rocketlauncher_1",
     "name": "РПГ-77",
     "dmgMax": 104,
+    "dps": 18,
     "tech": 6,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9157,6 +9483,7 @@
     "id": "chu_plasma_sniper_1",
     "name": "Прощение",
     "dmgMax": 97,
+    "dps": 86,
     "tech": 8,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9167,6 +9494,7 @@
     "id": "army_rocketlauncher_1",
     "name": "МРС-21",
     "dmgMax": 109,
+    "dps": 40,
     "tech": 8,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9175,6 +9503,7 @@
     "id": "cor_laser_sniper_1",
     "name": "ЛПС-Хлыст",
     "dmgMax": 88,
+    "dps": 23,
     "tech": 4,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9183,6 +9512,7 @@
     "id": "cor_worker_flamethrower_1",
     "name": "Бог Огня",
     "dmgMax": 86,
+    "dps": 698,
     "tech": 6,
     "cls": "Flamethrower",
     "kind": "range"
@@ -9193,6 +9523,7 @@
     "id": "ddr_disruptor_marksman_1",
     "name": "Гарпия",
     "dmgMax": 91,
+    "dps": 115,
     "tech": 9,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9201,6 +9532,7 @@
     "id": "ddr_shotgun_1",
     "name": "Винтаж СЕМЬ14",
     "dmgMax": 84,
+    "dps": 3221,
     "tech": 4,
     "cls": "Shotgun",
     "kind": "range"
@@ -9209,6 +9541,7 @@
     "id": "toxic_thrower_1",
     "name": "Горгона",
     "dmgMax": 79,
+    "dps": 518,
     "tech": 4,
     "cls": "Flamethrower",
     "kind": "range"
@@ -9219,6 +9552,7 @@
     "id": "dil_shock_sniper_1",
     "name": "Громовержец",
     "dmgMax": 76,
+    "dps": 119,
     "tech": 7,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9227,6 +9561,7 @@
     "id": "laser_sniper_1",
     "name": "Призма",
     "dmgMax": 68,
+    "dps": 62,
     "tech": 9,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9235,6 +9570,7 @@
     "id": "dil_sound_shotgun_1",
     "name": "Р.Е.В.",
     "dmgMax": 57,
+    "dps": 1551,
     "tech": 5,
     "cls": "Shotgun",
     "kind": "range"
@@ -9245,6 +9581,7 @@
     "id": "venus_rocketlauncher_1",
     "name": "Миктлахотла",
     "dmgMax": 116,
+    "dps": 225,
     "tech": 8,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9253,6 +9590,7 @@
     "id": "sun_rocketlauncher_1",
     "name": "Психопомп",
     "dmgMax": 104,
+    "dps": 136,
     "tech": 9,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9261,6 +9599,7 @@
     "id": "venus_marksman_1",
     "name": "Змеиная Пасть",
     "dmgMax": 79,
+    "dps": 221,
     "tech": 5,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9271,6 +9610,7 @@
     "id": "fra_security_shotgun_1",
     "name": "Вердикт",
     "dmgMax": 109,
+    "dps": 1004,
     "tech": 6,
     "cls": "Shotgun",
     "kind": "range"
@@ -9279,6 +9619,7 @@
     "id": "army_rocketlauncher_1",
     "name": "МРС-21",
     "dmgMax": 109,
+    "dps": 40,
     "tech": 8,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9287,6 +9628,7 @@
     "id": "common_shotgun_3",
     "name": "Граница Шеф",
     "dmgMax": 79,
+    "dps": 403,
     "tech": 8,
     "cls": "Shotgun",
     "kind": "range"
@@ -9297,6 +9639,7 @@
     "id": "grh_trucker_marksman_2",
     "name": "Триггер Спешл",
     "dmgMax": 128,
+    "dps": 94,
     "tech": 7,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9305,6 +9648,7 @@
     "id": "army_rocketlauncher_1",
     "name": "МРС-21",
     "dmgMax": 109,
+    "dps": 40,
     "tech": 8,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9313,6 +9657,7 @@
     "id": "common_rocketlauncher_1",
     "name": "РПГ-77",
     "dmgMax": 104,
+    "dps": 18,
     "tech": 6,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9323,6 +9668,7 @@
     "id": "army_sniper_2",
     "name": "Архиепископ",
     "dmgMax": 85,
+    "dps": 138,
     "tech": 7,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9331,6 +9677,7 @@
     "id": "plb_worker_shockgun_1",
     "name": "Гроза",
     "dmgMax": 76,
+    "dps": 880,
     "tech": 5,
     "cls": "Minigun",
     "kind": "range"
@@ -9339,6 +9686,7 @@
     "id": "rail_marksman_1",
     "name": "Энигма Суприм",
     "dmgMax": 64,
+    "dps": 141,
     "tech": 6,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9349,6 +9697,7 @@
     "id": "common_rocketlauncher_1",
     "name": "РПГ-77",
     "dmgMax": 104,
+    "dps": 18,
     "tech": 6,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9357,6 +9706,7 @@
     "id": "military_shotgun_1",
     "name": "Еретик",
     "dmgMax": 74,
+    "dps": 1018,
     "tech": 3,
     "cls": "Shotgun",
     "kind": "range"
@@ -9365,6 +9715,7 @@
     "id": "trucker_shotgun_3",
     "name": "Дхаммер-У22",
     "dmgMax": 73,
+    "dps": 2577,
     "tech": 6,
     "cls": "Shotgun",
     "kind": "range"
@@ -9375,6 +9726,7 @@
     "id": "tech_hfg_1",
     "name": "З.Е.П.",
     "dmgMax": 111,
+    "dps": 503,
     "tech": 10,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9383,6 +9735,7 @@
     "id": "trucker_shotgun_3",
     "name": "Дхаммер-У22",
     "dmgMax": 73,
+    "dps": 2577,
     "tech": 6,
     "cls": "Shotgun",
     "kind": "range"
@@ -9391,6 +9744,7 @@
     "id": "laser_sniper_1",
     "name": "Призма",
     "dmgMax": 68,
+    "dps": 62,
     "tech": 9,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9401,6 +9755,7 @@
     "id": "common_rocketlauncher_1",
     "name": "РПГ-77",
     "dmgMax": 104,
+    "dps": 18,
     "tech": 6,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9409,6 +9764,7 @@
     "id": "she_heavy_pistol_1",
     "name": "Жало",
     "dmgMax": 77,
+    "dps": 488,
     "tech": 1,
     "cls": "Pistol",
     "kind": "range"
@@ -9417,6 +9773,7 @@
     "id": "trucker_shotgun_3",
     "name": "Дхаммер-У22",
     "dmgMax": 73,
+    "dps": 2577,
     "tech": 6,
     "cls": "Shotgun",
     "kind": "range"
@@ -9427,6 +9784,7 @@
     "id": "sun_rocketlauncher_1",
     "name": "Психопомп",
     "dmgMax": 104,
+    "dps": 136,
     "tech": 9,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9435,6 +9793,7 @@
     "id": "laser_sniper_1",
     "name": "Призма",
     "dmgMax": 68,
+    "dps": 62,
     "tech": 9,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9443,6 +9802,7 @@
     "id": "military_axe_1",
     "name": "Ястреб",
     "dmgMax": 61,
+    "dps": 74,
     "tech": 4,
     "cls": "Axe",
     "kind": "melee"
@@ -9453,6 +9813,7 @@
     "id": "venus_rocketlauncher_1",
     "name": "Миктлахотла",
     "dmgMax": 116,
+    "dps": 225,
     "tech": 8,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9461,6 +9822,7 @@
     "id": "venus_poleaxe_1",
     "name": "Тепоцтли",
     "dmgMax": 70,
+    "dps": 86,
     "tech": 5,
     "cls": "Axe",
     "kind": "melee"
@@ -9469,6 +9831,7 @@
     "id": "venus_quasi_shotgun_1",
     "name": "Каг-2",
     "dmgMax": 65,
+    "dps": 394,
     "tech": 4,
     "cls": "Shotgun",
     "kind": "range"
@@ -9479,6 +9842,7 @@
     "id": "tia_rocketlauncher_1",
     "name": "Шачонг",
     "dmgMax": 105,
+    "dps": 35,
     "tech": 6,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9487,6 +9851,7 @@
     "id": "common_rocketlauncher_1",
     "name": "РПГ-77",
     "dmgMax": 104,
+    "dps": 18,
     "tech": 6,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9495,6 +9860,7 @@
     "id": "tia_shock_assault_1",
     "name": "Тип-Лейчин",
     "dmgMax": 78,
+    "dps": 564,
     "tech": 10,
     "cls": "AssaultRifle",
     "kind": "range"
@@ -9505,6 +9871,7 @@
     "id": "unc_autogun_1",
     "name": "Наковальня М6",
     "dmgMax": 133,
+    "dps": 548,
     "tech": 10,
     "cls": "Machinegun",
     "kind": "range"
@@ -9513,6 +9880,7 @@
     "id": "common_rocketlauncher_1",
     "name": "РПГ-77",
     "dmgMax": 104,
+    "dps": 18,
     "tech": 6,
     "cls": "RocketLauncher",
     "kind": "range"
@@ -9521,6 +9889,7 @@
     "id": "unc_sniper_1",
     "name": "Стервятник",
     "dmgMax": 71,
+    "dps": 420,
     "tech": 7,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9531,6 +9900,7 @@
     "id": "venus_marksman_1",
     "name": "Змеиная Пасть",
     "dmgMax": 79,
+    "dps": 221,
     "tech": 5,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9539,6 +9909,7 @@
     "id": "venus_blowpipe_1",
     "name": "Ацумарка",
     "dmgMax": 56,
+    "dps": 33,
     "tech": 3,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9547,6 +9918,7 @@
     "id": "venus_battlefist_1",
     "name": "Трипатекпатль",
     "dmgMax": 34,
+    "dps": 43,
     "tech": 3,
     "cls": "Fist",
     "kind": "melee"
@@ -9559,6 +9931,7 @@
     "id": "army_sniper_2",
     "name": "Архиепископ",
     "dmgMax": 85,
+    "dps": 138,
     "tech": 7,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9567,6 +9940,7 @@
     "id": "anc_quasi_assault_1",
     "name": "АЭВ-Господство",
     "dmgMax": 82,
+    "dps": 89,
     "tech": 10,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9575,6 +9949,7 @@
     "id": "pmc_shotgun_2",
     "name": "Тайга АНКМ",
     "dmgMax": 72,
+    "dps": 2076,
     "tech": 6,
     "cls": "Shotgun",
     "kind": "range"
@@ -9585,6 +9960,7 @@
     "id": "civ_common_assault_2",
     "name": "Интернационал А",
     "dmgMax": 73,
+    "dps": 1012,
     "tech": 9,
     "cls": "AssaultRifle",
     "kind": "range"
@@ -9593,6 +9969,7 @@
     "id": "plasma_shotgun_2",
     "name": "Разрядник",
     "dmgMax": 65,
+    "dps": 207,
     "tech": 6,
     "cls": "Shotgun",
     "kind": "range"
@@ -9601,6 +9978,7 @@
     "id": "worker_discthrower_1",
     "name": "Резчик",
     "dmgMax": 62,
+    "dps": 112,
     "tech": 2,
     "cls": "Shotgun",
     "kind": "range"
@@ -9611,6 +9989,7 @@
     "id": "chu_plasma_sniper_1",
     "name": "Прощение",
     "dmgMax": 97,
+    "dps": 86,
     "tech": 8,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9619,6 +9998,7 @@
     "id": "chu_meltathrower_1",
     "name": "Покаяние",
     "dmgMax": 94,
+    "dps": 258,
     "tech": 5,
     "cls": "AssaultRifle",
     "kind": "range"
@@ -9627,6 +10007,7 @@
     "id": "chu_shotgun_1",
     "name": "Анафема",
     "dmgMax": 86,
+    "dps": 221,
     "tech": 8,
     "cls": "Shotgun",
     "kind": "range"
@@ -9637,6 +10018,7 @@
     "id": "chu_plasma_sniper_1",
     "name": "Прощение",
     "dmgMax": 97,
+    "dps": 86,
     "tech": 8,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9645,6 +10027,7 @@
     "id": "chu_meltathrower_1",
     "name": "Покаяние",
     "dmgMax": 94,
+    "dps": 258,
     "tech": 5,
     "cls": "AssaultRifle",
     "kind": "range"
@@ -9653,6 +10036,7 @@
     "id": "chu_shotgun_1",
     "name": "Анафема",
     "dmgMax": 86,
+    "dps": 221,
     "tech": 8,
     "cls": "Shotgun",
     "kind": "range"
@@ -9663,6 +10047,7 @@
     "id": "cor_laser_sniper_1",
     "name": "ЛПС-Хлыст",
     "dmgMax": 88,
+    "dps": 23,
     "tech": 4,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9671,6 +10056,7 @@
     "id": "cor_worker_discthrower_1",
     "name": "Мясорубка",
     "dmgMax": 80,
+    "dps": 242,
     "tech": 5,
     "cls": "Shotgun",
     "kind": "range"
@@ -9679,6 +10065,7 @@
     "id": "laser_sniper_1",
     "name": "Призма",
     "dmgMax": 68,
+    "dps": 62,
     "tech": 9,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9689,6 +10076,7 @@
     "id": "ddr_disruptor_marksman_1",
     "name": "Гарпия",
     "dmgMax": 91,
+    "dps": 115,
     "tech": 9,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9697,6 +10085,7 @@
     "id": "ddr_shotgun_1",
     "name": "Винтаж СЕМЬ14",
     "dmgMax": 84,
+    "dps": 3221,
     "tech": 4,
     "cls": "Shotgun",
     "kind": "range"
@@ -9705,6 +10094,7 @@
     "id": "trucker_shotgun_2",
     "name": "Джеффхаммер МД",
     "dmgMax": 69,
+    "dps": 2212,
     "tech": 4,
     "cls": "Shotgun",
     "kind": "range"
@@ -9715,6 +10105,7 @@
     "id": "dil_shock_sniper_1",
     "name": "Громовержец",
     "dmgMax": 76,
+    "dps": 119,
     "tech": 7,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9723,6 +10114,7 @@
     "id": "laser_sniper_1",
     "name": "Призма",
     "dmgMax": 68,
+    "dps": 62,
     "tech": 9,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9731,6 +10123,7 @@
     "id": "dil_sound_shotgun_1",
     "name": "Р.Е.В.",
     "dmgMax": 57,
+    "dps": 1551,
     "tech": 5,
     "cls": "Shotgun",
     "kind": "range"
@@ -9741,6 +10134,7 @@
     "id": "venus_marksman_1",
     "name": "Змеиная Пасть",
     "dmgMax": 79,
+    "dps": 221,
     "tech": 5,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9749,6 +10143,7 @@
     "id": "laser_sniper_1",
     "name": "Призма",
     "dmgMax": 68,
+    "dps": 62,
     "tech": 9,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9757,6 +10152,7 @@
     "id": "venus_quasi_shotgun_1",
     "name": "Каг-2",
     "dmgMax": 65,
+    "dps": 394,
     "tech": 4,
     "cls": "Shotgun",
     "kind": "range"
@@ -9767,6 +10163,7 @@
     "id": "fra_security_shotgun_1",
     "name": "Вердикт",
     "dmgMax": 109,
+    "dps": 1004,
     "tech": 6,
     "cls": "Shotgun",
     "kind": "range"
@@ -9775,6 +10172,7 @@
     "id": "common_shotgun_3",
     "name": "Граница Шеф",
     "dmgMax": 79,
+    "dps": 403,
     "tech": 8,
     "cls": "Shotgun",
     "kind": "range"
@@ -9783,6 +10181,7 @@
     "id": "common_shotgun_2",
     "name": "Граница Марк-2",
     "dmgMax": 76,
+    "dps": 2340,
     "tech": 4,
     "cls": "Shotgun",
     "kind": "range"
@@ -9793,6 +10192,7 @@
     "id": "grh_trucker_marksman_2",
     "name": "Триггер Спешл",
     "dmgMax": 128,
+    "dps": 94,
     "tech": 7,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9801,6 +10201,7 @@
     "id": "grh_microwave_marksman_1",
     "name": "Термостат",
     "dmgMax": 74,
+    "dps": 284,
     "tech": 10,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9809,6 +10210,7 @@
     "id": "chu_trucker_pistol_1",
     "name": "Закон",
     "dmgMax": 72,
+    "dps": 393,
     "tech": 8,
     "cls": "Pistol",
     "kind": "range"
@@ -9819,6 +10221,7 @@
     "id": "army_sniper_2",
     "name": "Архиепископ",
     "dmgMax": 85,
+    "dps": 138,
     "tech": 7,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9827,6 +10230,7 @@
     "id": "rail_marksman_1",
     "name": "Энигма Суприм",
     "dmgMax": 64,
+    "dps": 141,
     "tech": 6,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9835,6 +10239,7 @@
     "id": "plb_pistol_2",
     "name": "Стерлинг А2Л4",
     "dmgMax": 42,
+    "dps": 406,
     "tech": 7,
     "cls": "Pistol",
     "kind": "range"
@@ -9845,6 +10250,7 @@
     "id": "military_shotgun_1",
     "name": "Еретик",
     "dmgMax": 74,
+    "dps": 1018,
     "tech": 3,
     "cls": "Shotgun",
     "kind": "range"
@@ -9853,6 +10259,7 @@
     "id": "trucker_shotgun_3",
     "name": "Дхаммер-У22",
     "dmgMax": 73,
+    "dps": 2577,
     "tech": 6,
     "cls": "Shotgun",
     "kind": "range"
@@ -9861,6 +10268,7 @@
     "id": "trucker_shotgun_2",
     "name": "Джеффхаммер МД",
     "dmgMax": 69,
+    "dps": 2212,
     "tech": 4,
     "cls": "Shotgun",
     "kind": "range"
@@ -9871,6 +10279,7 @@
     "id": "trucker_shotgun_3",
     "name": "Дхаммер-У22",
     "dmgMax": 73,
+    "dps": 2577,
     "tech": 6,
     "cls": "Shotgun",
     "kind": "range"
@@ -9879,6 +10288,7 @@
     "id": "laser_sniper_1",
     "name": "Призма",
     "dmgMax": 68,
+    "dps": 62,
     "tech": 9,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9887,6 +10297,7 @@
     "id": "plasma_assault_1",
     "name": "Пожиратель",
     "dmgMax": 61,
+    "dps": 670,
     "tech": 7,
     "cls": "AssaultRifle",
     "kind": "range"
@@ -9897,6 +10308,7 @@
     "id": "she_heavy_pistol_1",
     "name": "Жало",
     "dmgMax": 77,
+    "dps": 488,
     "tech": 1,
     "cls": "Pistol",
     "kind": "range"
@@ -9905,6 +10317,7 @@
     "id": "trucker_shotgun_3",
     "name": "Дхаммер-У22",
     "dmgMax": 73,
+    "dps": 2577,
     "tech": 6,
     "cls": "Shotgun",
     "kind": "range"
@@ -9913,6 +10326,7 @@
     "id": "trucker_shotgun_2",
     "name": "Джеффхаммер МД",
     "dmgMax": 69,
+    "dps": 2212,
     "tech": 4,
     "cls": "Shotgun",
     "kind": "range"
@@ -9923,6 +10337,7 @@
     "id": "laser_sniper_1",
     "name": "Призма",
     "dmgMax": 68,
+    "dps": 62,
     "tech": 9,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9931,6 +10346,7 @@
     "id": "sun_laser_sniper_1",
     "name": "Просветление МК",
     "dmgMax": 61,
+    "dps": 82,
     "tech": 4,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9939,6 +10355,7 @@
     "id": "sun_laser_marksman_1",
     "name": "Крестоносец",
     "dmgMax": 60,
+    "dps": 263,
     "tech": 7,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9949,6 +10366,7 @@
     "id": "venus_quasi_shotgun_1",
     "name": "Каг-2",
     "dmgMax": 65,
+    "dps": 394,
     "tech": 4,
     "cls": "Shotgun",
     "kind": "range"
@@ -9959,6 +10377,7 @@
     "id": "tia_shock_assault_1",
     "name": "Тип-Лейчин",
     "dmgMax": 78,
+    "dps": 564,
     "tech": 10,
     "cls": "AssaultRifle",
     "kind": "range"
@@ -9967,6 +10386,7 @@
     "id": "spec_shotgun_1",
     "name": "Лонгху",
     "dmgMax": 76,
+    "dps": 4520,
     "tech": 3,
     "cls": "Shotgun",
     "kind": "range"
@@ -9975,6 +10395,7 @@
     "id": "tia_disc_assault_1",
     "name": "Куанцзи",
     "dmgMax": 62,
+    "dps": 391,
     "tech": 7,
     "cls": "AssaultRifle",
     "kind": "range"
@@ -9985,6 +10406,7 @@
     "id": "unc_sniper_1",
     "name": "Стервятник",
     "dmgMax": 71,
+    "dps": 420,
     "tech": 7,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -9993,6 +10415,7 @@
     "id": "unc_pistol_2",
     "name": "Воитель",
     "dmgMax": 69,
+    "dps": 190,
     "tech": 4,
     "cls": "Pistol",
     "kind": "range"
@@ -10001,6 +10424,7 @@
     "id": "army_sniper_1",
     "name": "Слон",
     "dmgMax": 66,
+    "dps": 396,
     "tech": 3,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -10011,6 +10435,7 @@
     "id": "venus_marksman_1",
     "name": "Змеиная Пасть",
     "dmgMax": 79,
+    "dps": 221,
     "tech": 5,
     "cls": "MarksmanRifle",
     "kind": "range"
@@ -10019,6 +10444,1086 @@
     "id": "venus_blowpipe_1",
     "name": "Ацумарка",
     "dmgMax": 56,
+    "dps": 33,
+    "tech": 3,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   }
+  ]
+ },
+ "topByFactionDps": {
+  "AnCom": [
+   {
+    "id": "pmc_shotgun_2",
+    "name": "Тайга АНКМ",
+    "dmgMax": 72,
+    "dps": 2076,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "anc_shotgun_1",
+    "name": "Раптор АНКМ",
+    "dmgMax": 71,
+    "dps": 1942,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "pmc_shotgun_1",
+    "name": "Тайга М",
+    "dmgMax": 63,
+    "dps": 952,
+    "tech": 2,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "CResistance": [
+   {
+    "id": "plasma_hmg_1",
+    "name": "Вулкан",
+    "dmgMax": 58,
+    "dps": 1045,
+    "tech": 9,
+    "cls": "Minigun",
+    "kind": "range"
+   },
+   {
+    "id": "civ_common_assault_2",
+    "name": "Интернационал А",
+    "dmgMax": 73,
+    "dps": 1012,
+    "tech": 9,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   },
+   {
+    "id": "civ_common_assault_1",
+    "name": "Красный Изгой",
+    "dmgMax": 55,
+    "dps": 662,
+    "tech": 4,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   }
+  ],
+  "ChurchGannix": [
+   {
+    "id": "trucker_shotgun_1",
+    "name": "Джеффхаммер",
+    "dmgMax": 56,
+    "dps": 1610,
+    "tech": 2,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "army_pistol_3",
+    "name": "Старлок ОШП",
+    "dmgMax": 64,
+    "dps": 1268,
+    "tech": 4,
+    "cls": "Pistol",
+    "kind": "range"
+   },
+   {
+    "id": "army_pistol_4",
+    "name": "Потрошитель",
+    "dmgMax": 68,
+    "dps": 1112,
+    "tech": 6,
+    "cls": "Pistol",
+    "kind": "range"
+   }
+  ],
+  "ChurchRevelation": [
+   {
+    "id": "trucker_shotgun_1",
+    "name": "Джеффхаммер",
+    "dmgMax": 56,
+    "dps": 1610,
+    "tech": 2,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "army_pistol_3",
+    "name": "Старлок ОШП",
+    "dmgMax": 64,
+    "dps": 1268,
+    "tech": 4,
+    "cls": "Pistol",
+    "kind": "range"
+   },
+   {
+    "id": "army_pistol_4",
+    "name": "Потрошитель",
+    "dmgMax": 68,
+    "dps": 1112,
+    "tech": 6,
+    "cls": "Pistol",
+    "kind": "range"
+   }
+  ],
+  "CoreWard": [
+   {
+    "id": "military_minigun_1",
+    "name": "Зверь",
+    "dmgMax": 72,
+    "dps": 1277,
+    "tech": 9,
+    "cls": "Minigun",
+    "kind": "range"
+   },
+   {
+    "id": "cor_worker_hmg_2",
+    "name": "Прораб",
+    "dmgMax": 57,
+    "dps": 1058,
+    "tech": 9,
+    "cls": "Machinegun",
+    "kind": "range"
+   },
+   {
+    "id": "plasma_hmg_1",
+    "name": "Вулкан",
+    "dmgMax": 58,
+    "dps": 1045,
+    "tech": 9,
+    "cls": "Minigun",
+    "kind": "range"
+   }
+  ],
+  "DaydreamChems": [
+   {
+    "id": "ddr_shotgun_1",
+    "name": "Винтаж СЕМЬ14",
+    "dmgMax": 84,
+    "dps": 3221,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "trucker_shotgun_2",
+    "name": "Джеффхаммер МД",
+    "dmgMax": 69,
+    "dps": 2212,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "army_hmg_1",
+    "name": "Наследие",
+    "dmgMax": 61,
+    "dps": 1115,
+    "tech": 7,
+    "cls": "Machinegun",
+    "kind": "range"
+   }
+  ],
+  "Dilthey": [
+   {
+    "id": "dil_sound_shotgun_1",
+    "name": "Р.Е.В.",
+    "dmgMax": 57,
+    "dps": 1551,
+    "tech": 5,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "dil_chaos_assault_1",
+    "name": "ФрейВектор",
+    "dmgMax": 56,
+    "dps": 438,
+    "tech": 10,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   },
+   {
+    "id": "dil_sound_assault_1",
+    "name": "А.П.О.К.",
+    "dmgMax": 43,
+    "dps": 408,
+    "tech": 7,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   }
+  ],
+  "Emeraldlight": [
+   {
+    "id": "army_pistol_2",
+    "name": "Старлок МД-6",
+    "dmgMax": 46,
+    "dps": 1551,
+    "tech": 2,
+    "cls": "Pistol",
+    "kind": "range"
+   },
+   {
+    "id": "sun_cryolaser_hmg_1",
+    "name": "Тепловая Смерть",
+    "dmgMax": 58,
+    "dps": 795,
+    "tech": 10,
+    "cls": "Minigun",
+    "kind": "range"
+   },
+   {
+    "id": "venus_assault_1",
+    "name": "Шиукоатль",
+    "dmgMax": 51,
+    "dps": 666,
+    "tech": 9,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   }
+  ],
+  "FrancheComte": [
+   {
+    "id": "common_shotgun_2",
+    "name": "Граница Марк-2",
+    "dmgMax": 76,
+    "dps": 2340,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "police_smg_1",
+    "name": "Грохот Мод.П",
+    "dmgMax": 40,
+    "dps": 1600,
+    "tech": 5,
+    "cls": "Smg",
+    "kind": "range"
+   },
+   {
+    "id": "fra_security_hmg_1",
+    "name": "Истязатель X1",
+    "dmgMax": 73,
+    "dps": 1156,
+    "tech": 9,
+    "cls": "Machinegun",
+    "kind": "range"
+   }
+  ],
+  "Grasshopper": [
+   {
+    "id": "military_minigun_1",
+    "name": "Зверь",
+    "dmgMax": 72,
+    "dps": 1277,
+    "tech": 9,
+    "cls": "Minigun",
+    "kind": "range"
+   },
+   {
+    "id": "trucker_marksman_2",
+    "name": "Охотник Рх",
+    "dmgMax": 61,
+    "dps": 648,
+    "tech": 6,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "grh_trucker_assault_2",
+    "name": "Полдень",
+    "dmgMax": 54,
+    "dps": 562,
+    "tech": 9,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   }
+  ],
+  "PlanetBridge": [
+   {
+    "id": "army_hmg_1",
+    "name": "Наследие",
+    "dmgMax": 61,
+    "dps": 1115,
+    "tech": 7,
+    "cls": "Machinegun",
+    "kind": "range"
+   },
+   {
+    "id": "plb_hmg_1",
+    "name": "Стоунер 93",
+    "dmgMax": 56,
+    "dps": 1021,
+    "tech": 9,
+    "cls": "Machinegun",
+    "kind": "range"
+   },
+   {
+    "id": "plb_worker_shockgun_1",
+    "name": "Гроза",
+    "dmgMax": 76,
+    "dps": 880,
+    "tech": 5,
+    "cls": "Minigun",
+    "kind": "range"
+   }
+  ],
+  "RealWare": [
+   {
+    "id": "trucker_shotgun_3",
+    "name": "Дхаммер-У22",
+    "dmgMax": 73,
+    "dps": 2577,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "trucker_shotgun_2",
+    "name": "Джеффхаммер МД",
+    "dmgMax": 69,
+    "dps": 2212,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "trucker_shotgun_1",
+    "name": "Джеффхаммер",
+    "dmgMax": 56,
+    "dps": 1610,
+    "tech": 2,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "SBN": [
+   {
+    "id": "trucker_shotgun_3",
+    "name": "Дхаммер-У22",
+    "dmgMax": 73,
+    "dps": 2577,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "plasma_hmg_1",
+    "name": "Вулкан",
+    "dmgMax": 58,
+    "dps": 1045,
+    "tech": 9,
+    "cls": "Minigun",
+    "kind": "range"
+   },
+   {
+    "id": "plasma_assault_1",
+    "name": "Пожиратель",
+    "dmgMax": 61,
+    "dps": 670,
+    "tech": 7,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   }
+  ],
+  "SheduThousand": [
+   {
+    "id": "trucker_shotgun_3",
+    "name": "Дхаммер-У22",
+    "dmgMax": 73,
+    "dps": 2577,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "trucker_shotgun_2",
+    "name": "Джеффхаммер МД",
+    "dmgMax": 69,
+    "dps": 2212,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "trucker_shotgun_1",
+    "name": "Джеффхаммер",
+    "dmgMax": 56,
+    "dps": 1610,
+    "tech": 2,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "Sunlight": [
+   {
+    "id": "army_pistol_2",
+    "name": "Старлок МД-6",
+    "dmgMax": 46,
+    "dps": 1551,
+    "tech": 2,
+    "cls": "Pistol",
+    "kind": "range"
+   },
+   {
+    "id": "sun_cryolaser_hmg_1",
+    "name": "Тепловая Смерть",
+    "dmgMax": 58,
+    "dps": 795,
+    "tech": 10,
+    "cls": "Minigun",
+    "kind": "range"
+   },
+   {
+    "id": "sun_laser_powersword_1",
+    "name": "Звездный меч",
+    "dmgMax": 60,
+    "dps": 522,
+    "tech": 7,
+    "cls": "Blade",
+    "kind": "melee"
+   }
+  ],
+  "Tezctlan": [
+   {
+    "id": "venus_quasi_shotgun_1",
+    "name": "Каг-2",
+    "dmgMax": 65,
+    "dps": 394,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "venus_rocketlauncher_1",
+    "name": "Миктлахотла",
+    "dmgMax": 116,
+    "dps": 225,
+    "tech": 8,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   },
+   {
+    "id": "venus_poleaxe_1",
+    "name": "Тепоцтли",
+    "dmgMax": 70,
+    "dps": 86,
+    "tech": 5,
+    "cls": "Axe",
+    "kind": "melee"
+   }
+  ],
+  "Tianming": [
+   {
+    "id": "spec_shotgun_1",
+    "name": "Лонгху",
+    "dmgMax": 76,
+    "dps": 4520,
+    "tech": 3,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "tia_shock_assault_1",
+    "name": "Тип-Лейчин",
+    "dmgMax": 78,
+    "dps": 564,
+    "tech": 10,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   },
+   {
+    "id": "spec_pistol_1",
+    "name": "Тип 77",
+    "dmgMax": 41,
+    "dps": 468,
+    "tech": 5,
+    "cls": "Pistol",
+    "kind": "range"
+   }
+  ],
+  "UnchainedBelt": [
+   {
+    "id": "unc_smg_1",
+    "name": "Грохот Войны",
+    "dmgMax": 44,
+    "dps": 2643,
+    "tech": 6,
+    "cls": "Smg",
+    "kind": "range"
+   },
+   {
+    "id": "unc_assault_2",
+    "name": "Налетчик M16T",
+    "dmgMax": 57,
+    "dps": 794,
+    "tech": 8,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   },
+   {
+    "id": "unc_smg_2",
+    "name": "Вихрь-30M",
+    "dmgMax": 40,
+    "dps": 554,
+    "tech": 4,
+    "cls": "Smg",
+    "kind": "range"
+   }
+  ],
+  "XiomaraMasks": [
+   {
+    "id": "venus_marksman_1",
+    "name": "Змеиная Пасть",
+    "dmgMax": 79,
+    "dps": 221,
+    "tech": 5,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "venus_battlefist_1",
+    "name": "Трипатекпатль",
+    "dmgMax": 34,
+    "dps": 43,
+    "tech": 3,
+    "cls": "Fist",
+    "kind": "melee"
+   },
+   {
+    "id": "venus_blowpipe_1",
+    "name": "Ацумарка",
+    "dmgMax": 56,
+    "dps": 33,
+    "tech": 3,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   }
+  ]
+ },
+ "topByFactionDpsRanged": {
+  "AnCom": [
+   {
+    "id": "pmc_shotgun_2",
+    "name": "Тайга АНКМ",
+    "dmgMax": 72,
+    "dps": 2076,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "anc_shotgun_1",
+    "name": "Раптор АНКМ",
+    "dmgMax": 71,
+    "dps": 1942,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "pmc_shotgun_1",
+    "name": "Тайга М",
+    "dmgMax": 63,
+    "dps": 952,
+    "tech": 2,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "CResistance": [
+   {
+    "id": "civ_common_assault_2",
+    "name": "Интернационал А",
+    "dmgMax": 73,
+    "dps": 1012,
+    "tech": 9,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   },
+   {
+    "id": "civ_common_assault_1",
+    "name": "Красный Изгой",
+    "dmgMax": 55,
+    "dps": 662,
+    "tech": 4,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   },
+   {
+    "id": "civ_pistol_1",
+    "name": "Скорпион",
+    "dmgMax": 40,
+    "dps": 433,
+    "tech": 3,
+    "cls": "Pistol",
+    "kind": "range"
+   }
+  ],
+  "ChurchGannix": [
+   {
+    "id": "trucker_shotgun_1",
+    "name": "Джеффхаммер",
+    "dmgMax": 56,
+    "dps": 1610,
+    "tech": 2,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "army_pistol_3",
+    "name": "Старлок ОШП",
+    "dmgMax": 64,
+    "dps": 1268,
+    "tech": 4,
+    "cls": "Pistol",
+    "kind": "range"
+   },
+   {
+    "id": "army_pistol_4",
+    "name": "Потрошитель",
+    "dmgMax": 68,
+    "dps": 1112,
+    "tech": 6,
+    "cls": "Pistol",
+    "kind": "range"
+   }
+  ],
+  "ChurchRevelation": [
+   {
+    "id": "trucker_shotgun_1",
+    "name": "Джеффхаммер",
+    "dmgMax": 56,
+    "dps": 1610,
+    "tech": 2,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "army_pistol_3",
+    "name": "Старлок ОШП",
+    "dmgMax": 64,
+    "dps": 1268,
+    "tech": 4,
+    "cls": "Pistol",
+    "kind": "range"
+   },
+   {
+    "id": "army_pistol_4",
+    "name": "Потрошитель",
+    "dmgMax": 68,
+    "dps": 1112,
+    "tech": 6,
+    "cls": "Pistol",
+    "kind": "range"
+   }
+  ],
+  "CoreWard": [
+   {
+    "id": "plasma_assault_1",
+    "name": "Пожиратель",
+    "dmgMax": 61,
+    "dps": 670,
+    "tech": 7,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   },
+   {
+    "id": "cor_nail_shotgun_1",
+    "name": "Ударный молоток",
+    "dmgMax": 66,
+    "dps": 495,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "common_assault_1",
+    "name": "Изгой ШВ",
+    "dmgMax": 36,
+    "dps": 345,
+    "tech": 2,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   }
+  ],
+  "DaydreamChems": [
+   {
+    "id": "ddr_shotgun_1",
+    "name": "Винтаж СЕМЬ14",
+    "dmgMax": 84,
+    "dps": 3221,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "trucker_shotgun_2",
+    "name": "Джеффхаммер МД",
+    "dmgMax": 69,
+    "dps": 2212,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "military_assault_1",
+    "name": "Наказание",
+    "dmgMax": 48,
+    "dps": 553,
+    "tech": 5,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   }
+  ],
+  "Dilthey": [
+   {
+    "id": "dil_sound_shotgun_1",
+    "name": "Р.Е.В.",
+    "dmgMax": 57,
+    "dps": 1551,
+    "tech": 5,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "dil_chaos_assault_1",
+    "name": "ФрейВектор",
+    "dmgMax": 56,
+    "dps": 438,
+    "tech": 10,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   },
+   {
+    "id": "dil_sound_assault_1",
+    "name": "А.П.О.К.",
+    "dmgMax": 43,
+    "dps": 408,
+    "tech": 7,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   }
+  ],
+  "Emeraldlight": [
+   {
+    "id": "army_pistol_2",
+    "name": "Старлок МД-6",
+    "dmgMax": 46,
+    "dps": 1551,
+    "tech": 2,
+    "cls": "Pistol",
+    "kind": "range"
+   },
+   {
+    "id": "venus_assault_1",
+    "name": "Шиукоатль",
+    "dmgMax": 51,
+    "dps": 666,
+    "tech": 9,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   },
+   {
+    "id": "sun_laser_shotgun_1",
+    "name": "Сверхновая-7К",
+    "dmgMax": 55,
+    "dps": 448,
+    "tech": 5,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "FrancheComte": [
+   {
+    "id": "common_shotgun_2",
+    "name": "Граница Марк-2",
+    "dmgMax": 76,
+    "dps": 2340,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "fra_security_shotgun_1",
+    "name": "Вердикт",
+    "dmgMax": 109,
+    "dps": 1004,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "fra_security_assault_1",
+    "name": "ФМАФ 300",
+    "dmgMax": 64,
+    "dps": 983,
+    "tech": 10,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   }
+  ],
+  "Grasshopper": [
+   {
+    "id": "trucker_marksman_2",
+    "name": "Охотник Рх",
+    "dmgMax": 61,
+    "dps": 648,
+    "tech": 6,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "grh_trucker_assault_2",
+    "name": "Полдень",
+    "dmgMax": 54,
+    "dps": 562,
+    "tech": 9,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   },
+   {
+    "id": "grh_revolver_pistol_1",
+    "name": "Банкир",
+    "dmgMax": 38,
+    "dps": 402,
+    "tech": 5,
+    "cls": "Pistol",
+    "kind": "range"
+   }
+  ],
+  "PlanetBridge": [
+   {
+    "id": "rail_pistol_3",
+    "name": "Энигма-М2",
+    "dmgMax": 38,
+    "dps": 456,
+    "tech": 6,
+    "cls": "Pistol",
+    "kind": "range"
+   },
+   {
+    "id": "plb_pistol_2",
+    "name": "Стерлинг А2Л4",
+    "dmgMax": 42,
+    "dps": 406,
+    "tech": 7,
+    "cls": "Pistol",
+    "kind": "range"
+   },
+   {
+    "id": "worker_pistol_1",
+    "name": "Гвоздемет",
+    "dmgMax": 24,
+    "dps": 247,
+    "tech": 1,
+    "cls": "Pistol",
+    "kind": "range"
+   }
+  ],
+  "RealWare": [
+   {
+    "id": "trucker_shotgun_3",
+    "name": "Дхаммер-У22",
+    "dmgMax": 73,
+    "dps": 2577,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "trucker_shotgun_2",
+    "name": "Джеффхаммер МД",
+    "dmgMax": 69,
+    "dps": 2212,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "trucker_shotgun_1",
+    "name": "Джеффхаммер",
+    "dmgMax": 56,
+    "dps": 1610,
+    "tech": 2,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "SBN": [
+   {
+    "id": "trucker_shotgun_3",
+    "name": "Дхаммер-У22",
+    "dmgMax": 73,
+    "dps": 2577,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "plasma_assault_1",
+    "name": "Пожиратель",
+    "dmgMax": 61,
+    "dps": 670,
+    "tech": 7,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   },
+   {
+    "id": "sbn_rail_shotgun_1",
+    "name": "Сильвер-СЭД",
+    "dmgMax": 32,
+    "dps": 424,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "SheduThousand": [
+   {
+    "id": "trucker_shotgun_3",
+    "name": "Дхаммер-У22",
+    "dmgMax": 73,
+    "dps": 2577,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "trucker_shotgun_2",
+    "name": "Джеффхаммер МД",
+    "dmgMax": 69,
+    "dps": 2212,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "trucker_shotgun_1",
+    "name": "Джеффхаммер",
+    "dmgMax": 56,
+    "dps": 1610,
+    "tech": 2,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "Sunlight": [
+   {
+    "id": "army_pistol_2",
+    "name": "Старлок МД-6",
+    "dmgMax": 46,
+    "dps": 1551,
+    "tech": 2,
+    "cls": "Pistol",
+    "kind": "range"
+   },
+   {
+    "id": "sun_laser_shotgun_1",
+    "name": "Сверхновая-7К",
+    "dmgMax": 55,
+    "dps": 448,
+    "tech": 5,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "sun_laser_assault_1",
+    "name": "Экзорцист",
+    "dmgMax": 40,
+    "dps": 387,
+    "tech": 8,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   }
+  ],
+  "Tezctlan": [
+   {
+    "id": "venus_quasi_shotgun_1",
+    "name": "Каг-2",
+    "dmgMax": 65,
+    "dps": 394,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "Tianming": [
+   {
+    "id": "spec_shotgun_1",
+    "name": "Лонгху",
+    "dmgMax": 76,
+    "dps": 4520,
+    "tech": 3,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "tia_shock_assault_1",
+    "name": "Тип-Лейчин",
+    "dmgMax": 78,
+    "dps": 564,
+    "tech": 10,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   },
+   {
+    "id": "spec_pistol_1",
+    "name": "Тип 77",
+    "dmgMax": 41,
+    "dps": 468,
+    "tech": 5,
+    "cls": "Pistol",
+    "kind": "range"
+   }
+  ],
+  "UnchainedBelt": [
+   {
+    "id": "unc_assault_2",
+    "name": "Налетчик M16T",
+    "dmgMax": 57,
+    "dps": 794,
+    "tech": 8,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   },
+   {
+    "id": "unc_assault_1",
+    "name": "AZ-120",
+    "dmgMax": 42,
+    "dps": 421,
+    "tech": 6,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   },
+   {
+    "id": "unc_sniper_1",
+    "name": "Стервятник",
+    "dmgMax": 71,
+    "dps": 420,
+    "tech": 7,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   }
+  ],
+  "XiomaraMasks": [
+   {
+    "id": "venus_marksman_1",
+    "name": "Змеиная Пасть",
+    "dmgMax": 79,
+    "dps": 221,
+    "tech": 5,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "venus_blowpipe_1",
+    "name": "Ацумарка",
+    "dmgMax": 56,
+    "dps": 33,
     "tech": 3,
     "cls": "MarksmanRifle",
     "kind": "range"

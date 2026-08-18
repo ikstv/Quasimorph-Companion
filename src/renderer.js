@@ -27,7 +27,7 @@ let DATA = null;
 let WEAPONS = null;   // { weapons, factionDrops, topByFaction, topByFactionRanged }
 const state = {
   mode:'story', category:'all', search:'', save:null,
-  target: { factionId:null, weaponId:null, rangedOnly:false }
+  target: { factionId:null, weaponId:null, rangedOnly:false, metric:'dmg' }
 };
 let pinnedId = null;
 const missionById = {};
@@ -264,12 +264,37 @@ function saveEmpty(msg){
   $('#counter').textContent = '—';
 }
 
+function currentTopTables(){
+  const t = state.target;
+  if(t.metric === 'dps'){
+    return t.rangedOnly ? WEAPONS.topByFactionDpsRanged : WEAPONS.topByFactionDps;
+  }
+  return t.rangedOnly ? WEAPONS.topByFactionRanged : WEAPONS.topByFaction;
+}
+
 function renderTargetPicker(container){
   if(!WEAPONS) return;
   const t = state.target;
-  const top = t.rangedOnly ? WEAPONS.topByFactionRanged : WEAPONS.topByFaction;
+  const top = currentTopTables() || {};
   const factionOrder = Object.keys(top).sort();
   const row = el('div','nav-target');
+
+  // Metric segment: Урон / DPS
+  const seg = el('div','nav-metric');
+  for(const [val, label, title] of [
+    ['dmg','⚔ Урон','max damage per hit'],
+    ['dps','⚡ DPS','DPS-бал (сталий вихід)']
+  ]){
+    const b = el('button','ms-btn' + (t.metric===val?' active':''));
+    b.textContent = label; b.title = title;
+    b.addEventListener('click', ()=>{
+      state.target.metric = val;
+      state.target.weaponId = null;   // list changed
+      renderContent();
+    });
+    seg.appendChild(b);
+  }
+  row.appendChild(seg);
 
   // Faction dropdown
   const facSel = el('select','nav-sel');
@@ -285,8 +310,10 @@ function renderTargetPicker(container){
   // Weapon dropdown (depends on selected faction)
   const wSel = el('select','nav-sel');
   const opts = t.factionId ? (top[t.factionId] || []) : [];
+  const unit = t.metric === 'dps' ? 'DPS' : 'dmg';
+  const val  = (w) => t.metric === 'dps' ? w.dps : w.dmgMax;
   wSel.innerHTML = '<option value="">— ціль-зброя —</option>' +
-    opts.map(w => `<option value="${esc(w.id)}"${w.id===t.weaponId?' selected':''}>${esc(w.name)} · ${w.dmgMax} dmg · TL${w.tech}</option>`).join('');
+    opts.map(w => `<option value="${esc(w.id)}"${w.id===t.weaponId?' selected':''}>${esc(w.name)} · ${val(w)} ${unit} · TL${w.tech}</option>`).join('');
   wSel.disabled = !t.factionId;
   wSel.addEventListener('change', ()=>{
     state.target.weaponId = wSel.value || null;
@@ -307,7 +334,7 @@ function renderTargetPicker(container){
   if(t.weaponId){
     const clear = el('button','nav-clear'); clear.textContent = 'скинути ціль ✕';
     clear.addEventListener('click', ()=>{
-      state.target = { factionId:null, weaponId:null, rangedOnly:t.rangedOnly };
+      state.target = { factionId:null, weaponId:null, rangedOnly:t.rangedOnly, metric:t.metric };
       renderContent();
     });
     row.appendChild(clear);

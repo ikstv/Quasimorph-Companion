@@ -298,11 +298,60 @@ def parse_damage(s):
     return (int(m.group(1)), int(m.group(2))) if m else (0, 0)
 
 
+def _float(s, default=0.0):
+    try:
+        return float(str(s).strip())
+    except Exception:
+        return default
+
+
+def _int(s, default=0):
+    try:
+        return int(str(s).strip())
+    except Exception:
+        return default
+
+
+def load_firemodes(data):
+    """Index firemodes across ALL sections by Id.
+    Cols: WeaponCastsCount(3), DamageMult(6), DelayInSecsBetweenShots(8)."""
+    out = {}
+    for block in all_sections(data, "firemodes"):
+        for r in block[1:]:
+            if not r or not r[0] or r[0].startswith("#"):
+                continue
+            fid = r[0].strip().lstrip("*")
+            out[fid] = dict(
+                casts=max(_int(r[3] if len(r) > 3 else "", 1), 1),
+                dmgMult=_float(r[6] if len(r) > 6 else "", 1.0),
+                delay=_float(r[8] if len(r) > 8 else "", 0.0)
+            )
+    return out
+
+
+def load_ammo(data):
+    """Index ammo by Id.
+    Cols: DamageMult(18), BulletCastsPerShot(19)."""
+    out = {}
+    for block in all_sections(data, "ammo"):
+        for r in block[1:]:
+            if not r or not r[0] or r[0].startswith("#"):
+                continue
+            aid = r[0].strip().lstrip("*")
+            out[aid] = dict(
+                dmgMult=_float(r[18] if len(r) > 18 else "", 1.0),
+                bullets=max(_int(r[19] if len(r) > 19 else "", 1), 1)
+            )
+    return out
+
+
 def extract_weapons(data, R, out_path):
     """Emit weapons.json with weapons list, per-faction reward tables, and
-    a precomputed topByFaction ranking."""
+    precomputed topByFaction ranking (by damage AND by sustained DPS)."""
     ranged = section(data, "rangeweapons") or []
     melee = section(data, "meleeweapons") or []
+    firemodes = load_firemodes(data)
+    ammos = load_ammo(data)
 
     def rows_to_weapons(rows, dmg_col, kind):
         if not rows:
@@ -313,6 +362,9 @@ def extract_weapons(data, R, out_path):
         i_id, i_cat, i_tl, i_ic, i_wc, i_ws = (
             gi("Id"), gi("Categories"), gi("TechLevel"),
             gi("ItemClass"), gi("WeaponClass"), gi("WeaponSubClass"))
+        i_ammo, i_firemodes, i_mag, i_reload = (
+            gi("DefaultAmmoId"), gi("Firemodes"),
+            gi("MagazineCapacity"), gi("ReloadDuration"))
         out = []
         for r in rows[1:]:
             if not r or not r[0] or r[0].startswith("#"):
@@ -327,17 +379,51 @@ def extract_weapons(data, R, out_path):
             dmg_raw = r[dmg_col].strip() if dmg_col < len(r) else ""
             dmin, dmax = parse_damage(dmg_raw)
             cats = (r[i_cat].strip().split() if i_cat is not None and i_cat < len(r) else [])
+            ammo_id = (r[i_ammo].strip().lstrip("*") if i_ammo is not None and i_ammo < len(r) else "")
+            fm_ids = (r[i_firemodes].strip().split() if i_firemodes is not None and i_firemodes < len(r) else [])
+            mag = max(_int(r[i_mag] if i_mag is not None and i_mag < len(r) else "", 1), 1)
+            reload = _float(r[i_reload] if i_reload is not None and i_reload < len(r) else "", 0.0)
             out.append(dict(
                 id=wid, name=R(f"item.{wid}.name") or wid, kind=kind,
                 cls=(r[i_wc].strip() if i_wc is not None and i_wc < len(r) else ""),
                 subcls=(r[i_ws].strip() if i_ws is not None and i_ws < len(r) else ""),
                 tech=int(r[i_tl].strip() or "0") if i_tl is not None and i_tl < len(r) else 0,
-                dmgMin=dmin, dmgMax=dmax, categories=cats
+                dmgMin=dmin, dmgMax=dmax, categories=cats,
+                _ammoId=ammo_id, _firemodes=fm_ids, _mag=mag, _reload=reload
             ))
         return out
 
     weapons = rows_to_weapons(ranged, 16, "range") + rows_to_weapons(melee, 15, "melee")
-    by_id = {w["id"]: w for w in weapons}
+
+    # ---- DPS (sustained) --------------------------------------------------
+    def compute_dps(w):
+        avg = (w["dmgMin"] + w["dmgMax"]) / 2.0
+        if avg <= 0:
+            return 0
+        ammo = ammos.get(w["_ammoId"]) or dict(dmgMult=1.0, bullets=1)
+        best = 0.0
+        fm_list = [firemodes[f] for f in w["_firemodes"] if f in firemodes] or [dict(casts=1, dmgMult=1.0, delay=0.0)]
+        for fm in fm_list:
+            per_shot = avg * fm["dmgMult"] * ammo["dmgMult"] * ammo["bullets"]
+            casts = fm["casts"]
+            mag = w["_mag"]
+            delay = fm["delay"]
+            reload = w["_reload"]
+            denom = mag * casts * delay + reload
+            if denom <= 0:
+                # No time cost — treat as one-shot burst, use per-shot as fallback.
+                sustained = per_shot * casts
+            else:
+                sustained = (per_shot * casts * mag) / denom
+            if sustained > best:
+                best = sustained
+        return int(round(best))
+
+    for w in weapons:
+        w["dps"] = compute_dps(w)
+        # Drop the internal underscore fields from the JSON payload.
+        for k in ("_ammoId", "_firemodes", "_mag", "_reload"):
+            w.pop(k, None)
 
     # Faction reward tables — one #factiondrop_<F>_rewardEquipment per faction.
     fac_pat = re.compile(rb"#factiondrop_([A-Za-z]+)_rewardEquipment[\t\r]")
@@ -360,23 +446,31 @@ def extract_weapons(data, R, out_path):
 
     RANGED_PRECISION_CLASSES = {"MarksmanRifle", "AssaultRifle", "Shotgun", "SMG", "Pistol"}
 
-    def top_for(fid, ranged_only=False):
-        """Top-3 weapons for a faction, ranked by (dmgMax desc, tech asc)."""
+    def top_for(fid, key, ranged_only=False):
+        """Top-3 weapons for a faction, ranked by `key` (a callable, higher = better)."""
         pool = [w for w in weapons
                 if fid in w["categories"]
                 and (not ranged_only or w["cls"] in RANGED_PRECISION_CLASSES)]
-        pool.sort(key=lambda w: (-w["dmgMax"], w["tech"], w["id"]))
-        return [dict(id=w["id"], name=w["name"], dmgMax=w["dmgMax"], tech=w["tech"],
-                     cls=w["cls"], kind=w["kind"]) for w in pool[:3]]
+        pool.sort(key=lambda w: (-key(w), w["tech"], w["id"]))
+        return [dict(id=w["id"], name=w["name"], dmgMax=w["dmgMax"], dps=w["dps"],
+                     tech=w["tech"], cls=w["cls"], kind=w["kind"]) for w in pool[:3]]
 
-    topByFaction = {fid: top_for(fid) for fid in faction_ids if any(fid in w["categories"] for w in weapons)}
-    topByFactionRanged = {fid: top_for(fid, ranged_only=True) for fid in topByFaction}
+    by_dmg   = lambda w: w["dmgMax"]
+    by_dps   = lambda w: w["dps"]
+
+    active_fids = [fid for fid in faction_ids if any(fid in w["categories"] for w in weapons)]
+    topByFaction         = {fid: top_for(fid, by_dmg)          for fid in active_fids}
+    topByFactionRanged   = {fid: top_for(fid, by_dmg, True)    for fid in active_fids}
+    topByFactionDps      = {fid: top_for(fid, by_dps)          for fid in active_fids}
+    topByFactionDpsRanged= {fid: top_for(fid, by_dps, True)    for fid in active_fids}
 
     payload = dict(
         weapons=weapons,
         factionDrops=factionDrops,
         topByFaction=topByFaction,
-        topByFactionRanged=topByFactionRanged
+        topByFactionRanged=topByFactionRanged,
+        topByFactionDps=topByFactionDps,
+        topByFactionDpsRanged=topByFactionDpsRanged
     )
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=1)
