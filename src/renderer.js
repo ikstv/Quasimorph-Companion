@@ -310,6 +310,52 @@ function currentTopTables(){
   return t.rangedOnly ? WEAPONS.topByFactionRanged : WEAPONS.topByFaction;
 }
 
+/**
+ * Recommend the best (faction, weapon) pair given the current save state.
+ * Ranking:  reputation ≥ 0 (not hostile) → higher DPS/damage wins →
+ * fewer tech-tiers to climb wins → higher starting rep wins.
+ * Returns { factionId, weaponId, name, dps, dmgMax, tech, techGap, rep, reason }
+ * or null if nothing can be recommended.
+ */
+function recommendTarget(metric){
+  if(!WEAPONS || !state.save?.ok) return null;
+  const top = metric === 'dps' ? WEAPONS.topByFactionDps : WEAPONS.topByFaction;
+  const facRep = new Map();
+  const facTech = new Map();
+  for(const f of state.save.factions){
+    facRep.set(f.id, f.reputation);
+    facTech.set(f.id, f.techLevel);
+  }
+  const candidates = [];
+  for(const [fid, list] of Object.entries(top)){
+    if(!list?.length) continue;
+    const rep = facRep.get(fid);
+    if(rep == null || rep < 0) continue;   // hostile → skip
+    const w = list[0];
+    const tech = facTech.get(fid) || 1;
+    const gap = Math.max(0, w.tech - tech);
+    const score = (metric === 'dps' ? w.dps : w.dmgMax) - gap * 100 + rep * 5;
+    candidates.push({
+      factionId: fid, weaponId: w.id, name: w.name,
+      dps: w.dps, dmgMax: w.dmgMax, tech: w.tech, cls: w.cls,
+      techGap: gap, rep, score
+    });
+  }
+  if(!candidates.length) return null;
+  candidates.sort((a,b) => b.score - a.score);
+  const pick = candidates[0];
+  pick.reason = metric === 'dps'
+    ? `${pick.dps} DPS · +${pick.rep} репи · потрібно ще +${pick.techGap} тех-рівнів`
+    : `${pick.dmgMax} урону · +${pick.rep} репи · потрібно ще +${pick.techGap} тех-рівнів`;
+  return pick;
+}
+
+function acceptRecommendation(rec){
+  state.target.factionId = rec.factionId;
+  state.target.weaponId = rec.weaponId;
+  renderContent();
+}
+
 function renderTargetPicker(container){
   if(!WEAPONS) return;
   const t = state.target;
@@ -392,6 +438,28 @@ function renderNav(){
   renderTargetPicker(content);
 
   const hasTarget = !!state.target.weaponId;
+
+  // Recommendation banner — only when no target picked yet.
+  if(!hasTarget){
+    const rec = recommendTarget(state.target.metric);
+    if(rec){
+      const banner = el('div','rec-banner');
+      const label = state.target.metric==='dps' ? 'Рекомендуємо для макс DPS' : 'Рекомендуємо для макс Урону';
+      banner.innerHTML = `
+        <div class="rec-left">
+          <div class="rec-tag">${esc(label)}</div>
+          <div class="rec-main">
+            <span class="rec-fac" style="color:${factionColor(rec.factionId)}">${esc(rec.factionId)}</span>
+            <span class="rec-arrow">→</span>
+            <span class="rec-wpn">${esc(rec.name)}</span>
+          </div>
+          <div class="rec-reason">${esc(rec.reason)}</div>
+        </div>
+        <button class="rec-accept">Обрати цю ціль</button>`;
+      banner.querySelector('.rec-accept').addEventListener('click', () => acceptRecommendation(rec));
+      content.appendChild(banner);
+    }
+  }
 
   // filter blocked + search; sort depends on whether a target is set
   const rows = s.liveMissions
@@ -861,6 +929,21 @@ async function loadWorld(){
 
 // ---- welcome overlay -------------------------------------------------------
 function showWelcome(){
+  // Compute per-metric recommendation, if save state is available.
+  const recDps = recommendTarget('dps');
+  const recDmg = recommendTarget('dmg');
+  const recBlock = (r, unit) => r
+    ? `<div class="w-rec">
+         <div class="w-rec-tag">Для твого save</div>
+         <div class="w-rec-main">
+           <span class="w-rec-fac" style="color:${factionColor(r.factionId)}">${esc(r.factionId)}</span>
+           <span class="w-rec-arrow">→</span>
+           <span class="w-rec-wpn">${esc(r.name)}</span>
+         </div>
+         <div class="w-rec-num">${unit === 'dps' ? r.dps + ' DPS' : r.dmgMax + ' урону'} · TL${r.tech} · +${r.rep} репи</div>
+       </div>`
+    : '<div class="w-rec w-rec-empty">Save ще не читається — рекомендація зʼявиться після старту гри</div>';
+
   const overlay = el('div','welcome-overlay');
   overlay.innerHTML = `
     <div class="w-inner">
@@ -870,12 +953,14 @@ function showWelcome(){
         <button class="w-card w-dps" data-choice="dps">
           <div class="w-ico">⚡</div>
           <div class="w-title">Максимальний DPS в грі</div>
-          <div class="w-desc">Сталий вихід урону: дробовики, ПП, кулемети.<br>Приклад цілі: <b>Тайга АНКМ · 2076 DPS</b></div>
+          <div class="w-desc">Сталий вихід урону: дробовики, ПП, кулемети.</div>
+          ${recBlock(recDps, 'dps')}
         </button>
         <button class="w-card w-dmg" data-choice="dmg">
           <div class="w-ico">⚔</div>
           <div class="w-title">Максимальний Урон в грі</div>
-          <div class="w-desc">Альфа-удар: снайперки, ракетниці, гвинтівки.<br>Приклад цілі: <b>Наковальня М6 · 133 dmg</b></div>
+          <div class="w-desc">Альфа-удар: снайперки, ракетниці, гвинтівки.</div>
+          ${recBlock(recDmg, 'dmg')}
         </button>
       </div>
       <div class="w-skip"><a data-choice="story">→ Просто база місій</a></div>
@@ -890,6 +975,12 @@ function showWelcome(){
       } else {
         state.mode = 'nav';
         state.target.metric = c;
+        // Auto-accept the recommendation so the user lands on a working target.
+        const rec = c === 'dps' ? recDps : recDmg;
+        if(rec){
+          state.target.factionId = rec.factionId;
+          state.target.weaponId = rec.weaponId;
+        }
       }
       try { localStorage.setItem(LS.seen, '1'); } catch {}
       saveLastMode();

@@ -302,6 +302,39 @@ body{
   letter-spacing:.06em;text-decoration:none;font-family:"PT Sans Narrow","Arial Narrow",sans-serif}
 .welcome-overlay .w-skip a:hover{color:var(--amber)}
 
+/* Recommendation banner (shown in Штурман when no target set) */
+.rec-banner{display:flex;align-items:center;justify-content:space-between;gap:16px;
+  margin:0 0 14px 0;padding:14px 18px;
+  background:linear-gradient(180deg,#181b24,#0f1116);
+  border:1px solid var(--gold);box-shadow:inset 0 0 30px rgba(255,254,193,.06)}
+.rec-left{min-width:0;flex:1}
+.rec-tag{font-family:"Oswald","Arial Narrow",sans-serif;font-size:11px;
+  color:var(--gold);letter-spacing:.14em;margin-bottom:4px}
+.rec-main{font-family:"Oswald","Arial Narrow",sans-serif;font-size:18px;color:var(--gold);
+  display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.rec-fac{font-weight:700;letter-spacing:.04em}
+.rec-arrow{color:var(--ink-dim);font-weight:400}
+.rec-wpn{font-weight:600}
+.rec-reason{font-family:"PT Sans Narrow","Arial Narrow",sans-serif;
+  font-size:12.5px;color:var(--ink-dim);letter-spacing:.02em;margin-top:5px}
+.rec-accept{background:var(--gold);color:#101216;border:none;
+  font-family:"Oswald","Arial Narrow",sans-serif;font-size:12px;font-weight:700;
+  letter-spacing:.08em;padding:8px 16px;cursor:pointer;flex-shrink:0}
+.rec-accept:hover{background:var(--amber);color:#0a0b0f}
+
+/* Welcome recommendation block inside each choice card */
+.welcome-overlay .w-rec{margin-top:14px;padding:10px 12px;background:#0a0c11;
+  border:1px solid var(--line);font-family:"PT Sans Narrow","Arial Narrow",sans-serif}
+.welcome-overlay .w-rec-tag{font-family:"Oswald","Arial Narrow",sans-serif;
+  font-size:10px;color:var(--gold);letter-spacing:.12em;margin-bottom:4px}
+.welcome-overlay .w-rec-main{font-family:"Oswald","Arial Narrow",sans-serif;
+  font-size:15px;color:var(--gold);display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}
+.welcome-overlay .w-rec-fac{font-weight:700}
+.welcome-overlay .w-rec-arrow{color:var(--ink-dim)}
+.welcome-overlay .w-rec-wpn{font-weight:600}
+.welcome-overlay .w-rec-num{font-size:11.5px;color:var(--ink-dim);margin-top:3px;letter-spacing:.02em}
+.welcome-overlay .w-rec-empty{color:var(--ink-dim);font-style:italic;font-size:11.5px;text-align:center}
+
 /* Focus-view section labels */
 .nav-section-title{font-family:"Oswald","Arial Narrow",sans-serif;font-size:11px;
   color:var(--ink-dim);letter-spacing:.14em;margin:16px 0 6px 2px}
