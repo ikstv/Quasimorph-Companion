@@ -21,7 +21,8 @@ rewards, factions and station.
 - Non‑story missions grouped by type (Захват, Оборона, Устранение, Саботаж, Шпионаж, Ритуал, …).
 - **Hover** a mission to open a compact mission card; **click** to open the full detail panel with
   briefing, details, objectives, stages, rewards and epilogue.
-- Colour‑coded **SVG emblems** per faction/campaign and per mission type (tiles, cards, chain nodes).
+- Authentic **game sprites** for factions and mission types (tiles, cards, chain nodes), with hand‑drawn
+  SVG fallbacks if the sprites are not present.
 - In‑game highlight colour (`#FFFEC1`) is preserved in all texts.
 - Instant search across mission name, id, station and factions.
 - Frameless, game‑styled window (dark palette, scanline / vignette atmosphere).
@@ -56,9 +57,20 @@ The installer is produced in `dist/`.
 
 ## Icons
 
-The UI ships with hand‑drawn SVG emblems (`src/icons.js`). To use **authentic game sprites** instead,
-run `tools/extract_icons.py` on a machine with network access (`pip install UnityPy Pillow`) — it exports
-faction/item/portrait sprites from the game's Unity assets into `assets/game-icons/`.
+Faction emblems, mission‑type glyphs and campaign portraits are authentic game sprites — but they are
+**not tracked in this repository** (they are game‑publisher assets). `src/icons.js` prefers a real PNG
+under `assets/game-icons/` and falls back to a hand‑drawn SVG placeholder (via the `<img>` `onerror`
+handler) whenever a sprite is missing, so the app looks fine either way.
+
+To activate the real sprites on your own machine:
+
+```bash
+pip install UnityPy Pillow
+python tools/extract_icons.py "<path>/Quasimorph/Quasimorph_Data"
+```
+
+Then re‑run the extractor with keywords (e.g. `_missionicon_ _tooltip _tooltype _small`) to export the
+PNGs into `assets/game-icons/`. The folder is gitignored, so nothing you export leaks into commits.
 
 ## License
 

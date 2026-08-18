@@ -7,7 +7,13 @@
     `stroke-linecap="round" stroke-linejoin="round" class="ic">${inner}</svg>`;
 
   // Path is relative to src/index.html (renderer's document URL).
-  const IMG = (p, cls) => `<img class="ic ic-img ${cls||''}" src="../assets/game-icons/${p}" alt="">`;
+  // On load failure (repo cloned without running tools/extract_icons.py),
+  // the onerror handler swaps in the SVG fallback stored in data-fb.
+  const IMG = (p, cls, fb) => {
+    const safeFb = (fb || '').replace(/"/g, '&quot;');
+    return `<img class="ic ic-img ${cls||''}" src="../assets/game-icons/${p}" alt=""` +
+      ` data-fb="${safeFb}" onerror="this.outerHTML=this.dataset.fb">`;
+  };
 
   // ---- authentic faction / campaign emblems (72x72 PNG from game) ------------
   // campaign key in mission data -> filename slug under factions/
@@ -68,19 +74,21 @@
   window.QM_ICONS = {
     campaign(key) {
       const slug = CAMPAIGN_REAL[key];
-      if (slug) return IMG(`factions/${slug}.png`, 'ic-faction');
-      return CAMPAIGN_SVG[key] || '';
+      const svg = CAMPAIGN_SVG[key] || '';
+      if (slug) return IMG(`factions/${slug}.png`, 'ic-faction', svg);
+      return svg;
     },
     type(key) {
       const slug = TYPE_REAL[key];
-      if (slug) return IMG(`mission-types/${slug}.png`, 'ic-type');
-      return TYPE_SVG[key] || '';
+      const svg = TYPE_SVG[key] || '';
+      if (slug) return IMG(`mission-types/${slug}.png`, 'ic-type', svg);
+      return svg;
     },
     portrait(campaignKey) {
       // 512-px character portraits, for the detail drawer.
       const map = { anc:'ancom', civ:'civ', rwa:'realware', tez:'tezctlan', xio:'xiomara', unc:'unchain' };
       const slug = map[campaignKey];
-      return slug ? IMG(`portraits/${slug}.png`, 'ic-portrait') : '';
+      return slug ? IMG(`portraits/${slug}.png`, 'ic-portrait', '') : '';
     }
   };
 })();
