@@ -4,6 +4,7 @@ const path = require('path');
 
 const dataPath = path.join(__dirname, 'data', 'missions.json');
 const weaponsPath = path.join(__dirname, 'data', 'weapons.json');
+const worldPath = path.join(__dirname, 'data', 'world.json');
 
 contextBridge.exposeInMainWorld('QM', {
   getData: () => {
@@ -16,6 +17,13 @@ contextBridge.exposeInMainWorld('QM', {
   getWeapons: () => {
     try {
       return JSON.parse(fs.readFileSync(weaponsPath, 'utf8'));
+    } catch {
+      return null;
+    }
+  },
+  getWorld: () => {
+    try {
+      return JSON.parse(fs.readFileSync(worldPath, 'utf8'));
     } catch {
       return null;
     }

@@ -24,11 +24,49 @@ const PROC_TYPE_COLOR = {
 
 // ---- state -----------------------------------------------------------------
 let DATA = null;
-let WEAPONS = null;   // { weapons, factionDrops, topByFaction, topByFactionRanged }
+let WEAPONS = null;   // { weapons, factionDrops, topByFaction, topByFactionRanged, ... }
+let WORLD = null;     // { spaceObjects, stations }
 const state = {
   mode:'story', category:'all', search:'', save:null,
-  target: { factionId:null, weaponId:null, rangedOnly:false, metric:'dmg' }
+  target: { factionId:null, weaponId:null, rangedOnly:false, metric:'dmg' },
+  showedWelcome: false
 };
+
+// ---- welcome + persistence -------------------------------------------------
+const LS = {
+  seen:   'qmSeenWelcome',
+  mode:   'qmLastMode',
+  metric: 'qmLastMetric'
+};
+function saveLastMode(){
+  try {
+    localStorage.setItem(LS.mode, state.mode);
+    localStorage.setItem(LS.metric, state.target.metric);
+  } catch {}
+}
+function restoreLastMode(){
+  try {
+    const m = localStorage.getItem(LS.mode);
+    const met = localStorage.getItem(LS.metric);
+    if (m) state.mode = m;
+    if (met === 'dps' || met === 'dmg') state.target.metric = met;
+  } catch {}
+}
+
+// Localization helper for space object / station names.
+function locationChain(stationId){
+  if(!WORLD || !stationId) return [];
+  const st = WORLD.stations[stationId];
+  if(!st) return [stationId];
+  const parts = [st.name];
+  let cur = st.spaceObjectId;
+  while(cur && WORLD.spaceObjects[cur]){
+    const so = WORLD.spaceObjects[cur];
+    parts.unshift(so.name);
+    cur = so.parentId;
+  }
+  return parts;
+}
 let pinnedId = null;
 const missionById = {};
 
@@ -279,22 +317,10 @@ function renderTargetPicker(container){
   const factionOrder = Object.keys(top).sort();
   const row = el('div','nav-target');
 
-  // Metric segment: Урон / DPS
-  const seg = el('div','nav-metric');
-  for(const [val, label, title] of [
-    ['dmg','⚔ Урон','max damage per hit'],
-    ['dps','⚡ DPS','DPS-бал (сталий вихід)']
-  ]){
-    const b = el('button','ms-btn' + (t.metric===val?' active':''));
-    b.textContent = label; b.title = title;
-    b.addEventListener('click', ()=>{
-      state.target.metric = val;
-      state.target.weaponId = null;   // list changed
-      renderContent();
-    });
-    seg.appendChild(b);
-  }
-  row.appendChild(seg);
+  // Current metric is shown as a static label; mode chips are the metric selector.
+  const label = el('div','nav-metric-label');
+  label.textContent = t.metric === 'dps' ? '⚡ Ціль за DPS' : '⚔ Ціль за уроном';
+  row.appendChild(label);
 
   // Faction dropdown
   const facSel = el('select','nav-sel');
@@ -397,81 +423,133 @@ function renderNav(){
     content.appendChild(e); return;
   }
 
-  const grid = el('div','nav-list');
-  for(const lm of list){
-    const m = missionById[lm.storyId];   // may be undefined for freshly-seeded proc missions
+  // Three-tier layout: hero (1), normal (next up to 4), compact (rest).
+  const heroWrap    = el('div','nav-hero');
+  const normalWrap  = el('div','nav-list');
+  const compactWrap = el('div','nav-compact');
+
+  const NORMAL_COUNT = 4;
+
+  list.forEach((lm, i) => {
+    const tier = i === 0 ? 'hero' : (i <= NORMAL_COUNT ? 'normal' : 'compact');
+    const m = missionById[lm.storyId];
     const sc = scoreOf.get(lm) || {leadsTo:false, blocks:false};
-    const row = el('div','nav-row');
-    if(sc.leadsTo) row.classList.add('to-target');
-    if(sc.blocks) row.classList.add('blocks-target');
-    const camp = m ? (m.type==='story' ? m.campaignKey : null) : null;
-    row.style.setProperty('--fac', camp ? CAMPAIGN_META[camp].color : factionColor(lm.benId));
+    const row = navRow(lm, m, sc, tier);
+    (tier==='hero' ? heroWrap : tier==='compact' ? compactWrap : normalWrap).appendChild(row);
+  });
 
-    // difficulty badge
-    const d = el('div','nav-diff'); d.textContent = lm.difficulty || '?'; row.appendChild(d);
+  content.appendChild(heroWrap);
+  if(normalWrap.childNodes.length){
+    const h = el('div','nav-section-title'); h.textContent = 'НАСТУПНІ ВАРІАНТИ';
+    content.appendChild(h);
+    content.appendChild(normalWrap);
+  }
+  if(compactWrap.childNodes.length){
+    const h = el('div','nav-section-title'); h.textContent = 'РЕШТА ПРОПОЗИЦІЙ';
+    content.appendChild(h);
+    content.appendChild(compactWrap);
+  }
+}
 
-    // emblem
-    const em = el('div','emblem');
-    em.style.color = row.style.getPropertyValue('--fac');
-    if(m && window.QM_ICONS){
-      em.innerHTML = m.type==='story' ? window.QM_ICONS.campaign(m.campaignKey) : window.QM_ICONS.type(m.missionType);
-    } else {
-      em.innerHTML = window.QM_ICONS?.type(lm.procType) || '';
-    }
-    row.appendChild(em);
+function navRow(lm, m, sc, tier){
+  const row = el('div', 'nav-row nav-' + tier);
+  if(sc.leadsTo) row.classList.add('to-target');
+  if(sc.blocks) row.classList.add('blocks-target');
+  const camp = m ? (m.type==='story' ? m.campaignKey : null) : null;
+  row.style.setProperty('--fac', camp ? CAMPAIGN_META[camp].color : factionColor(lm.benId));
 
-    // name + station
-    const mid = el('div','nav-mid');
-    const nameRow = el('div','nav-nameRow');
-    const name = el('div','nav-name');
-    name.textContent = m?.name || lm.storyId;
-    nameRow.appendChild(name);
-    if(sc.leadsTo){ const b = el('span','target-badge to'); b.textContent = '→ ЦІЛЬ'; nameRow.appendChild(b); }
-    if(sc.blocks){ const b = el('span','target-badge block'); b.textContent = '⚠ ЗАКРИЄ ЦІЛЬ'; nameRow.appendChild(b); }
-    const sub = el('div','nav-sub');
-    sub.textContent = (lm.stationId ? lm.stationId : '—') + ' · ' + (lm.procType || (m?.missionTypeName || 'СЮЖЕТ'));
-    mid.append(nameRow, sub);
-    row.appendChild(mid);
+  // difficulty
+  const d = el('div','nav-diff'); d.textContent = lm.difficulty || '?'; row.appendChild(d);
 
-    // rep chips
-    const rep = el('div','nav-rep');
-    if(lm.benId){
-      const b = el('span','rep-chip pos');
-      b.style.color = factionColor(lm.benId);
-      b.textContent = `${lm.benId} +${lm.benDelta.toFixed(1)}`;
-      rep.appendChild(b);
-    }
-    if(lm.vicId){
-      const v = el('span','rep-chip neg');
-      v.style.color = factionColor(lm.vicId);
-      v.textContent = `${lm.vicId} ${lm.vicDelta.toFixed(1)}`;
-      rep.appendChild(v);
-    }
-    row.appendChild(rep);
+  // emblem
+  const em = el('div','emblem');
+  em.style.color = row.style.getPropertyValue('--fac');
+  if(m && window.QM_ICONS){
+    em.innerHTML = m.type==='story' ? window.QM_ICONS.campaign(m.campaignKey) : window.QM_ICONS.type(m.missionType);
+  } else {
+    em.innerHTML = window.QM_ICONS?.type(lm.procType) || '';
+  }
+  row.appendChild(em);
 
-    // reward items summary
+  // center column
+  const mid = el('div','nav-mid');
+  const nameRow = el('div','nav-nameRow');
+  const name = el('div','nav-name');
+  name.textContent = m?.name || lm.storyId;
+  nameRow.appendChild(name);
+  if(sc.leadsTo){ const b = el('span','target-badge to'); b.textContent = '→ ЦІЛЬ'; nameRow.appendChild(b); }
+  if(sc.blocks){ const b = el('span','target-badge block'); b.textContent = '⚠ ЗАКРИЄ ЦІЛЬ'; nameRow.appendChild(b); }
+  mid.appendChild(nameRow);
+
+  // Location chain + mission-type sub-line
+  const sub = el('div','nav-sub');
+  const chain = locationChain(lm.stationId);
+  const typeLabel = lm.procType || (m?.missionTypeName || 'СЮЖЕТ');
+  sub.innerHTML = `<span class="nav-chain">${chain.map(esc).join('<span class="nav-sep">›</span>')}</span>`
+    + `<span class="nav-typedot"> · </span><span class="nav-type">${esc(typeLabel)}</span>`;
+  mid.appendChild(sub);
+
+  // Detail chips (skulls, floors, threat, mapWH, days) — for hero + normal
+  if(tier !== 'compact'){
+    const chips = el('div','nav-details');
+    chips.appendChild(chip('💀', '×' + (lm.difficulty || 0), 'складність'));
+    if(lm.floors)    chips.appendChild(chip('🏢', String(lm.floors) + ' пов.', 'поверхів'));
+    if(lm.threat)    chips.appendChild(chip('⚡', 'бюджет ' + lm.threat, 'бюджет загрози'));
+    if(lm.mapW && lm.mapH) chips.appendChild(chip('📏', `${lm.mapW}×${lm.mapH}`, 'розмір карти'));
+    if(lm.daysLeft!=null) chips.appendChild(chip('⏳', lm.daysLeft.toFixed(1) + ' дн.', 'до експірації'));
+    mid.appendChild(chips);
+  }
+
+  row.appendChild(mid);
+
+  // right column: rep + rewards
+  const right = el('div','nav-right');
+  const rep = el('div','nav-rep');
+  if(lm.benId){
+    const b = el('span','rep-chip pos');
+    b.style.color = factionColor(lm.benId);
+    b.textContent = `${lm.benId} +${lm.benDelta.toFixed(1)}`;
+    rep.appendChild(b);
+  }
+  if(lm.vicId){
+    const v = el('span','rep-chip neg');
+    v.style.color = factionColor(lm.vicId);
+    v.textContent = `${lm.vicId} ${lm.vicDelta.toFixed(1)}`;
+    rep.appendChild(v);
+  }
+  right.appendChild(rep);
+
+  if(tier !== 'compact'){
     const rw = el('div','nav-rw');
     if(lm.rewardItems.length){
-      const items = lm.rewardItems.slice(0,3).map(it => {
+      const maxItems = tier === 'hero' ? 6 : 3;
+      const items = lm.rewardItems.slice(0,maxItems).map(it => {
         const s = (it.count>1 ? `${it.id}×${it.count}` : it.id);
         return it.isWeapon ? `⚔ ${s}` : s;
       });
-      if(lm.rewardItems.length > 3) items.push(`+${lm.rewardItems.length-3}`);
+      if(lm.rewardItems.length > maxItems) items.push(`+${lm.rewardItems.length-maxItems}`);
       rw.textContent = items.join(' · ');
     } else {
       rw.textContent = `${lm.rewardPoints} pts`;
     }
-    row.appendChild(rw);
-
-    if(m){
-      row.addEventListener('mouseenter', ()=>showHover(m, row));
-      row.addEventListener('mouseleave', hideHover);
-      row.addEventListener('click', ()=>openDrawer(m));
-      row.classList.add('clickable');
-    }
-    grid.appendChild(row);
+    right.appendChild(rw);
   }
-  content.appendChild(grid);
+  row.appendChild(right);
+
+  if(m){
+    row.addEventListener('mouseenter', ()=>showHover(m, row));
+    row.addEventListener('mouseleave', hideHover);
+    row.addEventListener('click', ()=>openDrawer(m));
+    row.classList.add('clickable');
+  }
+  return row;
+}
+
+function chip(icon, text, title){
+  const c = el('span','nav-chip-detail');
+  c.title = title || '';
+  c.innerHTML = `<span class="ncd-ico">${icon}</span><span class="ncd-txt">${esc(text)}</span>`;
+  return c;
 }
 
 function renderDone(){
@@ -699,15 +777,33 @@ function renderFilters(){
   seg.innerHTML = '';
   box.innerHTML = '';
 
-  // mode segmented (always visible)
+  // mode segmented (always visible). Штурман is split into two: pick a metric on chip click.
+  const activeMetric = state.target.metric;
   const modes = [
-    ['story','Сюжетні'], ['proc','Несюжетні'], ['chain','Ланцюг'],
-    ['nav','Штурман'], ['done','Пройдені']
+    { val:'story', label:'Сюжетні' },
+    { val:'proc',  label:'Несюжетні' },
+    { val:'chain', label:'Ланцюг' },
+    { val:'nav',   label:'⚡ Макс DPS', metric:'dps',
+      active: state.mode==='nav' && activeMetric==='dps' },
+    { val:'nav',   label:'⚔ Макс Урон', metric:'dmg',
+      active: state.mode==='nav' && activeMetric==='dmg' },
+    { val:'done',  label:'Пройдені' }
   ];
-  for(const [val,label] of modes){
-    const c = el('div','chip' + (state.mode===val?' active':''));
-    c.textContent = label;
-    c.addEventListener('click', ()=>{ state.mode=val; state.category='all'; renderFilters(); renderContent(); });
+  for(const m of modes){
+    const isActive = m.active !== undefined ? m.active
+      : (state.mode === m.val && !m.metric);
+    const c = el('div','chip' + (isActive ? ' active' : ''));
+    c.textContent = m.label;
+    c.addEventListener('click', ()=>{
+      state.mode = m.val;
+      state.category = 'all';
+      if(m.metric){
+        state.target.metric = m.metric;
+        state.target.weaponId = null;   // list contents change with metric
+      }
+      saveLastMode();
+      renderFilters(); renderContent();
+    });
     seg.appendChild(c);
   }
 
@@ -757,6 +853,52 @@ async function loadWeapons(){
   try { const r = await fetch('../data/weapons.json'); return r.ok ? r.json() : null; }
   catch { return null; }
 }
+async function loadWorld(){
+  if(window.QM?.getWorld) return window.QM.getWorld();
+  try { const r = await fetch('../data/world.json'); return r.ok ? r.json() : null; }
+  catch { return null; }
+}
+
+// ---- welcome overlay -------------------------------------------------------
+function showWelcome(){
+  const overlay = el('div','welcome-overlay');
+  overlay.innerHTML = `
+    <div class="w-inner">
+      <div class="w-logo">◈ QUASIMORPH COMPANION</div>
+      <div class="w-sub">Вибери, що тебе цікавить у цій сесії</div>
+      <div class="w-cards">
+        <button class="w-card w-dps" data-choice="dps">
+          <div class="w-ico">⚡</div>
+          <div class="w-title">Максимальний DPS в грі</div>
+          <div class="w-desc">Сталий вихід урону: дробовики, ПП, кулемети.<br>Приклад цілі: <b>Тайга АНКМ · 2076 DPS</b></div>
+        </button>
+        <button class="w-card w-dmg" data-choice="dmg">
+          <div class="w-ico">⚔</div>
+          <div class="w-title">Максимальний Урон в грі</div>
+          <div class="w-desc">Альфа-удар: снайперки, ракетниці, гвинтівки.<br>Приклад цілі: <b>Наковальня М6 · 133 dmg</b></div>
+        </button>
+      </div>
+      <div class="w-skip"><a data-choice="story">→ Просто база місій</a></div>
+    </div>`;
+  document.body.appendChild(overlay);
+
+  overlay.querySelectorAll('[data-choice]').forEach(node => {
+    node.addEventListener('click', () => {
+      const c = node.dataset.choice;
+      if (c === 'story') {
+        state.mode = 'story';
+      } else {
+        state.mode = 'nav';
+        state.target.metric = c;
+      }
+      try { localStorage.setItem(LS.seen, '1'); } catch {}
+      saveLastMode();
+      overlay.remove();
+      renderFilters();
+      renderContent();
+    });
+  });
+}
 
 // Score a live-mission against the current target weapon.
 // Returns {leadsTo, blocks, weight}. weight: smaller = better path to target.
@@ -790,19 +932,7 @@ async function refreshSave(){
   }
 }
 
-async function boot(){
-  DATA = await loadData();
-  if(DATA.error){ $('#content').innerHTML = `<div class="empty">ПОМИЛКА ДАНИХ: ${esc(DATA.error)}</div>`; return; }
-  buildSearchIndex();
-  [...DATA.storyMissions, ...DATA.procMissions].forEach(m => { missionById[m.id] = m; });
-
-  // Prime save + weapons (best-effort; UI works without them).
-  WEAPONS = await loadWeapons();
-  await refreshSave();
-
-  renderFilters();
-  renderContent();
-
+function wireGlobalHandlers(){
   // Live watch — debounced re-read + re-render whenever save files change.
   if(window.QM?.watchSave){
     let pending = null;
@@ -814,18 +944,38 @@ async function boot(){
       }, 250);
     });
   }
-
-  // search
   $('#search').addEventListener('input', e=>{ state.search = e.target.value; renderContent(); });
-
-  // window controls
   $('#btn-min').addEventListener('click', ()=>window.QM?.minimize());
   $('#btn-max').addEventListener('click', ()=>window.QM?.maximize());
   $('#btn-close').addEventListener('click', ()=>window.QM?.close());
-
-  // drawer close interactions
   $('#drawer-scrim').addEventListener('click', closeDrawer);
   document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeDrawer(); });
+}
+
+async function boot(){
+  DATA = await loadData();
+  if(DATA.error){ $('#content').innerHTML = `<div class="empty">ПОМИЛКА ДАНИХ: ${esc(DATA.error)}</div>`; return; }
+  buildSearchIndex();
+  [...DATA.storyMissions, ...DATA.procMissions].forEach(m => { missionById[m.id] = m; });
+
+  // Prime save + weapons + world (best-effort; UI works without them).
+  WEAPONS = await loadWeapons();
+  WORLD = await loadWorld();
+  await refreshSave();
+
+  // Wire input/window handlers unconditionally (welcome overlay doesn't affect these).
+  wireGlobalHandlers();
+
+  // Restore last mode from localStorage; show welcome on very first launch.
+  const seen = (() => { try { return localStorage.getItem(LS.seen); } catch { return null; }})();
+  if (!seen) {
+    showWelcome();
+    return;   // welcome will trigger renderFilters + renderContent after user picks
+  }
+  restoreLastMode();
+
+  renderFilters();
+  renderContent();
 }
 
 boot();

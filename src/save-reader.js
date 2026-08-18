@@ -38,9 +38,16 @@
       locked: lockedSet.has(f.Id)
     }));
 
+    // Space time — Unity ticks (1 tick = 100 ns; 1 day = 8.64e11 ticks)
+    const spaceTime = c['MGSC.SpaceTime'] || {};
+    const currentTicks = num(spaceTime.Time);
+    const TICKS_PER_DAY = 864_000_000_000;
+
+    // Travel state (where you are on the star map)
+    const travel = c['MGSC.TravelMetadata'] || {};
+
     // Live missions ------------------------------------------------------------
     const missionsArr = c['MGSC.Missions']?.Values || [];
-    const now = Date.now();
     const liveMissions = missionsArr.map(m => {
       const rewardItemIds = [];
       for (const it of (m.RewardItems || [])) {
@@ -51,6 +58,28 @@
           isWeapon: (it.Content._components || []).some(x => x?.Type === 'MGSC.WeaponComponent')
         });
       }
+
+      // LocationPlans → floors/mapWH/threat budget
+      const plans = m.LocationPlans || [];
+      let floors = 0, threat = 0, mapW = 0, mapH = 0;
+      for (const entry of plans) {
+        const key = entry.Key || '';
+        const v = entry.Value || {};
+        if (/^stage\d+$/i.test(key)) {
+          floors++;
+          threat += num(v.MonstersPointsLimit);
+          if (!mapW) {
+            mapW = num(v.MapGridWidth);
+            mapH = num(v.MapGridHeight);
+          }
+        }
+      }
+
+      const expireTicks = num(m.ExpireTime);
+      const daysLeft = currentTicks > 0 && expireTicks > 0
+        ? Math.max(0, (expireTicks - currentTicks) / TICKS_PER_DAY)
+        : null;
+
       return {
         storyId: m.StoryId,
         stationId: m.StationId,
@@ -64,8 +93,9 @@
         difficulty: num(m.MissionDifficulty),
         minTech: num(m.MinTechLevel),
         rewardItems: rewardItemIds,
-        expireTime: num(m.ExpireTime),
-        isBlocked: bool(m.IsBlocked)
+        expireTime: expireTicks,
+        isBlocked: bool(m.IsBlocked),
+        floors, threat, mapW, mapH, daysLeft
       };
     });
 
@@ -87,7 +117,13 @@
       liveMissions,
       passedTriggers,
       completedStoryIds,
-      inventory: { unlockedProduction }
+      inventory: { unlockedProduction },
+      spaceTime: { currentTicks },
+      travel: {
+        currentSpaceObject: travel.CurrentSpaceObject || null,
+        isInBramfatura: bool(travel.IsInBramfatura),
+        canTravel: bool(travel.CanTravel)
+      }
     };
   }
 

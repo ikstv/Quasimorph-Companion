@@ -9124,14 +9124,14 @@
   }
  ],
  "storyChains": {
-  "anc": [
+  "xio": [
    {
     "tier": 1,
     "side": false,
     "missions": [
      {
-      "id": "anc_1_comm_anarchy",
-      "name": "Сообщающиеся анархии",
+      "id": "xio_1_sinkhole",
+      "name": "Карстовый Оазис",
       "branch": "",
       "unlock": []
      }
@@ -9142,8 +9142,8 @@
     "side": false,
     "missions": [
      {
-      "id": "anc_2_mib",
-      "name": "Люди в Черном",
+      "id": "xio_2_madness",
+      "name": "Безумие с пользой для дела",
       "branch": "",
       "unlock": []
      }
@@ -9154,12 +9154,10 @@
     "side": false,
     "missions": [
      {
-      "id": "anc_3_reload",
-      "name": "Перезагрузка",
+      "id": "xio_3_bram_ruins",
+      "name": "Руины древних брамфатур",
       "branch": "",
-      "unlock": [
-       "сила фракції «СБН» падає"
-      ]
+      "unlock": []
      }
     ]
    },
@@ -9168,14 +9166,20 @@
     "side": false,
     "missions": [
      {
-      "id": "anc_4_screamers",
-      "name": "Крикуны",
+      "id": "xio_4_topil",
+      "name": "Прыжок Топильцина",
       "branch": "",
       "unlock": []
      },
      {
-      "id": "anc_4_deadman",
-      "name": "Рука мертвеца",
+      "id": "xio_4_nanau",
+      "name": "Огонь Нанауацина",
+      "branch": "",
+      "unlock": []
+     },
+     {
+      "id": "xio_4_tonatiuh",
+      "name": "Смех Тонатиу",
       "branch": "",
       "unlock": []
      }
@@ -9186,29 +9190,24 @@
     "side": false,
     "missions": [
      {
-      "id": "anc_5_sonnen",
-      "name": "Солнцечеловек",
+      "id": "xio_5_shattered",
+      "name": "Разбитый Изумруд",
       "branch": "",
-      "unlock": [
-       "завершити «Крикуны»",
-       "завершити «Рука мертвеца»"
-      ]
+      "unlock": []
      }
     ]
    }
   ],
-  "hiv": [
+  "civ": [
    {
     "tier": 1,
     "side": false,
     "missions": [
      {
-      "id": "hiv_1_cold_war",
-      "name": "Очень холодная война",
+      "id": "civ_1_manifesto",
+      "name": "Манифест",
       "branch": "",
-      "unlock": [
-       "очікування 1 дн."
-      ]
+      "unlock": []
      }
     ]
    },
@@ -9217,22 +9216,12 @@
     "side": false,
     "missions": [
      {
-      "id": "hiv_2_bifrost",
-      "name": "Биврест",
+      "id": "civ_2_spark_flame",
+      "name": "Из искры возгорится пламя",
       "branch": "",
-      "unlock": []
-     },
-     {
-      "id": "hiv_2_telegraph",
-      "name": "Телеграф",
-      "branch": "",
-      "unlock": []
-     },
-     {
-      "id": "hiv_2_rokosz",
-      "name": "Рокош",
-      "branch": "",
-      "unlock": []
+      "unlock": [
+       "фракція набирає силу"
+      ]
      }
     ]
    },
@@ -9241,9 +9230,39 @@
     "side": false,
     "missions": [
      {
-      "id": "hiv_3_awakened",
-      "name": "Улей Пробуждается",
+      "id": "civ_3_iron_broom",
+      "name": "Железная метла",
       "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 4,
+    "side": false,
+    "missions": [
+     {
+      "id": "civ_4a_icepick",
+      "name": "Ледоруб",
+      "branch": "a",
+      "unlock": []
+     },
+     {
+      "id": "civ_4b_beacon",
+      "name": "Маяк",
+      "branch": "b",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 5,
+    "side": false,
+    "missions": [
+     {
+      "id": "civ_5b_sacred",
+      "name": "Священный Огонь",
+      "branch": "b",
       "unlock": []
      }
     ]
@@ -9332,14 +9351,14 @@
     ]
    }
   ],
-  "civ": [
+  "tutorial": [
    {
     "tier": 1,
     "side": false,
     "missions": [
      {
-      "id": "civ_1_manifesto",
-      "name": "Манифест",
+      "id": "tutorial_1_defense",
+      "name": "Оборона",
       "branch": "",
       "unlock": []
      }
@@ -9350,126 +9369,8 @@
     "side": false,
     "missions": [
      {
-      "id": "civ_2_spark_flame",
-      "name": "Из искры возгорится пламя",
-      "branch": "",
-      "unlock": [
-       "фракція набирає силу"
-      ]
-     }
-    ]
-   },
-   {
-    "tier": 3,
-    "side": false,
-    "missions": [
-     {
-      "id": "civ_3_iron_broom",
-      "name": "Железная метла",
-      "branch": "",
-      "unlock": []
-     }
-    ]
-   },
-   {
-    "tier": 4,
-    "side": false,
-    "missions": [
-     {
-      "id": "civ_4a_icepick",
-      "name": "Ледоруб",
-      "branch": "a",
-      "unlock": []
-     },
-     {
-      "id": "civ_4b_beacon",
-      "name": "Маяк",
-      "branch": "b",
-      "unlock": []
-     }
-    ]
-   },
-   {
-    "tier": 5,
-    "side": false,
-    "missions": [
-     {
-      "id": "civ_5b_sacred",
-      "name": "Священный Огонь",
-      "branch": "b",
-      "unlock": []
-     }
-    ]
-   }
-  ],
-  "xio": [
-   {
-    "tier": 1,
-    "side": false,
-    "missions": [
-     {
-      "id": "xio_1_sinkhole",
-      "name": "Карстовый Оазис",
-      "branch": "",
-      "unlock": []
-     }
-    ]
-   },
-   {
-    "tier": 2,
-    "side": false,
-    "missions": [
-     {
-      "id": "xio_2_madness",
-      "name": "Безумие с пользой для дела",
-      "branch": "",
-      "unlock": []
-     }
-    ]
-   },
-   {
-    "tier": 3,
-    "side": false,
-    "missions": [
-     {
-      "id": "xio_3_bram_ruins",
-      "name": "Руины древних брамфатур",
-      "branch": "",
-      "unlock": []
-     }
-    ]
-   },
-   {
-    "tier": 4,
-    "side": false,
-    "missions": [
-     {
-      "id": "xio_4_topil",
-      "name": "Прыжок Топильцина",
-      "branch": "",
-      "unlock": []
-     },
-     {
-      "id": "xio_4_nanau",
-      "name": "Огонь Нанауацина",
-      "branch": "",
-      "unlock": []
-     },
-     {
-      "id": "xio_4_tonatiuh",
-      "name": "Смех Тонатиу",
-      "branch": "",
-      "unlock": []
-     }
-    ]
-   },
-   {
-    "tier": 5,
-    "side": false,
-    "missions": [
-     {
-      "id": "xio_5_shattered",
-      "name": "Разбитый Изумруд",
+      "id": "tutorial_2_revenge",
+      "name": "Вкус мести",
       "branch": "",
       "unlock": []
      }
@@ -9576,14 +9477,14 @@
     ]
    }
   ],
-  "tutorial": [
+  "anc": [
    {
     "tier": 1,
     "side": false,
     "missions": [
      {
-      "id": "tutorial_1_defense",
-      "name": "Оборона",
+      "id": "anc_1_comm_anarchy",
+      "name": "Сообщающиеся анархии",
       "branch": "",
       "unlock": []
      }
@@ -9594,8 +9495,107 @@
     "side": false,
     "missions": [
      {
-      "id": "tutorial_2_revenge",
-      "name": "Вкус мести",
+      "id": "anc_2_mib",
+      "name": "Люди в Черном",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 3,
+    "side": false,
+    "missions": [
+     {
+      "id": "anc_3_reload",
+      "name": "Перезагрузка",
+      "branch": "",
+      "unlock": [
+       "сила фракції «СБН» падає"
+      ]
+     }
+    ]
+   },
+   {
+    "tier": 4,
+    "side": false,
+    "missions": [
+     {
+      "id": "anc_4_screamers",
+      "name": "Крикуны",
+      "branch": "",
+      "unlock": []
+     },
+     {
+      "id": "anc_4_deadman",
+      "name": "Рука мертвеца",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 5,
+    "side": false,
+    "missions": [
+     {
+      "id": "anc_5_sonnen",
+      "name": "Солнцечеловек",
+      "branch": "",
+      "unlock": [
+       "завершити «Крикуны»",
+       "завершити «Рука мертвеца»"
+      ]
+     }
+    ]
+   }
+  ],
+  "hiv": [
+   {
+    "tier": 1,
+    "side": false,
+    "missions": [
+     {
+      "id": "hiv_1_cold_war",
+      "name": "Очень холодная война",
+      "branch": "",
+      "unlock": [
+       "очікування 1 дн."
+      ]
+     }
+    ]
+   },
+   {
+    "tier": 2,
+    "side": false,
+    "missions": [
+     {
+      "id": "hiv_2_telegraph",
+      "name": "Телеграф",
+      "branch": "",
+      "unlock": []
+     },
+     {
+      "id": "hiv_2_rokosz",
+      "name": "Рокош",
+      "branch": "",
+      "unlock": []
+     },
+     {
+      "id": "hiv_2_bifrost",
+      "name": "Биврест",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 3,
+    "side": false,
+    "missions": [
+     {
+      "id": "hiv_3_awakened",
+      "name": "Улей Пробуждается",
       "branch": "",
       "unlock": []
      }

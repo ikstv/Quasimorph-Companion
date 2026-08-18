@@ -1,0 +1,1293 @@
+{
+ "spaceObjects": {
+  "mercury": {
+   "id": "mercury",
+   "name": "Меркурий",
+   "type": "Planet",
+   "parentId": null,
+   "available": true
+  },
+  "volcano": {
+   "id": "volcano",
+   "name": "Вулкан",
+   "type": "Satelite",
+   "parentId": "mercury",
+   "available": true
+  },
+  "citadel": {
+   "id": "citadel",
+   "name": "Цитадель-1",
+   "type": "Satelite",
+   "parentId": "mercury",
+   "available": true
+  },
+  "venus": {
+   "id": "venus",
+   "name": "Венера",
+   "type": "Planet",
+   "parentId": null,
+   "available": true
+  },
+  "havoc": {
+   "id": "havoc",
+   "name": "ВИЗГ",
+   "type": "Satelite",
+   "parentId": "venus",
+   "available": true
+  },
+  "mechta": {
+   "id": "mechta",
+   "name": "Мечта",
+   "type": "Satelite",
+   "parentId": "venus",
+   "available": true
+  },
+  "earth": {
+   "id": "earth",
+   "name": "Земля",
+   "type": "Planet",
+   "parentId": null,
+   "available": true
+  },
+  "tsiolkovsky": {
+   "id": "tsiolkovsky",
+   "name": "Циолковский",
+   "type": "Satelite",
+   "parentId": "earth",
+   "available": true
+  },
+  "moon": {
+   "id": "moon",
+   "name": "Луна",
+   "type": "Satelite",
+   "parentId": "earth",
+   "available": true
+  },
+  "fuller": {
+   "id": "fuller",
+   "name": "Фуллер",
+   "type": "Satelite",
+   "parentId": "moon",
+   "available": true
+  },
+  "mars": {
+   "id": "mars",
+   "name": "Марс",
+   "type": "Planet",
+   "parentId": null,
+   "available": true
+  },
+  "phobos": {
+   "id": "phobos",
+   "name": "Фобос",
+   "type": "Satelite",
+   "parentId": "mars",
+   "available": true
+  },
+  "deimos": {
+   "id": "deimos",
+   "name": "Деймос",
+   "type": "Satelite",
+   "parentId": "mars",
+   "available": true
+  },
+  "ceres": {
+   "id": "ceres",
+   "name": "Церера",
+   "type": "Planet",
+   "parentId": null,
+   "available": true
+  },
+  "hungary": {
+   "id": "hungary",
+   "name": "434-Венгрия",
+   "type": "Planet",
+   "parentId": null,
+   "available": true
+  },
+  "wernher": {
+   "id": "wernher",
+   "name": "Вернер",
+   "type": "Planet",
+   "parentId": null,
+   "available": true
+  },
+  "annaherman": {
+   "id": "annaherman",
+   "name": "Анна Герман",
+   "type": "Planet",
+   "parentId": null,
+   "available": true
+  },
+  "vesta": {
+   "id": "vesta",
+   "name": "Веста",
+   "type": "Planet",
+   "parentId": null,
+   "available": true
+  },
+  "pallas": {
+   "id": "pallas",
+   "name": "Паллада",
+   "type": "Planet",
+   "parentId": null,
+   "available": true
+  },
+  "geist": {
+   "id": "geist",
+   "name": "Гейст",
+   "type": "Planet",
+   "parentId": null,
+   "available": true
+  },
+  "interamnia": {
+   "id": "interamnia",
+   "name": "Интерамния",
+   "type": "Planet",
+   "parentId": null,
+   "available": true
+  },
+  "hekate": {
+   "id": "hekate",
+   "name": "Геката",
+   "type": "Planet",
+   "parentId": null,
+   "available": false
+  },
+  "hygeia": {
+   "id": "hygeia",
+   "name": "Гигея",
+   "type": "Planet",
+   "parentId": null,
+   "available": true
+  },
+  "jupiter": {
+   "id": "jupiter",
+   "name": "Юпитер",
+   "type": "Planet",
+   "parentId": null,
+   "available": true
+  },
+  "io": {
+   "id": "io",
+   "name": "Ио",
+   "type": "Satelite",
+   "parentId": "jupiter",
+   "available": true
+  },
+  "europa": {
+   "id": "europa",
+   "name": "Европа",
+   "type": "Satelite",
+   "parentId": "jupiter",
+   "available": true
+  },
+  "ganymede": {
+   "id": "ganymede",
+   "name": "Ганимед",
+   "type": "Satelite",
+   "parentId": "jupiter",
+   "available": true
+  },
+  "callisto": {
+   "id": "callisto",
+   "name": "Каллисто",
+   "type": "Satelite",
+   "parentId": "jupiter",
+   "available": true
+  },
+  "saturn": {
+   "id": "saturn",
+   "name": "Сатурн",
+   "type": "Planet",
+   "parentId": null,
+   "available": true
+  },
+  "enceladus": {
+   "id": "enceladus",
+   "name": "Энцелад",
+   "type": "Satelite",
+   "parentId": "saturn",
+   "available": true
+  },
+  "titan": {
+   "id": "titan",
+   "name": "Титан",
+   "type": "Satelite",
+   "parentId": "saturn",
+   "available": true
+  },
+  "phoebe": {
+   "id": "phoebe",
+   "name": "Феба",
+   "type": "Satelite",
+   "parentId": "saturn",
+   "available": true
+  },
+  "hyperion": {
+   "id": "hyperion",
+   "name": "Гиперион",
+   "type": "Satelite",
+   "parentId": "saturn",
+   "available": true
+  }
+ },
+ "stations": {
+  "FlatObsidian": {
+   "id": "FlatObsidian",
+   "name": "Флэт Обсидиан",
+   "spaceObjectId": "mercury",
+   "faction": "CResistance"
+  },
+  "Rachmaninoff": {
+   "id": "Rachmaninoff",
+   "name": "Рахманинов-Энергия",
+   "spaceObjectId": "mercury",
+   "faction": "CoreWard"
+  },
+  "Discovery": {
+   "id": "Discovery",
+   "name": "Дискавери ИЦ",
+   "spaceObjectId": "mercury",
+   "faction": "AnCom"
+  },
+  "CalorisPlanitia": {
+   "id": "CalorisPlanitia",
+   "name": "Равнины Жары",
+   "spaceObjectId": "mercury",
+   "faction": "FrancheComte"
+  },
+  "Goethe": {
+   "id": "Goethe",
+   "name": "Гете-1",
+   "spaceObjectId": "mercury",
+   "faction": "RealWare"
+  },
+  "Boethius": {
+   "id": "Boethius",
+   "name": "Боэций",
+   "spaceObjectId": "mercury",
+   "faction": "SBN"
+  },
+  "Mammoth": {
+   "id": "Mammoth",
+   "name": "Терминал Мамонт",
+   "spaceObjectId": "mercury",
+   "faction": "PlanetBridge"
+  },
+  "Rhino": {
+   "id": "Rhino",
+   "name": "Носорог-4",
+   "spaceObjectId": "volcano",
+   "faction": "ChurchRevelation"
+  },
+  "Kizzuwatna": {
+   "id": "Kizzuwatna",
+   "name": "Киццуватна",
+   "spaceObjectId": "volcano",
+   "faction": "CResistance"
+  },
+  "Lomonosov": {
+   "id": "Lomonosov",
+   "name": "Ломоносов",
+   "spaceObjectId": "volcano",
+   "faction": "PlanetBridge"
+  },
+  "GammaHydra": {
+   "id": "GammaHydra",
+   "name": "Гамма Гидра 4",
+   "spaceObjectId": "citadel",
+   "faction": "PlanetBridge"
+  },
+  "EnergyOne": {
+   "id": "EnergyOne",
+   "name": "Энергия Один",
+   "spaceObjectId": "citadel",
+   "faction": "Dilthey"
+  },
+  "Photosphere": {
+   "id": "Photosphere",
+   "name": "Фотосфера-17",
+   "spaceObjectId": "citadel",
+   "faction": "AnCom"
+  },
+  "JourneyOfFire": {
+   "id": "JourneyOfFire",
+   "name": "Путешествие Огня",
+   "spaceObjectId": "citadel",
+   "faction": "FrancheComte"
+  },
+  "Campbell": {
+   "id": "Campbell",
+   "name": "Норман Р. Кэмпбелл",
+   "spaceObjectId": "citadel",
+   "faction": "PlanetBridge"
+  },
+  "IbsaPrison": {
+   "id": "IbsaPrison",
+   "name": "Л-БСА",
+   "spaceObjectId": "venus",
+   "faction": "Tezctlan"
+  },
+  "Jinxing": {
+   "id": "Jinxing",
+   "name": "Цзиньсин-Гунчан II",
+   "spaceObjectId": "venus",
+   "faction": "Grasshopper"
+  },
+  "HISUnveiled": {
+   "id": "HISUnveiled",
+   "name": "ТМК «Разоблаченный»",
+   "spaceObjectId": "venus",
+   "faction": "AnCom"
+  },
+  "FrescoPlatforms": {
+   "id": "FrescoPlatforms",
+   "name": "ДР Платформы Фреско",
+   "spaceObjectId": "venus",
+   "faction": "Tezctlan"
+  },
+  "LouhiCity": {
+   "id": "LouhiCity",
+   "name": "Лоухи-Сити",
+   "spaceObjectId": "venus",
+   "faction": "FrancheComte"
+  },
+  "Fortuna": {
+   "id": "Fortuna",
+   "name": "Университет Фортуна",
+   "spaceObjectId": "venus",
+   "faction": "Dilthey"
+  },
+  "Oddibjord": {
+   "id": "Oddibjord",
+   "name": "Оддибьорд-3",
+   "spaceObjectId": "venus",
+   "faction": "Tezctlan"
+  },
+  "Clotho": {
+   "id": "Clotho",
+   "name": "Клото-узловая",
+   "spaceObjectId": "venus",
+   "faction": "RealWare"
+  },
+  "FeatheredTemple": {
+   "id": "FeatheredTemple",
+   "name": "Пернатый Храм",
+   "spaceObjectId": "venus",
+   "faction": "Tezctlan"
+  },
+  "SubRosa": {
+   "id": "SubRosa",
+   "name": "Sub rosa",
+   "spaceObjectId": "mechta",
+   "faction": "AnCom"
+  },
+  "February": {
+   "id": "February",
+   "name": "Февраль",
+   "spaceObjectId": "mechta",
+   "faction": "FrancheComte"
+  },
+  "Kyoko": {
+   "id": "Kyoko",
+   "name": "Дом Кеко",
+   "spaceObjectId": "mechta",
+   "faction": "Grasshopper"
+  },
+  "MechtaShooting": {
+   "id": "MechtaShooting",
+   "name": "Тир Мечты",
+   "spaceObjectId": "mechta",
+   "faction": "DaydreamChems"
+  },
+  "Kitchen": {
+   "id": "Kitchen",
+   "name": "Кухня",
+   "spaceObjectId": "mechta",
+   "faction": "CoreWard"
+  },
+  "EStation": {
+   "id": "EStation",
+   "name": "E",
+   "spaceObjectId": "mechta",
+   "faction": "DaydreamChems"
+  },
+  "Purgatory": {
+   "id": "Purgatory",
+   "name": "Чистилище",
+   "spaceObjectId": "mechta",
+   "faction": "CResistance"
+  },
+  "Edge": {
+   "id": "Edge",
+   "name": "Грань-6",
+   "spaceObjectId": "havoc",
+   "faction": "FrancheComte"
+  },
+  "Blade": {
+   "id": "Blade",
+   "name": "Клинок Наизготовку",
+   "spaceObjectId": "havoc",
+   "faction": "Sunlight"
+  },
+  "SampoQuern": {
+   "id": "SampoQuern",
+   "name": "Мельница Сампо",
+   "spaceObjectId": "havoc",
+   "faction": "CoreWard"
+  },
+  "VenusTwo": {
+   "id": "VenusTwo",
+   "name": "Венера-2",
+   "spaceObjectId": "havoc",
+   "faction": "Dilthey"
+  },
+  "PromisedLand": {
+   "id": "PromisedLand",
+   "name": "Земля обетованная",
+   "spaceObjectId": "havoc",
+   "faction": "ChurchRevelation"
+  },
+  "HeritageStation": {
+   "id": "HeritageStation",
+   "name": "Херитадж",
+   "spaceObjectId": "earth",
+   "faction": "ChurchRevelation"
+  },
+  "ArcadisTerminal": {
+   "id": "ArcadisTerminal",
+   "name": "Аркадис",
+   "spaceObjectId": "earth",
+   "faction": "RealWare"
+  },
+  "PineGapTraining": {
+   "id": "PineGapTraining",
+   "name": "Пейн-Гэп",
+   "spaceObjectId": "earth",
+   "faction": "ChurchRevelation"
+  },
+  "Skylab": {
+   "id": "Skylab",
+   "name": "Скайлаб",
+   "spaceObjectId": "earth",
+   "faction": "SBN"
+  },
+  "ISSStation": {
+   "id": "ISSStation",
+   "name": "ПИС",
+   "spaceObjectId": "earth",
+   "faction": "SBN"
+  },
+  "Akatsuki": {
+   "id": "Akatsuki",
+   "name": "Акацуки Кодзе",
+   "spaceObjectId": "earth",
+   "faction": "AnCom"
+  },
+  "Paragon": {
+   "id": "Paragon",
+   "name": "ФЦ Парагон",
+   "spaceObjectId": "earth",
+   "faction": "DaydreamChems"
+  },
+  "Phenomenon": {
+   "id": "Phenomenon",
+   "name": "Феномен",
+   "spaceObjectId": "earth",
+   "faction": "FrancheComte"
+  },
+  "OrkneyIslands": {
+   "id": "OrkneyIslands",
+   "name": "Оркни",
+   "spaceObjectId": "earth",
+   "faction": "FrancheComte"
+  },
+  "SterlingsFarm": {
+   "id": "SterlingsFarm",
+   "name": "Ферма Стерлинга",
+   "spaceObjectId": "fuller",
+   "faction": "ChurchRevelation"
+  },
+  "HartsWarehouse": {
+   "id": "HartsWarehouse",
+   "name": "Склады Харта",
+   "spaceObjectId": "fuller",
+   "faction": "Grasshopper"
+  },
+  "FullersCore": {
+   "id": "FullersCore",
+   "name": "Ядро Фуллера",
+   "spaceObjectId": "fuller",
+   "faction": "FrancheComte"
+  },
+  "PlatosAcademy": {
+   "id": "PlatosAcademy",
+   "name": "Академия Платона",
+   "spaceObjectId": "fuller",
+   "faction": "ChurchRevelation"
+  },
+  "AvicennasClinic": {
+   "id": "AvicennasClinic",
+   "name": "Клиника Авиценны",
+   "spaceObjectId": "fuller",
+   "faction": "DaydreamChems"
+  },
+  "VanDeGraaff": {
+   "id": "VanDeGraaff",
+   "name": "Ван де Грааф",
+   "spaceObjectId": "tsiolkovsky",
+   "faction": "SBN"
+  },
+  "ChickMoo": {
+   "id": "ChickMoo",
+   "name": "Чик-Чик/Му-Му",
+   "spaceObjectId": "tsiolkovsky",
+   "faction": "FrancheComte"
+  },
+  "LandscronaCenter": {
+   "id": "LandscronaCenter",
+   "name": "Центр Ландскрона",
+   "spaceObjectId": "tsiolkovsky",
+   "faction": "Dilthey"
+  },
+  "CenterDefense": {
+   "id": "CenterDefense",
+   "name": "ЦОТ",
+   "spaceObjectId": "tsiolkovsky",
+   "faction": "RealWare"
+  },
+  "ZeroGravity": {
+   "id": "ZeroGravity",
+   "name": "0Г ТЦ",
+   "spaceObjectId": "tsiolkovsky",
+   "faction": "Dilthey"
+  },
+  "MTZ": {
+   "id": "MTZ",
+   "name": "ДМС",
+   "spaceObjectId": "moon",
+   "faction": "Sunlight"
+  },
+  "QiHelium": {
+   "id": "QiHelium",
+   "name": "Завод Г-3 Ци",
+   "spaceObjectId": "moon",
+   "faction": "FrancheComte"
+  },
+  "AnCapDogma": {
+   "id": "AnCapDogma",
+   "name": "Догма АнКапа",
+   "spaceObjectId": "moon",
+   "faction": "Dilthey"
+  },
+  "MoonTradeCenter": {
+   "id": "MoonTradeCenter",
+   "name": "Лунный ТЦ",
+   "spaceObjectId": "moon",
+   "faction": "DaydreamChems"
+  },
+  "Candle": {
+   "id": "Candle",
+   "name": "Центр Кэндл",
+   "spaceObjectId": "moon",
+   "faction": "AnCom"
+  },
+  "AllianceArcology": {
+   "id": "AllianceArcology",
+   "name": "Аркология Альянс",
+   "spaceObjectId": "moon",
+   "faction": "PlanetBridge"
+  },
+  "Tycho": {
+   "id": "Tycho",
+   "name": "Терминал Тихо",
+   "spaceObjectId": "moon",
+   "faction": "ChurchRevelation"
+  },
+  "ShuCenter": {
+   "id": "ShuCenter",
+   "name": "Шу-Центр",
+   "spaceObjectId": "mars",
+   "faction": "FrancheComte"
+  },
+  "RedTiangong": {
+   "id": "RedTiangong",
+   "name": "Красный Тяньгун",
+   "spaceObjectId": "mars",
+   "faction": "Tianming"
+  },
+  "RebusSkyCity": {
+   "id": "RebusSkyCity",
+   "name": "НГ Ребус",
+   "spaceObjectId": "mars",
+   "faction": "AnCom"
+  },
+  "HISAres": {
+   "id": "HISAres",
+   "name": "ТМК «Арес»",
+   "spaceObjectId": "mars",
+   "faction": "RealWare"
+  },
+  "Argyre": {
+   "id": "Argyre",
+   "name": "Аргир-14",
+   "spaceObjectId": "mars",
+   "faction": "DaydreamChems"
+  },
+  "SinkholeOasis": {
+   "id": "SinkholeOasis",
+   "name": "Карстовый Оазис",
+   "spaceObjectId": "mars",
+   "faction": "RealWare"
+  },
+  "Gloria": {
+   "id": "Gloria",
+   "name": "Терминал Глория",
+   "spaceObjectId": "mars",
+   "faction": "ChurchRevelation"
+  },
+  "IntercityTradeCenter": {
+   "id": "IntercityTradeCenter",
+   "name": "Интерсити ТЦ",
+   "spaceObjectId": "mars",
+   "faction": "SBN"
+  },
+  "Charon": {
+   "id": "Charon",
+   "name": "Порт Харон",
+   "spaceObjectId": "phobos",
+   "faction": "PlanetBridge"
+  },
+  "Canaan": {
+   "id": "Canaan",
+   "name": "Терминал Ханаан",
+   "spaceObjectId": "phobos",
+   "faction": "Grasshopper"
+  },
+  "Hypnos": {
+   "id": "Hypnos",
+   "name": "Гипнос-2",
+   "spaceObjectId": "phobos",
+   "faction": "RealWare"
+  },
+  "Orphan": {
+   "id": "Orphan",
+   "name": "Орфан",
+   "spaceObjectId": "phobos",
+   "faction": "CResistance"
+  },
+  "RogueCity": {
+   "id": "RogueCity",
+   "name": "Руж-Сити",
+   "spaceObjectId": "phobos",
+   "faction": "CResistance"
+  },
+  "SwiftAndVoltaire": {
+   "id": "SwiftAndVoltaire",
+   "name": "Свифт и Вольтер",
+   "spaceObjectId": "deimos",
+   "faction": "Dilthey"
+  },
+  "AresPost": {
+   "id": "AresPost",
+   "name": "Пост Арес Высотный",
+   "spaceObjectId": "deimos",
+   "faction": "SBN"
+  },
+  "Warden": {
+   "id": "Warden",
+   "name": "Варден-Д",
+   "spaceObjectId": "deimos",
+   "faction": "CResistance"
+  },
+  "DarkFlora": {
+   "id": "DarkFlora",
+   "name": "Дарк Флора",
+   "spaceObjectId": "deimos",
+   "faction": "Sunlight"
+  },
+  "Sundog": {
+   "id": "Sundog",
+   "name": "Бродяжья Зона",
+   "spaceObjectId": "deimos",
+   "faction": "DaydreamChems"
+  },
+  "Epitome": {
+   "id": "Epitome",
+   "name": "Колония Эпитома",
+   "spaceObjectId": "ceres",
+   "faction": "PlanetBridge"
+  },
+  "Angel": {
+   "id": "Angel",
+   "name": "Терминал Ангел",
+   "spaceObjectId": "ceres",
+   "faction": "Grasshopper"
+  },
+  "Eos": {
+   "id": "Eos",
+   "name": "Эос",
+   "spaceObjectId": "ceres",
+   "faction": "CoreWard"
+  },
+  "Lumina": {
+   "id": "Lumina",
+   "name": "Просвет",
+   "spaceObjectId": "ceres",
+   "faction": "RealWare"
+  },
+  "Oracle": {
+   "id": "Oracle",
+   "name": "Бастион Оракул",
+   "spaceObjectId": "ceres",
+   "faction": "Tianming"
+  },
+  "Flinthold": {
+   "id": "Flinthold",
+   "name": "Кремневый вал",
+   "spaceObjectId": "ceres",
+   "faction": "CoreWard"
+  },
+  "Nox": {
+   "id": "Nox",
+   "name": "Нокс",
+   "spaceObjectId": "ceres",
+   "faction": "Dilthey"
+  },
+  "BlueMoon": {
+   "id": "BlueMoon",
+   "name": "Голубая Луна",
+   "spaceObjectId": "ceres",
+   "faction": "UnchainedBelt"
+  },
+  "Pedigree": {
+   "id": "Pedigree",
+   "name": "Родословная",
+   "spaceObjectId": "ceres",
+   "faction": "UnchainedBelt"
+  },
+  "Frostreach": {
+   "id": "Frostreach",
+   "name": "Морозный Предел",
+   "spaceObjectId": "wernher",
+   "faction": "DaydreamChems"
+  },
+  "Jaffa": {
+   "id": "Jaffa",
+   "name": "Яффа",
+   "spaceObjectId": "wernher",
+   "faction": "SBN"
+  },
+  "Cryptoria": {
+   "id": "Cryptoria",
+   "name": "Шифрария",
+   "spaceObjectId": "wernher",
+   "faction": "PlanetBridge"
+  },
+  "Carmel": {
+   "id": "Carmel",
+   "name": "Кармель",
+   "spaceObjectId": "vesta",
+   "faction": "Sunlight"
+  },
+  "Lavinium": {
+   "id": "Lavinium",
+   "name": "Лавиния",
+   "spaceObjectId": "vesta",
+   "faction": "CoreWard"
+  },
+  "AriciaTholus": {
+   "id": "AriciaTholus",
+   "name": "Купол Ариция",
+   "spaceObjectId": "vesta",
+   "faction": "Grasshopper"
+  },
+  "HISWoodpecker": {
+   "id": "HISWoodpecker",
+   "name": "ТМК «Дятел»",
+   "spaceObjectId": "vesta",
+   "faction": "CoreWard"
+  },
+  "Bethlehem": {
+   "id": "Bethlehem",
+   "name": "Вифлеем",
+   "spaceObjectId": "pallas",
+   "faction": "UnchainedBelt"
+  },
+  "TSWatcher": {
+   "id": "TSWatcher",
+   "name": "ТС «Дозорный»",
+   "spaceObjectId": "pallas",
+   "faction": "UnchainedBelt"
+  },
+  "HumankindsHope": {
+   "id": "HumankindsHope",
+   "name": "Цитадель «Надежда Человечества»",
+   "spaceObjectId": "pallas",
+   "faction": "SBN"
+  },
+  "Origin": {
+   "id": "Origin",
+   "name": "Ориджин",
+   "spaceObjectId": "pallas",
+   "faction": "CoreWard"
+  },
+  "Vasa": {
+   "id": "Vasa",
+   "name": "Васа",
+   "spaceObjectId": "geist",
+   "faction": "Dilthey"
+  },
+  "Malmo": {
+   "id": "Malmo",
+   "name": "Мальме",
+   "spaceObjectId": "geist",
+   "faction": "RealWare"
+  },
+  "Schwerin": {
+   "id": "Schwerin",
+   "name": "Шверин",
+   "spaceObjectId": "geist",
+   "faction": "UnchainedBelt"
+  },
+  "Hargeysa": {
+   "id": "Hargeysa",
+   "name": "Харгейса",
+   "spaceObjectId": "interamnia",
+   "faction": "UnchainedBelt"
+  },
+  "Jamame": {
+   "id": "Jamame",
+   "name": "Джамаме",
+   "spaceObjectId": "interamnia",
+   "faction": "CResistance"
+  },
+  "Forward": {
+   "id": "Forward",
+   "name": "Форвард",
+   "spaceObjectId": "hungary",
+   "faction": "Tianming"
+  },
+  "Dubrovskiy": {
+   "id": "Dubrovskiy",
+   "name": "Дубровский-1",
+   "spaceObjectId": "hungary",
+   "faction": "UnchainedBelt"
+  },
+  "Budapest": {
+   "id": "Budapest",
+   "name": "Будапешт",
+   "spaceObjectId": "hungary",
+   "faction": "PlanetBridge"
+  },
+  "Rommel": {
+   "id": "Rommel",
+   "name": "Роммель",
+   "spaceObjectId": "annaherman",
+   "faction": "CoreWard"
+  },
+  "Patton": {
+   "id": "Patton",
+   "name": "Паттон",
+   "spaceObjectId": "annaherman",
+   "faction": "SBN"
+  },
+  "Zhukov": {
+   "id": "Zhukov",
+   "name": "Жуков",
+   "spaceObjectId": "annaherman",
+   "faction": "UnchainedBelt"
+  },
+  "Montgomery": {
+   "id": "Montgomery",
+   "name": "Монтгомери",
+   "spaceObjectId": "annaherman",
+   "faction": "FrancheComte"
+  },
+  "Connelly": {
+   "id": "Connelly",
+   "name": "Коннели-4",
+   "spaceObjectId": "hygeia",
+   "faction": "UnchainedBelt"
+  },
+  "Sewell": {
+   "id": "Sewell",
+   "name": "Сьюэлл-2",
+   "spaceObjectId": "hygeia",
+   "faction": "ChurchRevelation"
+  },
+  "Proyas": {
+   "id": "Proyas",
+   "name": "Пройас",
+   "spaceObjectId": "hygeia",
+   "faction": "CResistance"
+  },
+  "RedThrone": {
+   "id": "RedThrone",
+   "name": "Красный Трон",
+   "spaceObjectId": "hekate",
+   "faction": "CResistance"
+  },
+  "Galileo": {
+   "id": "Galileo",
+   "name": "Галилей",
+   "spaceObjectId": "jupiter",
+   "faction": "AnCom"
+  },
+  "CathodeRampart": {
+   "id": "CathodeRampart",
+   "name": "Бастион Катод",
+   "spaceObjectId": "jupiter",
+   "faction": "SBN"
+  },
+  "Zephyr": {
+   "id": "Zephyr",
+   "name": "Зефир",
+   "spaceObjectId": "jupiter",
+   "faction": "RealWare"
+  },
+  "Zeus": {
+   "id": "Zeus",
+   "name": "Зевс М-III",
+   "spaceObjectId": "jupiter",
+   "faction": "Sunlight"
+  },
+  "TeslaRing": {
+   "id": "TeslaRing",
+   "name": "Великое Кольцо Теслы",
+   "spaceObjectId": "jupiter",
+   "faction": "CResistance"
+  },
+  "Ark": {
+   "id": "Ark",
+   "name": "Ковчег",
+   "spaceObjectId": "jupiter",
+   "faction": "Tianming"
+  },
+  "Stratagem": {
+   "id": "Stratagem",
+   "name": "Цзи-Стратагема",
+   "spaceObjectId": "jupiter",
+   "faction": "Sunlight"
+  },
+  "PintadoPetrel": {
+   "id": "PintadoPetrel",
+   "name": "Капский голубок",
+   "spaceObjectId": "jupiter",
+   "faction": "DaydreamChems"
+  },
+  "Juphub": {
+   "id": "Juphub",
+   "name": "Юпхаб",
+   "spaceObjectId": "jupiter",
+   "faction": "ChurchRevelation"
+  },
+  "HadesTorchlight": {
+   "id": "HadesTorchlight",
+   "name": "Факел Аида",
+   "spaceObjectId": "io",
+   "faction": "Sunlight"
+  },
+  "AliJinnah": {
+   "id": "AliJinnah",
+   "name": "Али Джинна",
+   "spaceObjectId": "io",
+   "faction": "Dilthey"
+  },
+  "DantePeak": {
+   "id": "DantePeak",
+   "name": "Пик Данте",
+   "spaceObjectId": "io",
+   "faction": "Sunlight"
+  },
+  "Escher": {
+   "id": "Escher",
+   "name": "М. К. Эшер",
+   "spaceObjectId": "ganymede",
+   "faction": "Grasshopper"
+  },
+  "Mobius": {
+   "id": "Mobius",
+   "name": "А. Ф. Мебиус",
+   "spaceObjectId": "ganymede",
+   "faction": "CoreWard"
+  },
+  "Korotsev": {
+   "id": "Korotsev",
+   "name": "Коротцев 2",
+   "spaceObjectId": "ganymede",
+   "faction": "Tianming"
+  },
+  "Freyja": {
+   "id": "Freyja",
+   "name": "Фрейя",
+   "spaceObjectId": "europa",
+   "faction": "Sunlight"
+  },
+  "MacReady": {
+   "id": "MacReady",
+   "name": "Р. Дж. МакРиди",
+   "spaceObjectId": "europa",
+   "faction": "AnCom"
+  },
+  "BiosphereEU": {
+   "id": "BiosphereEU",
+   "name": "Биосфера ЕС",
+   "spaceObjectId": "europa",
+   "faction": "Tianming"
+  },
+  "Chancellor": {
+   "id": "Chancellor",
+   "name": "Канцлер",
+   "spaceObjectId": "europa",
+   "faction": "DaydreamChems"
+  },
+  "Abyss2199": {
+   "id": "Abyss2199",
+   "name": "Бездна-2199",
+   "spaceObjectId": "europa",
+   "faction": "Tianming"
+  },
+  "MirrorMain": {
+   "id": "MirrorMain",
+   "name": "Зеркало-Главное",
+   "spaceObjectId": "callisto",
+   "faction": "Tianming"
+  },
+  "GravityRaimbow": {
+   "id": "GravityRaimbow",
+   "name": "Радуга Тяготения",
+   "spaceObjectId": "callisto",
+   "faction": "Dilthey"
+  },
+  "NewKent": {
+   "id": "NewKent",
+   "name": "Новый Кент",
+   "spaceObjectId": "callisto",
+   "faction": "Tianming"
+  },
+  "Jumpstart": {
+   "id": "Jumpstart",
+   "name": "Джампстарт",
+   "spaceObjectId": "callisto",
+   "faction": "Grasshopper"
+  },
+  "Lightbay": {
+   "id": "Lightbay",
+   "name": "Светловодная",
+   "spaceObjectId": "callisto",
+   "faction": "CResistance"
+  },
+  "Deepsky": {
+   "id": "Deepsky",
+   "name": "Каменное небо",
+   "spaceObjectId": "callisto",
+   "faction": "ChurchRevelation"
+  },
+  "Aynrand": {
+   "id": "Aynrand",
+   "name": "Айнрэнд",
+   "spaceObjectId": "callisto",
+   "faction": "UnchainedBelt"
+  },
+  "Frantseva7": {
+   "id": "Frantseva7",
+   "name": "Францева-7",
+   "spaceObjectId": "saturn",
+   "faction": "AnCom"
+  },
+  "LaCE": {
+   "id": "LaCE",
+   "name": "ЭЛиК",
+   "spaceObjectId": "saturn",
+   "faction": "Tianming"
+  },
+  "ShepherdsArc": {
+   "id": "ShepherdsArc",
+   "name": "Пастушья Дуга",
+   "spaceObjectId": "saturn",
+   "faction": "Grasshopper"
+  },
+  "Pertwee": {
+   "id": "Pertwee",
+   "name": "Пертви",
+   "spaceObjectId": "saturn",
+   "faction": "SBN"
+  },
+  "Polaris": {
+   "id": "Polaris",
+   "name": "Полярис",
+   "spaceObjectId": "saturn",
+   "faction": "Sunlight"
+  },
+  "TwinMiller": {
+   "id": "TwinMiller",
+   "name": "Двойной Миллер",
+   "spaceObjectId": "saturn",
+   "faction": "Dilthey"
+  },
+  "Chimera9": {
+   "id": "Chimera9",
+   "name": "Химера-9",
+   "spaceObjectId": "titan",
+   "faction": "FrancheComte"
+  },
+  "CassinisShadow": {
+   "id": "CassinisShadow",
+   "name": "Тень Кассини",
+   "spaceObjectId": "titan",
+   "faction": "Tianming"
+  },
+  "Carcosa": {
+   "id": "Carcosa",
+   "name": "Каркоза",
+   "spaceObjectId": "titan",
+   "faction": "ChurchRevelation"
+  },
+  "KrakensHub": {
+   "id": "KrakensHub",
+   "name": "Хаб Кракена",
+   "spaceObjectId": "titan",
+   "faction": "AnCom"
+  },
+  "BillGregor": {
+   "id": "BillGregor",
+   "name": "Билл Грегор",
+   "spaceObjectId": "titan",
+   "faction": "DaydreamChems"
+  },
+  "Mirage12": {
+   "id": "Mirage12",
+   "name": "Мираж-12",
+   "spaceObjectId": "enceladus",
+   "faction": "Grasshopper"
+  },
+  "WinterBay": {
+   "id": "WinterBay",
+   "name": "Зимняя Бухта",
+   "spaceObjectId": "enceladus",
+   "faction": "PlanetBridge"
+  },
+  "ValleyOfGeysers": {
+   "id": "ValleyOfGeysers",
+   "name": "Долина Гейзеров",
+   "spaceObjectId": "enceladus",
+   "faction": "AnCom"
+  },
+  "Phoebe1": {
+   "id": "Phoebe1",
+   "name": "Феба-1",
+   "spaceObjectId": "phoebe",
+   "faction": "Tianming"
+  },
+  "Echo4": {
+   "id": "Echo4",
+   "name": "Эхо-4",
+   "spaceObjectId": "phoebe",
+   "faction": "UnchainedBelt"
+  },
+  "Cronus": {
+   "id": "Cronus",
+   "name": "Крон",
+   "spaceObjectId": "hyperion",
+   "faction": "RealWare"
+  },
+  "Labyrinth13": {
+   "id": "Labyrinth13",
+   "name": "Лабиринт-13",
+   "spaceObjectId": "hyperion",
+   "faction": "SBN"
+  },
+  "PointShadow": {
+   "id": "PointShadow",
+   "name": "Пункт Тень",
+   "spaceObjectId": "hyperion",
+   "faction": "CResistance"
+  },
+  "PilgrimsRift": {
+   "id": "PilgrimsRift",
+   "name": "Ущелье Паломников",
+   "spaceObjectId": "hyperion",
+   "faction": "Sunlight"
+  },
+  "bramfaturian_Shartamakhum": {
+   "id": "bramfaturian_Shartamakhum",
+   "name": "bramfaturian_Shartamakhum",
+   "spaceObjectId": null,
+   "faction": "ShartamakhumFeral"
+  },
+  "bramfaturian_Gannix": {
+   "id": "bramfaturian_Gannix",
+   "name": "bramfaturian_Gannix",
+   "spaceObjectId": null,
+   "faction": "GannixFeral"
+  },
+  "bramfaturian_Gannix_Sleeping": {
+   "id": "bramfaturian_Gannix_Sleeping",
+   "name": "bramfaturian_Gannix_Sleeping",
+   "spaceObjectId": null,
+   "faction": "GannixFeral"
+  },
+  "bramfaturian_Duggur": {
+   "id": "bramfaturian_Duggur",
+   "name": "bramfaturian_Duggur",
+   "spaceObjectId": null,
+   "faction": "DuggurFeral"
+  },
+  "bramfaturian_Duggur_Sleeping": {
+   "id": "bramfaturian_Duggur_Sleeping",
+   "name": "bramfaturian_Duggur_Sleeping",
+   "spaceObjectId": null,
+   "faction": "DuggurFeral"
+  },
+  "bramfaturian_Ur_Awakened": {
+   "id": "bramfaturian_Ur_Awakened",
+   "name": "bramfaturian_Ur_Awakened",
+   "spaceObjectId": null,
+   "faction": "UrFeral"
+  },
+  "bramfaturian_Ur_Sleeping": {
+   "id": "bramfaturian_Ur_Sleeping",
+   "name": "bramfaturian_Ur_Sleeping",
+   "spaceObjectId": null,
+   "faction": "UrFeral"
+  },
+  "bramfaturian_Cattaram": {
+   "id": "bramfaturian_Cattaram",
+   "name": "bramfaturian_Cattaram",
+   "spaceObjectId": null,
+   "faction": "CattaramFeral"
+  },
+  "bramfaturian_Ron": {
+   "id": "bramfaturian_Ron",
+   "name": "bramfaturian_Ron",
+   "spaceObjectId": null,
+   "faction": "RonFeral"
+  },
+  "bramfaturian_Scrivnus": {
+   "id": "bramfaturian_Scrivnus",
+   "name": "bramfaturian_Scrivnus",
+   "spaceObjectId": null,
+   "faction": "ScrivnusFeral"
+  },
+  "bramfaturian_Flauros": {
+   "id": "bramfaturian_Flauros",
+   "name": "bramfaturian_Flauros",
+   "spaceObjectId": null,
+   "faction": "FlaurosFeral"
+  },
+  "bramfaturian_Olirna_Awakened": {
+   "id": "bramfaturian_Olirna_Awakened",
+   "name": "bramfaturian_Olirna_Awakened",
+   "spaceObjectId": null,
+   "faction": "OlirnaFeral"
+  },
+  "bramfaturian_Olirna_Sleeping": {
+   "id": "bramfaturian_Olirna_Sleeping",
+   "name": "bramfaturian_Olirna_Sleeping",
+   "spaceObjectId": null,
+   "faction": "OlirnaFeral"
+  }
+ }
+}

@@ -289,6 +289,48 @@ def main():
     weapons_path = os.path.join(os.path.dirname(out_path), "weapons.json")
     extract_weapons(data, R, weapons_path)
 
+    # ---- world (planet › satellite › station hierarchy, Phase 4 data) ------
+    world_path = os.path.join(os.path.dirname(out_path), "world.json")
+    extract_world(data, R, world_path)
+
+
+def extract_world(data, R, out_path):
+    """Emit world.json: space-object hierarchy + stations mapped to their orbit."""
+    so_rows = section(data, "spaceobjects") or []
+    st_rows = section(data, "stations") or []
+
+    space_objects = {}
+    for r in so_rows[1:]:
+        if not r or not r[0] or r[0].startswith("#"):
+            continue
+        sid = r[0].strip()
+        parent = (r[3].strip() if len(r) > 3 else "") or None
+        space_objects[sid] = dict(
+            id=sid,
+            name=R(f"spaceobject.{sid}.name") or sid,
+            type=(r[2].strip() if len(r) > 2 else ""),
+            parentId=parent,
+            available=(r[1].strip() == "TRUE") if len(r) > 1 else True,
+        )
+
+    stations = {}
+    for r in st_rows[1:]:
+        if not r or not r[0] or r[0].startswith("#"):
+            continue
+        sid = r[0].strip()
+        space_id = (r[2].strip() if len(r) > 2 else "") or None
+        stations[sid] = dict(
+            id=sid,
+            name=R(f"station.{sid}.name") or sid,
+            spaceObjectId=space_id,
+            faction=(r[3].strip() if len(r) > 3 else "") or None,
+        )
+
+    payload = dict(spaceObjects=space_objects, stations=stations)
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=1)
+    print(f"Wrote {out_path}: {len(space_objects)} space objects, {len(stations)} stations")
+
 
 def parse_damage(s):
     """'68 85 crit 2.1' -> (68, 85). Blank/malformed -> (0, 0)."""
