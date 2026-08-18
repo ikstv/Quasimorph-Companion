@@ -130,10 +130,20 @@ body{
 .tile-fac{color:var(--fac,#8b8b82);font-weight:700;font-family:"Oswald","Arial Narrow",sans-serif;font-size:12px;letter-spacing:.04em}
 .tile-station{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
-/* ---------- SVG emblems ---------- */
+/* ---------- SVG emblems + real game icons ---------- */
 .ic{width:100%;height:100%;display:block}
+.ic-img{object-fit:contain}
+.ic-type{image-rendering:pixelated;image-rendering:crisp-edges;
+  filter:drop-shadow(0 0 3px var(--fac,#ffbf78))}
+.ic-faction{filter:drop-shadow(0 0 4px rgba(255,254,193,.35))}
+.ic-portrait{image-rendering:auto}
 .emblem{flex:0 0 auto;width:22px;height:22px;display:flex;align-items:center;justify-content:center;
   opacity:.95;filter:drop-shadow(0 0 4px currentColor)}
+/* When emblem contains a real bitmap icon, drop the currentColor drop-shadow on the wrapper
+   (the .ic-img/.ic-type filter handles glow) so it doesn't double up. */
+.emblem:has(.ic-img){filter:none;opacity:1}
+.card-emblem:has(.ic-img){filter:none}
+.node-emblem:has(.ic-img){filter:none}
 .tt-left{display:flex;gap:9px;align-items:flex-start;min-width:0;flex:1}
 .tt-namewrap{min-width:0;flex:1}
 .card-emblem{flex:0 0 auto;width:30px;height:30px;display:flex;align-items:center;justify-content:center;
