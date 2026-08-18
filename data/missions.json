@@ -14,10 +14,8 @@
   "Control": "Надзор",
   "Counterattack": "Контратака",
   "Security": "Защита",
-  "CEOElimination": "Устранение CEO",
   "BramfaturaInvasion": "Погружение",
-  "Assault": "Assault",
-  "Hunt": "Hunt"
+  "CEOElimination": "Устранение CEO"
  },
  "counts": {
   "story": 42,
@@ -9124,5 +9122,485 @@
    ],
    "stages": []
   }
- ]
+ ],
+ "storyChains": {
+  "rwa": [
+   {
+    "tier": 1,
+    "side": false,
+    "missions": [
+     {
+      "id": "rwa_1_covert",
+      "name": "Руководство по Тайным Операциям",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 2,
+    "side": false,
+    "missions": [
+     {
+      "id": "rwa_2_treasure",
+      "name": "Остров Сокровищ",
+      "branch": "",
+      "unlock": []
+     },
+     {
+      "id": "rwa_2_malefic",
+      "name": "Молот Ведьм",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 3,
+    "side": false,
+    "missions": [
+     {
+      "id": "rwa_3_light",
+      "name": "Да будет свет!",
+      "branch": "",
+      "unlock": [
+       "завершити «Остров Сокровищ»",
+       "завершити «Молот Ведьм»"
+      ]
+     }
+    ]
+   },
+   {
+    "tier": 4,
+    "side": false,
+    "missions": [
+     {
+      "id": "rwa_4a_whirl",
+      "name": "Пожнут Бурю",
+      "branch": "a",
+      "unlock": []
+     },
+     {
+      "id": "rwa_4b_odoacer",
+      "name": "Одоакр",
+      "branch": "b",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 5,
+    "side": false,
+    "missions": [
+     {
+      "id": "rwa_5a_glass",
+      "name": "Игра в бисер",
+      "branch": "a",
+      "unlock": []
+     },
+     {
+      "id": "rwa_5b_carnage",
+      "name": "Бог Резни",
+      "branch": "b",
+      "unlock": []
+     }
+    ]
+   }
+  ],
+  "anc": [
+   {
+    "tier": 1,
+    "side": false,
+    "missions": [
+     {
+      "id": "anc_1_comm_anarchy",
+      "name": "Сообщающиеся анархии",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 2,
+    "side": false,
+    "missions": [
+     {
+      "id": "anc_2_mib",
+      "name": "Люди в Черном",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 3,
+    "side": false,
+    "missions": [
+     {
+      "id": "anc_3_reload",
+      "name": "Перезагрузка",
+      "branch": "",
+      "unlock": [
+       "сила фракції «СБН» падає"
+      ]
+     }
+    ]
+   },
+   {
+    "tier": 4,
+    "side": false,
+    "missions": [
+     {
+      "id": "anc_4_deadman",
+      "name": "Рука мертвеца",
+      "branch": "",
+      "unlock": []
+     },
+     {
+      "id": "anc_4_screamers",
+      "name": "Крикуны",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 5,
+    "side": false,
+    "missions": [
+     {
+      "id": "anc_5_sonnen",
+      "name": "Солнцечеловек",
+      "branch": "",
+      "unlock": [
+       "завершити «Крикуны»",
+       "завершити «Рука мертвеца»"
+      ]
+     }
+    ]
+   }
+  ],
+  "tez": [
+   {
+    "tier": 1,
+    "side": false,
+    "missions": [
+     {
+      "id": "tez_1_flower",
+      "name": "Цветочная Война",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 2,
+    "side": false,
+    "missions": [
+     {
+      "id": "tez_2_interplan",
+      "name": "Межпланетная любовь",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 3,
+    "side": false,
+    "missions": [
+     {
+      "id": "tez_3_mine",
+      "name": "Что мое — мое",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 4,
+    "side": false,
+    "missions": [
+     {
+      "id": "tez_4_emerald",
+      "name": "Изумрудный Храм",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 5,
+    "side": false,
+    "missions": [
+     {
+      "id": "tez_5_stones",
+      "name": "Стоячие Камни",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 6,
+    "side": false,
+    "missions": [
+     {
+      "id": "tez_6_erad",
+      "name": "Эрадикация",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 1,
+    "side": true,
+    "missions": [
+     {
+      "id": "tez_side_1_poison",
+      "name": "Испытание Ядом",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   }
+  ],
+  "hiv": [
+   {
+    "tier": 1,
+    "side": false,
+    "missions": [
+     {
+      "id": "hiv_1_cold_war",
+      "name": "Очень холодная война",
+      "branch": "",
+      "unlock": [
+       "очікування 1 дн."
+      ]
+     }
+    ]
+   },
+   {
+    "tier": 2,
+    "side": false,
+    "missions": [
+     {
+      "id": "hiv_2_bifrost",
+      "name": "Биврест",
+      "branch": "",
+      "unlock": []
+     },
+     {
+      "id": "hiv_2_rokosz",
+      "name": "Рокош",
+      "branch": "",
+      "unlock": []
+     },
+     {
+      "id": "hiv_2_telegraph",
+      "name": "Телеграф",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 3,
+    "side": false,
+    "missions": [
+     {
+      "id": "hiv_3_awakened",
+      "name": "Улей Пробуждается",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   }
+  ],
+  "unc": [
+   {
+    "tier": 1,
+    "side": false,
+    "missions": [
+     {
+      "id": "unc_1_ghoul",
+      "name": "Корабль Вурдалаков",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   }
+  ],
+  "civ": [
+   {
+    "tier": 1,
+    "side": false,
+    "missions": [
+     {
+      "id": "civ_1_manifesto",
+      "name": "Манифест",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 2,
+    "side": false,
+    "missions": [
+     {
+      "id": "civ_2_spark_flame",
+      "name": "Из искры возгорится пламя",
+      "branch": "",
+      "unlock": [
+       "фракція набирає силу"
+      ]
+     }
+    ]
+   },
+   {
+    "tier": 3,
+    "side": false,
+    "missions": [
+     {
+      "id": "civ_3_iron_broom",
+      "name": "Железная метла",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 4,
+    "side": false,
+    "missions": [
+     {
+      "id": "civ_4a_icepick",
+      "name": "Ледоруб",
+      "branch": "a",
+      "unlock": []
+     },
+     {
+      "id": "civ_4b_beacon",
+      "name": "Маяк",
+      "branch": "b",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 5,
+    "side": false,
+    "missions": [
+     {
+      "id": "civ_5b_sacred",
+      "name": "Священный Огонь",
+      "branch": "b",
+      "unlock": []
+     }
+    ]
+   }
+  ],
+  "tutorial": [
+   {
+    "tier": 1,
+    "side": false,
+    "missions": [
+     {
+      "id": "tutorial_1_defense",
+      "name": "Оборона",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 2,
+    "side": false,
+    "missions": [
+     {
+      "id": "tutorial_2_revenge",
+      "name": "Вкус мести",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   }
+  ],
+  "xio": [
+   {
+    "tier": 1,
+    "side": false,
+    "missions": [
+     {
+      "id": "xio_1_sinkhole",
+      "name": "Карстовый Оазис",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 2,
+    "side": false,
+    "missions": [
+     {
+      "id": "xio_2_madness",
+      "name": "Безумие с пользой для дела",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 3,
+    "side": false,
+    "missions": [
+     {
+      "id": "xio_3_bram_ruins",
+      "name": "Руины древних брамфатур",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 4,
+    "side": false,
+    "missions": [
+     {
+      "id": "xio_4_tonatiuh",
+      "name": "Смех Тонатиу",
+      "branch": "",
+      "unlock": []
+     },
+     {
+      "id": "xio_4_topil",
+      "name": "Прыжок Топильцина",
+      "branch": "",
+      "unlock": []
+     },
+     {
+      "id": "xio_4_nanau",
+      "name": "Огонь Нанауацина",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   },
+   {
+    "tier": 5,
+    "side": false,
+    "missions": [
+     {
+      "id": "xio_5_shattered",
+      "name": "Разбитый Изумруд",
+      "branch": "",
+      "unlock": []
+     }
+    ]
+   }
+  ]
+ }
 }

@@ -13,14 +13,20 @@ rewards, factions and station.
 ## Features
 
 - **313 missions** total — 42 story missions + 271 procedural missions.
+- Three views: **Story** (grouped by campaign), **Procedural** (grouped by mission type), and
+  **Chain** — a per‑campaign story timeline showing mission order, mutually‑exclusive branches and
+  unlock conditions (reconstructed from the game's questline / strategy data).
 - Story missions grouped by campaign (AnCom, Civil Resistance, Hive, RealWare, Tezctlan, Xiomara Masks,
   Unchained Belt, Tutorial), colour‑coded per faction.
 - Non‑story missions grouped by type (Захват, Оборона, Устранение, Саботаж, Шпионаж, Ритуал, …).
 - **Hover** a mission to open a compact mission card; **click** to open the full detail panel with
   briefing, details, objectives, stages, rewards and epilogue.
+- Colour‑coded **SVG emblems** per faction/campaign and per mission type (tiles, cards, chain nodes).
 - In‑game highlight colour (`#FFFEC1`) is preserved in all texts.
 - Instant search across mission name, id, station and factions.
 - Frameless, game‑styled window (dark palette, scanline / vignette atmosphere).
+- **Offline fonts**: Oswald / PT Sans Narrow / JetBrains Mono are bundled locally as woff2 during
+  `npm install` (postinstall) — no CDN dependency at runtime.
 
 ## Tech
 
@@ -47,6 +53,12 @@ The installer is produced in `dist/`.
 
 `data/missions.json` is generated from the game's `resources.assets`. See `tools/extract_missions.py`
 (the extractor script) to regenerate it against a newer game version.
+
+## Icons
+
+The UI ships with hand‑drawn SVG emblems (`src/icons.js`). To use **authentic game sprites** instead,
+run `tools/extract_icons.py` on a machine with network access (`pip install UnityPy Pillow`) — it exports
+faction/item/portrait sprites from the game's Unity assets into `assets/game-icons/`.
 
 ## License
 

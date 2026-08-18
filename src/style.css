@@ -130,6 +130,20 @@ body{
 .tile-fac{color:var(--fac,#8b8b82);font-weight:700;font-family:"Oswald","Arial Narrow",sans-serif;font-size:12px;letter-spacing:.04em}
 .tile-station{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
+/* ---------- SVG emblems ---------- */
+.ic{width:100%;height:100%;display:block}
+.emblem{flex:0 0 auto;width:22px;height:22px;display:flex;align-items:center;justify-content:center;
+  opacity:.95;filter:drop-shadow(0 0 4px currentColor)}
+.tt-left{display:flex;gap:9px;align-items:flex-start;min-width:0;flex:1}
+.tt-namewrap{min-width:0;flex:1}
+.card-emblem{flex:0 0 auto;width:30px;height:30px;display:flex;align-items:center;justify-content:center;
+  filter:drop-shadow(0 0 6px currentColor)}
+.card-titlerow{display:flex;gap:11px;align-items:center;margin-top:3px}
+.ct-text{min-width:0}
+.nt-left{display:flex;gap:8px;align-items:center;min-width:0;flex:1}
+.node-emblem{flex:0 0 auto;width:20px;height:20px;display:flex;align-items:center;justify-content:center;
+  filter:drop-shadow(0 0 4px currentColor)}
+
 /* ---------- rich mission card (hover + drawer share styles) ---------- */
 .card-head{border-bottom:1px solid var(--line);padding-bottom:11px;margin-bottom:12px}
 .card-badges{display:flex;gap:7px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
@@ -206,6 +220,36 @@ body{
 .dlg-key{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--teal);margin-bottom:4px}
 
 .empty{padding:60px 20px;text-align:center;color:var(--ink-dim);font-family:"Oswald","Arial Narrow",sans-serif;letter-spacing:.1em}
+
+/* ---------- story chain (timeline) ---------- */
+.chain{max-width:1080px;margin:0 auto}
+.chain-camp{margin-bottom:30px}
+.tier{display:flex;gap:16px;align-items:stretch;position:relative}
+.spine{flex:0 0 42px;display:flex;flex-direction:column;align-items:center}
+.tier-badge{width:34px;height:34px;flex:0 0 34px;display:flex;align-items:center;justify-content:center;
+  font-family:"Oswald","Arial Narrow",sans-serif;font-weight:700;font-size:15px;color:var(--gold);
+  background:#0c0e11;border:1px solid var(--cc,#3a424e);position:relative;z-index:2}
+.tier-badge.side{font-size:11px;color:var(--teal)}
+.spine-line{flex:1;width:2px;background:var(--cc,#2b313b);opacity:.5;margin:2px 0}
+.tier:last-child .spine-line{display:none}
+.tier-nodes{flex:1;display:flex;gap:10px;flex-wrap:wrap;padding-bottom:16px;align-content:flex-start}
+.branch-hint{flex-basis:100%;font-family:"Oswald","Arial Narrow",sans-serif;font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--teal);margin-bottom:-2px;display:flex;align-items:center;gap:7px}
+.branch-hint::before{content:"⑂"}
+.node{flex:1 1 250px;min-width:230px;max-width:360px;position:relative;cursor:pointer;
+  background:linear-gradient(180deg,var(--panel),#111318);border:1px solid var(--line);
+  padding:11px 13px 11px 15px;transition:.13s}
+.node::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--cc,#4a5160)}
+.node:hover{border-color:var(--line-bright);transform:translateY(-1px);background:linear-gradient(180deg,#191d23,#131519)}
+.node.pinned{border-color:var(--amber);box-shadow:0 0 0 1px rgba(224,167,60,.35)}
+.node-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.node-name{font-family:"Oswald","Arial Narrow",sans-serif;font-weight:600;font-size:15px;color:var(--gold);line-height:1.15}
+.node-br{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--cc,#8b8b82);border:1px solid var(--line);
+  padding:1px 6px;flex-shrink:0}
+.node-id{font-family:"JetBrains Mono",monospace;font-size:10px;color:#5c626c;margin-top:3px}
+.node-unlock{margin-top:7px;font-size:12px;color:var(--ink-dim);line-height:1.35}
+.node-unlock b{color:var(--teal);font-weight:400;font-family:"Oswald","Arial Narrow",sans-serif;
+  font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:1px}
 
 /* ---------- atmosphere ---------- */
 .fx-scanlines{position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.35;

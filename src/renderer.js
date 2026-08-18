@@ -26,6 +26,7 @@ const PROC_TYPE_COLOR = {
 let DATA = null;
 const state = { mode:'story', category:'all', search:'' };
 let pinnedId = null;
+const missionById = {};
 
 // ---- helpers ---------------------------------------------------------------
 const $ = (s, r=document) => r.querySelector(s);
@@ -49,6 +50,11 @@ function colorFor(m){
   return m.type==='story'
     ? (CAMPAIGN_META[m.campaignKey]?.color || '#4a5160')
     : (PROC_TYPE_COLOR[m.missionType] || '#4a5160');
+}
+function iconFor(m){
+  const I = window.QM_ICONS;
+  if(!I) return '';
+  return m.type === 'story' ? I.campaign(m.campaignKey) : I.type(m.missionType);
 }
 function groupKeyFor(m){ return m.type==='story' ? m.campaignKey : m.missionType; }
 function groupLabelFor(m){
@@ -79,6 +85,8 @@ function currentList(){
 }
 
 function renderContent(){
+  hideHover();
+  if(state.mode === 'chain') return renderChain();
   const content = $('#content');
   content.innerHTML = '';
   const list = currentList();
@@ -127,6 +135,77 @@ function renderContent(){
   }
 }
 
+function renderChain(){
+  const content = $('#content');
+  content.innerHTML = '';
+  const chains = DATA.storyChains || {};
+  const cats = state.category === 'all' ? CAMPAIGN_ORDER : [state.category];
+  const wrap = el('div','chain');
+  let count = 0;
+
+  for(const camp of cats){
+    const tiers = chains[camp];
+    if(!tiers || !tiers.length) continue;
+    const meta = CAMPAIGN_META[camp] || {};
+    const grp = el('section','chain-camp');
+
+    const head = el('div','cg-head');
+    const bar = el('div','cg-bar'); bar.style.background = meta.color;
+    const title = el('div','cg-title'); title.textContent = meta.label || camp; title.style.color = meta.color;
+    const line = el('div','cg-line');
+    head.append(bar, title, line);
+    grp.appendChild(head);
+
+    for(const t of tiers){
+      const tier = el('div','tier'); tier.style.setProperty('--cc', meta.color);
+      const spine = el('div','spine');
+      const badge = el('div','tier-badge' + (t.side?' side':'')); badge.textContent = t.side ? 'S' : t.tier;
+      const sline = el('div','spine-line');
+      spine.append(badge, sline);
+
+      const nodes = el('div','tier-nodes');
+      if(t.missions.length > 1){
+        const bh = el('div','branch-hint'); bh.textContent = 'гілка — альтернативні шляхи';
+        nodes.appendChild(bh);
+      }
+      for(const mm of t.missions){
+        count++;
+        const m = missionById[mm.id];
+        const node = el('div','node'); node.style.setProperty('--cc', meta.color);
+        if(mm.id === pinnedId) node.classList.add('pinned');
+
+        const top = el('div','node-top');
+        const nleft = el('div','nt-left');
+        const nemb = el('div','node-emblem'); nemb.style.color = meta.color;
+        nemb.innerHTML = window.QM_ICONS ? window.QM_ICONS.campaign(camp) : '';
+        const nname = el('div','node-name'); nname.textContent = mm.name;
+        nleft.append(nemb, nname);
+        top.appendChild(nleft);
+        if(mm.branch){ const br = el('div','node-br'); br.textContent = mm.branch.toUpperCase(); top.appendChild(br); }
+        node.appendChild(top);
+
+        const idl = el('div','node-id'); idl.textContent = mm.id; node.appendChild(idl);
+        if(mm.unlock && mm.unlock.length){
+          const u = el('div','node-unlock');
+          u.innerHTML = '<b>Умова переходу</b>' + esc(mm.unlock.join(' · '));
+          node.appendChild(u);
+        }
+        if(m){
+          node.addEventListener('mouseenter', ()=>showHover(m, node));
+          node.addEventListener('mouseleave', hideHover);
+          node.addEventListener('click', ()=>openDrawer(m));
+        }
+        nodes.appendChild(node);
+      }
+      tier.append(spine, nodes);
+      grp.appendChild(tier);
+    }
+    wrap.appendChild(grp);
+  }
+  content.appendChild(wrap);
+  $('#counter').innerHTML = `<b>${count}</b> місій у ланцюгах`;
+}
+
 function diffText(m){
   if(m.type!=='story') return '';
   const d = m.shownDifficulty;
@@ -139,11 +218,14 @@ function tile(m){
   if(m.id===pinnedId) t.classList.add('pinned');
 
   const top = el('div','tile-top');
-  const nameWrap = el('div');
+  const left = el('div','tt-left');
+  const emblem = el('div','emblem'); emblem.style.color = colorFor(m); emblem.innerHTML = iconFor(m);
+  const nameWrap = el('div','tt-namewrap');
   const name = el('div','tile-name'); name.textContent = m.name;
   const id = el('div','tile-id'); id.textContent = m.id;
   nameWrap.append(name, id);
-  top.appendChild(nameWrap);
+  left.append(emblem, nameWrap);
+  top.appendChild(left);
 
   if(m.type==='story' && diffText(m)){
     const diff = el('div','tile-diff'); diff.textContent = '☠ ' + diffText(m);
@@ -245,8 +327,9 @@ function cardCompact(m){
 function cardFull(m){
   let h = '<button class="drawer-close" id="drawer-close">✕</button>';
   h += '<div class="card-head">' + badges(m) +
-    `<div class="card-title">${esc(m.name)}</div>` +
-    `<div class="card-idline">${esc(m.id)}</div></div>`;
+    `<div class="card-titlerow"><div class="card-emblem" style="color:${colorFor(m)}">${iconFor(m)}</div>` +
+    `<div class="ct-text"><div class="card-title">${esc(m.name)}</div>` +
+    `<div class="card-idline">${esc(m.id)}</div></div></div></div>`;
   h += kvGrid(m);
   h += sect('Задача', m.desc ? `<div class="prose">${fmt(m.desc)}</div>` : '');
   h += sect('Брифінг', m.briefing ? `<div class="prose">${fmt(m.briefing)}</div>` : '');
@@ -306,7 +389,7 @@ function renderFilters(){
   box.innerHTML = '';
 
   // mode segmented (always visible)
-  const modes = [['story','Сюжетні'],['proc','Несюжетні']];
+  const modes = [['story','Сюжетні'],['proc','Несюжетні'],['chain','Ланцюг']];
   for(const [val,label] of modes){
     const c = el('div','chip' + (state.mode===val?' active':''));
     c.textContent = label;
@@ -321,7 +404,7 @@ function renderFilters(){
   box.appendChild(all);
 
   // category chips
-  if(state.mode==='story'){
+  if(state.mode!=='proc'){
     for(const k of CAMPAIGN_ORDER){
       if(!DATA.storyMissions.some(m=>m.campaignKey===k)) continue;
       const meta = CAMPAIGN_META[k];
@@ -355,6 +438,7 @@ async function boot(){
   DATA = await loadData();
   if(DATA.error){ $('#content').innerHTML = `<div class="empty">ПОМИЛКА ДАНИХ: ${esc(DATA.error)}</div>`; return; }
   buildSearchIndex();
+  [...DATA.storyMissions, ...DATA.procMissions].forEach(m => { missionById[m.id] = m; });
   renderFilters();
   renderContent();
 

@@ -48,7 +48,7 @@ def load_localization(data):
 
 
 def section(data, name):
-    """Return rows (list of column-lists) for a #section TSV block."""
+    """Return rows (list of column-lists) for the FIRST #section TSV block."""
     m = re.search(rb"#" + re.escape(name.encode()) + rb"[\t\r]", data)
     if not m:
         return None
@@ -59,6 +59,119 @@ def section(data, name):
             break
         rows.append(line.split("\t"))
     return rows
+
+
+def all_sections(data, name):
+    """Return a list of row-lists for EVERY #section block with this name
+    (some sections, e.g. #strategies, appear in multiple TextAssets)."""
+    out = []
+    for m in re.finditer(rb"#" + re.escape(name.encode()) + rb"[\t\r]", data):
+        chunk = data[m.start():m.start() + 3_000_000].decode("utf-8", errors="replace")
+        rows = []
+        for line in chunk.split("\r\n")[1:]:
+            if line.startswith("#end"):
+                break
+            rows.append(line.split("\t"))
+        out.append(rows)
+    return out
+
+
+def build_story_chains(data, R, story_ids, name_of):
+    """Reconstruct per-campaign story chains (order + branches + unlock conditions)
+    from #questlines_* / #strategies + mission-id ordering."""
+    # merge all #strategies blocks
+    blocks = all_sections(data, "strategies")
+    hdr = blocks[0][0]
+    sidx = {n: i for i, n in enumerate(hdr) if n}
+
+    def sg(r, n):
+        i = sidx.get(n)
+        return r[i].strip() if i is not None and i < len(r) else ""
+
+    strat = {}
+    for b in blocks:
+        for r in b[1:]:
+            if r and r[0].strip() and not r[0].startswith("#"):
+                strat[r[0].strip()] = r
+
+    def stname(s):
+        return R(f"station.{s}.name") or s
+
+    def facname(f):
+        return R(f"faction.{f}.name") or f
+
+    def translate(cond):
+        toks = cond.split()
+        out = []
+        i = 0
+        while i < len(toks):
+            t = toks[i]
+            if t in ("SFinishMission", "SFinishMissionAny") and i + 1 < len(toks):
+                out.append(("finish", toks[i + 1], f"завершити «{name_of(toks[i + 1])}»")); i += 2
+            elif t == "SStationDestroyed" and i + 1 < len(toks):
+                out.append(("other", None, f"станцію «{stname(toks[i + 1])}» знищено")); i += 2
+            elif t == "SMissionExists" and i + 1 < len(toks):
+                out.append(("other", None, f"зʼявляється «{name_of(toks[i + 1])}»")); i += 2
+            elif t == "SFactionPowerLessThan" and i + 1 < len(toks):
+                out.append(("other", None, f"сила фракції «{facname(toks[i + 1])}» падає")); i += 2
+            elif t == "IAwaitingDays" and i + 1 < len(toks):
+                out.append(("other", None, f"очікування {toks[i + 1]} дн.")); i += 2
+            elif t.startswith("FPower"):
+                out.append(("other", None, "фракція набирає силу")); i += 1
+            elif t == "SFaction":
+                i += 2
+            else:
+                i += 1
+        return out
+
+    mission_cond = {}
+    for sid, r in strat.items():
+        for c in ("RunMissionsOnStart", "RunMissionsOnSuccess"):
+            for mid in sg(r, c).split():
+                if mid in story_ids:
+                    conds = translate(sg(r, "WinConditions"))
+                    keep, seen = [], set()
+                    for kind, ref, txt in conds:
+                        if kind == "finish" and ref == mid:
+                            continue  # drop self-referential "finish this mission"
+                        if txt not in seen:
+                            seen.add(txt); keep.append(txt)
+                    mission_cond[mid] = keep
+
+    def parse(mid):
+        parts = mid.split("_"); rest = parts[1:]; side = False
+        if rest and rest[0] == "side":
+            side = True; rest = rest[1:]
+        num, branch = None, ""
+        if rest:
+            mm = re.match(r"^(\d+)([a-z]?)$", rest[0])
+            if mm:
+                num, branch = int(mm.group(1)), mm.group(2)
+        return parts[0], num, branch, side
+
+    grouped = {}
+    for mid in story_ids:
+        camp, num, branch, side = parse(mid)
+        grouped.setdefault(camp, []).append((num if num is not None else 99, branch, side, mid))
+
+    chains = {}
+    for camp, its in grouped.items():
+        its.sort(key=lambda x: (x[2], x[0], x[1]))
+        tiers, curkey, cur = [], None, None
+        for num, branch, side, mid in its:
+            key = (side, num)
+            if key != curkey:
+                cur = {"tier": num, "side": side, "missions": []}
+                tiers.append(cur); curkey = key
+            cur["missions"].append({"id": mid, "name": name_of(mid), "branch": branch,
+                                    "unlock": mission_cond.get(mid, [])})
+        # branch tiers: clear per-node unlock (the branch marker conveys it)
+        for t in tiers:
+            if len(t["missions"]) > 1:
+                for m in t["missions"]:
+                    m["unlock"] = []
+        chains[camp] = tiers
+    return chains
 
 
 def main():
@@ -158,10 +271,15 @@ def main():
             proc.append(dict(id=root, type="proc", missionType=root, missionTypeName=nm,
                 giver="", giverName="", victim="", victimName="", variant=0, name=nm, **t))
 
+    # ---- story chains (order / branches / unlock conditions) ----
+    story_name = {m["id"]: m["name"] for m in story}
+    story_ids = set(story_name)
+    chains = build_story_chains(data, R, story_ids, lambda mid: story_name.get(mid) or mid)
+
     out = dict(generatedFrom="Quasimorph resources.assets (GameData DB)", lang="ru",
                missionTypeNames=type_name,
                counts=dict(story=len(story), proc=len(proc), total=len(story) + len(proc)),
-               storyMissions=story, procMissions=proc)
+               storyMissions=story, procMissions=proc, storyChains=chains)
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
