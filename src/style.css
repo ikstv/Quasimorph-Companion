@@ -302,25 +302,41 @@ body{
   letter-spacing:.06em;text-decoration:none;font-family:"PT Sans Narrow","Arial Narrow",sans-serif}
 .welcome-overlay .w-skip a:hover{color:var(--amber)}
 
-/* Recommendation banner (shown in Штурман when no target set) */
-.rec-banner{display:flex;align-items:center;justify-content:space-between;gap:16px;
-  margin:0 0 14px 0;padding:14px 18px;
-  background:linear-gradient(180deg,#181b24,#0f1116);
-  border:1px solid var(--gold);box-shadow:inset 0 0 30px rgba(255,254,193,.06)}
-.rec-left{min-width:0;flex:1}
-.rec-tag{font-family:"Oswald","Arial Narrow",sans-serif;font-size:11px;
-  color:var(--gold);letter-spacing:.14em;margin-bottom:4px}
-.rec-main{font-family:"Oswald","Arial Narrow",sans-serif;font-size:18px;color:var(--gold);
-  display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
-.rec-fac{font-weight:700;letter-spacing:.04em}
-.rec-arrow{color:var(--ink-dim);font-weight:400}
-.rec-wpn{font-weight:600}
-.rec-reason{font-family:"PT Sans Narrow","Arial Narrow",sans-serif;
-  font-size:12.5px;color:var(--ink-dim);letter-spacing:.02em;margin-top:5px}
-.rec-accept{background:var(--gold);color:#101216;border:none;
-  font-family:"Oswald","Arial Narrow",sans-serif;font-size:12px;font-weight:700;
-  letter-spacing:.08em;padding:8px 16px;cursor:pointer;flex-shrink:0}
-.rec-accept:hover{background:var(--amber);color:#0a0b0f}
+/* Recommendation modal (centered dialog) */
+.rec-modal{position:fixed;inset:0;z-index:180;background:rgba(6,7,10,.86);
+  display:flex;align-items:center;justify-content:center;padding:40px}
+.rec-modal .rm-inner{max-width:640px;width:100%;padding:34px 36px 30px;
+  background:linear-gradient(180deg,#161923,#0d0f14);
+  border:1px solid var(--gold);
+  box-shadow:0 0 80px rgba(255,254,193,.08), 0 12px 60px rgba(0,0,0,.7)}
+.rec-modal .rm-tag{font-family:"Oswald","Arial Narrow",sans-serif;font-size:11px;
+  color:var(--amber);letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+.rec-modal .rm-headline{font-family:"Oswald","Arial Narrow",sans-serif;font-size:24px;
+  color:var(--gold);letter-spacing:.06em;margin-bottom:18px}
+.rec-modal .rm-pick{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;
+  font-family:"Oswald","Arial Narrow",sans-serif;font-size:32px;color:var(--gold);
+  padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  margin-bottom:18px}
+.rec-modal .rm-fac{font-weight:700;letter-spacing:.04em;text-shadow:0 0 12px currentColor}
+.rec-modal .rm-arrow{color:var(--ink-dim);font-weight:400;font-size:24px}
+.rec-modal .rm-wpn{font-weight:600}
+.rec-modal .rm-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;margin-bottom:18px}
+.rec-modal .rm-stat{display:flex;justify-content:space-between;gap:12px;
+  padding:6px 12px;background:#0a0c11;border:1px solid var(--line);
+  font-family:"PT Sans Narrow","Arial Narrow",sans-serif;font-size:13px}
+.rec-modal .rm-stat-k{color:var(--ink-dim);letter-spacing:.02em}
+.rec-modal .rm-stat-v{color:var(--gold);font-weight:600}
+.rec-modal .rm-reason{font-family:"PT Sans Narrow","Arial Narrow",sans-serif;font-size:12.5px;
+  color:var(--ink-dim);line-height:1.5;margin-bottom:22px}
+.rec-modal .rm-reason b{color:var(--amber);font-weight:600}
+.rec-modal .rm-actions{display:flex;gap:12px;justify-content:flex-end}
+.rec-modal .rm-accept,.rec-modal .rm-skip{
+  font-family:"Oswald","Arial Narrow",sans-serif;font-size:13px;letter-spacing:.08em;
+  padding:10px 22px;cursor:pointer;border:1px solid var(--gold)}
+.rec-modal .rm-accept{background:var(--gold);color:#101216;font-weight:700}
+.rec-modal .rm-accept:hover{background:var(--amber);color:#0a0b0f}
+.rec-modal .rm-skip{background:transparent;color:var(--ink)}
+.rec-modal .rm-skip:hover{background:#141720;color:var(--amber);border-color:var(--amber)}
 
 /* Welcome recommendation block inside each choice card */
 .welcome-overlay .w-rec{margin-top:14px;padding:10px 12px;background:#0a0c11;

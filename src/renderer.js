@@ -353,7 +353,61 @@ function recommendTarget(metric){
 function acceptRecommendation(rec){
   state.target.factionId = rec.factionId;
   state.target.weaponId = rec.weaponId;
+  state._dismissedRecFor = null;
   renderContent();
+}
+
+/** Show a centered modal dialog recommending a specific faction/weapon.
+ *  Non-blocking (user can close), dismiss is tracked per-session so it doesn't
+ *  keep re-appearing after they say "pick manually". */
+function showRecommendationModal(rec){
+  // Guard against duplicates on rapid re-renders.
+  document.querySelectorAll('.rec-modal').forEach(m => m.remove());
+
+  const overlay = el('div','rec-modal');
+  const label = state.target.metric==='dps' ? 'Максимальний DPS в грі' : 'Максимальний Урон в грі';
+  const valueStr = state.target.metric==='dps'
+    ? `${rec.dps} DPS`
+    : `${rec.dmgMax} урону`;
+  overlay.innerHTML = `
+    <div class="rm-inner">
+      <div class="rm-tag">Рекомендуємо для: ${esc(label)}</div>
+      <div class="rm-headline">Обери цю фракцію</div>
+      <div class="rm-pick">
+        <span class="rm-fac" style="color:${factionColor(rec.factionId)}">${esc(rec.factionId)}</span>
+        <span class="rm-arrow">→</span>
+        <span class="rm-wpn">${esc(rec.name)}</span>
+      </div>
+      <div class="rm-stats">
+        <div class="rm-stat"><span class="rm-stat-k">${state.target.metric==='dps' ? 'DPS-бал' : 'Урон'}</span><span class="rm-stat-v">${esc(valueStr)}</span></div>
+        <div class="rm-stat"><span class="rm-stat-k">Тех-рівень зброї</span><span class="rm-stat-v">TL${rec.tech}</span></div>
+        <div class="rm-stat"><span class="rm-stat-k">Твоя репа</span><span class="rm-stat-v">+${rec.rep}</span></div>
+        <div class="rm-stat"><span class="rm-stat-k">До розблокування</span><span class="rm-stat-v">+${rec.techGap} тех-рівнів</span></div>
+      </div>
+      <div class="rm-reason">Обрано серед не-ворожих фракцій за максимальним показником з поправкою на відстань до цілі та стартову репу. Клік «Обрати» встановить її ціллю у Штурмані — місії, що на неї працюють, підсвітяться <b>→ ЦІЛЬ</b>, які шкодять — <b>⚠ ЗАКРИЄ ЦІЛЬ</b>.</div>
+      <div class="rm-actions">
+        <button class="rm-accept">Обрати цю фракцію</button>
+        <button class="rm-skip">Обрати вручну</button>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+
+  overlay.querySelector('.rm-accept').addEventListener('click', () => {
+    overlay.remove();
+    acceptRecommendation(rec);
+  });
+  overlay.querySelector('.rm-skip').addEventListener('click', () => {
+    overlay.remove();
+    state._dismissedRecFor = state.target.metric;
+    renderContent();
+  });
+  // Also close on scrim click (outside the inner box)
+  overlay.addEventListener('click', (e) => {
+    if(e.target === overlay){
+      overlay.remove();
+      state._dismissedRecFor = state.target.metric;
+    }
+  });
 }
 
 function renderTargetPicker(container){
@@ -439,26 +493,11 @@ function renderNav(){
 
   const hasTarget = !!state.target.weaponId;
 
-  // Recommendation banner — only when no target picked yet.
-  if(!hasTarget){
+  // Recommendation modal — centered dialog, only when no target picked and
+  // the user hasn't already dismissed for this metric in this session.
+  if(!hasTarget && state._dismissedRecFor !== state.target.metric){
     const rec = recommendTarget(state.target.metric);
-    if(rec){
-      const banner = el('div','rec-banner');
-      const label = state.target.metric==='dps' ? 'Рекомендуємо для макс DPS' : 'Рекомендуємо для макс Урону';
-      banner.innerHTML = `
-        <div class="rec-left">
-          <div class="rec-tag">${esc(label)}</div>
-          <div class="rec-main">
-            <span class="rec-fac" style="color:${factionColor(rec.factionId)}">${esc(rec.factionId)}</span>
-            <span class="rec-arrow">→</span>
-            <span class="rec-wpn">${esc(rec.name)}</span>
-          </div>
-          <div class="rec-reason">${esc(rec.reason)}</div>
-        </div>
-        <button class="rec-accept">Обрати цю ціль</button>`;
-      banner.querySelector('.rec-accept').addEventListener('click', () => acceptRecommendation(rec));
-      content.appendChild(banner);
-    }
+    if(rec) showRecommendationModal(rec);
   }
 
   // filter blocked + search; sort depends on whether a target is set
