@@ -285,6 +285,104 @@ def main():
         json.dump(out, f, ensure_ascii=False, indent=1)
     print(f"Wrote {out_path}: {len(story)} story + {len(proc)} proc = {len(story)+len(proc)} missions")
 
+    # ---- weapons + faction reward tables (Phase 2 data) --------------------
+    weapons_path = os.path.join(os.path.dirname(out_path), "weapons.json")
+    extract_weapons(data, R, weapons_path)
+
+
+def parse_damage(s):
+    """'68 85 crit 2.1' -> (68, 85). Blank/malformed -> (0, 0)."""
+    if not s:
+        return 0, 0
+    m = re.match(r"\s*(\d+)\s+(\d+)", s)
+    return (int(m.group(1)), int(m.group(2))) if m else (0, 0)
+
+
+def extract_weapons(data, R, out_path):
+    """Emit weapons.json with weapons list, per-faction reward tables, and
+    a precomputed topByFaction ranking."""
+    ranged = section(data, "rangeweapons") or []
+    melee = section(data, "meleeweapons") or []
+
+    def rows_to_weapons(rows, dmg_col, kind):
+        if not rows:
+            return []
+        hdr = rows[0]
+        def gi(name, default=None):
+            return hdr.index(name) if name in hdr else default
+        i_id, i_cat, i_tl, i_ic, i_wc, i_ws = (
+            gi("Id"), gi("Categories"), gi("TechLevel"),
+            gi("ItemClass"), gi("WeaponClass"), gi("WeaponSubClass"))
+        out = []
+        for r in rows[1:]:
+            if not r or not r[0] or r[0].startswith("#"):
+                continue
+            wid = r[i_id].strip()
+            item_class = r[i_ic].strip() if i_ic is not None and i_ic < len(r) else ""
+            if item_class != "Weapon":
+                continue
+            # Skip relics/junk that pollute per-faction rankings
+            if re.match(r"^(skull_|implicted_|trash_)", wid):
+                continue
+            dmg_raw = r[dmg_col].strip() if dmg_col < len(r) else ""
+            dmin, dmax = parse_damage(dmg_raw)
+            cats = (r[i_cat].strip().split() if i_cat is not None and i_cat < len(r) else [])
+            out.append(dict(
+                id=wid, name=R(f"item.{wid}.name") or wid, kind=kind,
+                cls=(r[i_wc].strip() if i_wc is not None and i_wc < len(r) else ""),
+                subcls=(r[i_ws].strip() if i_ws is not None and i_ws < len(r) else ""),
+                tech=int(r[i_tl].strip() or "0") if i_tl is not None and i_tl < len(r) else 0,
+                dmgMin=dmin, dmgMax=dmax, categories=cats
+            ))
+        return out
+
+    weapons = rows_to_weapons(ranged, 16, "range") + rows_to_weapons(melee, 15, "melee")
+    by_id = {w["id"]: w for w in weapons}
+
+    # Faction reward tables — one #factiondrop_<F>_rewardEquipment per faction.
+    fac_pat = re.compile(rb"#factiondrop_([A-Za-z]+)_rewardEquipment[\t\r]")
+    faction_ids = sorted({m.group(1).decode() for m in fac_pat.finditer(data)})
+    factionDrops = {}
+    for fid in faction_ids:
+        rows = section(data, f"factiondrop_{fid}_rewardEquipment")
+        if not rows:
+            continue
+        entries = []
+        for r in rows[1:]:
+            if not r or not r[0] or r[0].startswith("#"):
+                continue
+            tech = int(r[0].strip() or "0")
+            content_ids = r[1].strip().split() if len(r) > 1 else []
+            pts = int(r[3].strip() or "0") if len(r) > 3 else 0
+            for cid in content_ids:
+                entries.append(dict(tech=tech, id=cid, points=pts))
+        factionDrops[fid] = entries
+
+    RANGED_PRECISION_CLASSES = {"MarksmanRifle", "AssaultRifle", "Shotgun", "SMG", "Pistol"}
+
+    def top_for(fid, ranged_only=False):
+        """Top-3 weapons for a faction, ranked by (dmgMax desc, tech asc)."""
+        pool = [w for w in weapons
+                if fid in w["categories"]
+                and (not ranged_only or w["cls"] in RANGED_PRECISION_CLASSES)]
+        pool.sort(key=lambda w: (-w["dmgMax"], w["tech"], w["id"]))
+        return [dict(id=w["id"], name=w["name"], dmgMax=w["dmgMax"], tech=w["tech"],
+                     cls=w["cls"], kind=w["kind"]) for w in pool[:3]]
+
+    topByFaction = {fid: top_for(fid) for fid in faction_ids if any(fid in w["categories"] for w in weapons)}
+    topByFactionRanged = {fid: top_for(fid, ranged_only=True) for fid in topByFaction}
+
+    payload = dict(
+        weapons=weapons,
+        factionDrops=factionDrops,
+        topByFaction=topByFaction,
+        topByFactionRanged=topByFactionRanged
+    )
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=1)
+    print(f"Wrote {out_path}: {len(weapons)} weapons, {len(factionDrops)} faction drop tables, "
+          f"top computed for {len(topByFaction)} factions")
+
 
 if __name__ == "__main__":
     main()

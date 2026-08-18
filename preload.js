@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const dataPath = path.join(__dirname, 'data', 'missions.json');
+const weaponsPath = path.join(__dirname, 'data', 'weapons.json');
 
 contextBridge.exposeInMainWorld('QM', {
   getData: () => {
@@ -10,6 +11,13 @@ contextBridge.exposeInMainWorld('QM', {
       return JSON.parse(fs.readFileSync(dataPath, 'utf8'));
     } catch (e) {
       return { error: String(e), storyMissions: [], procMissionTypes: [] };
+    }
+  },
+  getWeapons: () => {
+    try {
+      return JSON.parse(fs.readFileSync(weaponsPath, 'utf8'));
+    } catch {
+      return null;
     }
   },
   getSave: (slot = 0) => ipcRenderer.invoke('save:read', slot),

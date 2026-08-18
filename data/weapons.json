@@ -1,0 +1,10028 @@
+{
+ "weapons": [
+  {
+   "id": "worker_torch_1",
+   "name": "Светлячок",
+   "kind": "range",
+   "cls": "Flamethrower",
+   "subcls": "Tool",
+   "tech": 2,
+   "dmgMin": 18,
+   "dmgMax": 28,
+   "categories": [
+    "Worker"
+   ]
+  },
+  {
+   "id": "worker_pistol_1",
+   "name": "Гвоздемет",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Tool",
+   "tech": 1,
+   "dmgMin": 10,
+   "dmgMax": 24,
+   "categories": [
+    "Worker",
+    "CoreWard",
+    "PlanetBridge"
+   ]
+  },
+  {
+   "id": "army_pistol_1",
+   "name": "Старлок 2",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 1,
+   "dmgMin": 26,
+   "dmgMax": 34,
+   "categories": [
+    "Civilian"
+   ]
+  },
+  {
+   "id": "army_pistol_2",
+   "name": "Старлок МД-6",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 2,
+   "dmgMin": 30,
+   "dmgMax": 46,
+   "categories": [
+    "Security",
+    "Sunlight",
+    "Emeraldlight"
+   ]
+  },
+  {
+   "id": "army_pistol_3",
+   "name": "Старлок ОШП",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 4,
+   "dmgMin": 51,
+   "dmgMax": 64,
+   "categories": [
+    "Military",
+    "ChurchRevelation",
+    "ChurchGannix"
+   ]
+  },
+  {
+   "id": "army_pistol_4",
+   "name": "Потрошитель",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 6,
+   "dmgMin": 58,
+   "dmgMax": 68,
+   "categories": [
+    "ChurchRevelation",
+    "ChurchGannix",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "pmc_pistol_1",
+   "name": "Беркут",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 1,
+   "dmgMin": 19,
+   "dmgMax": 23,
+   "categories": [
+    "Security"
+   ]
+  },
+  {
+   "id": "pmc_pistol_2",
+   "name": "Беркут Пб",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 1,
+   "dmgMin": 18,
+   "dmgMax": 22,
+   "categories": [
+    "Security",
+    "AnCom",
+    "Grasshopper"
+   ]
+  },
+  {
+   "id": "pmc_pistol_3",
+   "name": "Беркут СТ-13",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 4,
+   "dmgMin": 19,
+   "dmgMax": 27,
+   "categories": [
+    "Military"
+   ]
+  },
+  {
+   "id": "unc_pistol_1",
+   "name": "Вестсайд",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 3,
+   "dmgMin": 14,
+   "dmgMax": 27,
+   "categories": [
+    "UnchainedBelt"
+   ]
+  },
+  {
+   "id": "unc_pistol_2",
+   "name": "Воитель",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 4,
+   "dmgMin": 49,
+   "dmgMax": 69,
+   "categories": [
+    "UnchainedBelt"
+   ]
+  },
+  {
+   "id": "military_pistol_1",
+   "name": "Гидра-12",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 1,
+   "dmgMin": 16,
+   "dmgMax": 24,
+   "categories": [
+    "Civilian",
+    "Security"
+   ]
+  },
+  {
+   "id": "military_pistol_2",
+   "name": "Гидра-24",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 3,
+   "dmgMin": 23,
+   "dmgMax": 29,
+   "categories": [
+    "Security",
+    "RealWare",
+    "SheduThousand"
+   ]
+  },
+  {
+   "id": "military_pistol_3",
+   "name": "Гидра-33S",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 4,
+   "dmgMin": 29,
+   "dmgMax": 38,
+   "categories": [
+    "Reserve",
+    "Military",
+    "RealWare",
+    "SheduThousand"
+   ]
+  },
+  {
+   "id": "rwa_military_pistol_1",
+   "name": "Шарвара",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 6,
+   "dmgMin": 30,
+   "dmgMax": 39,
+   "categories": [
+    "RealWare",
+    "SheduThousand",
+    "Merc"
+   ]
+  },
+  {
+   "id": "trucker_pistol_1",
+   "name": "Освободитель",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 2,
+   "dmgMin": 24,
+   "dmgMax": 32,
+   "categories": [
+    "Reserve",
+    "Security",
+    "Grasshopper",
+    "DaydreamChems"
+   ]
+  },
+  {
+   "id": "trucker_pistol_2",
+   "name": "Освободитель М",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 3,
+   "dmgMin": 29,
+   "dmgMax": 37,
+   "categories": [
+    "Military",
+    "Grasshopper",
+    "DaydreamChems"
+   ]
+  },
+  {
+   "id": "trucker_pistol_3",
+   "name": "Избавитель",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 6,
+   "dmgMin": 37,
+   "dmgMax": 46,
+   "categories": [
+    "Grasshopper",
+    "Looted",
+    "Merc"
+   ]
+  },
+  {
+   "id": "chu_trucker_pistol_1",
+   "name": "Закон",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 8,
+   "dmgMin": 59,
+   "dmgMax": 72,
+   "categories": [
+    "Grasshopper",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "chu_trucker_pistol_2",
+   "name": "Порядок",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 8,
+   "dmgMin": 55,
+   "dmgMax": 62,
+   "categories": [
+    "ChurchRevelation",
+    "ChurchGannix",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "rail_pistol_1",
+   "name": "Энигма-ПТ",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Rail",
+   "tech": 1,
+   "dmgMin": 20,
+   "dmgMax": 20,
+   "categories": [
+    "Science",
+    "PlanetBridge"
+   ]
+  },
+  {
+   "id": "rail_pistol_2",
+   "name": "Энигма",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Rail",
+   "tech": 3,
+   "dmgMin": 27,
+   "dmgMax": 27,
+   "categories": [
+    "PlanetBridge",
+    "Looted"
+   ]
+  },
+  {
+   "id": "rail_pistol_3",
+   "name": "Энигма-М2",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Rail",
+   "tech": 6,
+   "dmgMin": 38,
+   "dmgMax": 38,
+   "categories": [
+    "PlanetBridge",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "laser_pistol_1",
+   "name": "Вспышка",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Laser",
+   "tech": 2,
+   "dmgMin": 21,
+   "dmgMax": 24,
+   "categories": [
+    "SBN",
+    "Sunlight",
+    "Emeraldlight"
+   ]
+  },
+  {
+   "id": "laser_pistol_2",
+   "name": "Вспышка-М",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Laser",
+   "tech": 4,
+   "dmgMin": 27,
+   "dmgMax": 34,
+   "categories": [
+    "SBN",
+    "Sunlight",
+    "Emeraldlight",
+    "Dilthey",
+    "Looted"
+   ]
+  },
+  {
+   "id": "ddr_disruptor_pistol_1",
+   "name": "Разделитель",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Toxic",
+   "tech": 6,
+   "dmgMin": 42,
+   "dmgMax": 48,
+   "categories": [
+    "DaydreamChems",
+    "Merc",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "common_pistol_1",
+   "name": "Галанд",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 1,
+   "dmgMin": 19,
+   "dmgMax": 24,
+   "categories": [
+    "Civilian",
+    "Reserve",
+    "UnchainedBelt"
+   ]
+  },
+  {
+   "id": "common_pistol_2",
+   "name": "Галанд Ново",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 2,
+   "dmgMin": 19,
+   "dmgMax": 24,
+   "categories": [
+    "Security",
+    "UnchainedBelt"
+   ]
+  },
+  {
+   "id": "common_pistol_3",
+   "name": "Галанд Ультим",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 4,
+   "dmgMin": 21,
+   "dmgMax": 25,
+   "categories": [
+    "Military"
+   ]
+  },
+  {
+   "id": "civ_pistol_1",
+   "name": "Скорпион",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 3,
+   "dmgMin": 25,
+   "dmgMax": 40,
+   "categories": [
+    "CResistance"
+   ]
+  },
+  {
+   "id": "civ_pistol_2",
+   "name": "Сверчок",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 1,
+   "dmgMin": 17,
+   "dmgMax": 26,
+   "categories": [
+    "CResistance"
+   ]
+  },
+  {
+   "id": "civ_plasma_pistol_1",
+   "name": "Прометей",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Plasma",
+   "tech": 5,
+   "dmgMin": 41,
+   "dmgMax": 54,
+   "categories": [
+    "CResistance",
+    "Merc",
+    "Energy"
+   ]
+  },
+  {
+   "id": "cor_worker_pistol_1",
+   "name": "Фирменный Гвоздемет",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Tool",
+   "tech": 2,
+   "dmgMin": 19,
+   "dmgMax": 28,
+   "categories": [
+    "CoreWard"
+   ]
+  },
+  {
+   "id": "plb_pistol_1",
+   "name": "ХРЭн",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 5,
+   "dmgMin": 26,
+   "dmgMax": 40,
+   "categories": [
+    "PlanetBridge",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "plb_pistol_2",
+   "name": "Стерлинг А2Л4",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 7,
+   "dmgMin": 29,
+   "dmgMax": 42,
+   "categories": [
+    "PlanetBridge",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "anc_pistol_1",
+   "name": "Вальдшнеп АНКМ",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 3,
+   "dmgMin": 27,
+   "dmgMax": 34,
+   "categories": [
+    "AnCom"
+   ]
+  },
+  {
+   "id": "anc_pistol_2",
+   "name": "АСП-Кулик",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 5,
+   "dmgMin": 35,
+   "dmgMax": 40,
+   "categories": [
+    "AnCom",
+    "Merc"
+   ]
+  },
+  {
+   "id": "anc_quasi_pistol_1",
+   "name": "АЭП-Альфа",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Quasi",
+   "tech": 8,
+   "dmgMin": 38,
+   "dmgMax": 48,
+   "categories": [
+    "AnCom",
+    "Merc"
+   ]
+  },
+  {
+   "id": "sbn_rail_pistol_1",
+   "name": "Сильвер-СЭП",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Rail",
+   "tech": 3,
+   "dmgMin": 24,
+   "dmgMax": 24,
+   "categories": [
+    "SBN"
+   ]
+  },
+  {
+   "id": "ddr_toxic_pistol_1",
+   "name": "Плевок",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Toxic",
+   "tech": 1,
+   "dmgMin": 16,
+   "dmgMax": 24,
+   "categories": [
+    "DaydreamChems"
+   ]
+  },
+  {
+   "id": "ddr_frost_pistol_1",
+   "name": "Хель Тринити",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Coldgun",
+   "tech": 4,
+   "dmgMin": 21,
+   "dmgMax": 26,
+   "categories": [
+    "DaydreamChems",
+    "Looted"
+   ]
+  },
+  {
+   "id": "grh_revolver_pistol_1",
+   "name": "Банкир",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 5,
+   "dmgMin": 29,
+   "dmgMax": 38,
+   "categories": [
+    "Grasshopper",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "sun_laser_pistol_1",
+   "name": "Струна-21М",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Laser",
+   "tech": 3,
+   "dmgMin": 19,
+   "dmgMax": 24,
+   "categories": [
+    "Sunlight",
+    "Emeraldlight",
+    "Looted"
+   ]
+  },
+  {
+   "id": "sun_cryolaser_pistol_1",
+   "name": "Белая Мгла",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Laser",
+   "tech": 5,
+   "dmgMin": 13,
+   "dmgMax": 23,
+   "categories": [
+    "Sunlight",
+    "Emeraldlight",
+    "Looted",
+    "Merc",
+    "Energy"
+   ]
+  },
+  {
+   "id": "fra_security_pistol_1",
+   "name": "Ле МАФ 2150",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 2,
+   "dmgMin": 23,
+   "dmgMax": 27,
+   "categories": [
+    "FrancheComte"
+   ]
+  },
+  {
+   "id": "fra_security_pistol_2",
+   "name": "Ле МАФ 2199",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 6,
+   "dmgMin": 43,
+   "dmgMax": 55,
+   "categories": [
+    "FrancheComte",
+    "Looted",
+    "Merc"
+   ]
+  },
+  {
+   "id": "fra_shock_pistol_1",
+   "name": "Тремор",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Electric",
+   "tech": 4,
+   "dmgMin": 1,
+   "dmgMax": 50,
+   "categories": [
+    "FrancheComte",
+    "Looted"
+   ]
+  },
+  {
+   "id": "dil_sound_pistol_1",
+   "name": "Э.Х.О.",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Rail",
+   "tech": 1,
+   "dmgMin": 19,
+   "dmgMax": 22,
+   "categories": [
+    "Dilthey"
+   ]
+  },
+  {
+   "id": "dil_sound_pistol_2",
+   "name": "Г.Р.О.М.",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Rail",
+   "tech": 4,
+   "dmgMin": 28,
+   "dmgMax": 35,
+   "categories": [
+    "Dilthey",
+    "Looted"
+   ]
+  },
+  {
+   "id": "dil_ion_pistol_1",
+   "name": "Стиллпоинт",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Electric",
+   "tech": 6,
+   "dmgMin": 25,
+   "dmgMax": 28,
+   "categories": [
+    "Dilthey",
+    "Merc",
+    "Energy"
+   ]
+  },
+  {
+   "id": "worker_discthrower_1",
+   "name": "Резчик",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Tool",
+   "tech": 2,
+   "dmgMin": 26,
+   "dmgMax": 62,
+   "categories": [
+    "Worker",
+    "CoreWard",
+    "CResistance"
+   ]
+  },
+  {
+   "id": "she_heavy_pistol_1",
+   "name": "Жало",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 1,
+   "dmgMin": 63,
+   "dmgMax": 77,
+   "categories": [
+    "SheduThousand"
+   ]
+  },
+  {
+   "id": "spec_pistol_1",
+   "name": "Тип 77",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 5,
+   "dmgMin": 35,
+   "dmgMax": 41,
+   "categories": [
+    "Military",
+    "Tianming",
+    "Merc"
+   ]
+  },
+  {
+   "id": "spec_pistol_2",
+   "name": "Тип 88С",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Firearm",
+   "tech": 8,
+   "dmgMin": 30,
+   "dmgMax": 37,
+   "categories": [
+    "Specops",
+    "Tianming",
+    "Merc"
+   ]
+  },
+  {
+   "id": "tia_disc_pistol_1",
+   "name": "Шарен",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Tool",
+   "tech": 2,
+   "dmgMin": 28,
+   "dmgMax": 42,
+   "categories": [
+    "Tianming"
+   ]
+  },
+  {
+   "id": "common_shock_pistol_1",
+   "name": "ВольтГард",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Electric",
+   "tech": 5,
+   "dmgMin": 1,
+   "dmgMax": 56,
+   "categories": [
+    "Civilian",
+    "Manager"
+   ]
+  },
+  {
+   "id": "matrix_disc",
+   "name": "Цифровой Метатель",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Tool",
+   "tech": 1,
+   "dmgMin": 19,
+   "dmgMax": 26,
+   "categories": [
+    "Matrix"
+   ]
+  },
+  {
+   "id": "venus_quasi_pistol_1",
+   "name": "Игвоплюй",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Quasi",
+   "tech": 2,
+   "dmgMin": 23,
+   "dmgMax": 34,
+   "categories": [
+    "Gannix",
+    "Emeraldlight",
+    "ChurchGannix"
+   ]
+  },
+  {
+   "id": "nature_falcon",
+   "name": "Клюв",
+   "kind": "range",
+   "cls": "Pistol",
+   "subcls": "Quasi",
+   "tech": 5,
+   "dmgMin": 41,
+   "dmgMax": 49,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "pmc_shotgun_1",
+   "name": "Тайга М",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Firearm",
+   "tech": 2,
+   "dmgMin": 36,
+   "dmgMax": 63,
+   "categories": [
+    "Security",
+    "AnCom"
+   ]
+  },
+  {
+   "id": "pmc_shotgun_2",
+   "name": "Тайга АНКМ",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Firearm",
+   "tech": 6,
+   "dmgMin": 47,
+   "dmgMax": 72,
+   "categories": [
+    "AnCom",
+    "Merc"
+   ]
+  },
+  {
+   "id": "trucker_shotgun_1",
+   "name": "Джеффхаммер",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Firearm",
+   "tech": 2,
+   "dmgMin": 19,
+   "dmgMax": 56,
+   "categories": [
+    "Security",
+    "RealWare",
+    "SheduThousand",
+    "ChurchRevelation",
+    "ChurchGannix"
+   ]
+  },
+  {
+   "id": "trucker_shotgun_2",
+   "name": "Джеффхаммер МД",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Firearm",
+   "tech": 4,
+   "dmgMin": 34,
+   "dmgMax": 69,
+   "categories": [
+    "Military",
+    "RealWare",
+    "SheduThousand",
+    "DaydreamChems"
+   ]
+  },
+  {
+   "id": "trucker_shotgun_3",
+   "name": "Дхаммер-У22",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Firearm",
+   "tech": 6,
+   "dmgMin": 47,
+   "dmgMax": 73,
+   "categories": [
+    "Specops",
+    "RealWare",
+    "SheduThousand",
+    "SBN",
+    "Merc"
+   ]
+  },
+  {
+   "id": "common_shotgun_1",
+   "name": "Граница ФН-4",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Firearm",
+   "tech": 2,
+   "dmgMin": 25,
+   "dmgMax": 67,
+   "categories": [
+    "Security",
+    "FrancheComte"
+   ]
+  },
+  {
+   "id": "common_shotgun_2",
+   "name": "Граница Марк-2",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Firearm",
+   "tech": 4,
+   "dmgMin": 41,
+   "dmgMax": 76,
+   "categories": [
+    "Military",
+    "FrancheComte"
+   ]
+  },
+  {
+   "id": "common_shotgun_3",
+   "name": "Граница Шеф",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Firearm",
+   "tech": 8,
+   "dmgMin": 47,
+   "dmgMax": 79,
+   "categories": [
+    "FrancheComte",
+    "Looted",
+    "Merc"
+   ]
+  },
+  {
+   "id": "cor_nail_shotgun_1",
+   "name": "Ударный молоток",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Tool",
+   "tech": 6,
+   "dmgMin": 33,
+   "dmgMax": 66,
+   "categories": [
+    "CoreWard",
+    "Looted",
+    "Merc"
+   ]
+  },
+  {
+   "id": "plasma_shotgun_2",
+   "name": "Разрядник",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Plasma",
+   "tech": 6,
+   "dmgMin": 46,
+   "dmgMax": 65,
+   "categories": [
+    "ChurchRevelation",
+    "ChurchGannix",
+    "CoreWard",
+    "CResistance",
+    "Merc",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "military_shotgun_1",
+   "name": "Еретик",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Firearm",
+   "tech": 3,
+   "dmgMin": 38,
+   "dmgMax": 74,
+   "categories": [
+    "RealWare"
+   ]
+  },
+  {
+   "id": "fra_security_shotgun_1",
+   "name": "Вердикт",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Firearm",
+   "tech": 6,
+   "dmgMin": 77,
+   "dmgMax": 109,
+   "categories": [
+    "FrancheComte",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "chu_shotgun_1",
+   "name": "Анафема",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Firearm",
+   "tech": 8,
+   "dmgMin": 54,
+   "dmgMax": 86,
+   "categories": [
+    "ChurchRevelation",
+    "ChurchGannix",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "anc_shotgun_1",
+   "name": "Раптор АНКМ",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Firearm",
+   "tech": 4,
+   "dmgMin": 18,
+   "dmgMax": 71,
+   "categories": [
+    "AnCom"
+   ]
+  },
+  {
+   "id": "anc_shotgun_2",
+   "name": "ААД-Барракуда",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Firearm",
+   "tech": 7,
+   "dmgMin": 45,
+   "dmgMax": 72,
+   "categories": [
+    "AnCom",
+    "Merc"
+   ]
+  },
+  {
+   "id": "sbn_rail_shotgun_1",
+   "name": "Сильвер-СЭД",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Rail",
+   "tech": 4,
+   "dmgMin": 32,
+   "dmgMax": 32,
+   "categories": [
+    "SBN"
+   ]
+  },
+  {
+   "id": "sun_laser_shotgun_1",
+   "name": "Сверхновая-7К",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Laser",
+   "tech": 5,
+   "dmgMin": 39,
+   "dmgMax": 55,
+   "categories": [
+    "Sunlight",
+    "Emeraldlight",
+    "Merc",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "ddr_shotgun_1",
+   "name": "Винтаж СЕМЬ14",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Firearm",
+   "tech": 4,
+   "dmgMin": 52,
+   "dmgMax": 84,
+   "categories": [
+    "DaydreamChems",
+    "Looted"
+   ]
+  },
+  {
+   "id": "ddr_toxic_shotgun_1",
+   "name": "Аспид",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Toxic",
+   "tech": 5,
+   "dmgMin": 45,
+   "dmgMax": 63,
+   "categories": [
+    "DaydreamChems",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "ddr_frost_shotgun_1",
+   "name": "Скади",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Coldgun",
+   "tech": 7,
+   "dmgMin": 41,
+   "dmgMax": 57,
+   "categories": [
+    "DaydreamChems",
+    "Merc",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "she_gas_shotgun_1",
+   "name": "Опустошение",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Firearm",
+   "tech": 3,
+   "dmgMin": 27,
+   "dmgMax": 54,
+   "categories": [
+    "SheduThousand"
+   ]
+  },
+  {
+   "id": "spec_shotgun_1",
+   "name": "Лонгху",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Firearm",
+   "tech": 3,
+   "dmgMin": 37,
+   "dmgMax": 76,
+   "categories": [
+    "Military",
+    "Tianming"
+   ]
+  },
+  {
+   "id": "dil_sound_shotgun_1",
+   "name": "Р.Е.В.",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Rail",
+   "tech": 5,
+   "dmgMin": 24,
+   "dmgMax": 57,
+   "categories": [
+    "Dilthey",
+    "Merc"
+   ]
+  },
+  {
+   "id": "nature_cyborg_fast_ion",
+   "name": "Ионный разрядник Кинга",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Electric",
+   "tech": 7,
+   "dmgMin": 54,
+   "dmgMax": 70,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "venus_quasi_shotgun_1",
+   "name": "Каг-2",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Quasi",
+   "tech": 4,
+   "dmgMin": 23,
+   "dmgMax": 65,
+   "categories": [
+    "Gannix",
+    "Tezctlan",
+    "Emeraldlight",
+    "ChurchGannix"
+   ]
+  },
+  {
+   "id": "olirna_frost_shotgun_1",
+   "name": "Дюд-Кха",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Quasi",
+   "tech": 1,
+   "dmgMin": 50,
+   "dmgMax": 67,
+   "categories": [
+    "Olirna"
+   ]
+  },
+  {
+   "id": "mercury_shotgun_staff_1",
+   "name": "Са’ид аль-Кайсара",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Quasi",
+   "tech": 3,
+   "dmgMin": 34,
+   "dmgMax": 64,
+   "categories": [
+    "Shartamakhum"
+   ]
+  },
+  {
+   "id": "pmc_smg_1",
+   "name": "Буря ТТ",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 1,
+   "dmgMin": 13,
+   "dmgMax": 26,
+   "categories": [
+    "Security",
+    "AnCom",
+    "Dilthey"
+   ]
+  },
+  {
+   "id": "pmc_smg_2",
+   "name": "Курс ВКТ",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 3,
+   "dmgMin": 15,
+   "dmgMax": 26,
+   "categories": [
+    "Security",
+    "SBN"
+   ]
+  },
+  {
+   "id": "pmc_smg_3",
+   "name": "Буря АНКМ",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 8,
+   "dmgMin": 18,
+   "dmgMax": 30,
+   "categories": [
+    "AnCom",
+    "Merc"
+   ]
+  },
+  {
+   "id": "pmc_smg_4",
+   "name": "Курс Милтех",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 4,
+   "dmgMin": 17,
+   "dmgMax": 29,
+   "categories": [
+    "Military",
+    "SBN"
+   ]
+  },
+  {
+   "id": "military_smg_1",
+   "name": "Богомол М3",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 4,
+   "dmgMin": 23,
+   "dmgMax": 31,
+   "categories": [
+    "Military",
+    "RealWare",
+    "SheduThousand"
+   ]
+  },
+  {
+   "id": "police_smg_1",
+   "name": "Грохот Мод.П",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 5,
+   "dmgMin": 32,
+   "dmgMax": 40,
+   "categories": [
+    "FrancheComte",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "unc_smg_1",
+   "name": "Грохот Войны",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 6,
+   "dmgMin": 30,
+   "dmgMax": 44,
+   "categories": [
+    "UnchainedBelt",
+    "Merc"
+   ]
+  },
+  {
+   "id": "unc_smg_2",
+   "name": "Вихрь-30M",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 4,
+   "dmgMin": 32,
+   "dmgMax": 40,
+   "categories": [
+    "Reserve",
+    "UnchainedBelt"
+   ]
+  },
+  {
+   "id": "laser_smg_2",
+   "name": "ХТС-665",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Laser",
+   "tech": 7,
+   "dmgMin": 19,
+   "dmgMax": 28,
+   "categories": [
+    "SBN",
+    "Dilthey",
+    "Merc"
+   ]
+  },
+  {
+   "id": "laser_smg_1",
+   "name": "Вспышка МГ-76",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Laser",
+   "tech": 5,
+   "dmgMin": 20,
+   "dmgMax": 25,
+   "categories": [
+    "Military",
+    "SBN",
+    "Sunlight",
+    "Emeraldlight",
+    "Dilthey",
+    "Merc",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "plasma_shotgun_1",
+   "name": "Омега II",
+   "kind": "range",
+   "cls": "RocketLauncher",
+   "subcls": "Plasma",
+   "tech": 8,
+   "dmgMin": 20,
+   "dmgMax": 25,
+   "categories": [
+    "SBN",
+    "ChurchRevelation",
+    "ChurchGannix",
+    "CoreWard",
+    "CResistance",
+    "Merc",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "rwa_military_smg_1",
+   "name": "Богомол-Призрак",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 7,
+   "dmgMin": 27,
+   "dmgMax": 37,
+   "categories": [
+    "RealWare",
+    "SheduThousand",
+    "Merc"
+   ]
+  },
+  {
+   "id": "civ_common_smg_1",
+   "name": "Восстание-С77",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 4,
+   "dmgMin": 23,
+   "dmgMax": 31,
+   "categories": [
+    "CResistance"
+   ]
+  },
+  {
+   "id": "civ_common_smg_2",
+   "name": "Восстание-D20",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 6,
+   "dmgMin": 14,
+   "dmgMax": 40,
+   "categories": [
+    "CResistance",
+    "Merc"
+   ]
+  },
+  {
+   "id": "anc_smg_1",
+   "name": "Шквал АНКМ",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 2,
+   "dmgMin": 19,
+   "dmgMax": 27,
+   "categories": [
+    "AnCom"
+   ]
+  },
+  {
+   "id": "anc_quasi_smg_1",
+   "name": "АПП-Таурус",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 9,
+   "dmgMin": 33,
+   "dmgMax": 38,
+   "categories": [
+    "AnCom",
+    "Merc"
+   ]
+  },
+  {
+   "id": "she_smg_1",
+   "name": "Джиггалаг",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 4,
+   "dmgMin": 33,
+   "dmgMax": 41,
+   "categories": [
+    "SheduThousand"
+   ]
+  },
+  {
+   "id": "grh_common_smg_1",
+   "name": "Ковров 3301",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 2,
+   "dmgMin": 14,
+   "dmgMax": 27,
+   "categories": [
+    "Grasshopper"
+   ]
+  },
+  {
+   "id": "fra_security_smg_1",
+   "name": "Мучение МАФ",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 3,
+   "dmgMin": 28,
+   "dmgMax": 35,
+   "categories": [
+    "FrancheComte",
+    "Looted"
+   ]
+  },
+  {
+   "id": "fra_security_smg_2",
+   "name": "Агония МАФ",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 7,
+   "dmgMin": 31,
+   "dmgMax": 38,
+   "categories": [
+    "Specops",
+    "FrancheComte",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "fra_shock_smg_1",
+   "name": "Барьер",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Electric",
+   "tech": 7,
+   "dmgMin": 1,
+   "dmgMax": 64,
+   "categories": [
+    "FrancheComte",
+    "Merc",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "sun_cryolaser_smg_1",
+   "name": "Белая Печать",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Laser",
+   "tech": 8,
+   "dmgMin": 21,
+   "dmgMax": 35,
+   "categories": [
+    "Sunlight",
+    "Merc",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "sbn_smg_1",
+   "name": "Вещатель",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 8,
+   "dmgMin": 29,
+   "dmgMax": 42,
+   "categories": [
+    "SBN",
+    "Merc"
+   ]
+  },
+  {
+   "id": "sbn_rail_smg_1",
+   "name": "Сильвер-СЭПп",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Rail",
+   "tech": 5,
+   "dmgMin": 28,
+   "dmgMax": 28,
+   "categories": [
+    "SBN",
+    "Merc"
+   ]
+  },
+  {
+   "id": "dil_shock_smg_1",
+   "name": "А.Р.К.",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Electric",
+   "tech": 3,
+   "dmgMin": 1,
+   "dmgMax": 42,
+   "categories": [
+    "Dilthey"
+   ]
+  },
+  {
+   "id": "dil_chaos_smg_1",
+   "name": "Бистрофия-93",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Entropic",
+   "tech": 9,
+   "dmgMin": 26,
+   "dmgMax": 36,
+   "categories": [
+    "Dilthey",
+    "Merc",
+    "Energy"
+   ]
+  },
+  {
+   "id": "dil_ion_smg_1",
+   "name": "Брейкпоинт",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Electric",
+   "tech": 8,
+   "dmgMin": 18,
+   "dmgMax": 25,
+   "categories": [
+    "Dilthey",
+    "Merc",
+    "Energy"
+   ]
+  },
+  {
+   "id": "cor_worker_discthrower_1",
+   "name": "Мясорубка",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Tool",
+   "tech": 5,
+   "dmgMin": 46,
+   "dmgMax": 80,
+   "categories": [
+    "CoreWard",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "plb_smg_1",
+   "name": "Стерлинг Мк-16",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 8,
+   "dmgMin": 33,
+   "dmgMax": 42,
+   "categories": [
+    "PlanetBridge",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "spec_smg_1",
+   "name": "Тайбай т94",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 4,
+   "dmgMin": 40,
+   "dmgMax": 54,
+   "categories": [
+    "Military",
+    "Tianming"
+   ]
+  },
+  {
+   "id": "spec_smg_2",
+   "name": "Сюнлей т100",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Firearm",
+   "tech": 7,
+   "dmgMin": 36,
+   "dmgMax": 52,
+   "categories": [
+    "Tianming",
+    "Merc"
+   ]
+  },
+  {
+   "id": "flauros_smg_1",
+   "name": "Глашатай мух",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Quasi",
+   "tech": 4,
+   "dmgMin": 27,
+   "dmgMax": 42,
+   "categories": [
+    "Flauros"
+   ]
+  },
+  {
+   "id": "nature_mercury_baron_smg",
+   "name": "Рука Джинна",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Quasi",
+   "tech": 100,
+   "dmgMin": 33,
+   "dmgMax": 38,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "mars_headgun",
+   "name": "Шумерр",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Quasi",
+   "tech": 1,
+   "dmgMin": 22,
+   "dmgMax": 30,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_mars_headgun",
+   "name": "Шумерр",
+   "kind": "range",
+   "cls": "Smg",
+   "subcls": "Quasi",
+   "tech": 1,
+   "dmgMin": 29,
+   "dmgMax": 39,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "pmc_assault_1",
+   "name": "СР-78",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Firearm",
+   "tech": 3,
+   "dmgMin": 31,
+   "dmgMax": 45,
+   "categories": [
+    "Security",
+    "AnCom",
+    "SBN",
+    "Grasshopper"
+   ]
+  },
+  {
+   "id": "military_assault_1",
+   "name": "Наказание",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Firearm",
+   "tech": 5,
+   "dmgMin": 27,
+   "dmgMax": 48,
+   "categories": [
+    "Military",
+    "RealWare",
+    "SheduThousand",
+    "DaydreamChems",
+    "Merc"
+   ]
+  },
+  {
+   "id": "rwa_military_assault_1",
+   "name": "Расплата",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Firearm",
+   "tech": 8,
+   "dmgMin": 30,
+   "dmgMax": 55,
+   "categories": [
+    "RealWare",
+    "SheduThousand",
+    "Merc"
+   ]
+  },
+  {
+   "id": "sbn_rail_assault_1",
+   "name": "Сильвер-САР",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Rail",
+   "tech": 10,
+   "dmgMin": 57,
+   "dmgMax": 57,
+   "categories": [
+    "SBN",
+    "Merc"
+   ]
+  },
+  {
+   "id": "moon_assault_1",
+   "name": "Колесо Боли",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Quasi",
+   "tech": 5,
+   "dmgMin": 35,
+   "dmgMax": 67,
+   "categories": [
+    "Duggur"
+   ]
+  },
+  {
+   "id": "unc_assault_1",
+   "name": "AZ-120",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Firearm",
+   "tech": 6,
+   "dmgMin": 31,
+   "dmgMax": 42,
+   "categories": [
+    "Specops",
+    "UnchainedBelt",
+    "Merc"
+   ]
+  },
+  {
+   "id": "unc_assault_2",
+   "name": "Налетчик M16T",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Firearm",
+   "tech": 8,
+   "dmgMin": 33,
+   "dmgMax": 57,
+   "categories": [
+    "UnchainedBelt",
+    "Merc"
+   ]
+  },
+  {
+   "id": "common_assault_1",
+   "name": "Изгой ШВ",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Firearm",
+   "tech": 2,
+   "dmgMin": 18,
+   "dmgMax": 36,
+   "categories": [
+    "Security",
+    "CoreWard",
+    "ChurchRevelation",
+    "ChurchGannix"
+   ]
+  },
+  {
+   "id": "civ_common_assault_1",
+   "name": "Красный Изгой",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Firearm",
+   "tech": 4,
+   "dmgMin": 20,
+   "dmgMax": 55,
+   "categories": [
+    "CResistance"
+   ]
+  },
+  {
+   "id": "civ_common_assault_2",
+   "name": "Интернационал А",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Firearm",
+   "tech": 9,
+   "dmgMin": 42,
+   "dmgMax": 73,
+   "categories": [
+    "CResistance"
+   ]
+  },
+  {
+   "id": "civ_plasma_assault_1",
+   "name": "Аполлон",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Plasma",
+   "tech": 7,
+   "dmgMin": 45,
+   "dmgMax": 60,
+   "categories": [
+    "CResistance",
+    "Merc",
+    "Energy"
+   ]
+  },
+  {
+   "id": "laser_marksman_1",
+   "name": "ПВ-277",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Laser",
+   "tech": 6,
+   "dmgMin": 39,
+   "dmgMax": 48,
+   "categories": [
+    "Specops",
+    "SBN",
+    "Sunlight",
+    "Emeraldlight",
+    "Dilthey",
+    "Merc",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "sun_laser_assault_1",
+   "name": "Экзорцист",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Laser",
+   "tech": 8,
+   "dmgMin": 19,
+   "dmgMax": 40,
+   "categories": [
+    "Sunlight",
+    "Emeraldlight",
+    "Merc",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "sun_cryolaser_assault_1",
+   "name": "Зимнее Безмолвие",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Laser",
+   "tech": 9,
+   "dmgMin": 17,
+   "dmgMax": 51,
+   "categories": [
+    "Sunlight",
+    "Emeraldlight",
+    "Merc",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "fra_security_assault_1",
+   "name": "ФМАФ 300",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Firearm",
+   "tech": 10,
+   "dmgMin": 47,
+   "dmgMax": 64,
+   "categories": [
+    "FrancheComte",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "grh_trucker_assault_1",
+   "name": "Ковров 025МП",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Firearm",
+   "tech": 4,
+   "dmgMin": 31,
+   "dmgMax": 51,
+   "categories": [
+    "Military",
+    "Grasshopper",
+    "Looted"
+   ]
+  },
+  {
+   "id": "grh_trucker_assault_2",
+   "name": "Полдень",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Firearm",
+   "tech": 9,
+   "dmgMin": 19,
+   "dmgMax": 54,
+   "categories": [
+    "Grasshopper",
+    "Looted",
+    "Merc"
+   ]
+  },
+  {
+   "id": "she_common_assault_1",
+   "name": "Пытка",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Firearm",
+   "tech": 4,
+   "dmgMin": 27,
+   "dmgMax": 53,
+   "categories": [
+    "SheduThousand"
+   ]
+  },
+  {
+   "id": "dil_chaos_assault_1",
+   "name": "ФрейВектор",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Entropic",
+   "tech": 10,
+   "dmgMin": 37,
+   "dmgMax": 56,
+   "categories": [
+    "Dilthey",
+    "Merc",
+    "Energy"
+   ]
+  },
+  {
+   "id": "dil_sound_assault_1",
+   "name": "А.П.О.К.",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Rail",
+   "tech": 7,
+   "dmgMin": 24,
+   "dmgMax": 43,
+   "categories": [
+    "Dilthey",
+    "Merc"
+   ]
+  },
+  {
+   "id": "she_plasma_assault_1",
+   "name": "Бича-Ку",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Firearm",
+   "tech": 8,
+   "dmgMin": 37,
+   "dmgMax": 68,
+   "categories": [
+    "SheduThousand"
+   ]
+  },
+  {
+   "id": "plasma_assault_1",
+   "name": "Пожиратель",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Plasma",
+   "tech": 7,
+   "dmgMin": 44,
+   "dmgMax": 61,
+   "categories": [
+    "Specops",
+    "SBN",
+    "ChurchRevelation",
+    "ChurchGannix",
+    "CoreWard",
+    "Merc",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "chu_meltathrower_1",
+   "name": "Покаяние",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Plasma",
+   "tech": 5,
+   "dmgMin": 47,
+   "dmgMax": 94,
+   "categories": [
+    "ChurchRevelation",
+    "ChurchGannix",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "mars_meltathrower",
+   "name": "Кузнечный горн",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Plasma",
+   "tech": 8,
+   "dmgMin": 47,
+   "dmgMax": 78,
+   "categories": [
+    "Merc"
+   ]
+  },
+  {
+   "id": "nature_mars_meltathrower",
+   "name": "Кузнечный горн",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Plasma",
+   "tech": 8,
+   "dmgMin": 61,
+   "dmgMax": 101,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "tia_disc_assault_1",
+   "name": "Куанцзи",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Tool",
+   "tech": 7,
+   "dmgMin": 33,
+   "dmgMax": 62,
+   "categories": [
+    "Tianming",
+    "Merc"
+   ]
+  },
+  {
+   "id": "tia_shock_assault_1",
+   "name": "Тип-Лейчин",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Electric",
+   "tech": 10,
+   "dmgMin": 1,
+   "dmgMax": 78,
+   "categories": [
+    "Tianming",
+    "Merc"
+   ]
+  },
+  {
+   "id": "*nature_ron_shock_tentacle",
+   "name": "*nature_ron_shock_tentacle",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Electric",
+   "tech": 6,
+   "dmgMin": 1,
+   "dmgMax": 94,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "flauros_assault_1",
+   "name": "Повелитель мух",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Quasi",
+   "tech": 9,
+   "dmgMin": 40,
+   "dmgMax": 73,
+   "categories": [
+    "Flauros",
+    "Merc"
+   ]
+  },
+  {
+   "id": "venus_assault_1",
+   "name": "Шиукоатль",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Quasi",
+   "tech": 9,
+   "dmgMin": 27,
+   "dmgMax": 51,
+   "categories": [
+    "Gannix",
+    "Emeraldlight",
+    "ChurchGannix",
+    "Merc"
+   ]
+  },
+  {
+   "id": "venus_marksman_1",
+   "name": "Змеиная Пасть",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Quasi",
+   "tech": 5,
+   "dmgMin": 36,
+   "dmgMax": 79,
+   "categories": [
+    "Gannix",
+    "XiomaraMasks",
+    "Emeraldlight",
+    "ChurchGannix",
+    "Merc"
+   ]
+  },
+  {
+   "id": "olirna_cryobeam_rifle_1",
+   "name": "Дюд-Зер",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Quasi",
+   "tech": 1,
+   "dmgMin": 50,
+   "dmgMax": 63,
+   "categories": [
+    "Olirna"
+   ]
+  },
+  {
+   "id": "mercury_assault_staff_1",
+   "name": "Джаханнама",
+   "kind": "range",
+   "cls": "AssaultRifle",
+   "subcls": "Quasi",
+   "tech": 4,
+   "dmgMin": 30,
+   "dmgMax": 50,
+   "categories": [
+    "Shartamakhum"
+   ]
+  },
+  {
+   "id": "army_sniper_1",
+   "name": "Слон",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Firearm",
+   "tech": 3,
+   "dmgMin": 47,
+   "dmgMax": 66,
+   "categories": [
+    "Military",
+    "RealWare",
+    "SheduThousand",
+    "UnchainedBelt"
+   ]
+  },
+  {
+   "id": "army_sniper_2",
+   "name": "Архиепископ",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Firearm",
+   "tech": 7,
+   "dmgMin": 68,
+   "dmgMax": 85,
+   "categories": [
+    "Specops",
+    "AnCom",
+    "PlanetBridge",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "unc_sniper_1",
+   "name": "Стервятник",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Firearm",
+   "tech": 7,
+   "dmgMin": 41,
+   "dmgMax": 71,
+   "categories": [
+    "UnchainedBelt",
+    "Merc"
+   ]
+  },
+  {
+   "id": "trucker_marksman_1",
+   "name": "Охотник",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Firearm",
+   "tech": 2,
+   "dmgMin": 33,
+   "dmgMax": 55,
+   "categories": [
+    "Reserve",
+    "Security",
+    "Grasshopper",
+    "ChurchRevelation",
+    "ChurchGannix"
+   ]
+  },
+  {
+   "id": "trucker_marksman_2",
+   "name": "Охотник Рх",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Firearm",
+   "tech": 6,
+   "dmgMin": 47,
+   "dmgMax": 61,
+   "categories": [
+    "Military",
+    "Grasshopper",
+    "ChurchRevelation",
+    "ChurchGannix",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "laser_sniper_1",
+   "name": "Призма",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Laser",
+   "tech": 9,
+   "dmgMin": 56,
+   "dmgMax": 68,
+   "categories": [
+    "Specops",
+    "SBN",
+    "CoreWard",
+    "Sunlight",
+    "Emeraldlight",
+    "Dilthey",
+    "Merc"
+   ]
+  },
+  {
+   "id": "civ_marksman_1",
+   "name": "Нахджир",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Firearm",
+   "tech": 6,
+   "dmgMin": 32,
+   "dmgMax": 62,
+   "categories": [
+    "CResistance",
+    "Merc"
+   ]
+  },
+  {
+   "id": "plb_marksman_1",
+   "name": "Ураган SCD",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Firearm",
+   "tech": 8,
+   "dmgMin": 41,
+   "dmgMax": 75,
+   "categories": [
+    "Planetbridge",
+    "Looted",
+    "Merc"
+   ]
+  },
+  {
+   "id": "anc_marksman_1",
+   "name": "АМВ - Снежный Волк",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Firearm",
+   "tech": 5,
+   "dmgMin": 43,
+   "dmgMax": 57,
+   "categories": [
+    "AnCom",
+    "Merc"
+   ]
+  },
+  {
+   "id": "anc_quasi_assault_1",
+   "name": "АЭВ-Господство",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Quasi",
+   "tech": 10,
+   "dmgMin": 66,
+   "dmgMax": 82,
+   "categories": [
+    "AnCom",
+    "Merc",
+    "Energy"
+   ]
+  },
+  {
+   "id": "ddr_disruptor_marksman_1",
+   "name": "Гарпия",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Toxic",
+   "tech": 9,
+   "dmgMin": 81,
+   "dmgMax": 91,
+   "categories": [
+    "DaydreamChems",
+    "Merc",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "rail_marksman_1",
+   "name": "Энигма Суприм",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Rail",
+   "tech": 6,
+   "dmgMin": 64,
+   "dmgMax": 64,
+   "categories": [
+    "PlanetBridge",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "grh_trucker_marksman_1",
+   "name": "Фронтир",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Firearm",
+   "tech": 3,
+   "dmgMin": 29,
+   "dmgMax": 63,
+   "categories": [
+    "Grasshopper",
+    "Looted"
+   ]
+  },
+  {
+   "id": "grh_trucker_marksman_2",
+   "name": "Триггер Спешл",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Firearm",
+   "tech": 7,
+   "dmgMin": 67,
+   "dmgMax": 128,
+   "categories": [
+    "Grasshopper",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "grh_microwave_marksman_1",
+   "name": "Термостат",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Tool",
+   "tech": 10,
+   "dmgMin": 49,
+   "dmgMax": 74,
+   "categories": [
+    "Grasshopper",
+    "Merc",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "sun_laser_sniper_1",
+   "name": "Просветление МК",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Laser",
+   "tech": 4,
+   "dmgMin": 38,
+   "dmgMax": 61,
+   "categories": [
+    "Sunlight",
+    "Emeraldlight",
+    "Looted"
+   ]
+  },
+  {
+   "id": "sun_laser_marksman_1",
+   "name": "Крестоносец",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Laser",
+   "tech": 7,
+   "dmgMin": 32,
+   "dmgMax": 60,
+   "categories": [
+    "Sunlight",
+    "Emeraldlight",
+    "Merc",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "chu_sniper_1",
+   "name": "Хардкор",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Firearm",
+   "tech": 4,
+   "dmgMin": 57,
+   "dmgMax": 76,
+   "categories": [
+    "ChurchRevelation",
+    "ChurchGannix",
+    "Looted"
+   ]
+  },
+  {
+   "id": "chu_plasma_sniper_1",
+   "name": "Прощение",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Plasma",
+   "tech": 8,
+   "dmgMin": 74,
+   "dmgMax": 97,
+   "categories": [
+    "ChurchRevelation",
+    "ChurchGannix",
+    "Looted",
+    "Merc"
+   ]
+  },
+  {
+   "id": "dil_shock_sniper_1",
+   "name": "Громовержец",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Electric",
+   "tech": 7,
+   "dmgMin": 1,
+   "dmgMax": 76,
+   "categories": [
+    "Dilthey",
+    "Merc",
+    "Energy"
+   ]
+  },
+  {
+   "id": "venus_blowpipe_1",
+   "name": "Ацумарка",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Quasi",
+   "tech": 3,
+   "dmgMin": 38,
+   "dmgMax": 56,
+   "categories": [
+    "Gannix",
+    "XiomaraMasks",
+    "Emeraldlight",
+    "ChurchGannix"
+   ]
+  },
+  {
+   "id": "moon_crossbow_sniper_1",
+   "name": "Арбалет",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Quasi",
+   "tech": 3,
+   "dmgMin": 63,
+   "dmgMax": 83,
+   "categories": [
+    "Duggur"
+   ]
+  },
+  {
+   "id": "mercury_staff_sniper_1",
+   "name": "Посох Аш-Шамса",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Quasi",
+   "tech": 5,
+   "dmgMin": 43,
+   "dmgMax": 63,
+   "categories": [
+    "Shartamakhum"
+   ]
+  },
+  {
+   "id": "worker_hmg_1",
+   "name": "Строитель",
+   "kind": "range",
+   "cls": "Machinegun",
+   "subcls": "Tool",
+   "tech": 3,
+   "dmgMin": 15,
+   "dmgMax": 45,
+   "categories": [
+    "Worker",
+    "PlanetBridge",
+    "CoreWard",
+    "Looted"
+   ]
+  },
+  {
+   "id": "cor_worker_hmg_1",
+   "name": "Архитектор",
+   "kind": "range",
+   "cls": "Machinegun",
+   "subcls": "Tool",
+   "tech": 5,
+   "dmgMin": 25,
+   "dmgMax": 54,
+   "categories": [
+    "CoreWard",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "cor_worker_hmg_2",
+   "name": "Прораб",
+   "kind": "range",
+   "cls": "Machinegun",
+   "subcls": "Tool",
+   "tech": 9,
+   "dmgMin": 27,
+   "dmgMax": 57,
+   "categories": [
+    "CoreWard",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "cor_hmg_1",
+   "name": "Мини Свн",
+   "kind": "range",
+   "cls": "Machinegun",
+   "subcls": "Firearm",
+   "tech": 7,
+   "dmgMin": 30,
+   "dmgMax": 51,
+   "categories": [
+    "CoreWard",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "plb_hmg_1",
+   "name": "Стоунер 93",
+   "kind": "range",
+   "cls": "Machinegun",
+   "subcls": "Firearm",
+   "tech": 9,
+   "dmgMin": 39,
+   "dmgMax": 56,
+   "categories": [
+    "PlanetBridge",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "army_hmg_1",
+   "name": "Наследие",
+   "kind": "range",
+   "cls": "Machinegun",
+   "subcls": "Firearm",
+   "tech": 7,
+   "dmgMin": 38,
+   "dmgMax": 61,
+   "categories": [
+    "Specops",
+    "DaydreamChems",
+    "PlanetBridge",
+    "FrancheComte",
+    "Merc"
+   ]
+  },
+  {
+   "id": "fra_security_hmg_1",
+   "name": "Истязатель X1",
+   "kind": "range",
+   "cls": "Machinegun",
+   "subcls": "Firearm",
+   "tech": 9,
+   "dmgMin": 41,
+   "dmgMax": 73,
+   "categories": [
+    "FrancheComte",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "rwa_military_hmg_1",
+   "name": "КС М249",
+   "kind": "range",
+   "cls": "Machinegun",
+   "subcls": "Firearm",
+   "tech": 10,
+   "dmgMin": 38,
+   "dmgMax": 61,
+   "categories": [
+    "RealWare",
+    "Merc"
+   ]
+  },
+  {
+   "id": "unc_autogun_1",
+   "name": "Наковальня М6",
+   "kind": "range",
+   "cls": "Machinegun",
+   "subcls": "Firearm",
+   "tech": 10,
+   "dmgMin": 62,
+   "dmgMax": 133,
+   "categories": [
+    "UnchainedBelt",
+    "Merc"
+   ]
+  },
+  {
+   "id": "venus_spear_hmg_1",
+   "name": "Ицпапалотль",
+   "kind": "range",
+   "cls": "Machinegun",
+   "subcls": "Quasi",
+   "tech": 100,
+   "dmgMin": 45,
+   "dmgMax": 72,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_venusziggurat",
+   "name": "Призма Тоналли",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Quasi",
+   "tech": 100,
+   "dmgMin": 27,
+   "dmgMax": 93,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_mars_knight_arm",
+   "name": "Шар-ур",
+   "kind": "range",
+   "cls": "Machinegun",
+   "subcls": "Quasi",
+   "tech": 9,
+   "dmgMin": 40,
+   "dmgMax": 95,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "plasma_hmg_1",
+   "name": "Вулкан",
+   "kind": "range",
+   "cls": "Minigun",
+   "subcls": "Plasma",
+   "tech": 9,
+   "dmgMin": 38,
+   "dmgMax": 58,
+   "categories": [
+    "SBN",
+    "RealWare",
+    "SheduThousand",
+    "CoreWard",
+    "CResistance",
+    "Merc",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "sun_cryolaser_hmg_1",
+   "name": "Тепловая Смерть",
+   "kind": "range",
+   "cls": "Minigun",
+   "subcls": "Laser",
+   "tech": 10,
+   "dmgMin": 15,
+   "dmgMax": 58,
+   "categories": [
+    "Sunlight",
+    "Emeraldlight",
+    "Merc",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "nature_cyborg_battle_machinegun",
+   "name": "Судья АБВ",
+   "kind": "range",
+   "cls": "Minigun",
+   "subcls": "Firearm",
+   "tech": 3,
+   "dmgMin": 24,
+   "dmgMax": 50,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "mercury_hmg_staff_1",
+   "name": "Кабид",
+   "kind": "range",
+   "cls": "Minigun",
+   "subcls": "Quasi",
+   "tech": 6,
+   "dmgMin": 34,
+   "dmgMax": 59,
+   "categories": [
+    "Shartamakhum"
+   ]
+  },
+  {
+   "id": "military_minigun_1",
+   "name": "Зверь",
+   "kind": "range",
+   "cls": "Minigun",
+   "subcls": "Firearm",
+   "tech": 9,
+   "dmgMin": 36,
+   "dmgMax": 72,
+   "categories": [
+    "Specops",
+    "RealWare",
+    "Grasshopper",
+    "CoreWard",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "she_military_minigun_1",
+   "name": "Злоба",
+   "kind": "range",
+   "cls": "Minigun",
+   "subcls": "Firearm",
+   "tech": 7,
+   "dmgMin": 29,
+   "dmgMax": 55,
+   "categories": [
+    "SheduThousand"
+   ]
+  },
+  {
+   "id": "moon_minigun_1",
+   "name": "Распинатель",
+   "kind": "range",
+   "cls": "Minigun",
+   "subcls": "Quasi",
+   "tech": 10,
+   "dmgMin": 29,
+   "dmgMax": 81,
+   "categories": [
+    "Duggur",
+    "Merc"
+   ]
+  },
+  {
+   "id": "olirna_icicle_minigun_1",
+   "name": "Дюд-Мда",
+   "kind": "range",
+   "cls": "Minigun",
+   "subcls": "Quasi",
+   "tech": 4,
+   "dmgMin": 43,
+   "dmgMax": 59,
+   "categories": [
+    "Olirna"
+   ]
+  },
+  {
+   "id": "plb_worker_shockgun_1",
+   "name": "Гроза",
+   "kind": "range",
+   "cls": "Minigun",
+   "subcls": "Electric",
+   "tech": 5,
+   "dmgMin": 1,
+   "dmgMax": 76,
+   "categories": [
+    "PlanetBridge",
+    "Merc",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "tech_hfg_1",
+   "name": "З.Е.П.",
+   "kind": "range",
+   "cls": "RocketLauncher",
+   "subcls": "Plasma",
+   "tech": 10,
+   "dmgMin": 65,
+   "dmgMax": 111,
+   "categories": [
+    "SBN",
+    "CResistance",
+    "Merc",
+    "Energy"
+   ]
+  },
+  {
+   "id": "cor_laser_sniper_1",
+   "name": "ЛПС-Хлыст",
+   "kind": "range",
+   "cls": "MarksmanRifle",
+   "subcls": "Laser",
+   "tech": 4,
+   "dmgMin": 48,
+   "dmgMax": 88,
+   "categories": [
+    "CoreWard",
+    "Looted"
+   ]
+  },
+  {
+   "id": "toxic_thrower_1",
+   "name": "Горгона",
+   "kind": "range",
+   "cls": "Flamethrower",
+   "subcls": "Toxic",
+   "tech": 4,
+   "dmgMin": 59,
+   "dmgMax": 79,
+   "categories": [
+    "DaydreamChems",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "worker_flamethrower_1",
+   "name": "Смерть Паразитов",
+   "kind": "range",
+   "cls": "Flamethrower",
+   "subcls": "Tool",
+   "tech": 3,
+   "dmgMin": 23,
+   "dmgMax": 66,
+   "categories": [
+    "Miner",
+    "CoreWard",
+    "CResistance",
+    "SheduThousand",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "cor_worker_flamethrower_1",
+   "name": "Бог Огня",
+   "kind": "range",
+   "cls": "Flamethrower",
+   "subcls": "Tool",
+   "tech": 6,
+   "dmgMin": 42,
+   "dmgMax": 86,
+   "categories": [
+    "CoreWard",
+    "Merc",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "mars_flamehead",
+   "name": "Мардукан",
+   "kind": "range",
+   "cls": "Flamethrower",
+   "subcls": "Quasi",
+   "tech": 1,
+   "dmgMin": 30,
+   "dmgMax": 47,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "fire_extinguisher",
+   "name": "ОВП-К",
+   "kind": "range",
+   "cls": "Flamethrower",
+   "subcls": "Tool",
+   "tech": 1,
+   "dmgMin": 3,
+   "dmgMax": 7,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_mars_flamehead",
+   "name": "Мардукан",
+   "kind": "range",
+   "cls": "Flamethrower",
+   "subcls": "Quasi",
+   "tech": 1,
+   "dmgMin": 40,
+   "dmgMax": 61,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_olrina_dog_breath",
+   "name": "Ледяное дыхание",
+   "kind": "range",
+   "cls": "Flamethrower",
+   "subcls": "Quasi",
+   "tech": 1,
+   "dmgMin": 62,
+   "dmgMax": 90,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "grenade_launcher_1",
+   "name": "Встряска",
+   "kind": "range",
+   "cls": "GrenadeLauncher",
+   "subcls": "Launcher",
+   "tech": 5,
+   "dmgMin": 1,
+   "dmgMax": 1,
+   "categories": [
+    "RealWare",
+    "SheduThousand",
+    "Grasshopper",
+    "UnchainedBelt",
+    "CResistance",
+    "Looted"
+   ]
+  },
+  {
+   "id": "common_rocketlauncher_1",
+   "name": "РПГ-77",
+   "kind": "range",
+   "cls": "RocketLauncher",
+   "subcls": "Launcher",
+   "tech": 6,
+   "dmgMin": 41,
+   "dmgMax": 104,
+   "categories": [
+    "RealWare",
+    "SheduThousand",
+    "ChurchRevelation",
+    "ChurchGannix",
+    "Grasshopper",
+    "UnchainedBelt",
+    "Tianming",
+    "CResistance",
+    "Merc"
+   ]
+  },
+  {
+   "id": "army_rocketlauncher_1",
+   "name": "МРС-21",
+   "kind": "range",
+   "cls": "RocketLauncher",
+   "subcls": "Launcher",
+   "tech": 8,
+   "dmgMin": 53,
+   "dmgMax": 109,
+   "categories": [
+    "ChurchRevelation",
+    "ChurchGannix",
+    "Grasshopper",
+    "FrancheComte",
+    "CoreWard",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "tia_rocketlauncher_1",
+   "name": "Шачонг",
+   "kind": "range",
+   "cls": "RocketLauncher",
+   "subcls": "Launcher",
+   "tech": 6,
+   "dmgMin": 57,
+   "dmgMax": 105,
+   "categories": [
+    "Tianming",
+    "Merc"
+   ]
+  },
+  {
+   "id": "sun_rocketlauncher_1",
+   "name": "Психопомп",
+   "kind": "range",
+   "cls": "RocketLauncher",
+   "subcls": "Launcher",
+   "tech": 9,
+   "dmgMin": 66,
+   "dmgMax": 104,
+   "categories": [
+    "Sunlight",
+    "Emeraldlight",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "venus_rocketlauncher_1",
+   "name": "Миктлахотла",
+   "kind": "range",
+   "cls": "RocketLauncher",
+   "subcls": "Quasi",
+   "tech": 8,
+   "dmgMin": 64,
+   "dmgMax": 116,
+   "categories": [
+    "Gannix",
+    "Tezctlan",
+    "Emeraldlight",
+    "ChurchGannix",
+    "Merc"
+   ]
+  },
+  {
+   "id": "*nature_mars_rocketlauncher",
+   "name": "*nature_mars_rocketlauncher",
+   "kind": "range",
+   "cls": "RocketLauncher",
+   "subcls": "Quasi",
+   "tech": 10,
+   "dmgMin": 51,
+   "dmgMax": 133,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "turtle_gun",
+   "name": "Хелонопир",
+   "kind": "range",
+   "cls": "RocketLauncher",
+   "subcls": "Quasi",
+   "tech": 1,
+   "dmgMin": 33,
+   "dmgMax": 89,
+   "categories": [
+    "Merc"
+   ]
+  },
+  {
+   "id": "nature_turtle_gun",
+   "name": "Хелонопир",
+   "kind": "range",
+   "cls": "RocketLauncher",
+   "subcls": "Quasi",
+   "tech": 1,
+   "dmgMin": 33,
+   "dmgMax": 89,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_xiomara_hand",
+   "name": "Изумрудная Длань",
+   "kind": "range",
+   "cls": "Machinegun",
+   "subcls": "Quasi",
+   "tech": 1,
+   "dmgMin": 14,
+   "dmgMax": 45,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_venus_warrior_smg",
+   "name": "Изумрудная Длань",
+   "kind": "range",
+   "cls": "Machinegun",
+   "subcls": "Quasi",
+   "tech": 3,
+   "dmgMin": 16,
+   "dmgMax": 50,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_mars_grenade_launcher",
+   "name": "Сихем",
+   "kind": "range",
+   "cls": "GrenadeLauncher",
+   "subcls": "Quasi",
+   "tech": 1,
+   "dmgMin": 1,
+   "dmgMax": 1,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_minigun_turret",
+   "name": "Картечница Гатлинга",
+   "kind": "range",
+   "cls": "Turret",
+   "subcls": "Firearm",
+   "tech": 1,
+   "dmgMin": 23,
+   "dmgMax": 48,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_firethrower_turret",
+   "name": "РВ Дрэгонборн",
+   "kind": "range",
+   "cls": "Flamethrower",
+   "subcls": "Tool",
+   "tech": 1,
+   "dmgMin": 28,
+   "dmgMax": 54,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_laser_turret",
+   "name": "Дльт Амплификатор",
+   "kind": "range",
+   "cls": "Turret",
+   "subcls": "Laser",
+   "tech": 1,
+   "dmgMin": 40,
+   "dmgMax": 57,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_flauros_turret",
+   "name": "Споровая коробка",
+   "kind": "range",
+   "cls": "Turret",
+   "subcls": "Quasi",
+   "tech": 1,
+   "dmgMin": 51,
+   "dmgMax": 61,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_mars_turret",
+   "name": "Латунное гало",
+   "kind": "range",
+   "cls": "Turret",
+   "subcls": "Firearm",
+   "tech": 1,
+   "dmgMin": 40,
+   "dmgMax": 110,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_mars_urparp_headgun",
+   "name": "Зев Ура",
+   "kind": "range",
+   "cls": "Shotgun",
+   "subcls": "Quasi",
+   "tech": 1,
+   "dmgMin": 30,
+   "dmgMax": 57,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "common_knife_1",
+   "name": "Коготь",
+   "kind": "melee",
+   "cls": "Knife",
+   "subcls": "Default",
+   "tech": 1,
+   "dmgMin": 20,
+   "dmgMax": 25,
+   "categories": [
+    "Civilian",
+    "Security",
+    "DaydreamChems"
+   ]
+  },
+  {
+   "id": "military_knife_1",
+   "name": "Финка Чвк",
+   "kind": "melee",
+   "cls": "Knife",
+   "subcls": "Default",
+   "tech": 3,
+   "dmgMin": 33,
+   "dmgMax": 37,
+   "categories": [
+    "Military",
+    "AnCom",
+    "SBN",
+    "Merc"
+   ]
+  },
+  {
+   "id": "miner_knife_1",
+   "name": "Заточка",
+   "kind": "melee",
+   "cls": "Knife",
+   "subcls": "Default",
+   "tech": 2,
+   "dmgMin": 29,
+   "dmgMax": 33,
+   "categories": [
+    "Reserve",
+    "Miner",
+    "Prison",
+    "Grasshopper",
+    "PlanetBridge",
+    "Tianming"
+   ]
+  },
+  {
+   "id": "ddr_poisonknife_1",
+   "name": "Менгеле",
+   "kind": "melee",
+   "cls": "Knife",
+   "subcls": "Toxic",
+   "tech": 3,
+   "dmgMin": 27,
+   "dmgMax": 33,
+   "categories": [
+    "DaydreamChems",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "venus_knife_1",
+   "name": "Текпатль",
+   "kind": "melee",
+   "cls": "Knife",
+   "subcls": "Quasi",
+   "tech": 1,
+   "dmgMin": 28,
+   "dmgMax": 34,
+   "categories": [
+    "Gannix",
+    "Emeraldlight",
+    "ChurchGannix"
+   ]
+  },
+  {
+   "id": "bone_knife",
+   "name": "Большая Кость",
+   "kind": "melee",
+   "cls": "Knife",
+   "subcls": "Default",
+   "tech": 1,
+   "dmgMin": 19,
+   "dmgMax": 27,
+   "categories": [
+    "Possessed"
+   ]
+  },
+  {
+   "id": "matrix_knife",
+   "name": "Цифровой Нож",
+   "kind": "melee",
+   "cls": "Knife",
+   "subcls": "Default",
+   "tech": 3,
+   "dmgMin": 22,
+   "dmgMax": 32,
+   "categories": [
+    "Matrix"
+   ]
+  },
+  {
+   "id": "*spider_claw",
+   "name": "*spider_claw",
+   "kind": "melee",
+   "cls": "Knife",
+   "subcls": "Default",
+   "tech": 4,
+   "dmgMin": 25,
+   "dmgMax": 31,
+   "categories": [
+    "Gannix",
+    "XiomaraMasks"
+   ]
+  },
+  {
+   "id": "tech_blade_1",
+   "name": "Бритва",
+   "kind": "melee",
+   "cls": "Blade",
+   "subcls": "Default",
+   "tech": 4,
+   "dmgMin": 30,
+   "dmgMax": 40,
+   "categories": [
+    "Military",
+    "AnCom",
+    "Merc",
+    "Energy"
+   ]
+  },
+  {
+   "id": "med_lightblade_1",
+   "name": "Старвоукер",
+   "kind": "melee",
+   "cls": "Blade",
+   "subcls": "Laser",
+   "tech": 4,
+   "dmgMin": 29,
+   "dmgMax": 35,
+   "categories": [
+    "Science",
+    "Medical",
+    "Sunlight",
+    "Emeraldlight",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "sun_laser_powersword_1",
+   "name": "Звездный меч",
+   "kind": "melee",
+   "cls": "Blade",
+   "subcls": "Laser",
+   "tech": 7,
+   "dmgMin": 47,
+   "dmgMax": 60,
+   "categories": [
+    "Sunlight",
+    "Emeraldlight",
+    "Merc",
+    "Energy",
+    "Looted"
+   ]
+  },
+  {
+   "id": "tia_blade_1",
+   "name": "Хань Дао",
+   "kind": "melee",
+   "cls": "Blade",
+   "subcls": "Default",
+   "tech": 1,
+   "dmgMin": 32,
+   "dmgMax": 38,
+   "categories": [
+    "Tianming"
+   ]
+  },
+  {
+   "id": "mercury_sickle_1",
+   "name": "Хинжал",
+   "kind": "melee",
+   "cls": "Blade",
+   "subcls": "Quasi",
+   "tech": 1,
+   "dmgMin": 28,
+   "dmgMax": 38,
+   "categories": [
+    "Shartamakhum"
+   ]
+  },
+  {
+   "id": "mercury_blade_1",
+   "name": "Дульфакар",
+   "kind": "melee",
+   "cls": "Blade",
+   "subcls": "Quasi",
+   "tech": 2,
+   "dmgMin": 41,
+   "dmgMax": 51,
+   "categories": [
+    "Shartamakhum"
+   ]
+  },
+  {
+   "id": "scrivnus_blade_1",
+   "name": "Жнец",
+   "kind": "melee",
+   "cls": "Blade",
+   "subcls": "Quasi",
+   "tech": 1,
+   "dmgMin": 44,
+   "dmgMax": 54,
+   "categories": [
+    "Scrivnus"
+   ]
+  },
+  {
+   "id": "moon_blade_1",
+   "name": "Сабля Дуггура",
+   "kind": "melee",
+   "cls": "Blade",
+   "subcls": "Quasi",
+   "tech": 6,
+   "dmgMin": 75,
+   "dmgMax": 90,
+   "categories": [
+    "Duggur",
+    "Merc"
+   ]
+  },
+  {
+   "id": "civ_powerfist_1",
+   "name": "Похмелье",
+   "kind": "melee",
+   "cls": "Fist",
+   "subcls": "Tool",
+   "tech": 3,
+   "dmgMin": 26,
+   "dmgMax": 32,
+   "categories": [
+    "CResistance",
+    "Merc"
+   ]
+  },
+  {
+   "id": "venus_battlefist_1",
+   "name": "Трипатекпатль",
+   "kind": "melee",
+   "cls": "Fist",
+   "subcls": "Quasi",
+   "tech": 3,
+   "dmgMin": 28,
+   "dmgMax": 34,
+   "categories": [
+    "Gannix",
+    "XiomaraMasks",
+    "Emeraldlight",
+    "ChurchGannix",
+    "Merc"
+   ]
+  },
+  {
+   "id": "nature_moonbaron_fist",
+   "name": "Рукавица Муки",
+   "kind": "melee",
+   "cls": "Fist",
+   "subcls": "Quasi",
+   "tech": 1,
+   "dmgMin": 30,
+   "dmgMax": 36,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "police_club_1",
+   "name": "Вертикаль",
+   "kind": "melee",
+   "cls": "Club",
+   "subcls": "Default",
+   "tech": 1,
+   "dmgMin": 21,
+   "dmgMax": 27,
+   "categories": [
+    "Security",
+    "FrancheComte"
+   ]
+  },
+  {
+   "id": "miner_breaker_1",
+   "name": "Крушитель",
+   "kind": "melee",
+   "cls": "Club",
+   "subcls": "Tool",
+   "tech": 2,
+   "dmgMin": 24,
+   "dmgMax": 30,
+   "categories": [
+    "Miner",
+    "CoreWard",
+    "CResistance"
+   ]
+  },
+  {
+   "id": "worker_crowbar_1",
+   "name": "Монтировка",
+   "kind": "melee",
+   "cls": "Club",
+   "subcls": "Tool",
+   "tech": 1,
+   "dmgMin": 25,
+   "dmgMax": 31,
+   "categories": [
+    "Worker",
+    "Miner",
+    "UnchainedBelt",
+    "Tianming"
+   ]
+  },
+  {
+   "id": "worker_wrench_1",
+   "name": "Гаечный Ключ",
+   "kind": "melee",
+   "cls": "Club",
+   "subcls": "Tool",
+   "tech": 2,
+   "dmgMin": 29,
+   "dmgMax": 35,
+   "categories": [
+    "Worker",
+    "PlanetBridge",
+    "Tianming"
+   ]
+  },
+  {
+   "id": "fra_police_club_1",
+   "name": "Зевс",
+   "kind": "melee",
+   "cls": "Club",
+   "subcls": "Electric",
+   "tech": 3,
+   "dmgMin": 23,
+   "dmgMax": 29,
+   "categories": [
+    "FrancheComte",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "chu_fireclub_1",
+   "name": "Архипресвитер",
+   "kind": "melee",
+   "cls": "Club",
+   "subcls": "Default",
+   "tech": 4,
+   "dmgMin": 31,
+   "dmgMax": 37,
+   "categories": [
+    "ChurchRevelation",
+    "ChurchGannix",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "matrix_staff",
+   "name": "Цифровой Посох",
+   "kind": "melee",
+   "cls": "Club",
+   "subcls": "Default",
+   "tech": 1,
+   "dmgMin": 24,
+   "dmgMax": 30,
+   "categories": [
+    "Matrix"
+   ]
+  },
+  {
+   "id": "venus_club_1",
+   "name": "Макуауитль",
+   "kind": "melee",
+   "cls": "Club",
+   "subcls": "Quasi",
+   "tech": 4,
+   "dmgMin": 36,
+   "dmgMax": 44,
+   "categories": [
+    "Tezctlan",
+    "Emeraldlight",
+    "ChurchGannix",
+    "Merc"
+   ]
+  },
+  {
+   "id": "venus_mace_1",
+   "name": "Кваухололь",
+   "kind": "melee",
+   "cls": "Club",
+   "subcls": "Quasi",
+   "tech": 1,
+   "dmgMin": 28,
+   "dmgMax": 34,
+   "categories": [
+    "Gannix",
+    "Emeraldlight",
+    "ChurchGannix"
+   ]
+  },
+  {
+   "id": "moon_mace_1",
+   "name": "Моргенштерн Дуггура",
+   "kind": "melee",
+   "cls": "Club",
+   "subcls": "Quasi",
+   "tech": 1,
+   "dmgMin": 25,
+   "dmgMax": 33,
+   "categories": [
+    "Duggur"
+   ]
+  },
+  {
+   "id": "moon_maul_1",
+   "name": "Свинцовая Булла",
+   "kind": "melee",
+   "cls": "Club",
+   "subcls": "Quasi",
+   "tech": 3,
+   "dmgMin": 56,
+   "dmgMax": 66,
+   "categories": [
+    "Duggur"
+   ]
+  },
+  {
+   "id": "common_axe_1",
+   "name": "Варяг",
+   "kind": "melee",
+   "cls": "Axe",
+   "subcls": "Default",
+   "tech": 2,
+   "dmgMin": 48,
+   "dmgMax": 56,
+   "categories": [
+    "Reserve",
+    "Security",
+    "RealWare",
+    "SheduThousand",
+    "Sunlight",
+    "Emeraldlight"
+   ]
+  },
+  {
+   "id": "prison_axe_1",
+   "name": "Рубило",
+   "kind": "melee",
+   "cls": "Axe",
+   "subcls": "Default",
+   "tech": 2,
+   "dmgMin": 56,
+   "dmgMax": 64,
+   "categories": [
+    "Prison",
+    "Possessed",
+    "DaydreamChems"
+   ]
+  },
+  {
+   "id": "military_axe_1",
+   "name": "Ястреб",
+   "kind": "melee",
+   "cls": "Axe",
+   "subcls": "Default",
+   "tech": 4,
+   "dmgMin": 53,
+   "dmgMax": 61,
+   "categories": [
+    "Military",
+    "RealWare",
+    "SheduThousand",
+    "DaydreamChems",
+    "Sunlight",
+    "Emeraldlight",
+    "Tianming",
+    "Merc",
+    "Looted"
+   ]
+  },
+  {
+   "id": "military_shovel_1",
+   "name": "МПЛ-95",
+   "kind": "melee",
+   "cls": "Axe",
+   "subcls": "Tool",
+   "tech": 3,
+   "dmgMin": 38,
+   "dmgMax": 44,
+   "categories": [
+    "Reserve",
+    "Miner",
+    "RealWare",
+    "CResistance",
+    "Merc"
+   ]
+  },
+  {
+   "id": "venus_axe_1",
+   "name": "Ицтопильи",
+   "kind": "melee",
+   "cls": "Axe",
+   "subcls": "Quasi",
+   "tech": 3,
+   "dmgMin": 52,
+   "dmgMax": 60,
+   "categories": [
+    "Gannix",
+    "Emeraldlight",
+    "ChurchGannix"
+   ]
+  },
+  {
+   "id": "venus_poleaxe_1",
+   "name": "Тепоцтли",
+   "kind": "melee",
+   "cls": "Axe",
+   "subcls": "Quasi",
+   "tech": 5,
+   "dmgMin": 63,
+   "dmgMax": 70,
+   "categories": [
+    "Gannix",
+    "Tezctlan",
+    "Emeraldlight",
+    "ChurchGannix",
+    "Merc"
+   ]
+  },
+  {
+   "id": "moon_axe_1",
+   "name": "Стрижающая Секира",
+   "kind": "melee",
+   "cls": "Axe",
+   "subcls": "Quasi",
+   "tech": 1,
+   "dmgMin": 53,
+   "dmgMax": 61,
+   "categories": [
+    "Duggur"
+   ]
+  },
+  {
+   "id": "nature_human_fist",
+   "name": "Кулак",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 8,
+   "dmgMax": 10,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_possessed_centaur_blade",
+   "name": "Коготь",
+   "kind": "melee",
+   "cls": "Blade",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 21,
+   "dmgMax": 24,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_possessed_bigarm_fist",
+   "name": "Большой кулак",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 15,
+   "dmgMax": 25,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_possessed_fist",
+   "name": "Кулак",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 13,
+   "dmgMax": 16,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_venus_demon_cat_claw",
+   "name": "Лапа",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 18,
+   "dmgMax": 26,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_venus_servitor_fist",
+   "name": "Лапа",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 13,
+   "dmgMax": 16,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_venus_knight_claw",
+   "name": "Лапа",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 15,
+   "dmgMax": 21,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_venus_warrior_claw",
+   "name": "Большая лапа",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 56,
+   "dmgMax": 62,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_venus_vortex",
+   "name": "Кровавая кромка",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 56,
+   "dmgMax": 62,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_mars_battle_fist",
+   "name": "Кулак",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 19,
+   "dmgMax": 33,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_mars_crab_fist",
+   "name": "Клешня",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 42,
+   "dmgMax": 56,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_spider_knife",
+   "name": "Коготь",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 19,
+   "dmgMax": 31,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_cyborg_fist",
+   "name": "Робо-кулак",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 11,
+   "dmgMax": 20,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_cyborg_drill",
+   "name": "Экскаватор",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 22,
+   "dmgMax": 29,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_cyborg_battle_fist",
+   "name": "Робо-кулак",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 10,
+   "dmgMax": 18,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_cyborg_recreation_fist",
+   "name": "Робо-кулак",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 11,
+   "dmgMax": 18,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_cyborg_recreation_blade",
+   "name": "Клинок-23",
+   "kind": "melee",
+   "cls": "Blade",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 23,
+   "dmgMax": 30,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_human_stump",
+   "name": "Культя руки",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 5,
+   "dmgMax": 9,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_mercury_headbutt",
+   "name": "`Икаб",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 25,
+   "dmgMax": 29,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_moon_knight_thorn",
+   "name": "Шип",
+   "kind": "melee",
+   "cls": "Knife",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 23,
+   "dmgMax": 30,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_moon_servitor_fist",
+   "name": "Кулак",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 13,
+   "dmgMax": 16,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_moon_slave_thorn",
+   "name": "Шипы",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 13,
+   "dmgMax": 18,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_moon_torturer_axe",
+   "name": "Свинцовый топор",
+   "kind": "melee",
+   "cls": "Axe",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 23,
+   "dmgMax": 30,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_scrivnus_fist",
+   "name": "Кулак",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 30,
+   "dmgMax": 36,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_scrivnus_baron_blade",
+   "name": "Жнец",
+   "kind": "melee",
+   "cls": "Blade",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 24,
+   "dmgMax": 32,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_cattaram_fist",
+   "name": "Кулак",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 39,
+   "dmgMax": 45,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_ron_tentacle",
+   "name": "Шипощупальце",
+   "kind": "melee",
+   "cls": "Blade",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 23,
+   "dmgMax": 30,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_flauros_horns",
+   "name": "Рога",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 21,
+   "dmgMax": 23,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_dog_bite",
+   "name": "Пасть",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 14,
+   "dmgMax": 32,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "nature_cargo_drone_fork",
+   "name": "Вилы",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 36,
+   "dmgMax": 48,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "*human_hand",
+   "name": "*human_hand",
+   "kind": "melee",
+   "cls": "Club",
+   "subcls": "Default",
+   "tech": 1,
+   "dmgMin": 28,
+   "dmgMax": 36,
+   "categories": [
+    "Possessed"
+   ]
+  },
+  {
+   "id": "*human_leg",
+   "name": "*human_leg",
+   "kind": "melee",
+   "cls": "Club",
+   "subcls": "Default",
+   "tech": 1,
+   "dmgMin": 28,
+   "dmgMax": 38,
+   "categories": [
+    "Possessed"
+   ]
+  },
+  {
+   "id": "*cyborg_hand",
+   "name": "*cyborg_hand",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 1,
+   "dmgMin": 32,
+   "dmgMax": 36,
+   "categories": [
+    "Common",
+    "Worker",
+    "Miner"
+   ]
+  },
+  {
+   "id": "*cyborg_leg",
+   "name": "*cyborg_leg",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 1,
+   "dmgMin": 32,
+   "dmgMax": 38,
+   "categories": [
+    "Common",
+    "Worker",
+    "Miner"
+   ]
+  },
+  {
+   "id": "*cyborg_battle_hand",
+   "name": "*cyborg_battle_hand",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 4,
+   "dmgMin": 32,
+   "dmgMax": 38,
+   "categories": [
+    "Military",
+    "Specops"
+   ]
+  },
+  {
+   "id": "*cyborg_battle_leg",
+   "name": "*cyborg_battle_leg",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 4,
+   "dmgMin": 33,
+   "dmgMax": 40,
+   "categories": [
+    "Military",
+    "Specops"
+   ]
+  },
+  {
+   "id": "*cyborg_recreation_hand",
+   "name": "*cyborg_recreation_hand",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 3,
+   "dmgMin": 32,
+   "dmgMax": 36,
+   "categories": [
+    "Management",
+    "Prison",
+    "Security"
+   ]
+  },
+  {
+   "id": "*cyborg_recreation_leg",
+   "name": "*cyborg_recreation_leg",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 3,
+   "dmgMin": 32,
+   "dmgMax": 38,
+   "categories": [
+    "Management",
+    "Prison",
+    "Security"
+   ]
+  },
+  {
+   "id": "*mars_cyborg_hand",
+   "name": "*mars_cyborg_hand",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 7,
+   "dmgMin": 42,
+   "dmgMax": 50,
+   "categories": [
+    "Ur",
+    "SheduThousand"
+   ]
+  },
+  {
+   "id": "*mars_cyborg_leg",
+   "name": "*mars_cyborg_leg",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 7,
+   "dmgMin": 43,
+   "dmgMax": 52,
+   "categories": [
+    "Ur",
+    "SheduThousand"
+   ]
+  },
+  {
+   "id": "*possessed_hand",
+   "name": "*possessed_hand",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 1,
+   "dmgMin": 28,
+   "dmgMax": 36,
+   "categories": [
+    "Psycho"
+   ]
+  },
+  {
+   "id": "*possessed_bigarm_hand",
+   "name": "*possessed_bigarm_hand",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 2,
+   "dmgMin": 32,
+   "dmgMax": 36,
+   "categories": [
+    "Possessed",
+    "SheduThousand"
+   ]
+  },
+  {
+   "id": "*possessed_centaur_hand",
+   "name": "*possessed_centaur_hand",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 3,
+   "dmgMin": 32,
+   "dmgMax": 36,
+   "categories": [
+    "Possessed",
+    "SheduThousand"
+   ]
+  },
+  {
+   "id": "*cyborg_drill",
+   "name": "*cyborg_drill",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 1,
+   "dmgMin": 32,
+   "dmgMax": 36,
+   "categories": [
+    "Miner",
+    "Reserve"
+   ]
+  },
+  {
+   "id": "*cyborg_battle_machinegun",
+   "name": "*cyborg_battle_machinegun",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 4,
+   "dmgMin": 32,
+   "dmgMax": 36,
+   "categories": [
+    "Military",
+    "Specops"
+   ]
+  },
+  {
+   "id": "*cyborg_recreation_blade",
+   "name": "*cyborg_recreation_blade",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 3,
+   "dmgMin": 28,
+   "dmgMax": 36,
+   "categories": [
+    "Prison",
+    "Security"
+   ]
+  },
+  {
+   "id": "*venus_warrior_hand",
+   "name": "*venus_warrior_hand",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 1,
+   "dmgMin": 28,
+   "dmgMax": 36,
+   "categories": [
+    "Gannix",
+    "Emeraldlight",
+    "ChurchGannix"
+   ]
+  },
+  {
+   "id": "*venus_warrior_smg",
+   "name": "*venus_warrior_smg",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 3,
+   "dmgMin": 28,
+   "dmgMax": 36,
+   "categories": [
+    "Gannix",
+    "Emeraldlight",
+    "ChurchGannix"
+   ]
+  },
+  {
+   "id": "*mercury_baron_smg",
+   "name": "*mercury_baron_smg",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 100,
+   "dmgMin": 28,
+   "dmgMax": 36,
+   "categories": [
+    "none"
+   ]
+  },
+  {
+   "id": "*mars_crab_hand",
+   "name": "*mars_crab_hand",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 9,
+   "dmgMin": 28,
+   "dmgMax": 36,
+   "categories": [
+    "SheduThousand"
+   ]
+  },
+  {
+   "id": "*mars_knight_hand",
+   "name": "*mars_knight_hand",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 9,
+   "dmgMin": 28,
+   "dmgMax": 36,
+   "categories": [
+    "SheduThousand"
+   ]
+  },
+  {
+   "id": "*mars_baron_hand",
+   "name": "*mars_baron_hand",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 10,
+   "dmgMin": 28,
+   "dmgMax": 36,
+   "categories": [
+    "SheduThousand"
+   ]
+  },
+  {
+   "id": "*mars_baron_leg",
+   "name": "*mars_baron_leg",
+   "kind": "melee",
+   "cls": "Unarmed",
+   "subcls": "Default",
+   "tech": 10,
+   "dmgMin": 28,
+   "dmgMax": 36,
+   "categories": [
+    "SheduThousand"
+   ]
+  }
+ ],
+ "factionDrops": {
+  "AnCom": [
+   {
+    "tech": 2,
+    "id": "military_knife_1",
+    "points": 250
+   },
+   {
+    "tech": 3,
+    "id": "tech_blade_1",
+    "points": 450
+   },
+   {
+    "tech": 5,
+    "id": "pmc_shotgun_2",
+    "points": 300
+   },
+   {
+    "tech": 1,
+    "id": "anc_shirt_1",
+    "points": 50
+   },
+   {
+    "tech": 1,
+    "id": "anc_pants_1",
+    "points": 25
+   },
+   {
+    "tech": 1,
+    "id": "anc_boots_1",
+    "points": 25
+   },
+   {
+    "tech": 5,
+    "id": "anc_reinforced_hat_1",
+    "points": 50
+   },
+   {
+    "tech": 5,
+    "id": "anc_reinforced_shirt_1",
+    "points": 75
+   },
+   {
+    "tech": 5,
+    "id": "anc_reinforced_pants_1",
+    "points": 50
+   },
+   {
+    "tech": 7,
+    "id": "anc_quasi_pistol_1",
+    "points": 575
+   },
+   {
+    "tech": 3,
+    "id": "anc_agent_mask_1",
+    "points": 75
+   },
+   {
+    "tech": 3,
+    "id": "anc_agent_armor_1",
+    "points": 150
+   },
+   {
+    "tech": 3,
+    "id": "anc_agent_pants_1",
+    "points": 100
+   },
+   {
+    "tech": 3,
+    "id": "anc_agent_boots_1",
+    "points": 75
+   },
+   {
+    "tech": 7,
+    "id": "pmc_smg_3",
+    "points": 500
+   },
+   {
+    "tech": 2,
+    "id": "anc_medium_mask_1",
+    "points": 75
+   },
+   {
+    "tech": 2,
+    "id": "anc_medium_armor_2",
+    "points": 125
+   },
+   {
+    "tech": 2,
+    "id": "anc_medium_pants_2",
+    "points": 100
+   },
+   {
+    "tech": 2,
+    "id": "anc_medium_boots_2",
+    "points": 75
+   },
+   {
+    "tech": 8,
+    "id": "anc_quasi_smg_1",
+    "points": 550
+   },
+   {
+    "tech": 9,
+    "id": "anc_quasi_assault_1",
+    "points": 1300
+   },
+   {
+    "tech": 7,
+    "id": "anc_medium_armor_1",
+    "points": 350
+   },
+   {
+    "tech": 7,
+    "id": "anc_medium_helmet_1",
+    "points": 200
+   },
+   {
+    "tech": 7,
+    "id": "anc_medium_pants_1",
+    "points": 250
+   },
+   {
+    "tech": 7,
+    "id": "anc_medium_boots_1",
+    "points": 175
+   },
+   {
+    "tech": 4,
+    "id": "anc_marksman_1",
+    "points": 475
+   },
+   {
+    "tech": 3,
+    "id": "anc_shotgun_1",
+    "points": 300
+   },
+   {
+    "tech": 4,
+    "id": "anc_pistol_2",
+    "points": 250
+   },
+   {
+    "tech": 2,
+    "id": "anc_pistol_1",
+    "points": 150
+   },
+   {
+    "tech": 6,
+    "id": "anc_shotgun_2",
+    "points": 500
+   },
+   {
+    "tech": 1,
+    "id": "anc_smg_1",
+    "points": 200
+   },
+   {
+    "tech": 6,
+    "id": "army_sniper_2",
+    "points": 425
+   }
+  ],
+  "CResistance": [
+   {
+    "tech": 3,
+    "id": "civ_powerfist_1",
+    "points": 150
+   },
+   {
+    "tech": 2,
+    "id": "miner_breaker_1",
+    "points": 60
+   },
+   {
+    "tech": 3,
+    "id": "military_shovel_1",
+    "points": 90
+   },
+   {
+    "tech": 3,
+    "id": "civ_pistol_1",
+    "points": 50
+   },
+   {
+    "tech": 1,
+    "id": "civ_pistol_2",
+    "points": 20
+   },
+   {
+    "tech": 5,
+    "id": "civ_plasma_pistol_1",
+    "points": 100
+   },
+   {
+    "tech": 1,
+    "id": "trash_shotgun_1",
+    "points": 30
+   },
+   {
+    "tech": 2,
+    "id": "worker_discthrower_1",
+    "points": 60
+   },
+   {
+    "tech": 4,
+    "id": "civ_common_smg_1",
+    "points": 90
+   },
+   {
+    "tech": 6,
+    "id": "civ_common_smg_2",
+    "points": 130
+   },
+   {
+    "tech": 4,
+    "id": "civ_common_assault_1",
+    "points": 120
+   },
+   {
+    "tech": 7,
+    "id": "civ_plasma_assault_1",
+    "points": 230
+   },
+   {
+    "tech": 6,
+    "id": "civ_marksman_1",
+    "points": 180
+   },
+   {
+    "tech": 9,
+    "id": "civ_common_assault_2",
+    "points": 240
+   },
+   {
+    "tech": 9,
+    "id": "plasma_hmg_1",
+    "points": 370
+   },
+   {
+    "tech": 10,
+    "id": "tech_hfg_1",
+    "points": 390
+   },
+   {
+    "tech": 3,
+    "id": "worker_flamethrower_1",
+    "points": 90
+   },
+   {
+    "tech": 5,
+    "id": "grenade_launcher_1",
+    "points": 160
+   },
+   {
+    "tech": 8,
+    "id": "army_rocketlauncher_1",
+    "points": 320
+   },
+   {
+    "tech": 1,
+    "id": "servo_backpack_1",
+    "points": 105
+   },
+   {
+    "tech": 4,
+    "id": "civ_reinforced_shirt_1",
+    "points": 105
+   },
+   {
+    "tech": 4,
+    "id": "civ_gasmask_1",
+    "points": 60
+   },
+   {
+    "tech": 4,
+    "id": "civ_pants_4",
+    "points": 75
+   },
+   {
+    "tech": 4,
+    "id": "civ_boots_2",
+    "points": 60
+   },
+   {
+    "tech": 5,
+    "id": "civ_medium_armor_1",
+    "points": 150
+   },
+   {
+    "tech": 5,
+    "id": "civ_medium_helmet_1",
+    "points": 90
+   },
+   {
+    "tech": 5,
+    "id": "civ_medium_pants_1",
+    "points": 120
+   },
+   {
+    "tech": 5,
+    "id": "civ_medium_boots_1",
+    "points": 75
+   },
+   {
+    "tech": 2,
+    "id": "civ_medium_armor_2",
+    "points": 75
+   },
+   {
+    "tech": 2,
+    "id": "civ_medium_helmet_2",
+    "points": 45
+   },
+   {
+    "tech": 2,
+    "id": "civ_medium_pants_2",
+    "points": 60
+   },
+   {
+    "tech": 2,
+    "id": "civ_medium_boots_2",
+    "points": 45
+   },
+   {
+    "tech": 8,
+    "id": "civ_heavy_helmet_1",
+    "points": 150
+   },
+   {
+    "tech": 8,
+    "id": "civ_heavy_armor_1",
+    "points": 255
+   },
+   {
+    "tech": 8,
+    "id": "civ_heavy_pants_1",
+    "points": 195
+   },
+   {
+    "tech": 8,
+    "id": "civ_heavy_boots_1",
+    "points": 135
+   }
+  ],
+  "ChurchGannix": [
+   {
+    "tech": 2,
+    "id": "trash_sawblade_1",
+    "points": 225
+   },
+   {
+    "tech": 4,
+    "id": "chu_fireclub_1",
+    "points": 450
+   },
+   {
+    "tech": 5,
+    "id": "army_pistol_4",
+    "points": 225
+   },
+   {
+    "tech": 7,
+    "id": "chu_trucker_pistol_2",
+    "points": 325
+   },
+   {
+    "tech": 5,
+    "id": "trucker_marksman_2",
+    "points": 400
+   },
+   {
+    "tech": 1,
+    "id": "trucker_shotgun_1",
+    "points": 175
+   },
+   {
+    "tech": 3,
+    "id": "trucker_shotgun_2",
+    "points": 250
+   },
+   {
+    "tech": 5,
+    "id": "plasma_shotgun_2",
+    "points": 325
+   },
+   {
+    "tech": 7,
+    "id": "chu_shotgun_1",
+    "points": 575
+   },
+   {
+    "tech": 7,
+    "id": "plasma_shotgun_1",
+    "points": 450
+   },
+   {
+    "tech": 4,
+    "id": "chu_meltathrower_1",
+    "points": 375
+   },
+   {
+    "tech": 8,
+    "id": "army_rocketlauncher_1",
+    "points": 800
+   },
+   {
+    "tech": 6,
+    "id": "common_rocketlauncher_1",
+    "points": 550
+   },
+   {
+    "tech": 6,
+    "id": "plasma_assault_1",
+    "points": 450
+   },
+   {
+    "tech": 3,
+    "id": "chu_sniper_1",
+    "points": 350
+   },
+   {
+    "tech": 7,
+    "id": "chu_plasma_sniper_1",
+    "points": 800
+   },
+   {
+    "tech": 2,
+    "id": "chu_manager_shirt_1",
+    "points": 100
+   },
+   {
+    "tech": 2,
+    "id": "chu_manager_mask_1",
+    "points": 75
+   },
+   {
+    "tech": 2,
+    "id": "chu_manager_pants_1",
+    "points": 75
+   },
+   {
+    "tech": 2,
+    "id": "chu_manager_boots_1",
+    "points": 50
+   },
+   {
+    "tech": 2,
+    "id": "trash_armored_vest_1",
+    "points": 75
+   },
+   {
+    "tech": 9,
+    "id": "chu_power_armor_1",
+    "points": 750
+   },
+   {
+    "tech": 9,
+    "id": "chu_power_helmet_1",
+    "points": 425
+   },
+   {
+    "tech": 9,
+    "id": "chu_power_pants_1",
+    "points": 575
+   },
+   {
+    "tech": 9,
+    "id": "chu_power_boots_1",
+    "points": 350
+   }
+  ],
+  "ChurchRevelation": [
+   {
+    "tech": 2,
+    "id": "trash_sawblade_1",
+    "points": 225
+   },
+   {
+    "tech": 4,
+    "id": "chu_fireclub_1",
+    "points": 450
+   },
+   {
+    "tech": 5,
+    "id": "army_pistol_4",
+    "points": 225
+   },
+   {
+    "tech": 7,
+    "id": "chu_trucker_pistol_2",
+    "points": 325
+   },
+   {
+    "tech": 5,
+    "id": "trucker_marksman_2",
+    "points": 400
+   },
+   {
+    "tech": 1,
+    "id": "trucker_shotgun_1",
+    "points": 175
+   },
+   {
+    "tech": 3,
+    "id": "trucker_shotgun_2",
+    "points": 250
+   },
+   {
+    "tech": 5,
+    "id": "plasma_shotgun_2",
+    "points": 325
+   },
+   {
+    "tech": 7,
+    "id": "chu_shotgun_1",
+    "points": 575
+   },
+   {
+    "tech": 7,
+    "id": "plasma_shotgun_1",
+    "points": 450
+   },
+   {
+    "tech": 4,
+    "id": "chu_meltathrower_1",
+    "points": 375
+   },
+   {
+    "tech": 8,
+    "id": "army_rocketlauncher_1",
+    "points": 800
+   },
+   {
+    "tech": 6,
+    "id": "common_rocketlauncher_1",
+    "points": 550
+   },
+   {
+    "tech": 6,
+    "id": "plasma_assault_1",
+    "points": 450
+   },
+   {
+    "tech": 3,
+    "id": "chu_sniper_1",
+    "points": 350
+   },
+   {
+    "tech": 7,
+    "id": "chu_plasma_sniper_1",
+    "points": 800
+   },
+   {
+    "tech": 2,
+    "id": "chu_manager_shirt_1",
+    "points": 100
+   },
+   {
+    "tech": 2,
+    "id": "chu_manager_mask_1",
+    "points": 75
+   },
+   {
+    "tech": 2,
+    "id": "chu_manager_pants_1",
+    "points": 75
+   },
+   {
+    "tech": 2,
+    "id": "chu_manager_boots_1",
+    "points": 50
+   },
+   {
+    "tech": 2,
+    "id": "trash_armored_vest_1",
+    "points": 75
+   },
+   {
+    "tech": 9,
+    "id": "chu_power_armor_1",
+    "points": 750
+   },
+   {
+    "tech": 9,
+    "id": "chu_power_helmet_1",
+    "points": 425
+   },
+   {
+    "tech": 9,
+    "id": "chu_power_pants_1",
+    "points": 575
+   },
+   {
+    "tech": 9,
+    "id": "chu_power_boots_1",
+    "points": 350
+   }
+  ],
+  "CivilUnity": [
+   {
+    "tech": 3,
+    "id": "civ_powerfist_1",
+    "points": 150
+   },
+   {
+    "tech": 2,
+    "id": "miner_breaker_1",
+    "points": 60
+   },
+   {
+    "tech": 3,
+    "id": "military_shovel_1",
+    "points": 90
+   },
+   {
+    "tech": 3,
+    "id": "civ_pistol_1",
+    "points": 50
+   },
+   {
+    "tech": 1,
+    "id": "civ_pistol_2",
+    "points": 20
+   },
+   {
+    "tech": 5,
+    "id": "civ_plasma_pistol_1",
+    "points": 100
+   },
+   {
+    "tech": 1,
+    "id": "trash_shotgun_1",
+    "points": 30
+   },
+   {
+    "tech": 2,
+    "id": "worker_discthrower_1",
+    "points": 60
+   },
+   {
+    "tech": 4,
+    "id": "civ_common_smg_1",
+    "points": 90
+   },
+   {
+    "tech": 6,
+    "id": "civ_common_smg_2",
+    "points": 130
+   },
+   {
+    "tech": 4,
+    "id": "civ_common_assault_1",
+    "points": 120
+   },
+   {
+    "tech": 7,
+    "id": "civ_plasma_assault_1",
+    "points": 230
+   },
+   {
+    "tech": 6,
+    "id": "civ_marksman_1",
+    "points": 180
+   },
+   {
+    "tech": 9,
+    "id": "civ_common_assault_2",
+    "points": 240
+   },
+   {
+    "tech": 9,
+    "id": "plasma_hmg_1",
+    "points": 370
+   },
+   {
+    "tech": 10,
+    "id": "tech_hfg_1",
+    "points": 390
+   },
+   {
+    "tech": 3,
+    "id": "worker_flamethrower_1",
+    "points": 90
+   },
+   {
+    "tech": 5,
+    "id": "grenade_launcher_1",
+    "points": 160
+   },
+   {
+    "tech": 8,
+    "id": "army_rocketlauncher_1",
+    "points": 320
+   },
+   {
+    "tech": 1,
+    "id": "servo_backpack_1",
+    "points": 105
+   },
+   {
+    "tech": 4,
+    "id": "civ_reinforced_shirt_1",
+    "points": 105
+   },
+   {
+    "tech": 4,
+    "id": "civ_gasmask_1",
+    "points": 60
+   },
+   {
+    "tech": 4,
+    "id": "civ_pants_4",
+    "points": 75
+   },
+   {
+    "tech": 4,
+    "id": "civ_boots_2",
+    "points": 60
+   },
+   {
+    "tech": 5,
+    "id": "civ_medium_armor_1",
+    "points": 150
+   },
+   {
+    "tech": 5,
+    "id": "civ_medium_helmet_1",
+    "points": 90
+   },
+   {
+    "tech": 5,
+    "id": "civ_medium_pants_1",
+    "points": 120
+   },
+   {
+    "tech": 5,
+    "id": "civ_medium_boots_1",
+    "points": 75
+   },
+   {
+    "tech": 2,
+    "id": "civ_medium_armor_2",
+    "points": 75
+   },
+   {
+    "tech": 2,
+    "id": "civ_medium_helmet_2",
+    "points": 45
+   },
+   {
+    "tech": 2,
+    "id": "civ_medium_pants_2",
+    "points": 60
+   },
+   {
+    "tech": 2,
+    "id": "civ_medium_boots_2",
+    "points": 45
+   },
+   {
+    "tech": 8,
+    "id": "civ_heavy_helmet_1",
+    "points": 150
+   },
+   {
+    "tech": 8,
+    "id": "civ_heavy_armor_1",
+    "points": 255
+   },
+   {
+    "tech": 8,
+    "id": "civ_heavy_pants_1",
+    "points": 195
+   },
+   {
+    "tech": 8,
+    "id": "civ_heavy_boots_1",
+    "points": 135
+   }
+  ],
+  "CoreWard": [
+   {
+    "tech": 1,
+    "id": "cor_worker_pistol_1",
+    "points": 125
+   },
+   {
+    "tech": 8,
+    "id": "cor_worker_hmg_2",
+    "points": 850
+   },
+   {
+    "tech": 4,
+    "id": "cor_nail_shotgun_1",
+    "points": 425
+   },
+   {
+    "tech": 1,
+    "id": "worker_discthrower_1",
+    "points": 150
+   },
+   {
+    "tech": 5,
+    "id": "plasma_shotgun_2",
+    "points": 325
+   },
+   {
+    "tech": 4,
+    "id": "cor_worker_discthrower_1",
+    "points": 375
+   },
+   {
+    "tech": 8,
+    "id": "laser_sniper_1",
+    "points": 700
+   },
+   {
+    "tech": 4,
+    "id": "cor_worker_hmg_1",
+    "points": 500
+   },
+   {
+    "tech": 6,
+    "id": "cor_hmg_1",
+    "points": 675
+   },
+   {
+    "tech": 2,
+    "id": "worker_hmg_1",
+    "points": 250
+   },
+   {
+    "tech": 8,
+    "id": "plasma_hmg_1",
+    "points": 925
+   },
+   {
+    "tech": 3,
+    "id": "cor_laser_sniper_1",
+    "points": 550
+   },
+   {
+    "tech": 2,
+    "id": "worker_flamethrower_1",
+    "points": 225
+   },
+   {
+    "tech": 5,
+    "id": "cor_worker_flamethrower_1",
+    "points": 500
+   },
+   {
+    "tech": 2,
+    "id": "servo_backpack_1",
+    "points": 150
+   },
+   {
+    "tech": 3,
+    "id": "pmc_common_vest_1",
+    "points": 200
+   },
+   {
+    "tech": 3,
+    "id": "miner_hard_cap_2",
+    "points": 75
+   },
+   {
+    "tech": 3,
+    "id": "miner_reinforced_shirt_1",
+    "points": 150
+   },
+   {
+    "tech": 3,
+    "id": "miner_reinforced_pants_1",
+    "points": 100
+   },
+   {
+    "tech": 3,
+    "id": "miner_reinforced_boots_1",
+    "points": 75
+   },
+   {
+    "tech": 5,
+    "id": "miner_medium_helmet_1",
+    "points": 175
+   },
+   {
+    "tech": 5,
+    "id": "miner_medium_armor_1",
+    "points": 275
+   },
+   {
+    "tech": 5,
+    "id": "miner_medium_pants_1",
+    "points": 225
+   },
+   {
+    "tech": 5,
+    "id": "miner_medium_boots_1",
+    "points": 150
+   },
+   {
+    "tech": 4,
+    "id": "miner_exoskeleton_1",
+    "points": 325
+   },
+   {
+    "tech": 4,
+    "id": "miner_gasmask_1",
+    "points": 125
+   },
+   {
+    "tech": 7,
+    "id": "miner_power_armor_1",
+    "points": 550
+   },
+   {
+    "tech": 7,
+    "id": "miner_power_helmet_1",
+    "points": 300
+   },
+   {
+    "tech": 7,
+    "id": "miner_power_pants_1",
+    "points": 400
+   },
+   {
+    "tech": 7,
+    "id": "miner_power_boots_1",
+    "points": 250
+   }
+  ],
+  "DaydreamChems": [
+   {
+    "tech": 2,
+    "id": "ddr_poisonknife_1",
+    "points": 375
+   },
+   {
+    "tech": 1,
+    "id": "prison_axe_1",
+    "points": 150
+   },
+   {
+    "tech": 5,
+    "id": "ddr_disruptor_pistol_1",
+    "points": 425
+   },
+   {
+    "tech": 1,
+    "id": "ddr_toxic_pistol_1",
+    "points": 60
+   },
+   {
+    "tech": 3,
+    "id": "ddr_frost_pistol_1",
+    "points": 225
+   },
+   {
+    "tech": 4,
+    "id": "ddr_toxic_shotgun_1",
+    "points": 375
+   },
+   {
+    "tech": 6,
+    "id": "ddr_frost_shotgun_1",
+    "points": 700
+   },
+   {
+    "tech": 8,
+    "id": "ddr_disruptor_marksman_1",
+    "points": 1125
+   },
+   {
+    "tech": 3,
+    "id": "toxic_thrower_1",
+    "points": 450
+   },
+   {
+    "tech": 3,
+    "id": "ddr_shotgun_1",
+    "points": 300
+   },
+   {
+    "tech": 4,
+    "id": "medical_chem_shirt_1",
+    "points": 175
+   },
+   {
+    "tech": 2,
+    "id": "medical_medium_armor_1",
+    "points": 125
+   },
+   {
+    "tech": 6,
+    "id": "medical_heavy_armor_1",
+    "points": 325
+   },
+   {
+    "tech": 4,
+    "id": "medical_chem_helmet_1",
+    "points": 100
+   },
+   {
+    "tech": 2,
+    "id": "medical_medium_helmet_1",
+    "points": 75
+   },
+   {
+    "tech": 6,
+    "id": "medical_heavy_helmet_1",
+    "points": 200
+   },
+   {
+    "tech": 4,
+    "id": "medical_chem_pants_1",
+    "points": 125
+   },
+   {
+    "tech": 2,
+    "id": "medical_medium_pants_1",
+    "points": 100
+   },
+   {
+    "tech": 6,
+    "id": "medical_heavy_pants_1",
+    "points": 250
+   },
+   {
+    "tech": 2,
+    "id": "medical_medium_boots_1",
+    "points": 75
+   },
+   {
+    "tech": 6,
+    "id": "medical_heavy_boots_1",
+    "points": 175
+   },
+   {
+    "tech": 5,
+    "id": "ddr_chem_coat_1",
+    "points": 225
+   },
+   {
+    "tech": 5,
+    "id": "ddr_chem_helmet_1",
+    "points": 125
+   },
+   {
+    "tech": 5,
+    "id": "ddr_chem_pants_1",
+    "points": 175
+   },
+   {
+    "tech": 5,
+    "id": "ddr_chem_boots_1",
+    "points": 100
+   },
+   {
+    "tech": 4,
+    "id": "ddr_reinforced_chem_coat_1",
+    "points": 200
+   },
+   {
+    "tech": 4,
+    "id": "ddr_reinforced_chem_helmet_1",
+    "points": 125
+   },
+   {
+    "tech": 4,
+    "id": "ddr_reinforced_chem_pants_1",
+    "points": 150
+   },
+   {
+    "tech": 9,
+    "id": "ddr_power_armor_1",
+    "points": 750
+   },
+   {
+    "tech": 9,
+    "id": "ddr_power_pants_1",
+    "points": 575
+   },
+   {
+    "tech": 9,
+    "id": "ddr_power_helmet_1",
+    "points": 425
+   },
+   {
+    "tech": 9,
+    "id": "ddr_power_boots_1",
+    "points": 350
+   }
+  ],
+  "Dilthey": [
+   {
+    "tech": 1,
+    "id": "dil_sound_pistol_1",
+    "points": 75
+   },
+   {
+    "tech": 3,
+    "id": "dil_sound_pistol_2",
+    "points": 250
+   },
+   {
+    "tech": 4,
+    "id": "laser_smg_1",
+    "points": 250
+   },
+   {
+    "tech": 2,
+    "id": "dil_shock_smg_1",
+    "points": 325
+   },
+   {
+    "tech": 8,
+    "id": "dil_chaos_smg_1",
+    "points": 950
+   },
+   {
+    "tech": 4,
+    "id": "dil_sound_shotgun_1",
+    "points": 550
+   },
+   {
+    "tech": 9,
+    "id": "dil_chaos_assault_1",
+    "points": 1250
+   },
+   {
+    "tech": 6,
+    "id": "dil_sound_assault_1",
+    "points": 750
+   },
+   {
+    "tech": 6,
+    "id": "dil_shock_sniper_1",
+    "points": 850
+   },
+   {
+    "tech": 5,
+    "id": "dil_ion_pistol_1",
+    "points": 425
+   },
+   {
+    "tech": 7,
+    "id": "dil_ion_smg_1",
+    "points": 725
+   },
+   {
+    "tech": 2,
+    "id": "medium_backpack_1",
+    "points": 150
+   },
+   {
+    "tech": 4,
+    "id": "armored_expanded_vest_1",
+    "points": 225
+   },
+   {
+    "tech": 3,
+    "id": "science_reinforced_shirt_1",
+    "points": 150
+   },
+   {
+    "tech": 5,
+    "id": "science_chem_shirt_1",
+    "points": 225
+   },
+   {
+    "tech": 3,
+    "id": "science_gasmask_1",
+    "points": 75
+   },
+   {
+    "tech": 5,
+    "id": "science_chem_helmet_1",
+    "points": 125
+   },
+   {
+    "tech": 3,
+    "id": "science_reinforced_pants_1",
+    "points": 100
+   },
+   {
+    "tech": 5,
+    "id": "science_chem_pants_1",
+    "points": 175
+   },
+   {
+    "tech": 3,
+    "id": "science_reinforced_boots_1",
+    "points": 75
+   },
+   {
+    "tech": 5,
+    "id": "science_chem_boots_1",
+    "points": 100
+   },
+   {
+    "tech": 8,
+    "id": "dil_light_armor_1",
+    "points": 425
+   },
+   {
+    "tech": 8,
+    "id": "dil_light_helmet_1",
+    "points": 225
+   },
+   {
+    "tech": 8,
+    "id": "dil_light_pants_1",
+    "points": 325
+   },
+   {
+    "tech": 8,
+    "id": "dil_light_boots_1",
+    "points": 200
+   }
+  ],
+  "Emeraldlight": [
+   {
+    "tech": 1,
+    "id": "trash_blade_1",
+    "points": 45
+   },
+   {
+    "tech": 1,
+    "id": "common_axe_1",
+    "points": 150
+   },
+   {
+    "tech": 3,
+    "id": "military_axe_1",
+    "points": 275
+   },
+   {
+    "tech": 3,
+    "id": "med_lightblade_1",
+    "points": 450
+   },
+   {
+    "tech": 6,
+    "id": "sun_laser_powersword_1",
+    "points": 825
+   },
+   {
+    "tech": 4,
+    "id": "sun_cryolaser_pistol_1",
+    "points": 275
+   },
+   {
+    "tech": 7,
+    "id": "sun_cryolaser_smg_1",
+    "points": 600
+   },
+   {
+    "tech": 8,
+    "id": "sun_cryolaser_assault_1",
+    "points": 975
+   },
+   {
+    "tech": 9,
+    "id": "sun_cryolaser_hmg_1",
+    "points": 1400
+   },
+   {
+    "tech": 8,
+    "id": "sun_rocketlauncher_1",
+    "points": 1000
+   },
+   {
+    "tech": 2,
+    "id": "sun_laser_pistol_1",
+    "points": 150
+   },
+   {
+    "tech": 4,
+    "id": "sun_laser_shotgun_1",
+    "points": 575
+   },
+   {
+    "tech": 7,
+    "id": "plasma_shotgun_1",
+    "points": 450
+   },
+   {
+    "tech": 1,
+    "id": "laser_pistol_1",
+    "points": 100
+   },
+   {
+    "tech": 3,
+    "id": "laser_pistol_2",
+    "points": 150
+   },
+   {
+    "tech": 4,
+    "id": "laser_smg_1",
+    "points": 250
+   },
+   {
+    "tech": 7,
+    "id": "sun_laser_assault_1",
+    "points": 750
+   },
+   {
+    "tech": 6,
+    "id": "plasma_assault_1",
+    "points": 450
+   },
+   {
+    "tech": 3,
+    "id": "sun_laser_sniper_1",
+    "points": 425
+   },
+   {
+    "tech": 6,
+    "id": "sun_laser_marksman_1",
+    "points": 750
+   },
+   {
+    "tech": 7,
+    "id": "army_rocketlauncher_1",
+    "points": 800
+   },
+   {
+    "tech": 4,
+    "id": "armored_expanded_vest_1",
+    "points": 225
+   },
+   {
+    "tech": 7,
+    "id": "sun_servo_backpack_1",
+    "points": 900
+   },
+   {
+    "tech": 9,
+    "id": "sun_power_armor_1",
+    "points": 750
+   },
+   {
+    "tech": 9,
+    "id": "sun_power_helmet_1",
+    "points": 425
+   },
+   {
+    "tech": 9,
+    "id": "sun_power_pants_1",
+    "points": 575
+   },
+   {
+    "tech": 9,
+    "id": "sun_power_boots_1",
+    "points": 375
+   },
+   {
+    "tech": 5,
+    "id": "sun_medium_armor_1",
+    "points": 250
+   },
+   {
+    "tech": 5,
+    "id": "sun_medium_helmet_1",
+    "points": 150
+   },
+   {
+    "tech": 5,
+    "id": "sun_medium_pants_1",
+    "points": 200
+   },
+   {
+    "tech": 5,
+    "id": "sun_medium_boots_1",
+    "points": 125
+   }
+  ],
+  "FrancheComte": [
+   {
+    "tech": 2,
+    "id": "fra_police_club_1",
+    "points": 150
+   },
+   {
+    "tech": 1,
+    "id": "fra_security_pistol_1",
+    "points": 100
+   },
+   {
+    "tech": 5,
+    "id": "fra_security_pistol_2",
+    "points": 250
+   },
+   {
+    "tech": 3,
+    "id": "fra_shock_pistol_1",
+    "points": 275
+   },
+   {
+    "tech": 1,
+    "id": "common_shotgun_1",
+    "points": 150
+   },
+   {
+    "tech": 3,
+    "id": "common_shotgun_2",
+    "points": 225
+   },
+   {
+    "tech": 7,
+    "id": "common_shotgun_3",
+    "points": 400
+   },
+   {
+    "tech": 5,
+    "id": "fra_security_shotgun_1",
+    "points": 350
+   },
+   {
+    "tech": 4,
+    "id": "police_smg_1",
+    "points": 325
+   },
+   {
+    "tech": 2,
+    "id": "fra_security_smg_1",
+    "points": 175
+   },
+   {
+    "tech": 6,
+    "id": "fra_security_smg_2",
+    "points": 350
+   },
+   {
+    "tech": 6,
+    "id": "fra_shock_smg_1",
+    "points": 575
+   },
+   {
+    "tech": 9,
+    "id": "fra_security_assault_1",
+    "points": 825
+   },
+   {
+    "tech": 8,
+    "id": "fra_security_hmg_1",
+    "points": 900
+   },
+   {
+    "tech": 6,
+    "id": "army_hmg_1",
+    "points": 575
+   },
+   {
+    "tech": 8,
+    "id": "army_rocketlauncher_1",
+    "points": 800
+   },
+   {
+    "tech": 2,
+    "id": "medium_backpack_1",
+    "points": 150
+   },
+   {
+    "tech": 1,
+    "id": "armored_vest_1",
+    "points": 100
+   },
+   {
+    "tech": 4,
+    "id": "police_medium_armor_1",
+    "points": 200
+   },
+   {
+    "tech": 7,
+    "id": "police_heavy_armor_1",
+    "points": 325
+   },
+   {
+    "tech": 5,
+    "id": "fra_heavy_armor_1",
+    "points": 325
+   },
+   {
+    "tech": 4,
+    "id": "police_medium_helmet_1",
+    "points": 125
+   },
+   {
+    "tech": 7,
+    "id": "police_heavy_helmet_2",
+    "points": 200
+   },
+   {
+    "tech": 5,
+    "id": "fra_heavy_mask_1",
+    "points": 175
+   },
+   {
+    "tech": 4,
+    "id": "police_medium_pants_1",
+    "points": 150
+   },
+   {
+    "tech": 7,
+    "id": "police_heavy_pants_1",
+    "points": 250
+   },
+   {
+    "tech": 5,
+    "id": "fra_heavy_pants_1",
+    "points": 250
+   },
+   {
+    "tech": 4,
+    "id": "police_medium_boots_1",
+    "points": 100
+   },
+   {
+    "tech": 7,
+    "id": "police_heavy_boots_1",
+    "points": 175
+   },
+   {
+    "tech": 5,
+    "id": "fra_heavy_boots_1",
+    "points": 150
+   }
+  ],
+  "General": [
+   {
+    "tech": 3,
+    "id": "military_knife_1",
+    "points": 15
+   },
+   {
+    "tech": 2,
+    "id": "miner_knife_1",
+    "points": 15
+   },
+   {
+    "tech": 1,
+    "id": "trash_blade_1",
+    "points": 15
+   },
+   {
+    "tech": 4,
+    "id": "tech_blade_1",
+    "points": 15
+   },
+   {
+    "tech": 4,
+    "id": "med_lightblade_1",
+    "points": 15
+   },
+   {
+    "tech": 3,
+    "id": "trash_sawblade_1",
+    "points": 15
+   },
+   {
+    "tech": 2,
+    "id": "trash_fist_1",
+    "points": 15
+   },
+   {
+    "tech": 1,
+    "id": "worker_crowbar_1",
+    "points": 15
+   },
+   {
+    "tech": 2,
+    "id": "worker_wrench_1",
+    "points": 15
+   },
+   {
+    "tech": 2,
+    "id": "common_axe_1",
+    "points": 15
+   },
+   {
+    "tech": 4,
+    "id": "military_axe_1",
+    "points": 15
+   },
+   {
+    "tech": 3,
+    "id": "military_shovel_1",
+    "points": 15
+   },
+   {
+    "tech": 1,
+    "id": "trash_axe_1",
+    "points": 15
+   },
+   {
+    "tech": 1,
+    "id": "army_pistol_1",
+    "points": 15
+   },
+   {
+    "tech": 2,
+    "id": "army_pistol_2",
+    "points": 15
+   },
+   {
+    "tech": 4,
+    "id": "army_pistol_3",
+    "points": 15
+   },
+   {
+    "tech": 1,
+    "id": "pmc_pistol_1",
+    "points": 15
+   },
+   {
+    "tech": 3,
+    "id": "unc_pistol_1",
+    "points": 15
+   },
+   {
+    "tech": 1,
+    "id": "military_pistol_1",
+    "points": 15
+   },
+   {
+    "tech": 3,
+    "id": "military_pistol_2",
+    "points": 15
+   },
+   {
+    "tech": 2,
+    "id": "trucker_pistol_1",
+    "points": 15
+   },
+   {
+    "tech": 3,
+    "id": "trucker_pistol_2",
+    "points": 15
+   },
+   {
+    "tech": 6,
+    "id": "trucker_pistol_3",
+    "points": 15
+   },
+   {
+    "tech": 1,
+    "id": "common_pistol_1",
+    "points": 15
+   },
+   {
+    "tech": 2,
+    "id": "common_pistol_2",
+    "points": 15
+   },
+   {
+    "tech": 4,
+    "id": "common_pistol_3",
+    "points": 15
+   },
+   {
+    "tech": 2,
+    "id": "worker_discthrower_1",
+    "points": 15
+   },
+   {
+    "tech": 5,
+    "id": "spec_pistol_1",
+    "points": 15
+   },
+   {
+    "tech": 8,
+    "id": "spec_pistol_2",
+    "points": 15
+   },
+   {
+    "tech": 2,
+    "id": "pmc_shotgun_1",
+    "points": 15
+   },
+   {
+    "tech": 2,
+    "id": "trucker_shotgun_1",
+    "points": 15
+   },
+   {
+    "tech": 4,
+    "id": "trucker_shotgun_2",
+    "points": 15
+   },
+   {
+    "tech": 6,
+    "id": "trucker_shotgun_3",
+    "points": 15
+   },
+   {
+    "tech": 2,
+    "id": "common_shotgun_1",
+    "points": 15
+   },
+   {
+    "tech": 4,
+    "id": "common_shotgun_2",
+    "points": 15
+   },
+   {
+    "tech": 1,
+    "id": "trash_shotgun_1",
+    "points": 15
+   },
+   {
+    "tech": 1,
+    "id": "pmc_smg_1",
+    "points": 15
+   },
+   {
+    "tech": 3,
+    "id": "pmc_smg_2",
+    "points": 15
+   },
+   {
+    "tech": 4,
+    "id": "pmc_smg_4",
+    "points": 15
+   },
+   {
+    "tech": 5,
+    "id": "laser_smg_1",
+    "points": 15
+   },
+   {
+    "tech": 4,
+    "id": "spec_smg_1",
+    "points": 15
+   },
+   {
+    "tech": 3,
+    "id": "pmc_assault_1",
+    "points": 15
+   },
+   {
+    "tech": 5,
+    "id": "military_assault_1",
+    "points": 15
+   },
+   {
+    "tech": 1,
+    "id": "trash_assault_1",
+    "points": 15
+   },
+   {
+    "tech": 2,
+    "id": "common_assault_1",
+    "points": 15
+   },
+   {
+    "tech": 3,
+    "id": "army_sniper_1",
+    "points": 15
+   },
+   {
+    "tech": 7,
+    "id": "army_sniper_2",
+    "points": 15
+   },
+   {
+    "tech": 2,
+    "id": "trucker_marksman_1",
+    "points": 15
+   },
+   {
+    "tech": 3,
+    "id": "worker_hmg_1",
+    "points": 15
+   },
+   {
+    "tech": 7,
+    "id": "army_hmg_1",
+    "points": 15
+   },
+   {
+    "tech": 3,
+    "id": "worker_flamethrower_1",
+    "points": 15
+   },
+   {
+    "tech": 6,
+    "id": "common_rocketlauncher_1",
+    "points": 15
+   },
+   {
+    "tech": 4,
+    "id": "pmc_common_vest_1",
+    "points": 15
+   },
+   {
+    "tech": 6,
+    "id": "military_armored_vest_1",
+    "points": 15
+   },
+   {
+    "tech": 2,
+    "id": "trash_common_vest_1",
+    "points": 15
+   },
+   {
+    "tech": 3,
+    "id": "trash_armored_vest_1",
+    "points": 15
+   },
+   {
+    "tech": 3,
+    "id": "military_common_vest_1",
+    "points": 15
+   },
+   {
+    "tech": 2,
+    "id": "armored_vest_1",
+    "points": 15
+   },
+   {
+    "tech": 3,
+    "id": "medium_backpack_1",
+    "points": 15
+   },
+   {
+    "tech": 4,
+    "id": "big_backpack_1",
+    "points": 15
+   },
+   {
+    "tech": 3,
+    "id": "servo_backpack_1",
+    "points": 15
+   },
+   {
+    "tech": 1,
+    "id": "common_hybershirt_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "common_hybershirt_2",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "common_jacket_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "science_coat_1",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "science_coat_2",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "science_reinforced_shirt_1",
+    "points": 10
+   },
+   {
+    "tech": 5,
+    "id": "science_chem_shirt_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "medical_tshirt_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "medical_tshirt_2",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "medical_chem_shirt_1",
+    "points": 10
+   },
+   {
+    "tech": 2,
+    "id": "medical_medium_armor_1",
+    "points": 10
+   },
+   {
+    "tech": 6,
+    "id": "medical_heavy_armor_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "prison_tshirt_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "prison_tshirt_2",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "prison_reinforced_shirt_1",
+    "points": 10
+   },
+   {
+    "tech": 2,
+    "id": "prison_light_armor_1",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "prison_medium_armor_1",
+    "points": 10
+   },
+   {
+    "tech": 6,
+    "id": "prison_heavy_armor_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "military_shirt_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "military_shirt_2",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "military_shirt_3",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "military_doc_armor_1",
+    "points": 10
+   },
+   {
+    "tech": 2,
+    "id": "military_light_armor_1",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "military_medium_armor_1",
+    "points": 10
+   },
+   {
+    "tech": 5,
+    "id": "military_heavy_armor_1",
+    "points": 10
+   },
+   {
+    "tech": 8,
+    "id": "military_power_armor_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "laborer_shirt_1",
+    "points": 10
+   },
+   {
+    "tech": 2,
+    "id": "laborer_shirt_2",
+    "points": 10
+   },
+   {
+    "tech": 5,
+    "id": "laborer_shirt_3",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "laborer_warm_shirt_1",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "laborer_medium_armor_1",
+    "points": 10
+   },
+   {
+    "tech": 6,
+    "id": "laborer_exoskeleton_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "miner_shirt_1",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "miner_reinforced_shirt_1",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "miner_exoskeleton_1",
+    "points": 10
+   },
+   {
+    "tech": 5,
+    "id": "miner_medium_armor_1",
+    "points": 10
+   },
+   {
+    "tech": 7,
+    "id": "miner_power_armor_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "police_shirt_1",
+    "points": 10
+   },
+   {
+    "tech": 2,
+    "id": "police_reinforced_shirt_1",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "police_medium_armor_1",
+    "points": 10
+   },
+   {
+    "tech": 7,
+    "id": "police_heavy_armor_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "common_glasses_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "common_glasses_2",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "common_gasmask_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "science_mask_1",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "science_gasmask_1",
+    "points": 10
+   },
+   {
+    "tech": 5,
+    "id": "science_chem_helmet_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "medical_gasmask_1",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "medical_chem_helmet_1",
+    "points": 10
+   },
+   {
+    "tech": 2,
+    "id": "medical_medium_helmet_1",
+    "points": 10
+   },
+   {
+    "tech": 6,
+    "id": "medical_heavy_helmet_1",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "prison_light_helmet_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "prison_mask_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "prison_mask_2",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "prison_mask_3",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "prison_hat_1",
+    "points": 10
+   },
+   {
+    "tech": 6,
+    "id": "prison_heavy_helmet_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "military_cap_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "military_mask_1",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "military_light_helmet_1",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "military_doc_helmet_1",
+    "points": 10
+   },
+   {
+    "tech": 2,
+    "id": "military_light_gasmask_1",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "military_medium_helmet_1",
+    "points": 10
+   },
+   {
+    "tech": 5,
+    "id": "military_heavy_helmet_1",
+    "points": 10
+   },
+   {
+    "tech": 8,
+    "id": "military_power_helmet_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "laborer_cap_1",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "laborer_warm_hat_1",
+    "points": 10
+   },
+   {
+    "tech": 2,
+    "id": "laborer_hard_cap_1",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "laborer_medium_helmet_1",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "miner_gasmask_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "miner_hard_cap_1",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "miner_hard_cap_2",
+    "points": 10
+   },
+   {
+    "tech": 5,
+    "id": "miner_medium_helmet_1",
+    "points": 10
+   },
+   {
+    "tech": 7,
+    "id": "miner_power_helmet_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "police_cap_1",
+    "points": 10
+   },
+   {
+    "tech": 2,
+    "id": "police_cap_2",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "police_medium_helmet_1",
+    "points": 10
+   },
+   {
+    "tech": 7,
+    "id": "police_heavy_helmet_2",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "common_hyber_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "common_hyber_pants_2",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "common_reinforced_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "science_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "science_pants_2",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "science_reinforced_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 5,
+    "id": "science_chem_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "medical_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "medical_chem_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 2,
+    "id": "medical_medium_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 6,
+    "id": "medical_heavy_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "prison_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "prison_reinforced_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 2,
+    "id": "prison_light_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "prison_medium_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 6,
+    "id": "prison_heavy_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "military_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "military_pants_2",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "military_doc_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 2,
+    "id": "military_light_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "military_medium_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 5,
+    "id": "military_heavy_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 8,
+    "id": "military_power_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "laborer_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 5,
+    "id": "laborer_pants_2",
+    "points": 10
+   },
+   {
+    "tech": 2,
+    "id": "laborer_pants_3",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "laborer_warm_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "laborer_medium_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "miner_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "miner_reinforced_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 5,
+    "id": "miner_medium_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 7,
+    "id": "miner_power_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "police_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 2,
+    "id": "police_pants_2",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "police_medium_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 7,
+    "id": "police_heavy_pants_1",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "common_boots_1",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "science_reinforced_boots_1",
+    "points": 10
+   },
+   {
+    "tech": 5,
+    "id": "science_chem_boots_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "medical_sneakers_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "medical_sneakers_2",
+    "points": 10
+   },
+   {
+    "tech": 2,
+    "id": "medical_medium_boots_1",
+    "points": 10
+   },
+   {
+    "tech": 6,
+    "id": "medical_heavy_boots_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "prison_sneakers_1",
+    "points": 10
+   },
+   {
+    "tech": 2,
+    "id": "prison_light_boots_1",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "prison_medium_boots_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "military_boots_1",
+    "points": 10
+   },
+   {
+    "tech": 2,
+    "id": "military_light_boots_1",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "military_medium_boots_1",
+    "points": 10
+   },
+   {
+    "tech": 5,
+    "id": "military_heavy_boots_1",
+    "points": 10
+   },
+   {
+    "tech": 8,
+    "id": "military_power_boots_1",
+    "points": 10
+   },
+   {
+    "tech": 2,
+    "id": "laborer_boots_1",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "laborer_warm_boots_1",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "laborer_medium_boots_1",
+    "points": 10
+   },
+   {
+    "tech": 1,
+    "id": "miner_boots_1",
+    "points": 10
+   },
+   {
+    "tech": 3,
+    "id": "miner_reinforced_boots_1",
+    "points": 10
+   },
+   {
+    "tech": 5,
+    "id": "miner_medium_boots_1",
+    "points": 10
+   },
+   {
+    "tech": 7,
+    "id": "miner_power_boots_1",
+    "points": 10
+   },
+   {
+    "tech": 2,
+    "id": "police_boots_2",
+    "points": 10
+   },
+   {
+    "tech": 4,
+    "id": "police_medium_boots_1",
+    "points": 10
+   },
+   {
+    "tech": 7,
+    "id": "police_heavy_boots_1",
+    "points": 10
+   }
+  ],
+  "GodBuilders": [
+   {
+    "tech": 3,
+    "id": "civ_powerfist_1",
+    "points": 150
+   },
+   {
+    "tech": 2,
+    "id": "miner_breaker_1",
+    "points": 60
+   },
+   {
+    "tech": 3,
+    "id": "military_shovel_1",
+    "points": 90
+   },
+   {
+    "tech": 3,
+    "id": "civ_pistol_1",
+    "points": 50
+   },
+   {
+    "tech": 1,
+    "id": "civ_pistol_2",
+    "points": 20
+   },
+   {
+    "tech": 5,
+    "id": "civ_plasma_pistol_1",
+    "points": 100
+   },
+   {
+    "tech": 1,
+    "id": "trash_shotgun_1",
+    "points": 30
+   },
+   {
+    "tech": 2,
+    "id": "worker_discthrower_1",
+    "points": 60
+   },
+   {
+    "tech": 4,
+    "id": "civ_common_smg_1",
+    "points": 90
+   },
+   {
+    "tech": 6,
+    "id": "civ_common_smg_2",
+    "points": 130
+   },
+   {
+    "tech": 4,
+    "id": "civ_common_assault_1",
+    "points": 120
+   },
+   {
+    "tech": 7,
+    "id": "civ_plasma_assault_1",
+    "points": 230
+   },
+   {
+    "tech": 6,
+    "id": "civ_marksman_1",
+    "points": 180
+   },
+   {
+    "tech": 9,
+    "id": "civ_common_assault_2",
+    "points": 240
+   },
+   {
+    "tech": 9,
+    "id": "plasma_hmg_1",
+    "points": 370
+   },
+   {
+    "tech": 10,
+    "id": "tech_hfg_1",
+    "points": 390
+   },
+   {
+    "tech": 3,
+    "id": "worker_flamethrower_1",
+    "points": 90
+   },
+   {
+    "tech": 5,
+    "id": "grenade_launcher_1",
+    "points": 160
+   },
+   {
+    "tech": 8,
+    "id": "army_rocketlauncher_1",
+    "points": 320
+   },
+   {
+    "tech": 1,
+    "id": "servo_backpack_1",
+    "points": 105
+   },
+   {
+    "tech": 4,
+    "id": "civ_reinforced_shirt_1",
+    "points": 105
+   },
+   {
+    "tech": 4,
+    "id": "civ_gasmask_1",
+    "points": 60
+   },
+   {
+    "tech": 4,
+    "id": "civ_pants_4",
+    "points": 75
+   },
+   {
+    "tech": 4,
+    "id": "civ_boots_2",
+    "points": 60
+   },
+   {
+    "tech": 5,
+    "id": "civ_medium_armor_1",
+    "points": 150
+   },
+   {
+    "tech": 5,
+    "id": "civ_medium_helmet_1",
+    "points": 90
+   },
+   {
+    "tech": 5,
+    "id": "civ_medium_pants_1",
+    "points": 120
+   },
+   {
+    "tech": 5,
+    "id": "civ_medium_boots_1",
+    "points": 75
+   },
+   {
+    "tech": 2,
+    "id": "civ_medium_armor_2",
+    "points": 75
+   },
+   {
+    "tech": 2,
+    "id": "civ_medium_helmet_2",
+    "points": 45
+   },
+   {
+    "tech": 2,
+    "id": "civ_medium_pants_2",
+    "points": 60
+   },
+   {
+    "tech": 2,
+    "id": "civ_medium_boots_2",
+    "points": 45
+   },
+   {
+    "tech": 8,
+    "id": "civ_heavy_helmet_1",
+    "points": 150
+   },
+   {
+    "tech": 8,
+    "id": "civ_heavy_armor_1",
+    "points": 255
+   },
+   {
+    "tech": 8,
+    "id": "civ_heavy_pants_1",
+    "points": 195
+   },
+   {
+    "tech": 8,
+    "id": "civ_heavy_boots_1",
+    "points": 135
+   }
+  ],
+  "Grasshopper": [
+   {
+    "tech": 2,
+    "id": "trucker_pistol_2",
+    "points": 125
+   },
+   {
+    "tech": 8,
+    "id": "grh_trucker_assault_2",
+    "points": 700
+   },
+   {
+    "tech": 7,
+    "id": "chu_trucker_pistol_1",
+    "points": 400
+   },
+   {
+    "tech": 5,
+    "id": "trucker_pistol_3",
+    "points": 200
+   },
+   {
+    "tech": 4,
+    "id": "grh_revolver_pistol_1",
+    "points": 200
+   },
+   {
+    "tech": 1,
+    "id": "grh_common_smg_1",
+    "points": 125
+   },
+   {
+    "tech": 1,
+    "id": "trucker_marksman_1",
+    "points": 175
+   },
+   {
+    "tech": 2,
+    "id": "grh_trucker_marksman_1",
+    "points": 325
+   },
+   {
+    "tech": 6,
+    "id": "grh_trucker_marksman_2",
+    "points": 650
+   },
+   {
+    "tech": 9,
+    "id": "grh_microwave_marksman_1",
+    "points": 1250
+   },
+   {
+    "tech": 3,
+    "id": "grh_trucker_assault_1",
+    "points": 350
+   },
+   {
+    "tech": 7,
+    "id": "army_rocketlauncher_1",
+    "points": 800
+   },
+   {
+    "tech": 5,
+    "id": "military_armored_vest_1",
+    "points": 375
+   },
+   {
+    "tech": 6,
+    "id": "grh_light_armor_1",
+    "points": 250
+   },
+   {
+    "tech": 6,
+    "id": "grh_light_helmet_1",
+    "points": 150
+   },
+   {
+    "tech": 6,
+    "id": "grh_light_pants_1",
+    "points": 200
+   },
+   {
+    "tech": 6,
+    "id": "grh_light_boots_1",
+    "points": 125
+   },
+   {
+    "tech": 4,
+    "id": "laborer_warm_shirt_1",
+    "points": 175
+   },
+   {
+    "tech": 4,
+    "id": "laborer_warm_pants_1",
+    "points": 125
+   },
+   {
+    "tech": 4,
+    "id": "laborer_warm_hat_1",
+    "points": 100
+   },
+   {
+    "tech": 4,
+    "id": "laborer_warm_boots_1",
+    "points": 100
+   },
+   {
+    "tech": 2,
+    "id": "military_light_gasmask_1",
+    "points": 75
+   },
+   {
+    "tech": 2,
+    "id": "military_light_armor_1",
+    "points": 125
+   },
+   {
+    "tech": 2,
+    "id": "military_light_pants_1",
+    "points": 100
+   },
+   {
+    "tech": 2,
+    "id": "military_light_boots_1",
+    "points": 75
+   },
+   {
+    "tech": 3,
+    "id": "laborer_medium_helmet_1",
+    "points": 100
+   },
+   {
+    "tech": 3,
+    "id": "laborer_medium_pants_1",
+    "points": 125
+   },
+   {
+    "tech": 3,
+    "id": "laborer_medium_boots_1",
+    "points": 75
+   },
+   {
+    "tech": 3,
+    "id": "laborer_medium_armor_1",
+    "points": 175
+   },
+   {
+    "tech": 6,
+    "id": "laborer_exoskeleton_1",
+    "points": 475
+   },
+   {
+    "tech": 8,
+    "id": "military_power_armor_1",
+    "points": 675
+   },
+   {
+    "tech": 8,
+    "id": "military_power_helmet_1",
+    "points": 375
+   },
+   {
+    "tech": 8,
+    "id": "military_power_pants_1",
+    "points": 500
+   },
+   {
+    "tech": 8,
+    "id": "military_power_boots_1",
+    "points": 325
+   }
+  ],
+  "Hive": [
+   {
+    "tech": 2,
+    "id": "military_knife_1",
+    "points": 250
+   },
+   {
+    "tech": 3,
+    "id": "tech_blade_1",
+    "points": 450
+   },
+   {
+    "tech": 5,
+    "id": "pmc_shotgun_2",
+    "points": 300
+   },
+   {
+    "tech": 1,
+    "id": "anc_shirt_1",
+    "points": 50
+   },
+   {
+    "tech": 1,
+    "id": "anc_pants_1",
+    "points": 25
+   },
+   {
+    "tech": 1,
+    "id": "anc_boots_1",
+    "points": 25
+   },
+   {
+    "tech": 5,
+    "id": "anc_reinforced_hat_1",
+    "points": 50
+   },
+   {
+    "tech": 5,
+    "id": "anc_reinforced_shirt_1",
+    "points": 75
+   },
+   {
+    "tech": 5,
+    "id": "anc_reinforced_pants_1",
+    "points": 50
+   },
+   {
+    "tech": 7,
+    "id": "anc_quasi_pistol_1",
+    "points": 575
+   },
+   {
+    "tech": 3,
+    "id": "anc_agent_mask_1",
+    "points": 75
+   },
+   {
+    "tech": 3,
+    "id": "anc_agent_armor_1",
+    "points": 150
+   },
+   {
+    "tech": 3,
+    "id": "anc_agent_pants_1",
+    "points": 100
+   },
+   {
+    "tech": 3,
+    "id": "anc_agent_boots_1",
+    "points": 75
+   },
+   {
+    "tech": 7,
+    "id": "pmc_smg_3",
+    "points": 500
+   },
+   {
+    "tech": 2,
+    "id": "anc_medium_mask_1",
+    "points": 75
+   },
+   {
+    "tech": 2,
+    "id": "anc_medium_armor_2",
+    "points": 125
+   },
+   {
+    "tech": 2,
+    "id": "anc_medium_pants_2",
+    "points": 100
+   },
+   {
+    "tech": 2,
+    "id": "anc_medium_boots_2",
+    "points": 75
+   },
+   {
+    "tech": 8,
+    "id": "anc_quasi_smg_1",
+    "points": 550
+   },
+   {
+    "tech": 9,
+    "id": "anc_quasi_assault_1",
+    "points": 1300
+   },
+   {
+    "tech": 7,
+    "id": "anc_medium_armor_1",
+    "points": 350
+   },
+   {
+    "tech": 7,
+    "id": "anc_medium_helmet_1",
+    "points": 200
+   },
+   {
+    "tech": 7,
+    "id": "anc_medium_pants_1",
+    "points": 250
+   },
+   {
+    "tech": 7,
+    "id": "anc_medium_boots_1",
+    "points": 175
+   },
+   {
+    "tech": 4,
+    "id": "anc_marksman_1",
+    "points": 475
+   },
+   {
+    "tech": 3,
+    "id": "anc_shotgun_1",
+    "points": 300
+   },
+   {
+    "tech": 4,
+    "id": "anc_pistol_2",
+    "points": 250
+   },
+   {
+    "tech": 2,
+    "id": "anc_pistol_1",
+    "points": 150
+   },
+   {
+    "tech": 6,
+    "id": "anc_shotgun_2",
+    "points": 500
+   },
+   {
+    "tech": 1,
+    "id": "anc_smg_1",
+    "points": 200
+   },
+   {
+    "tech": 6,
+    "id": "army_sniper_2",
+    "points": 425
+   }
+  ],
+  "PlanetBridge": [
+   {
+    "tech": 1,
+    "id": "worker_wrench_1",
+    "points": 150
+   },
+   {
+    "tech": 1,
+    "id": "rail_pistol_1",
+    "points": 60
+   },
+   {
+    "tech": 2,
+    "id": "rail_pistol_2",
+    "points": 200
+   },
+   {
+    "tech": 5,
+    "id": "rail_pistol_3",
+    "points": 275
+   },
+   {
+    "tech": 4,
+    "id": "plb_pistol_1",
+    "points": 200
+   },
+   {
+    "tech": 6,
+    "id": "plb_pistol_2",
+    "points": 300
+   },
+   {
+    "tech": 7,
+    "id": "plb_smg_1",
+    "points": 450
+   },
+   {
+    "tech": 7,
+    "id": "plb_marksman_1",
+    "points": 575
+   },
+   {
+    "tech": 6,
+    "id": "army_hmg_1",
+    "points": 575
+   },
+   {
+    "tech": 5,
+    "id": "rail_marksman_1",
+    "points": 600
+   },
+   {
+    "tech": 1,
+    "id": "worker_hmg_1",
+    "points": 250
+   },
+   {
+    "tech": 8,
+    "id": "plb_hmg_1",
+    "points": 750
+   },
+   {
+    "tech": 4,
+    "id": "plb_worker_shockgun_1",
+    "points": 750
+   },
+   {
+    "tech": 3,
+    "id": "servo_backpack_1",
+    "points": 90
+   },
+   {
+    "tech": 2,
+    "id": "laborer_hard_cap_1",
+    "points": 25
+   },
+   {
+    "tech": 2,
+    "id": "laborer_shirt_2",
+    "points": 50
+   },
+   {
+    "tech": 2,
+    "id": "laborer_pants_3",
+    "points": 50
+   },
+   {
+    "tech": 2,
+    "id": "laborer_boots_1",
+    "points": 25
+   },
+   {
+    "tech": 4,
+    "id": "laborer_warm_shirt_1",
+    "points": 175
+   },
+   {
+    "tech": 4,
+    "id": "laborer_warm_pants_1",
+    "points": 125
+   },
+   {
+    "tech": 4,
+    "id": "laborer_warm_hat_1",
+    "points": 100
+   },
+   {
+    "tech": 4,
+    "id": "laborer_warm_boots_1",
+    "points": 100
+   },
+   {
+    "tech": 3,
+    "id": "laborer_medium_helmet_1",
+    "points": 100
+   },
+   {
+    "tech": 3,
+    "id": "laborer_medium_pants_1",
+    "points": 125
+   },
+   {
+    "tech": 3,
+    "id": "laborer_medium_boots_1",
+    "points": 75
+   },
+   {
+    "tech": 3,
+    "id": "laborer_medium_armor_1",
+    "points": 175
+   },
+   {
+    "tech": 6,
+    "id": "laborer_exoskeleton_1",
+    "points": 475
+   },
+   {
+    "tech": 7,
+    "id": "plb_medium_armor_1",
+    "points": 325
+   },
+   {
+    "tech": 7,
+    "id": "plb_medium_helmet_1",
+    "points": 200
+   },
+   {
+    "tech": 7,
+    "id": "plb_medium_pants_1",
+    "points": 250
+   },
+   {
+    "tech": 7,
+    "id": "plb_medium_boots_1",
+    "points": 175
+   },
+   {
+    "tech": 9,
+    "id": "plb_power_armor_1",
+    "points": 750
+   },
+   {
+    "tech": 9,
+    "id": "plb_power_helmet_1",
+    "points": 425
+   },
+   {
+    "tech": 9,
+    "id": "plb_power_pants_1",
+    "points": 575
+   },
+   {
+    "tech": 9,
+    "id": "plb_power_boots_1",
+    "points": 350
+   }
+  ],
+  "RealWare": [
+   {
+    "tech": 2,
+    "id": "military_shovel_1",
+    "points": 180
+   },
+   {
+    "tech": 2,
+    "id": "military_pistol_2",
+    "points": 100
+   },
+   {
+    "tech": 5,
+    "id": "rwa_military_pistol_1",
+    "points": 220
+   },
+   {
+    "tech": 2,
+    "id": "military_shotgun_1",
+    "points": 160
+   },
+   {
+    "tech": 3,
+    "id": "military_smg_1",
+    "points": 160
+   },
+   {
+    "tech": 6,
+    "id": "rwa_military_smg_1",
+    "points": 380
+   },
+   {
+    "tech": 4,
+    "id": "military_assault_1",
+    "points": 280
+   },
+   {
+    "tech": 7,
+    "id": "rwa_military_assault_1",
+    "points": 580
+   },
+   {
+    "tech": 9,
+    "id": "rwa_military_hmg_1",
+    "points": 820
+   },
+   {
+    "tech": 1,
+    "id": "trash_assault_1",
+    "points": 50
+   },
+   {
+    "tech": 8,
+    "id": "military_minigun_1",
+    "points": 840
+   },
+   {
+    "tech": 8,
+    "id": "plasma_hmg_1",
+    "points": 740
+   },
+   {
+    "tech": 4,
+    "id": "grenade_launcher_1",
+    "points": 320
+   },
+   {
+    "tech": 6,
+    "id": "common_rocketlauncher_1",
+    "points": 220
+   },
+   {
+    "tech": 1,
+    "id": "rwa_light_helmet_1",
+    "points": 90
+   },
+   {
+    "tech": 1,
+    "id": "rwa_shirt_2",
+    "points": 120
+   },
+   {
+    "tech": 1,
+    "id": "rwa_pants_1",
+    "points": 25
+   },
+   {
+    "tech": 1,
+    "id": "rwa_boots_1",
+    "points": 25
+   },
+   {
+    "tech": 3,
+    "id": "rwa_light_armor_1",
+    "points": 200
+   },
+   {
+    "tech": 3,
+    "id": "rwa_light_helmet_2",
+    "points": 125
+   },
+   {
+    "tech": 3,
+    "id": "rwa_light_pants_1",
+    "points": 150
+   },
+   {
+    "tech": 3,
+    "id": "rwa_light_boots_1",
+    "points": 100
+   },
+   {
+    "tech": 4,
+    "id": "military_medium_armor_1",
+    "points": 200
+   },
+   {
+    "tech": 4,
+    "id": "military_medium_helmet_1",
+    "points": 125
+   },
+   {
+    "tech": 4,
+    "id": "military_medium_pants_1",
+    "points": 150
+   },
+   {
+    "tech": 4,
+    "id": "military_medium_boots_1",
+    "points": 100
+   },
+   {
+    "tech": 5,
+    "id": "military_heavy_armor_1",
+    "points": 300
+   },
+   {
+    "tech": 5,
+    "id": "military_heavy_helmet_1",
+    "points": 175
+   },
+   {
+    "tech": 5,
+    "id": "military_heavy_pants_1",
+    "points": 225
+   },
+   {
+    "tech": 5,
+    "id": "military_heavy_boots_1",
+    "points": 150
+   },
+   {
+    "tech": 7,
+    "id": "rwa_heavy_armor_1",
+    "points": 425
+   },
+   {
+    "tech": 7,
+    "id": "rwa_heavy_helmet_1",
+    "points": 250
+   },
+   {
+    "tech": 7,
+    "id": "rwa_heavy_pants_1",
+    "points": 325
+   },
+   {
+    "tech": 7,
+    "id": "rwa_heavy_boots_1",
+    "points": 200
+   },
+   {
+    "tech": 9,
+    "id": "rwa_power_armor_1",
+    "points": 990
+   },
+   {
+    "tech": 9,
+    "id": "rwa_power_helmet_1",
+    "points": 570
+   },
+   {
+    "tech": 9,
+    "id": "rwa_power_pants_1",
+    "points": 750
+   },
+   {
+    "tech": 9,
+    "id": "rwa_power_boots_1",
+    "points": 480
+   },
+   {
+    "tech": 3,
+    "id": "big_backpack_1",
+    "points": 375
+   },
+   {
+    "tech": 5,
+    "id": "heavy_armored_vest_1",
+    "points": 720
+   }
+  ],
+  "SBN": [
+   {
+    "tech": 1,
+    "id": "laser_pistol_1",
+    "points": 100
+   },
+   {
+    "tech": 3,
+    "id": "laser_pistol_2",
+    "points": 150
+   },
+   {
+    "tech": 4,
+    "id": "laser_smg_1",
+    "points": 250
+   },
+   {
+    "tech": 5,
+    "id": "laser_marksman_1",
+    "points": 475
+   },
+   {
+    "tech": 6,
+    "id": "laser_smg_2",
+    "points": 400
+   },
+   {
+    "tech": 8,
+    "id": "laser_sniper_1",
+    "points": 700
+   },
+   {
+    "tech": 6,
+    "id": "plasma_assault_1",
+    "points": 450
+   },
+   {
+    "tech": 8,
+    "id": "plasma_hmg_1",
+    "points": 925
+   },
+   {
+    "tech": 9,
+    "id": "tech_hfg_1",
+    "points": 975
+   },
+   {
+    "tech": 2,
+    "id": "sbn_rail_pistol_1",
+    "points": 225
+   },
+   {
+    "tech": 3,
+    "id": "sbn_rail_shotgun_1",
+    "points": 375
+   },
+   {
+    "tech": 4,
+    "id": "sbn_rail_smg_1",
+    "points": 450
+   },
+   {
+    "tech": 9,
+    "id": "sbn_rail_assault_1",
+    "points": 1100
+   },
+   {
+    "tech": 7,
+    "id": "sbn_smg_1",
+    "points": 475
+   },
+   {
+    "tech": 2,
+    "id": "sbn_cap_1",
+    "points": 25
+   },
+   {
+    "tech": 2,
+    "id": "sbn_shirt_2",
+    "points": 50
+   },
+   {
+    "tech": 2,
+    "id": "sbn_pants_2",
+    "points": 50
+   },
+   {
+    "tech": 2,
+    "id": "sbn_boots_1",
+    "points": 13
+   },
+   {
+    "tech": 3,
+    "id": "sbn_medium_helmet_1",
+    "points": 125
+   },
+   {
+    "tech": 3,
+    "id": "sbn_medium_armor_1",
+    "points": 200
+   },
+   {
+    "tech": 3,
+    "id": "sbn_medium_pants_1",
+    "points": 150
+   },
+   {
+    "tech": 3,
+    "id": "sbn_medium_boots_1",
+    "points": 100
+   },
+   {
+    "tech": 8,
+    "id": "sbn_heavy_armor_1",
+    "points": 475
+   },
+   {
+    "tech": 8,
+    "id": "sbn_heavy_helmet_1",
+    "points": 275
+   },
+   {
+    "tech": 8,
+    "id": "sbn_heavy_pants_1",
+    "points": 375
+   },
+   {
+    "tech": 8,
+    "id": "sbn_heavy_boots_1",
+    "points": 225
+   },
+   {
+    "tech": 4,
+    "id": "sbn_light_armor_1",
+    "points": 225
+   },
+   {
+    "tech": 4,
+    "id": "sbn_light_helmet_1",
+    "points": 125
+   },
+   {
+    "tech": 4,
+    "id": "sbn_light_pants_1",
+    "points": 175
+   },
+   {
+    "tech": 4,
+    "id": "sbn_light_boots_1",
+    "points": 125
+   },
+   {
+    "tech": 2,
+    "id": "pmc_common_vest_1",
+    "points": 160
+   }
+  ],
+  "SheduThousand": [
+   {
+    "tech": 2,
+    "id": "trash_sawblade_1",
+    "points": 180
+   },
+   {
+    "tech": 1,
+    "id": "she_heavy_pistol_1",
+    "points": 40
+   },
+   {
+    "tech": 2,
+    "id": "she_gas_shotgun_1",
+    "points": 220
+   },
+   {
+    "tech": 3,
+    "id": "she_smg_1",
+    "points": 240
+   },
+   {
+    "tech": 7,
+    "id": "she_plasma_assault_1",
+    "points": 680
+   },
+   {
+    "tech": 3,
+    "id": "she_common_assault_1",
+    "points": 280
+   },
+   {
+    "tech": 6,
+    "id": "she_military_minigun_1",
+    "points": 600
+   },
+   {
+    "tech": 2,
+    "id": "worker_flamethrower_1",
+    "points": 180
+   },
+   {
+    "tech": 5,
+    "id": "rwa_military_pistol_1",
+    "points": 220
+   },
+   {
+    "tech": 3,
+    "id": "military_smg_1",
+    "points": 160
+   },
+   {
+    "tech": 6,
+    "id": "rwa_military_smg_1",
+    "points": 380
+   },
+   {
+    "tech": 4,
+    "id": "military_assault_1",
+    "points": 280
+   },
+   {
+    "tech": 7,
+    "id": "rwa_military_assault_1",
+    "points": 580
+   },
+   {
+    "tech": 1,
+    "id": "trash_assault_1",
+    "points": 50
+   },
+   {
+    "tech": 4,
+    "id": "grenade_launcher_1",
+    "points": 320
+   },
+   {
+    "tech": 6,
+    "id": "common_rocketlauncher_1",
+    "points": 220
+   },
+   {
+    "tech": 2,
+    "id": "possessed_light_armor_1",
+    "points": 50
+   },
+   {
+    "tech": 5,
+    "id": "possessed_medium_armor_1",
+    "points": 100
+   },
+   {
+    "tech": 2,
+    "id": "possessed_light_helmet_1",
+    "points": 25
+   },
+   {
+    "tech": 5,
+    "id": "possessed_medium_helmet_1",
+    "points": 75
+   },
+   {
+    "tech": 5,
+    "id": "possessed_medium_pants_1",
+    "points": 75
+   },
+   {
+    "tech": 5,
+    "id": "possessed_medium_boots_1",
+    "points": 50
+   },
+   {
+    "tech": 4,
+    "id": "military_medium_armor_1",
+    "points": 200
+   },
+   {
+    "tech": 4,
+    "id": "military_medium_helmet_1",
+    "points": 125
+   },
+   {
+    "tech": 4,
+    "id": "military_medium_pants_1",
+    "points": 150
+   },
+   {
+    "tech": 4,
+    "id": "military_medium_boots_1",
+    "points": 100
+   },
+   {
+    "tech": 7,
+    "id": "rwa_heavy_armor_1",
+    "points": 425
+   },
+   {
+    "tech": 7,
+    "id": "rwa_heavy_helmet_1",
+    "points": 250
+   },
+   {
+    "tech": 7,
+    "id": "rwa_heavy_pants_1",
+    "points": 325
+   },
+   {
+    "tech": 7,
+    "id": "rwa_heavy_boots_1",
+    "points": 200
+   },
+   {
+    "tech": 3,
+    "id": "big_backpack_1",
+    "points": 375
+   },
+   {
+    "tech": 5,
+    "id": "heavy_armored_vest_1",
+    "points": 720
+   }
+  ],
+  "Sunlight": [
+   {
+    "tech": 1,
+    "id": "trash_blade_1",
+    "points": 45
+   },
+   {
+    "tech": 1,
+    "id": "common_axe_1",
+    "points": 150
+   },
+   {
+    "tech": 3,
+    "id": "military_axe_1",
+    "points": 275
+   },
+   {
+    "tech": 3,
+    "id": "med_lightblade_1",
+    "points": 450
+   },
+   {
+    "tech": 6,
+    "id": "sun_laser_powersword_1",
+    "points": 825
+   },
+   {
+    "tech": 4,
+    "id": "sun_cryolaser_pistol_1",
+    "points": 275
+   },
+   {
+    "tech": 7,
+    "id": "sun_cryolaser_smg_1",
+    "points": 600
+   },
+   {
+    "tech": 8,
+    "id": "sun_cryolaser_assault_1",
+    "points": 975
+   },
+   {
+    "tech": 9,
+    "id": "sun_cryolaser_hmg_1",
+    "points": 1400
+   },
+   {
+    "tech": 8,
+    "id": "sun_rocketlauncher_1",
+    "points": 1000
+   },
+   {
+    "tech": 2,
+    "id": "sun_laser_pistol_1",
+    "points": 150
+   },
+   {
+    "tech": 4,
+    "id": "sun_laser_shotgun_1",
+    "points": 575
+   },
+   {
+    "tech": 1,
+    "id": "laser_pistol_1",
+    "points": 100
+   },
+   {
+    "tech": 3,
+    "id": "laser_pistol_2",
+    "points": 150
+   },
+   {
+    "tech": 4,
+    "id": "laser_smg_1",
+    "points": 250
+   },
+   {
+    "tech": 7,
+    "id": "sun_laser_assault_1",
+    "points": 750
+   },
+   {
+    "tech": 3,
+    "id": "sun_laser_sniper_1",
+    "points": 425
+   },
+   {
+    "tech": 6,
+    "id": "sun_laser_marksman_1",
+    "points": 750
+   },
+   {
+    "tech": 7,
+    "id": "army_rocketlauncher_1",
+    "points": 800
+   },
+   {
+    "tech": 4,
+    "id": "armored_expanded_vest_1",
+    "points": 225
+   },
+   {
+    "tech": 7,
+    "id": "sun_servo_backpack_1",
+    "points": 900
+   },
+   {
+    "tech": 9,
+    "id": "sun_power_armor_1",
+    "points": 750
+   },
+   {
+    "tech": 9,
+    "id": "sun_power_helmet_1",
+    "points": 425
+   },
+   {
+    "tech": 9,
+    "id": "sun_power_pants_1",
+    "points": 575
+   },
+   {
+    "tech": 9,
+    "id": "sun_power_boots_1",
+    "points": 375
+   },
+   {
+    "tech": 5,
+    "id": "sun_medium_armor_1",
+    "points": 250
+   },
+   {
+    "tech": 5,
+    "id": "sun_medium_helmet_1",
+    "points": 150
+   },
+   {
+    "tech": 5,
+    "id": "sun_medium_pants_1",
+    "points": 200
+   },
+   {
+    "tech": 5,
+    "id": "sun_medium_boots_1",
+    "points": 125
+   }
+  ],
+  "Tezctlan": [
+   {
+    "tech": 1,
+    "id": "venus_knife_1",
+    "points": 150
+   },
+   {
+    "tech": 2,
+    "id": "venus_battlefist_1",
+    "points": 450
+   },
+   {
+    "tech": 1,
+    "id": "venus_mace_1",
+    "points": 90
+   },
+   {
+    "tech": 2,
+    "id": "venus_axe_1",
+    "points": 375
+   },
+   {
+    "tech": 4,
+    "id": "venus_poleaxe_1",
+    "points": 650
+   },
+   {
+    "tech": 1,
+    "id": "venus_quasi_pistol_1",
+    "points": 150
+   },
+   {
+    "tech": 3,
+    "id": "venus_quasi_shotgun_1",
+    "points": 575
+   },
+   {
+    "tech": 4,
+    "id": "venus_marksman_1",
+    "points": 700
+   },
+   {
+    "tech": 2,
+    "id": "venus_blowpipe_1",
+    "points": 400
+   },
+   {
+    "tech": 7,
+    "id": "venus_rocketlauncher_1",
+    "points": 975
+   },
+   {
+    "tech": 3,
+    "id": "venus_club_1",
+    "points": 550
+   },
+   {
+    "tech": 2,
+    "id": "venus_hat_1",
+    "points": 25
+   },
+   {
+    "tech": 2,
+    "id": "venus_shirt_1",
+    "points": 50
+   },
+   {
+    "tech": 2,
+    "id": "venus_pants_1",
+    "points": 25
+   },
+   {
+    "tech": 2,
+    "id": "venus_boots_1",
+    "points": 25
+   },
+   {
+    "tech": 3,
+    "id": "tez_heavy_armor_1",
+    "points": 175
+   },
+   {
+    "tech": 5,
+    "id": "tez_heavy_armor_2",
+    "points": 225
+   },
+   {
+    "tech": 7,
+    "id": "tez_heavy_armor_3",
+    "points": 325
+   },
+   {
+    "tech": 3,
+    "id": "tez_heavy_helmet_1",
+    "points": 100
+   },
+   {
+    "tech": 5,
+    "id": "tez_heavy_helmet_2",
+    "points": 125
+   },
+   {
+    "tech": 7,
+    "id": "tez_heavy_helmet_3",
+    "points": 200
+   },
+   {
+    "tech": 3,
+    "id": "tez_heavy_pants_1",
+    "points": 125
+   },
+   {
+    "tech": 7,
+    "id": "tez_heavy_pants_2",
+    "points": 300
+   },
+   {
+    "tech": 3,
+    "id": "tez_heavy_boots_1",
+    "points": 75
+   }
+  ],
+  "Tianming": [
+   {
+    "tech": 1,
+    "id": "tia_blade_1",
+    "points": 60
+   },
+   {
+    "tech": 3,
+    "id": "military_axe_1",
+    "points": 275
+   },
+   {
+    "tech": 1,
+    "id": "tia_disc_pistol_1",
+    "points": 125
+   },
+   {
+    "tech": 2,
+    "id": "spec_shotgun_1",
+    "points": 200
+   },
+   {
+    "tech": 3,
+    "id": "spec_smg_1",
+    "points": 375
+   },
+   {
+    "tech": 4,
+    "id": "spec_pistol_1",
+    "points": 250
+   },
+   {
+    "tech": 5,
+    "id": "tia_rocketlauncher_1",
+    "points": 725
+   },
+   {
+    "tech": 6,
+    "id": "tia_disc_assault_1",
+    "points": 575
+   },
+   {
+    "tech": 6,
+    "id": "spec_smg_2",
+    "points": 550
+   },
+   {
+    "tech": 7,
+    "id": "spec_pistol_2",
+    "points": 400
+   },
+   {
+    "tech": 9,
+    "id": "tia_shock_assault_1",
+    "points": 1125
+   },
+   {
+    "tech": 1,
+    "id": "armored_vest_1",
+    "points": 100
+   },
+   {
+    "tech": 2,
+    "id": "medium_backpack_1",
+    "points": 150
+   },
+   {
+    "tech": 8,
+    "id": "military_power_armor_1",
+    "points": 675
+   },
+   {
+    "tech": 8,
+    "id": "military_power_helmet_1",
+    "points": 375
+   },
+   {
+    "tech": 8,
+    "id": "military_power_pants_1",
+    "points": 500
+   },
+   {
+    "tech": 8,
+    "id": "military_power_boots_1",
+    "points": 325
+   },
+   {
+    "tech": 2,
+    "id": "tia_shirt_1",
+    "points": 50
+   },
+   {
+    "tech": 7,
+    "id": "tia_light_armor_1",
+    "points": 275
+   },
+   {
+    "tech": 4,
+    "id": "tia_heavy_armor_1",
+    "points": 250
+   },
+   {
+    "tech": 2,
+    "id": "tia_gasmask_1",
+    "points": 25
+   },
+   {
+    "tech": 7,
+    "id": "tia_light_helmet_1",
+    "points": 175
+   },
+   {
+    "tech": 4,
+    "id": "tia_heavy_helmet_1",
+    "points": 150
+   },
+   {
+    "tech": 2,
+    "id": "tia_pants_1",
+    "points": 50
+   },
+   {
+    "tech": 7,
+    "id": "tia_light_pants_1",
+    "points": 225
+   },
+   {
+    "tech": 4,
+    "id": "tia_heavy_pants_1",
+    "points": 200
+   },
+   {
+    "tech": 2,
+    "id": "tia_boots_1",
+    "points": 25
+   },
+   {
+    "tech": 7,
+    "id": "tia_light_boots_1",
+    "points": 150
+   },
+   {
+    "tech": 4,
+    "id": "tia_heavy_boots_1",
+    "points": 125
+   }
+  ],
+  "UnchainedBelt": [
+   {
+    "tech": 1,
+    "id": "trash_fist_1",
+    "points": 100
+   },
+   {
+    "tech": 1,
+    "id": "trash_axe_1",
+    "points": 45
+   },
+   {
+    "tech": 2,
+    "id": "unc_pistol_1",
+    "points": 125
+   },
+   {
+    "tech": 3,
+    "id": "unc_pistol_2",
+    "points": 200
+   },
+   {
+    "tech": 2,
+    "id": "trash_smg_1",
+    "points": 175
+   },
+   {
+    "tech": 5,
+    "id": "unc_smg_1",
+    "points": 275
+   },
+   {
+    "tech": 3,
+    "id": "unc_smg_2",
+    "points": 225
+   },
+   {
+    "tech": 5,
+    "id": "unc_assault_1",
+    "points": 425
+   },
+   {
+    "tech": 7,
+    "id": "unc_assault_2",
+    "points": 500
+   },
+   {
+    "tech": 6,
+    "id": "unc_sniper_1",
+    "points": 500
+   },
+   {
+    "tech": 9,
+    "id": "unc_autogun_1",
+    "points": 975
+   },
+   {
+    "tech": 4,
+    "id": "grenade_launcher_1",
+    "points": 400
+   },
+   {
+    "tech": 5,
+    "id": "common_rocketlauncher_1",
+    "points": 550
+   },
+   {
+    "tech": 2,
+    "id": "trash_armored_vest_1",
+    "points": 75
+   },
+   {
+    "tech": 6,
+    "id": "snake_vest_1",
+    "points": 150
+   },
+   {
+    "tech": 4,
+    "id": "prison_medium_armor_1",
+    "points": 200
+   },
+   {
+    "tech": 6,
+    "id": "prison_heavy_armor_1",
+    "points": 325
+   },
+   {
+    "tech": 5,
+    "id": "unc_reinforced_shirt_2",
+    "points": 225
+   },
+   {
+    "tech": 8,
+    "id": "unc_light_armor_1",
+    "points": 325
+   },
+   {
+    "tech": 3,
+    "id": "unc_medium_armor_1",
+    "points": 175
+   },
+   {
+    "tech": 7,
+    "id": "unc_medium_armor_2",
+    "points": 375
+   },
+   {
+    "tech": 4,
+    "id": "prison_light_helmet_1",
+    "points": 125
+   },
+   {
+    "tech": 6,
+    "id": "prison_heavy_helmet_1",
+    "points": 200
+   },
+   {
+    "tech": 2,
+    "id": "unc_reinforced_cap_1",
+    "points": 75
+   },
+   {
+    "tech": 8,
+    "id": "unc_light_helmet_1",
+    "points": 175
+   },
+   {
+    "tech": 3,
+    "id": "unc_medium_helmet_1",
+    "points": 100
+   },
+   {
+    "tech": 7,
+    "id": "unc_medium_helmet_2",
+    "points": 225
+   },
+   {
+    "tech": 4,
+    "id": "prison_medium_pants_1",
+    "points": 150
+   },
+   {
+    "tech": 6,
+    "id": "prison_heavy_pants_1",
+    "points": 250
+   },
+   {
+    "tech": 5,
+    "id": "unc_reinforced_pants_2",
+    "points": 175
+   },
+   {
+    "tech": 8,
+    "id": "unc_light_pants_1",
+    "points": 250
+   },
+   {
+    "tech": 3,
+    "id": "unc_medium_pants_1",
+    "points": 125
+   },
+   {
+    "tech": 7,
+    "id": "unc_medium_pants_2",
+    "points": 300
+   },
+   {
+    "tech": 4,
+    "id": "prison_medium_boots_1",
+    "points": 100
+   },
+   {
+    "tech": 8,
+    "id": "unc_light_boots_1",
+    "points": 150
+   },
+   {
+    "tech": 3,
+    "id": "unc_medium_boots_1",
+    "points": 75
+   },
+   {
+    "tech": 7,
+    "id": "unc_medium_boots_2",
+    "points": 200
+   }
+  ],
+  "XiomaraMasks": [
+   {
+    "tech": 1,
+    "id": "venus_knife_1",
+    "points": 150
+   },
+   {
+    "tech": 2,
+    "id": "venus_battlefist_1",
+    "points": 450
+   },
+   {
+    "tech": 1,
+    "id": "venus_mace_1",
+    "points": 90
+   },
+   {
+    "tech": 2,
+    "id": "venus_axe_1",
+    "points": 375
+   },
+   {
+    "tech": 4,
+    "id": "venus_poleaxe_1",
+    "points": 650
+   },
+   {
+    "tech": 1,
+    "id": "venus_quasi_pistol_1",
+    "points": 150
+   },
+   {
+    "tech": 3,
+    "id": "venus_quasi_shotgun_1",
+    "points": 575
+   },
+   {
+    "tech": 4,
+    "id": "venus_marksman_1",
+    "points": 700
+   },
+   {
+    "tech": 2,
+    "id": "venus_blowpipe_1",
+    "points": 400
+   },
+   {
+    "tech": 7,
+    "id": "venus_rocketlauncher_1",
+    "points": 975
+   },
+   {
+    "tech": 3,
+    "id": "spider_claw",
+    "points": 300
+   },
+   {
+    "tech": 2,
+    "id": "venus_hat_1",
+    "points": 25
+   },
+   {
+    "tech": 2,
+    "id": "venus_shirt_1",
+    "points": 50
+   },
+   {
+    "tech": 2,
+    "id": "venus_pants_1",
+    "points": 25
+   },
+   {
+    "tech": 2,
+    "id": "venus_boots_1",
+    "points": 25
+   },
+   {
+    "tech": 4,
+    "id": "spider_light_armor_1",
+    "points": 250
+   },
+   {
+    "tech": 4,
+    "id": "spider_light_helmet_1",
+    "points": 150
+   },
+   {
+    "tech": 4,
+    "id": "spider_light_pants_1",
+    "points": 200
+   },
+   {
+    "tech": 4,
+    "id": "spider_light_boots_1",
+    "points": 125
+   },
+   {
+    "tech": 3,
+    "id": "xio_light_helmet_1",
+    "points": 75
+   },
+   {
+    "tech": 7,
+    "id": "xio_light_helmet_2",
+    "points": 150
+   },
+   {
+    "tech": 5,
+    "id": "xio_light_helmet_3",
+    "points": 125
+   },
+   {
+    "tech": 3,
+    "id": "xio_light_armor_1",
+    "points": 150
+   },
+   {
+    "tech": 7,
+    "id": "xio_light_armor_2",
+    "points": 250
+   },
+   {
+    "tech": 5,
+    "id": "xio_light_armor_3",
+    "points": 200
+   },
+   {
+    "tech": 3,
+    "id": "xio_pants_1",
+    "points": 100
+   },
+   {
+    "tech": 3,
+    "id": "xio_light_boots_1",
+    "points": 75
+   }
+  ]
+ },
+ "topByFaction": {
+  "AnCom": [
+   {
+    "id": "army_sniper_2",
+    "name": "Архиепископ",
+    "dmgMax": 85,
+    "tech": 7,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "anc_quasi_assault_1",
+    "name": "АЭВ-Господство",
+    "dmgMax": 82,
+    "tech": 10,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "pmc_shotgun_2",
+    "name": "Тайга АНКМ",
+    "dmgMax": 72,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "CResistance": [
+   {
+    "id": "tech_hfg_1",
+    "name": "З.Е.П.",
+    "dmgMax": 111,
+    "tech": 10,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   },
+   {
+    "id": "common_rocketlauncher_1",
+    "name": "РПГ-77",
+    "dmgMax": 104,
+    "tech": 6,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   },
+   {
+    "id": "civ_common_assault_2",
+    "name": "Интернационал А",
+    "dmgMax": 73,
+    "tech": 9,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   }
+  ],
+  "ChurchGannix": [
+   {
+    "id": "venus_rocketlauncher_1",
+    "name": "Миктлахотла",
+    "dmgMax": 116,
+    "tech": 8,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   },
+   {
+    "id": "army_rocketlauncher_1",
+    "name": "МРС-21",
+    "dmgMax": 109,
+    "tech": 8,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   },
+   {
+    "id": "common_rocketlauncher_1",
+    "name": "РПГ-77",
+    "dmgMax": 104,
+    "tech": 6,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   }
+  ],
+  "ChurchRevelation": [
+   {
+    "id": "army_rocketlauncher_1",
+    "name": "МРС-21",
+    "dmgMax": 109,
+    "tech": 8,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   },
+   {
+    "id": "common_rocketlauncher_1",
+    "name": "РПГ-77",
+    "dmgMax": 104,
+    "tech": 6,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   },
+   {
+    "id": "chu_plasma_sniper_1",
+    "name": "Прощение",
+    "dmgMax": 97,
+    "tech": 8,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   }
+  ],
+  "CoreWard": [
+   {
+    "id": "army_rocketlauncher_1",
+    "name": "МРС-21",
+    "dmgMax": 109,
+    "tech": 8,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   },
+   {
+    "id": "cor_laser_sniper_1",
+    "name": "ЛПС-Хлыст",
+    "dmgMax": 88,
+    "tech": 4,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "cor_worker_flamethrower_1",
+    "name": "Бог Огня",
+    "dmgMax": 86,
+    "tech": 6,
+    "cls": "Flamethrower",
+    "kind": "range"
+   }
+  ],
+  "DaydreamChems": [
+   {
+    "id": "ddr_disruptor_marksman_1",
+    "name": "Гарпия",
+    "dmgMax": 91,
+    "tech": 9,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "ddr_shotgun_1",
+    "name": "Винтаж СЕМЬ14",
+    "dmgMax": 84,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "toxic_thrower_1",
+    "name": "Горгона",
+    "dmgMax": 79,
+    "tech": 4,
+    "cls": "Flamethrower",
+    "kind": "range"
+   }
+  ],
+  "Dilthey": [
+   {
+    "id": "dil_shock_sniper_1",
+    "name": "Громовержец",
+    "dmgMax": 76,
+    "tech": 7,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "laser_sniper_1",
+    "name": "Призма",
+    "dmgMax": 68,
+    "tech": 9,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "dil_sound_shotgun_1",
+    "name": "Р.Е.В.",
+    "dmgMax": 57,
+    "tech": 5,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "Emeraldlight": [
+   {
+    "id": "venus_rocketlauncher_1",
+    "name": "Миктлахотла",
+    "dmgMax": 116,
+    "tech": 8,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   },
+   {
+    "id": "sun_rocketlauncher_1",
+    "name": "Психопомп",
+    "dmgMax": 104,
+    "tech": 9,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   },
+   {
+    "id": "venus_marksman_1",
+    "name": "Змеиная Пасть",
+    "dmgMax": 79,
+    "tech": 5,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   }
+  ],
+  "FrancheComte": [
+   {
+    "id": "fra_security_shotgun_1",
+    "name": "Вердикт",
+    "dmgMax": 109,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "army_rocketlauncher_1",
+    "name": "МРС-21",
+    "dmgMax": 109,
+    "tech": 8,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   },
+   {
+    "id": "common_shotgun_3",
+    "name": "Граница Шеф",
+    "dmgMax": 79,
+    "tech": 8,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "Grasshopper": [
+   {
+    "id": "grh_trucker_marksman_2",
+    "name": "Триггер Спешл",
+    "dmgMax": 128,
+    "tech": 7,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "army_rocketlauncher_1",
+    "name": "МРС-21",
+    "dmgMax": 109,
+    "tech": 8,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   },
+   {
+    "id": "common_rocketlauncher_1",
+    "name": "РПГ-77",
+    "dmgMax": 104,
+    "tech": 6,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   }
+  ],
+  "PlanetBridge": [
+   {
+    "id": "army_sniper_2",
+    "name": "Архиепископ",
+    "dmgMax": 85,
+    "tech": 7,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "plb_worker_shockgun_1",
+    "name": "Гроза",
+    "dmgMax": 76,
+    "tech": 5,
+    "cls": "Minigun",
+    "kind": "range"
+   },
+   {
+    "id": "rail_marksman_1",
+    "name": "Энигма Суприм",
+    "dmgMax": 64,
+    "tech": 6,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   }
+  ],
+  "RealWare": [
+   {
+    "id": "common_rocketlauncher_1",
+    "name": "РПГ-77",
+    "dmgMax": 104,
+    "tech": 6,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   },
+   {
+    "id": "military_shotgun_1",
+    "name": "Еретик",
+    "dmgMax": 74,
+    "tech": 3,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "trucker_shotgun_3",
+    "name": "Дхаммер-У22",
+    "dmgMax": 73,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "SBN": [
+   {
+    "id": "tech_hfg_1",
+    "name": "З.Е.П.",
+    "dmgMax": 111,
+    "tech": 10,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   },
+   {
+    "id": "trucker_shotgun_3",
+    "name": "Дхаммер-У22",
+    "dmgMax": 73,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "laser_sniper_1",
+    "name": "Призма",
+    "dmgMax": 68,
+    "tech": 9,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   }
+  ],
+  "SheduThousand": [
+   {
+    "id": "common_rocketlauncher_1",
+    "name": "РПГ-77",
+    "dmgMax": 104,
+    "tech": 6,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   },
+   {
+    "id": "she_heavy_pistol_1",
+    "name": "Жало",
+    "dmgMax": 77,
+    "tech": 1,
+    "cls": "Pistol",
+    "kind": "range"
+   },
+   {
+    "id": "trucker_shotgun_3",
+    "name": "Дхаммер-У22",
+    "dmgMax": 73,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "Sunlight": [
+   {
+    "id": "sun_rocketlauncher_1",
+    "name": "Психопомп",
+    "dmgMax": 104,
+    "tech": 9,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   },
+   {
+    "id": "laser_sniper_1",
+    "name": "Призма",
+    "dmgMax": 68,
+    "tech": 9,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "military_axe_1",
+    "name": "Ястреб",
+    "dmgMax": 61,
+    "tech": 4,
+    "cls": "Axe",
+    "kind": "melee"
+   }
+  ],
+  "Tezctlan": [
+   {
+    "id": "venus_rocketlauncher_1",
+    "name": "Миктлахотла",
+    "dmgMax": 116,
+    "tech": 8,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   },
+   {
+    "id": "venus_poleaxe_1",
+    "name": "Тепоцтли",
+    "dmgMax": 70,
+    "tech": 5,
+    "cls": "Axe",
+    "kind": "melee"
+   },
+   {
+    "id": "venus_quasi_shotgun_1",
+    "name": "Каг-2",
+    "dmgMax": 65,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "Tianming": [
+   {
+    "id": "tia_rocketlauncher_1",
+    "name": "Шачонг",
+    "dmgMax": 105,
+    "tech": 6,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   },
+   {
+    "id": "common_rocketlauncher_1",
+    "name": "РПГ-77",
+    "dmgMax": 104,
+    "tech": 6,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   },
+   {
+    "id": "tia_shock_assault_1",
+    "name": "Тип-Лейчин",
+    "dmgMax": 78,
+    "tech": 10,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   }
+  ],
+  "UnchainedBelt": [
+   {
+    "id": "unc_autogun_1",
+    "name": "Наковальня М6",
+    "dmgMax": 133,
+    "tech": 10,
+    "cls": "Machinegun",
+    "kind": "range"
+   },
+   {
+    "id": "common_rocketlauncher_1",
+    "name": "РПГ-77",
+    "dmgMax": 104,
+    "tech": 6,
+    "cls": "RocketLauncher",
+    "kind": "range"
+   },
+   {
+    "id": "unc_sniper_1",
+    "name": "Стервятник",
+    "dmgMax": 71,
+    "tech": 7,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   }
+  ],
+  "XiomaraMasks": [
+   {
+    "id": "venus_marksman_1",
+    "name": "Змеиная Пасть",
+    "dmgMax": 79,
+    "tech": 5,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "venus_blowpipe_1",
+    "name": "Ацумарка",
+    "dmgMax": 56,
+    "tech": 3,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "venus_battlefist_1",
+    "name": "Трипатекпатль",
+    "dmgMax": 34,
+    "tech": 3,
+    "cls": "Fist",
+    "kind": "melee"
+   }
+  ]
+ },
+ "topByFactionRanged": {
+  "AnCom": [
+   {
+    "id": "army_sniper_2",
+    "name": "Архиепископ",
+    "dmgMax": 85,
+    "tech": 7,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "anc_quasi_assault_1",
+    "name": "АЭВ-Господство",
+    "dmgMax": 82,
+    "tech": 10,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "pmc_shotgun_2",
+    "name": "Тайга АНКМ",
+    "dmgMax": 72,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "CResistance": [
+   {
+    "id": "civ_common_assault_2",
+    "name": "Интернационал А",
+    "dmgMax": 73,
+    "tech": 9,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   },
+   {
+    "id": "plasma_shotgun_2",
+    "name": "Разрядник",
+    "dmgMax": 65,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "worker_discthrower_1",
+    "name": "Резчик",
+    "dmgMax": 62,
+    "tech": 2,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "ChurchGannix": [
+   {
+    "id": "chu_plasma_sniper_1",
+    "name": "Прощение",
+    "dmgMax": 97,
+    "tech": 8,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "chu_meltathrower_1",
+    "name": "Покаяние",
+    "dmgMax": 94,
+    "tech": 5,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   },
+   {
+    "id": "chu_shotgun_1",
+    "name": "Анафема",
+    "dmgMax": 86,
+    "tech": 8,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "ChurchRevelation": [
+   {
+    "id": "chu_plasma_sniper_1",
+    "name": "Прощение",
+    "dmgMax": 97,
+    "tech": 8,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "chu_meltathrower_1",
+    "name": "Покаяние",
+    "dmgMax": 94,
+    "tech": 5,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   },
+   {
+    "id": "chu_shotgun_1",
+    "name": "Анафема",
+    "dmgMax": 86,
+    "tech": 8,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "CoreWard": [
+   {
+    "id": "cor_laser_sniper_1",
+    "name": "ЛПС-Хлыст",
+    "dmgMax": 88,
+    "tech": 4,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "cor_worker_discthrower_1",
+    "name": "Мясорубка",
+    "dmgMax": 80,
+    "tech": 5,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "laser_sniper_1",
+    "name": "Призма",
+    "dmgMax": 68,
+    "tech": 9,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   }
+  ],
+  "DaydreamChems": [
+   {
+    "id": "ddr_disruptor_marksman_1",
+    "name": "Гарпия",
+    "dmgMax": 91,
+    "tech": 9,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "ddr_shotgun_1",
+    "name": "Винтаж СЕМЬ14",
+    "dmgMax": 84,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "trucker_shotgun_2",
+    "name": "Джеффхаммер МД",
+    "dmgMax": 69,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "Dilthey": [
+   {
+    "id": "dil_shock_sniper_1",
+    "name": "Громовержец",
+    "dmgMax": 76,
+    "tech": 7,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "laser_sniper_1",
+    "name": "Призма",
+    "dmgMax": 68,
+    "tech": 9,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "dil_sound_shotgun_1",
+    "name": "Р.Е.В.",
+    "dmgMax": 57,
+    "tech": 5,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "Emeraldlight": [
+   {
+    "id": "venus_marksman_1",
+    "name": "Змеиная Пасть",
+    "dmgMax": 79,
+    "tech": 5,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "laser_sniper_1",
+    "name": "Призма",
+    "dmgMax": 68,
+    "tech": 9,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "venus_quasi_shotgun_1",
+    "name": "Каг-2",
+    "dmgMax": 65,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "FrancheComte": [
+   {
+    "id": "fra_security_shotgun_1",
+    "name": "Вердикт",
+    "dmgMax": 109,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "common_shotgun_3",
+    "name": "Граница Шеф",
+    "dmgMax": 79,
+    "tech": 8,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "common_shotgun_2",
+    "name": "Граница Марк-2",
+    "dmgMax": 76,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "Grasshopper": [
+   {
+    "id": "grh_trucker_marksman_2",
+    "name": "Триггер Спешл",
+    "dmgMax": 128,
+    "tech": 7,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "grh_microwave_marksman_1",
+    "name": "Термостат",
+    "dmgMax": 74,
+    "tech": 10,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "chu_trucker_pistol_1",
+    "name": "Закон",
+    "dmgMax": 72,
+    "tech": 8,
+    "cls": "Pistol",
+    "kind": "range"
+   }
+  ],
+  "PlanetBridge": [
+   {
+    "id": "army_sniper_2",
+    "name": "Архиепископ",
+    "dmgMax": 85,
+    "tech": 7,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "rail_marksman_1",
+    "name": "Энигма Суприм",
+    "dmgMax": 64,
+    "tech": 6,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "plb_pistol_2",
+    "name": "Стерлинг А2Л4",
+    "dmgMax": 42,
+    "tech": 7,
+    "cls": "Pistol",
+    "kind": "range"
+   }
+  ],
+  "RealWare": [
+   {
+    "id": "military_shotgun_1",
+    "name": "Еретик",
+    "dmgMax": 74,
+    "tech": 3,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "trucker_shotgun_3",
+    "name": "Дхаммер-У22",
+    "dmgMax": 73,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "trucker_shotgun_2",
+    "name": "Джеффхаммер МД",
+    "dmgMax": 69,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "SBN": [
+   {
+    "id": "trucker_shotgun_3",
+    "name": "Дхаммер-У22",
+    "dmgMax": 73,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "laser_sniper_1",
+    "name": "Призма",
+    "dmgMax": 68,
+    "tech": 9,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "plasma_assault_1",
+    "name": "Пожиратель",
+    "dmgMax": 61,
+    "tech": 7,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   }
+  ],
+  "SheduThousand": [
+   {
+    "id": "she_heavy_pistol_1",
+    "name": "Жало",
+    "dmgMax": 77,
+    "tech": 1,
+    "cls": "Pistol",
+    "kind": "range"
+   },
+   {
+    "id": "trucker_shotgun_3",
+    "name": "Дхаммер-У22",
+    "dmgMax": 73,
+    "tech": 6,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "trucker_shotgun_2",
+    "name": "Джеффхаммер МД",
+    "dmgMax": 69,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "Sunlight": [
+   {
+    "id": "laser_sniper_1",
+    "name": "Призма",
+    "dmgMax": 68,
+    "tech": 9,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "sun_laser_sniper_1",
+    "name": "Просветление МК",
+    "dmgMax": 61,
+    "tech": 4,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "sun_laser_marksman_1",
+    "name": "Крестоносец",
+    "dmgMax": 60,
+    "tech": 7,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   }
+  ],
+  "Tezctlan": [
+   {
+    "id": "venus_quasi_shotgun_1",
+    "name": "Каг-2",
+    "dmgMax": 65,
+    "tech": 4,
+    "cls": "Shotgun",
+    "kind": "range"
+   }
+  ],
+  "Tianming": [
+   {
+    "id": "tia_shock_assault_1",
+    "name": "Тип-Лейчин",
+    "dmgMax": 78,
+    "tech": 10,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   },
+   {
+    "id": "spec_shotgun_1",
+    "name": "Лонгху",
+    "dmgMax": 76,
+    "tech": 3,
+    "cls": "Shotgun",
+    "kind": "range"
+   },
+   {
+    "id": "tia_disc_assault_1",
+    "name": "Куанцзи",
+    "dmgMax": 62,
+    "tech": 7,
+    "cls": "AssaultRifle",
+    "kind": "range"
+   }
+  ],
+  "UnchainedBelt": [
+   {
+    "id": "unc_sniper_1",
+    "name": "Стервятник",
+    "dmgMax": 71,
+    "tech": 7,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "unc_pistol_2",
+    "name": "Воитель",
+    "dmgMax": 69,
+    "tech": 4,
+    "cls": "Pistol",
+    "kind": "range"
+   },
+   {
+    "id": "army_sniper_1",
+    "name": "Слон",
+    "dmgMax": 66,
+    "tech": 3,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   }
+  ],
+  "XiomaraMasks": [
+   {
+    "id": "venus_marksman_1",
+    "name": "Змеиная Пасть",
+    "dmgMax": 79,
+    "tech": 5,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   },
+   {
+    "id": "venus_blowpipe_1",
+    "name": "Ацумарка",
+    "dmgMax": 56,
+    "tech": 3,
+    "cls": "MarksmanRifle",
+    "kind": "range"
+   }
+  ]
+ }
+}

@@ -24,7 +24,11 @@ const PROC_TYPE_COLOR = {
 
 // ---- state -----------------------------------------------------------------
 let DATA = null;
-const state = { mode:'story', category:'all', search:'', save:null };
+let WEAPONS = null;   // { weapons, factionDrops, topByFaction, topByFactionRanged }
+const state = {
+  mode:'story', category:'all', search:'', save:null,
+  target: { factionId:null, weaponId:null, rangedOnly:false }
+};
 let pinnedId = null;
 const missionById = {};
 
@@ -260,6 +264,58 @@ function saveEmpty(msg){
   $('#counter').textContent = '—';
 }
 
+function renderTargetPicker(container){
+  if(!WEAPONS) return;
+  const t = state.target;
+  const top = t.rangedOnly ? WEAPONS.topByFactionRanged : WEAPONS.topByFaction;
+  const factionOrder = Object.keys(top).sort();
+  const row = el('div','nav-target');
+
+  // Faction dropdown
+  const facSel = el('select','nav-sel');
+  facSel.innerHTML = '<option value="">— ціль-фракція —</option>' +
+    factionOrder.map(f => `<option value="${esc(f)}"${f===t.factionId?' selected':''}>${esc(f)}</option>`).join('');
+  facSel.addEventListener('change', ()=>{
+    state.target.factionId = facSel.value || null;
+    state.target.weaponId = null;   // reset weapon choice
+    renderContent();
+  });
+  row.appendChild(facSel);
+
+  // Weapon dropdown (depends on selected faction)
+  const wSel = el('select','nav-sel');
+  const opts = t.factionId ? (top[t.factionId] || []) : [];
+  wSel.innerHTML = '<option value="">— ціль-зброя —</option>' +
+    opts.map(w => `<option value="${esc(w.id)}"${w.id===t.weaponId?' selected':''}>${esc(w.name)} · ${w.dmgMax} dmg · TL${w.tech}</option>`).join('');
+  wSel.disabled = !t.factionId;
+  wSel.addEventListener('change', ()=>{
+    state.target.weaponId = wSel.value || null;
+    renderContent();
+  });
+  row.appendChild(wSel);
+
+  // Ranged-only toggle
+  const toggle = el('label','nav-toggle');
+  toggle.innerHTML = `<input type="checkbox"${t.rangedOnly?' checked':''}> тільки стрілецька`;
+  toggle.querySelector('input').addEventListener('change', (e)=>{
+    state.target.rangedOnly = e.target.checked;
+    state.target.weaponId = null;   // weapon list changed — reset
+    renderContent();
+  });
+  row.appendChild(toggle);
+
+  if(t.weaponId){
+    const clear = el('button','nav-clear'); clear.textContent = 'скинути ціль ✕';
+    clear.addEventListener('click', ()=>{
+      state.target = { factionId:null, weaponId:null, rangedOnly:t.rangedOnly };
+      renderContent();
+    });
+    row.appendChild(clear);
+  }
+
+  container.appendChild(row);
+}
+
 function renderNav(){
   if(!state.save){ return saveEmpty('Читаю збереження…'); }
   if(!state.save.ok){
@@ -279,8 +335,13 @@ function renderNav(){
     <div class="nav-chip"><b>Пройдено сюжетних:</b> ${s.completedStoryIds.size}</div>`;
   content.appendChild(strip);
 
-  // filter blocked; sort primary by MissionDifficulty asc, tie-breaker rewardPoints asc
-  const list = s.liveMissions
+  // Target-weapon picker row
+  renderTargetPicker(content);
+
+  const hasTarget = !!state.target.weaponId;
+
+  // filter blocked + search; sort depends on whether a target is set
+  const rows = s.liveMissions
     .filter(m => !m.isBlocked)
     .filter(m => {
       const q = state.search.trim().toLowerCase();
@@ -288,7 +349,19 @@ function renderNav(){
       const key = (m.storyId+' '+(m.benId||'')+' '+(m.vicId||'')+' '+(m.stationId||'')).toLowerCase();
       return key.includes(q);
     })
-    .sort((a,b) => (a.difficulty-b.difficulty) || (a.rewardPoints-b.rewardPoints));
+    .map(m => ({ m, score: scoreForTarget(m) }));
+
+  if(hasTarget){
+    rows.sort((a,b) =>
+      (Number(a.score.blocks) - Number(b.score.blocks)) ||
+      (a.score.weight - b.score.weight) ||
+      (a.m.difficulty - b.m.difficulty)
+    );
+  } else {
+    rows.sort((a,b) => (a.m.difficulty - b.m.difficulty) || (a.m.rewardPoints - b.m.rewardPoints));
+  }
+  const list = rows.map(r => r.m);
+  const scoreOf = new Map(rows.map(r => [r.m, r.score]));
 
   $('#counter').innerHTML = `<b>${list.length}</b> / ${s.liveMissions.length} пропозицій`;
 
@@ -300,7 +373,10 @@ function renderNav(){
   const grid = el('div','nav-list');
   for(const lm of list){
     const m = missionById[lm.storyId];   // may be undefined for freshly-seeded proc missions
+    const sc = scoreOf.get(lm) || {leadsTo:false, blocks:false};
     const row = el('div','nav-row');
+    if(sc.leadsTo) row.classList.add('to-target');
+    if(sc.blocks) row.classList.add('blocks-target');
     const camp = m ? (m.type==='story' ? m.campaignKey : null) : null;
     row.style.setProperty('--fac', camp ? CAMPAIGN_META[camp].color : factionColor(lm.benId));
 
@@ -319,11 +395,15 @@ function renderNav(){
 
     // name + station
     const mid = el('div','nav-mid');
+    const nameRow = el('div','nav-nameRow');
     const name = el('div','nav-name');
     name.textContent = m?.name || lm.storyId;
+    nameRow.appendChild(name);
+    if(sc.leadsTo){ const b = el('span','target-badge to'); b.textContent = '→ ЦІЛЬ'; nameRow.appendChild(b); }
+    if(sc.blocks){ const b = el('span','target-badge block'); b.textContent = '⚠ ЗАКРИЄ ЦІЛЬ'; nameRow.appendChild(b); }
     const sub = el('div','nav-sub');
     sub.textContent = (lm.stationId ? lm.stationId : '—') + ' · ' + (lm.procType || (m?.missionTypeName || 'СЮЖЕТ'));
-    mid.append(name, sub);
+    mid.append(nameRow, sub);
     row.appendChild(mid);
 
     // rep chips
@@ -645,6 +725,33 @@ async function loadData(){
   const r = await fetch('../data/missions.json'); // fallback for browser testing
   return r.json();
 }
+async function loadWeapons(){
+  if(window.QM?.getWeapons) return window.QM.getWeapons();
+  try { const r = await fetch('../data/weapons.json'); return r.ok ? r.json() : null; }
+  catch { return null; }
+}
+
+// Score a live-mission against the current target weapon.
+// Returns {leadsTo, blocks, weight}. weight: smaller = better path to target.
+function scoreForTarget(lm){
+  const tgt = state.target;
+  if(!tgt.weaponId || !WEAPONS) return { leadsTo:false, blocks:false, weight:0 };
+  const w = WEAPONS.weapons.find(x => x.id === tgt.weaponId);
+  if(!w) return { leadsTo:false, blocks:false, weight:0 };
+  const facId = tgt.factionId;
+  const leadsTo = lm.benId === facId && lm.benDelta > 0;
+  const blocks  = lm.vicId === facId && lm.vicDelta < 0;
+  // Distance-to-target proxy: for the target-faction weapon, look up the
+  // lowest drop-tier and subtract benDelta (bigger delta → closer).
+  let unlockTier = w.tech;
+  const drops = WEAPONS.factionDrops[facId] || [];
+  for(const d of drops){
+    if(d.id === w.id && d.tech < unlockTier) unlockTier = d.tech;
+  }
+  const rep = (state.save?.factions || []).find(f => f.id === facId)?.reputation || 0;
+  const weight = (unlockTier - rep/10) - (leadsTo ? lm.benDelta/10 : 0) + (blocks ? 100 : 0);
+  return { leadsTo, blocks, weight };
+}
 
 async function refreshSave(){
   if(!window.QM?.getSave || !window.QM_SAVE) return;
@@ -662,7 +769,8 @@ async function boot(){
   buildSearchIndex();
   [...DATA.storyMissions, ...DATA.procMissions].forEach(m => { missionById[m.id] = m; });
 
-  // Prime save (best-effort; UI works without it).
+  // Prime save + weapons (best-effort; UI works without them).
+  WEAPONS = await loadWeapons();
   await refreshSave();
 
   renderFilters();
